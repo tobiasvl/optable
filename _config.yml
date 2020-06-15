@@ -16,9 +16,9 @@
 title: Game Boy CPU (SM83) instruction set
 description: >-
   Instruction set of the Nintendo Game Boy, Game Boy Pocket, Game Boy Color and Super Game Boy systems.
-baseurl: "/gb-opcodes" # the subpath of your site, e.g. /blog
-url: "http://gbdev.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-github: "https://github.com/gbdev/gb-opcodes"
+baseurl: "/opcode-tables" # the subpath of your site, e.g. /blog
+url: "http://tobiasvl.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github: "https://github.com/tobiasvl/opcode-tables"
 
 encoding: UTF-8
 
