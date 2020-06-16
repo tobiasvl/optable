@@ -9,45 +9,27 @@
 {% if illegal == "ILLEGAL" %}{% assign illegal = true %}{% else %}{% assign illegal = false %}{% endif %}
 {% if illegal %}{% assign mnemonic = "ILLEGAL" %}{% endif %}
 
-<!--{% if op.operands.size > 0 and op.operands[0].name == "SP" and op.operands[0].immediate %}
+{% assign is16bit = false %}
+{% if op.operands.size > 0 and op.operands[0].type == "register pair" %}
 	{% assign is16bit = true %}
-{% elsif op.operands.size > 0 and op.operands[0].name == "BC" and op.operands[0].immediate %}
+{% endif %}
+{% if op.operands.size > 1 and op.operands[1].type == "register pair" %}
 	{% assign is16bit = true %}
-{% elsif op.operands.size > 0 and op.operands[0].name == "DE" and op.operands[0].immediate %}
+{% endif %}
+{% if op.operands.size > 0 and op.operands[0].name == "d16" %}
 	{% assign is16bit = true %}
-{% elsif op.operands.size > 0 and op.operands[0].name == "HL" and op.operands[0].immediate %}
+{% endif %}
+{% if op.operands.size > 1 and op.operands[1].name == "d16" %}
 	{% assign is16bit = true %}
-{% elsif op.operands.size > 0 and op.operands[0].name == "AF" and op.operands[0].immediate %}
-	{% assign is16bit = true %}
-{% elsif op.operands.size > 0 and op.operands[0].name == "a16" and op.operands[0].immediate %}
-	{% assign is16bit = true %}
-{% elsif op.operands.size > 0 and op.operands[0].name == "d16" %}
-	{% assign is16bit = true %}
-{% elsif op.operands.size > 1 and op.operands[1].name == "SP" and op.operands[1].immediate %}
-	{% assign is16bit = true %}
-{% elsif op.operands.size > 1 and op.operands[1].name == "BC" and op.operands[1].immediate %}
-	{% assign is16bit = true %}
-{% elsif op.operands.size > 1 and op.operands[1].name == "DE" and op.operands[1].immediate %}
-	{% assign is16bit = true %}
-{% elsif op.operands.size > 1 and op.operands[1].name == "HL" and op.operands[1].immediate %}
-	{% assign is16bit = true %}
-{% elsif op.operands.size > 1 and op.operands[1].name == "AF" and op.operands[1].immediate %}
-	{% assign is16bit = true %}
-{% elsif op.operands.size > 1 and op.operands[1].name == "a16" and op.operands[1].immediate %}
-	{% assign is16bit = true %}
-{% elsif op.operands.size > 1 and op.operands[1].name == "d16" %}
-	{% assign is16bit = true %}
-{% else %}-->
-	{% assign is16bit = false %}
-<!--{% endif %}-->
+{% endif %}
 
 <td id="op-{% if include.set == "cbprefixed" %}cb{% endif %}{{ key | downcase | slice: -2, 2 }}" class="opcode-info op-{{ mnemonic | downcase }} {% if is16bit %}is16bit{% else %}is8bit{% endif %}">
 	{% if illegal %}
 		—
 	{% else %}
-		<span class="mnemonic">{{ mnemonic }} {{ op.operands | join: ',' }}<!--{% include optables/mnemonic.html id=key op=op %}--></span>
+		<span class="mnemonic">{{ mnemonic }} {{ op.operands | map: 'name' | join: ',' }}<!--{% include optables/mnemonic.html id=key op=op %}--></span>
 		<span class="bytes-cycles">
-			<span class="bytes">{{ op.operands | where: 'type', 'immediate' | size | plus: 1 }}</span>&nbsp;&nbsp;<span class="cycles">{{ op.cycles | join: '/' }}</span>
+			<span class="bytes">{% assign bytes = 1 %}{% assign operands = op.operands | where: 'type', 'immediate' %}{% for operand in operands %}{% assign bytes = bytes | plus: operand.bytes %}{% endfor %}{{ bytes }}</span>&nbsp;&nbsp;<span class="cycles">{{ op.cycles | join: '/' }}</span>
 		</span>
 		<span class="flags">{{ instruction.flags.S | default: "-"}} {{ instruction.flags.Z | default: "-"}} {{ instruction.flags.AC | default: "-"}} {{ instruction.flags.P | default: "-"}} {{ instruction.flags.C | default: "-"}}</span>
 	{% endif %}

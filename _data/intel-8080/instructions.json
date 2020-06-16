@@ -92,8 +92,8 @@
         "flags": {
             "Z": "Z",
             "S": "S",
-            "P": "P",
-            "C": "C"
+            "A": "A",
+            "P": "P"
         },
         "cycles": 10
     },
@@ -102,8 +102,8 @@
         "flags": {
             "Z": "Z",
             "S": "S",
-            "P": "P",
-            "C": "C"
+            "A": "A",
+            "P": "P"
         },
         "cycles": 10
     },
@@ -131,26 +131,62 @@
     },
     "ANA": {
         "description": "Load register pair with immediate value",
+        "flags": {
+            "Z": "Z",
+            "S": "S",
+            "A": "A",
+            "P": "P"
+        },
         "cycles": 10
     },
     "ORA": {
         "description": "Load register pair with immediate value",
+        "flags": {
+            "Z": "Z",
+            "S": "S",
+            "A": "0",
+            "P": "P"
+        },
         "cycles": 10
     },
     "XRA": {
         "description": "Load register pair with immediate value",
+        "flags": {
+            "Z": "Z",
+            "S": "S",
+            "A": "0",
+            "P": "P"
+        },
         "cycles": 10
     },
     "ANI": {
         "description": "Load register pair with immediate value",
+        "flags": {
+            "Z": "Z",
+            "S": "S",
+            "A": "A",
+            "P": "P"
+        },
         "cycles": 10
     },
     "ORI": {
         "description": "Load register pair with immediate value",
+        "flags": {
+            "Z": "Z",
+            "S": "S",
+            "A": "0",
+            "P": "P"
+        },
         "cycles": 10
     },
     "XRI": {
         "description": "Load register pair with immediate value",
+        "flags": {
+            "Z": "Z",
+            "S": "S",
+            "A": "0",
+            "P": "P"
+        },
         "cycles": 10
     },
     "CMP": {

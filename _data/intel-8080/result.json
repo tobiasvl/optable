@@ -9,9 +9,10 @@
                 {
                     "description": "16-bit register pair BC", 
                     "name": "B", 
-                    "type": "register"
+                    "type": "register pair"
                 }, 
                 {
+                    "bytes": 2, 
                     "description": "16-bit immediate value", 
                     "name": "d16", 
                     "type": "immediate"
@@ -24,7 +25,7 @@
                 {
                     "description": "16-bit register pair BC", 
                     "name": "B", 
-                    "type": "register"
+                    "type": "register pair"
                 }
             ]
         }, 
@@ -34,7 +35,7 @@
                 {
                     "description": "16-bit register pair BC", 
                     "name": "B", 
-                    "type": "register"
+                    "type": "register pair"
                 }
             ]
         }, 
@@ -67,6 +68,7 @@
                     "type": "register"
                 }, 
                 {
+                    "bytes": 1, 
                     "description": "8-bit immediate value", 
                     "name": "d8", 
                     "type": "immediate"
@@ -85,7 +87,7 @@
                 {
                     "description": "16-bit register pair BC", 
                     "name": "B", 
-                    "type": "register"
+                    "type": "register pair"
                 }
             ]
         }, 
@@ -95,7 +97,7 @@
                 {
                     "description": "16-bit register pair BC", 
                     "name": "B", 
-                    "type": "register"
+                    "type": "register pair"
                 }
             ]
         }, 
@@ -105,7 +107,7 @@
                 {
                     "description": "16-bit register pair BC", 
                     "name": "B", 
-                    "type": "register"
+                    "type": "register pair"
                 }
             ]
         }, 
@@ -138,6 +140,7 @@
                     "type": "register"
                 }, 
                 {
+                    "bytes": 1, 
                     "description": "8-bit immediate value", 
                     "name": "d8", 
                     "type": "immediate"
@@ -156,9 +159,10 @@
                 {
                     "description": "16-bit register pair DE", 
                     "name": "D", 
-                    "type": "register"
+                    "type": "register pair"
                 }, 
                 {
+                    "bytes": 2, 
                     "description": "16-bit immediate value", 
                     "name": "d16", 
                     "type": "immediate"
@@ -171,7 +175,7 @@
                 {
                     "description": "16-bit register pair DE", 
                     "name": "D", 
-                    "type": "register"
+                    "type": "register pair"
                 }
             ]
         }, 
@@ -181,7 +185,7 @@
                 {
                     "description": "16-bit register pair DE", 
                     "name": "D", 
-                    "type": "register"
+                    "type": "register pair"
                 }
             ]
         }, 
@@ -214,6 +218,7 @@
                     "type": "register"
                 }, 
                 {
+                    "bytes": 1, 
                     "description": "8-bit immediate value", 
                     "name": "d8", 
                     "type": "immediate"
@@ -232,7 +237,7 @@
                 {
                     "description": "16-bit register pair DE", 
                     "name": "D", 
-                    "type": "register"
+                    "type": "register pair"
                 }
             ]
         }, 
@@ -242,7 +247,7 @@
                 {
                     "description": "16-bit register pair DE", 
                     "name": "D", 
-                    "type": "register"
+                    "type": "register pair"
                 }
             ]
         }, 
@@ -252,7 +257,7 @@
                 {
                     "description": "16-bit register pair DE", 
                     "name": "D", 
-                    "type": "register"
+                    "type": "register pair"
                 }
             ]
         }, 
@@ -285,6 +290,7 @@
                     "type": "register"
                 }, 
                 {
+                    "bytes": 1, 
                     "description": "8-bit immediate value", 
                     "name": "d8", 
                     "type": "immediate"
@@ -303,9 +309,10 @@
                 {
                     "description": "16-bit register pair HL", 
                     "name": "H", 
-                    "type": "register"
+                    "type": "register pair"
                 }, 
                 {
+                    "bytes": 2, 
                     "description": "16-bit immediate value", 
                     "name": "d16", 
                     "type": "immediate"
@@ -316,6 +323,7 @@
             "instruction": "SHLD", 
             "operands": [
                 {
+                    "bytes": 2, 
                     "description": "16-bit immediate value", 
                     "name": "d16", 
                     "type": "immediate"
@@ -328,7 +336,7 @@
                 {
                     "description": "16-bit register pair HL", 
                     "name": "H", 
-                    "type": "register"
+                    "type": "register pair"
                 }
             ]
         }, 
@@ -361,6 +369,7 @@
                     "type": "register"
                 }, 
                 {
+                    "bytes": 1, 
                     "description": "8-bit immediate value", 
                     "name": "d8", 
                     "type": "immediate"
@@ -379,7 +388,7 @@
                 {
                     "description": "16-bit register pair HL", 
                     "name": "H", 
-                    "type": "register"
+                    "type": "register pair"
                 }
             ]
         }, 
@@ -387,6 +396,7 @@
             "instruction": "LHLD", 
             "operands": [
                 {
+                    "bytes": 2, 
                     "description": "16-bit immediate value", 
                     "name": "d16", 
                     "type": "immediate"
@@ -399,7 +409,7 @@
                 {
                     "description": "16-bit register pair HL", 
                     "name": "H", 
-                    "type": "register"
+                    "type": "register pair"
                 }
             ]
         }, 
@@ -432,6 +442,7 @@
                     "type": "register"
                 }, 
                 {
+                    "bytes": 1, 
                     "description": "8-bit immediate value", 
                     "name": "d8", 
                     "type": "immediate"
@@ -449,10 +460,11 @@
             "operands": [
                 {
                     "description": "16-bit Stack Pointer", 
-                    "name": "SP", 
-                    "type": "register"
+                    "name": "PSW", 
+                    "type": "register pair"
                 }, 
                 {
+                    "bytes": 2, 
                     "description": "16-bit immediate value", 
                     "name": "d16", 
                     "type": "immediate"
@@ -463,6 +475,7 @@
             "instruction": "STA", 
             "operands": [
                 {
+                    "bytes": 2, 
                     "description": "16-bit immediate value", 
                     "name": "d16", 
                     "type": "immediate"
@@ -474,8 +487,8 @@
             "operands": [
                 {
                     "description": "16-bit Stack Pointer", 
-                    "name": "SP", 
-                    "type": "register"
+                    "name": "PSW", 
+                    "type": "register pair"
                 }
             ]
         }, 
@@ -508,6 +521,7 @@
                     "type": "memory"
                 }, 
                 {
+                    "bytes": 1, 
                     "description": "8-bit immediate value", 
                     "name": "d8", 
                     "type": "immediate"
@@ -525,8 +539,8 @@
             "operands": [
                 {
                     "description": "16-bit Stack Pointer", 
-                    "name": "SP", 
-                    "type": "register"
+                    "name": "PSW", 
+                    "type": "register pair"
                 }
             ]
         }, 
@@ -534,6 +548,7 @@
             "instruction": "LDA", 
             "operands": [
                 {
+                    "bytes": 2, 
                     "description": "16-bit immediate value", 
                     "name": "d16", 
                     "type": "immediate"
@@ -545,8 +560,8 @@
             "operands": [
                 {
                     "description": "16-bit Stack Pointer", 
-                    "name": "SP", 
-                    "type": "register"
+                    "name": "PSW", 
+                    "type": "register pair"
                 }
             ]
         }, 
@@ -579,6 +594,7 @@
                     "type": "register"
                 }, 
                 {
+                    "bytes": 1, 
                     "description": "8-bit immediate value", 
                     "name": "d8", 
                     "type": "immediate"
@@ -2185,7 +2201,7 @@
                 {
                     "description": "16-bit register pair BC", 
                     "name": "B", 
-                    "type": "register"
+                    "type": "register pair"
                 }
             ]
         }, 
@@ -2193,6 +2209,7 @@
             "instruction": "JNZ", 
             "operands": [
                 {
+                    "bytes": 2, 
                     "description": "16-bit immediate value", 
                     "name": "d16", 
                     "type": "immediate"
@@ -2203,6 +2220,7 @@
             "instruction": "JMP", 
             "operands": [
                 {
+                    "bytes": 2, 
                     "description": "16-bit immediate value", 
                     "name": "d16", 
                     "type": "immediate"
@@ -2213,6 +2231,7 @@
             "instruction": "CNZ", 
             "operands": [
                 {
+                    "bytes": 2, 
                     "description": "16-bit immediate value", 
                     "name": "d16", 
                     "type": "immediate"
@@ -2225,7 +2244,7 @@
                 {
                     "description": "16-bit register pair BC", 
                     "name": "B", 
-                    "type": "register"
+                    "type": "register pair"
                 }
             ]
         }, 
@@ -2233,6 +2252,7 @@
             "instruction": "ADI", 
             "operands": [
                 {
+                    "bytes": 1, 
                     "description": "8-bit immediate value", 
                     "name": "d8", 
                     "type": "immediate"
@@ -2242,7 +2262,10 @@
         "0xC7": {
             "instruction": "RST", 
             "operands": [
-                0
+                {
+                    "name": "0", 
+                    "type": "inherent"
+                }
             ]
         }, 
         "0xC8": {
@@ -2255,6 +2278,7 @@
             "instruction": "JZ", 
             "operands": [
                 {
+                    "bytes": 2, 
                     "description": "16-bit immediate value", 
                     "name": "d16", 
                     "type": "immediate"
@@ -2268,6 +2292,7 @@
             "instruction": "CZ", 
             "operands": [
                 {
+                    "bytes": 2, 
                     "description": "16-bit immediate value", 
                     "name": "d16", 
                     "type": "immediate"
@@ -2278,6 +2303,7 @@
             "instruction": "CALL", 
             "operands": [
                 {
+                    "bytes": 2, 
                     "description": "16-bit immediate value", 
                     "name": "d16", 
                     "type": "immediate"
@@ -2288,6 +2314,7 @@
             "instruction": "ACI", 
             "operands": [
                 {
+                    "bytes": 1, 
                     "description": "8-bit immediate value", 
                     "name": "d8", 
                     "type": "immediate"
@@ -2297,7 +2324,10 @@
         "0xCF": {
             "instruction": "RST", 
             "operands": [
-                1
+                {
+                    "name": "1", 
+                    "type": "inherent"
+                }
             ]
         }, 
         "0xD0": {
@@ -2309,7 +2339,7 @@
                 {
                     "description": "16-bit register pair DE", 
                     "name": "D", 
-                    "type": "register"
+                    "type": "register pair"
                 }
             ]
         }, 
@@ -2317,6 +2347,7 @@
             "instruction": "JNC", 
             "operands": [
                 {
+                    "bytes": 2, 
                     "description": "16-bit immediate value", 
                     "name": "d16", 
                     "type": "immediate"
@@ -2327,6 +2358,7 @@
             "instruction": "OUT", 
             "operands": [
                 {
+                    "bytes": 1, 
                     "description": "8-bit immediate value", 
                     "name": "d8", 
                     "type": "immediate"
@@ -2337,6 +2369,7 @@
             "instruction": "CNC", 
             "operands": [
                 {
+                    "bytes": 2, 
                     "description": "16-bit immediate value", 
                     "name": "d16", 
                     "type": "immediate"
@@ -2349,7 +2382,7 @@
                 {
                     "description": "16-bit register pair DE", 
                     "name": "D", 
-                    "type": "register"
+                    "type": "register pair"
                 }
             ]
         }, 
@@ -2357,6 +2390,7 @@
             "instruction": "SUI", 
             "operands": [
                 {
+                    "bytes": 1, 
                     "description": "8-bit immediate value", 
                     "name": "d8", 
                     "type": "immediate"
@@ -2366,7 +2400,10 @@
         "0xD7": {
             "instruction": "RST", 
             "operands": [
-                2
+                {
+                    "name": "2", 
+                    "type": "inherent"
+                }
             ]
         }, 
         "0xD8": {
@@ -2379,6 +2416,7 @@
             "instruction": "JC", 
             "operands": [
                 {
+                    "bytes": 2, 
                     "description": "16-bit immediate value", 
                     "name": "d16", 
                     "type": "immediate"
@@ -2389,6 +2427,7 @@
             "instruction": "IN", 
             "operands": [
                 {
+                    "bytes": 1, 
                     "description": "8-bit immediate value", 
                     "name": "d8", 
                     "type": "immediate"
@@ -2399,6 +2438,7 @@
             "instruction": "CC", 
             "operands": [
                 {
+                    "bytes": 2, 
                     "description": "16-bit immediate value", 
                     "name": "d16", 
                     "type": "immediate"
@@ -2412,6 +2452,7 @@
             "instruction": "SBI", 
             "operands": [
                 {
+                    "bytes": 1, 
                     "description": "8-bit immediate value", 
                     "name": "d8", 
                     "type": "immediate"
@@ -2421,7 +2462,10 @@
         "0xDF": {
             "instruction": "RST", 
             "operands": [
-                3
+                {
+                    "name": "3", 
+                    "type": "inherent"
+                }
             ]
         }, 
         "0xE0": {
@@ -2433,7 +2477,7 @@
                 {
                     "description": "16-bit register pair HL", 
                     "name": "H", 
-                    "type": "register"
+                    "type": "register pair"
                 }
             ]
         }, 
@@ -2441,6 +2485,7 @@
             "instruction": "JPO", 
             "operands": [
                 {
+                    "bytes": 2, 
                     "description": "16-bit immediate value", 
                     "name": "d16", 
                     "type": "immediate"
@@ -2454,6 +2499,7 @@
             "instruction": "CPO", 
             "operands": [
                 {
+                    "bytes": 2, 
                     "description": "16-bit immediate value", 
                     "name": "d16", 
                     "type": "immediate"
@@ -2466,7 +2512,7 @@
                 {
                     "description": "16-bit register pair HL", 
                     "name": "H", 
-                    "type": "register"
+                    "type": "register pair"
                 }
             ]
         }, 
@@ -2474,6 +2520,7 @@
             "instruction": "ANI", 
             "operands": [
                 {
+                    "bytes": 1, 
                     "description": "8-bit immediate value", 
                     "name": "d8", 
                     "type": "immediate"
@@ -2483,7 +2530,10 @@
         "0xE7": {
             "instruction": "RST", 
             "operands": [
-                4
+                {
+                    "name": "4", 
+                    "type": "inherent"
+                }
             ]
         }, 
         "0xE8": {
@@ -2496,6 +2546,7 @@
             "instruction": "JPE", 
             "operands": [
                 {
+                    "bytes": 2, 
                     "description": "16-bit immediate value", 
                     "name": "d16", 
                     "type": "immediate"
@@ -2509,6 +2560,7 @@
             "instruction": "CPE", 
             "operands": [
                 {
+                    "bytes": 2, 
                     "description": "16-bit immediate value", 
                     "name": "d16", 
                     "type": "immediate"
@@ -2522,6 +2574,7 @@
             "instruction": "XRI", 
             "operands": [
                 {
+                    "bytes": 1, 
                     "description": "8-bit immediate value", 
                     "name": "d8", 
                     "type": "immediate"
@@ -2531,7 +2584,10 @@
         "0xEF": {
             "instruction": "RST", 
             "operands": [
-                5
+                {
+                    "name": "5", 
+                    "type": "inherent"
+                }
             ]
         }, 
         "0xF0": {
@@ -2542,8 +2598,8 @@
             "operands": [
                 {
                     "description": "16-bit Stack Pointer", 
-                    "name": "SP", 
-                    "type": "register"
+                    "name": "PSW", 
+                    "type": "register pair"
                 }
             ]
         }, 
@@ -2551,6 +2607,7 @@
             "instruction": "JP", 
             "operands": [
                 {
+                    "bytes": 2, 
                     "description": "16-bit immediate value", 
                     "name": "d16", 
                     "type": "immediate"
@@ -2564,6 +2621,7 @@
             "instruction": "CP", 
             "operands": [
                 {
+                    "bytes": 2, 
                     "description": "16-bit immediate value", 
                     "name": "d16", 
                     "type": "immediate"
@@ -2575,8 +2633,8 @@
             "operands": [
                 {
                     "description": "16-bit Stack Pointer", 
-                    "name": "SP", 
-                    "type": "register"
+                    "name": "PSW", 
+                    "type": "register pair"
                 }
             ]
         }, 
@@ -2584,6 +2642,7 @@
             "instruction": "ORI", 
             "operands": [
                 {
+                    "bytes": 1, 
                     "description": "8-bit immediate value", 
                     "name": "d8", 
                     "type": "immediate"
@@ -2593,7 +2652,10 @@
         "0xF7": {
             "instruction": "RST", 
             "operands": [
-                6
+                {
+                    "name": "6", 
+                    "type": "inherent"
+                }
             ]
         }, 
         "0xF8": {
@@ -2606,6 +2668,7 @@
             "instruction": "JM", 
             "operands": [
                 {
+                    "bytes": 2, 
                     "description": "16-bit immediate value", 
                     "name": "d16", 
                     "type": "immediate"
@@ -2619,6 +2682,7 @@
             "instruction": "CM", 
             "operands": [
                 {
+                    "bytes": 2, 
                     "description": "16-bit immediate value", 
                     "name": "d16", 
                     "type": "immediate"
@@ -2632,6 +2696,7 @@
             "instruction": "CPI", 
             "operands": [
                 {
+                    "bytes": 1, 
                     "description": "8-bit immediate value", 
                     "name": "d8", 
                     "type": "immediate"
