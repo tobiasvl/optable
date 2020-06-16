@@ -1,0 +1,2642 @@
+{
+    "unprefixed": {
+        "0x00": {
+            "instruction": "NOP"
+        }, 
+        "0x01": {
+            "instruction": "LXI", 
+            "operands": [
+                {
+                    "description": "16-bit register pair BC", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "16-bit immediate value", 
+                    "name": "d16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x02": {
+            "instruction": "STAX", 
+            "operands": [
+                {
+                    "description": "16-bit register pair BC", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x03": {
+            "instruction": "INX", 
+            "operands": [
+                {
+                    "description": "16-bit register pair BC", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x04": {
+            "instruction": "INR", 
+            "operands": [
+                {
+                    "description": "8-bit register B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x05": {
+            "instruction": "DCR", 
+            "operands": [
+                {
+                    "description": "8-bit register B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x06": {
+            "instruction": "MVI", 
+            "operands": [
+                {
+                    "description": "8-bit register B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x07": {
+            "instruction": "RLC"
+        }, 
+        "0x08": {
+            "instruction": "NOP"
+        }, 
+        "0x09": {
+            "instruction": "DAD", 
+            "operands": [
+                {
+                    "description": "16-bit register pair BC", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x0A": {
+            "instruction": "LDAX", 
+            "operands": [
+                {
+                    "description": "16-bit register pair BC", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x0B": {
+            "instruction": "DCX", 
+            "operands": [
+                {
+                    "description": "16-bit register pair BC", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x0C": {
+            "instruction": "INR", 
+            "operands": [
+                {
+                    "description": "8-bit register C", 
+                    "name": "C", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x0D": {
+            "instruction": "DCR", 
+            "operands": [
+                {
+                    "description": "8-bit register C", 
+                    "name": "C", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x0E": {
+            "instruction": "MVI", 
+            "operands": [
+                {
+                    "description": "8-bit register C", 
+                    "name": "C", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x0F": {
+            "instruction": "RRC"
+        }, 
+        "0x10": {
+            "instruction": "NOP"
+        }, 
+        "0x11": {
+            "instruction": "LXI", 
+            "operands": [
+                {
+                    "description": "16-bit register pair DE", 
+                    "name": "D", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "16-bit immediate value", 
+                    "name": "d16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x12": {
+            "instruction": "STAX", 
+            "operands": [
+                {
+                    "description": "16-bit register pair DE", 
+                    "name": "D", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x13": {
+            "instruction": "INX", 
+            "operands": [
+                {
+                    "description": "16-bit register pair DE", 
+                    "name": "D", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x14": {
+            "instruction": "INR", 
+            "operands": [
+                {
+                    "description": "8-bit register D", 
+                    "name": "D", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x15": {
+            "instruction": "DCR", 
+            "operands": [
+                {
+                    "description": "8-bit register D", 
+                    "name": "D", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x16": {
+            "instruction": "MVI", 
+            "operands": [
+                {
+                    "description": "8-bit register D", 
+                    "name": "D", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x17": {
+            "instruction": "RAL"
+        }, 
+        "0x18": {
+            "instruction": "NOP"
+        }, 
+        "0x19": {
+            "instruction": "DAD", 
+            "operands": [
+                {
+                    "description": "16-bit register pair DE", 
+                    "name": "D", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x1A": {
+            "instruction": "LDAX", 
+            "operands": [
+                {
+                    "description": "16-bit register pair DE", 
+                    "name": "D", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x1B": {
+            "instruction": "DCX", 
+            "operands": [
+                {
+                    "description": "16-bit register pair DE", 
+                    "name": "D", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x1C": {
+            "instruction": "INR", 
+            "operands": [
+                {
+                    "description": "8-bit register E", 
+                    "name": "E", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x1D": {
+            "instruction": "DCR", 
+            "operands": [
+                {
+                    "description": "8-bit register E", 
+                    "name": "E", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x1E": {
+            "instruction": "MVI", 
+            "operands": [
+                {
+                    "description": "8-bit register E", 
+                    "name": "E", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x1F": {
+            "instruction": "RAR"
+        }, 
+        "0x20": {
+            "instruction": "NOP"
+        }, 
+        "0x21": {
+            "instruction": "LXI", 
+            "operands": [
+                {
+                    "description": "16-bit register pair HL", 
+                    "name": "H", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "16-bit immediate value", 
+                    "name": "d16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x22": {
+            "instruction": "SHLD", 
+            "operands": [
+                {
+                    "description": "16-bit immediate value", 
+                    "name": "d16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x23": {
+            "instruction": "INX", 
+            "operands": [
+                {
+                    "description": "16-bit register pair HL", 
+                    "name": "H", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x24": {
+            "instruction": "INR", 
+            "operands": [
+                {
+                    "description": "8-bit register H", 
+                    "name": "H", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x25": {
+            "instruction": "DCR", 
+            "operands": [
+                {
+                    "description": "8-bit register H", 
+                    "name": "H", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x26": {
+            "instruction": "MVI", 
+            "operands": [
+                {
+                    "description": "8-bit register H", 
+                    "name": "H", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x27": {
+            "instruction": "DAA"
+        }, 
+        "0x28": {
+            "instruction": "NOP"
+        }, 
+        "0x29": {
+            "instruction": "DAD", 
+            "operands": [
+                {
+                    "description": "16-bit register pair HL", 
+                    "name": "H", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x2A": {
+            "instruction": "LHLD", 
+            "operands": [
+                {
+                    "description": "16-bit immediate value", 
+                    "name": "d16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x2B": {
+            "instruction": "DCX", 
+            "operands": [
+                {
+                    "description": "16-bit register pair HL", 
+                    "name": "H", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x2C": {
+            "instruction": "INR", 
+            "operands": [
+                {
+                    "description": "8-bit register L", 
+                    "name": "L", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x2D": {
+            "instruction": "DCR", 
+            "operands": [
+                {
+                    "description": "8-bit register L", 
+                    "name": "L", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x2E": {
+            "instruction": "MVI", 
+            "operands": [
+                {
+                    "description": "8-bit register L", 
+                    "name": "L", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x2F": {
+            "instruction": "CMA"
+        }, 
+        "0x30": {
+            "instruction": "NOP"
+        }, 
+        "0x31": {
+            "instruction": "LXI", 
+            "operands": [
+                {
+                    "description": "16-bit Stack Pointer", 
+                    "name": "SP", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "16-bit immediate value", 
+                    "name": "d16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x32": {
+            "instruction": "STA", 
+            "operands": [
+                {
+                    "description": "16-bit immediate value", 
+                    "name": "d16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x33": {
+            "instruction": "INX", 
+            "operands": [
+                {
+                    "description": "16-bit Stack Pointer", 
+                    "name": "SP", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x34": {
+            "instruction": "INR", 
+            "operands": [
+                {
+                    "description": "Memory location pointed to by register pair HL", 
+                    "name": "M", 
+                    "type": "memory"
+                }
+            ]
+        }, 
+        "0x35": {
+            "instruction": "DCR", 
+            "operands": [
+                {
+                    "description": "Memory location pointed to by register pair HL", 
+                    "name": "M", 
+                    "type": "memory"
+                }
+            ]
+        }, 
+        "0x36": {
+            "instruction": "MVI", 
+            "operands": [
+                {
+                    "description": "Memory location pointed to by register pair HL", 
+                    "name": "M", 
+                    "type": "memory"
+                }, 
+                {
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x37": {
+            "instruction": "STC"
+        }, 
+        "0x38": {
+            "instruction": "NOP"
+        }, 
+        "0x39": {
+            "instruction": "DAD", 
+            "operands": [
+                {
+                    "description": "16-bit Stack Pointer", 
+                    "name": "SP", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x3A": {
+            "instruction": "LDA", 
+            "operands": [
+                {
+                    "description": "16-bit immediate value", 
+                    "name": "d16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x3B": {
+            "instruction": "DCX", 
+            "operands": [
+                {
+                    "description": "16-bit Stack Pointer", 
+                    "name": "SP", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x3C": {
+            "instruction": "INR", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator B", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x3D": {
+            "instruction": "DCR", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator B", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x3E": {
+            "instruction": "MVI", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator B", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x3F": {
+            "instruction": "CMC"
+        }, 
+        "0x40": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x41": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register C", 
+                    "name": "C", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x42": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register D", 
+                    "name": "D", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x43": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register E", 
+                    "name": "E", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x44": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register H", 
+                    "name": "H", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x45": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register L", 
+                    "name": "L", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x46": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "Memory location pointed to by register pair HL", 
+                    "name": "M", 
+                    "type": "memory"
+                }
+            ]
+        }, 
+        "0x47": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit accumulator B", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x48": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register C", 
+                    "name": "C", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x49": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register C", 
+                    "name": "C", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register C", 
+                    "name": "C", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x4A": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register C", 
+                    "name": "C", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register D", 
+                    "name": "D", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x4B": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register C", 
+                    "name": "C", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register E", 
+                    "name": "E", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x4C": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register C", 
+                    "name": "C", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register H", 
+                    "name": "H", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x4D": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register C", 
+                    "name": "C", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register L", 
+                    "name": "L", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x4E": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register C", 
+                    "name": "C", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "Memory location pointed to by register pair HL", 
+                    "name": "M", 
+                    "type": "memory"
+                }
+            ]
+        }, 
+        "0x4F": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register C", 
+                    "name": "C", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit accumulator B", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x50": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register D", 
+                    "name": "D", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x51": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register D", 
+                    "name": "D", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register C", 
+                    "name": "C", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x52": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register D", 
+                    "name": "D", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register D", 
+                    "name": "D", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x53": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register D", 
+                    "name": "D", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register E", 
+                    "name": "E", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x54": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register D", 
+                    "name": "D", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register H", 
+                    "name": "H", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x55": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register D", 
+                    "name": "D", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register L", 
+                    "name": "L", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x56": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register D", 
+                    "name": "D", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "Memory location pointed to by register pair HL", 
+                    "name": "M", 
+                    "type": "memory"
+                }
+            ]
+        }, 
+        "0x57": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register D", 
+                    "name": "D", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit accumulator B", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x58": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register E", 
+                    "name": "E", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x59": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register E", 
+                    "name": "E", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register C", 
+                    "name": "C", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x5A": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register E", 
+                    "name": "E", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register D", 
+                    "name": "D", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x5B": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register E", 
+                    "name": "E", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register E", 
+                    "name": "E", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x5C": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register E", 
+                    "name": "E", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register H", 
+                    "name": "H", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x5D": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register E", 
+                    "name": "E", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register L", 
+                    "name": "L", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x5E": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register E", 
+                    "name": "E", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "Memory location pointed to by register pair HL", 
+                    "name": "M", 
+                    "type": "memory"
+                }
+            ]
+        }, 
+        "0x5F": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register E", 
+                    "name": "E", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit accumulator B", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x60": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register H", 
+                    "name": "H", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x61": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register H", 
+                    "name": "H", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register C", 
+                    "name": "C", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x62": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register H", 
+                    "name": "H", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register D", 
+                    "name": "D", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x63": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register H", 
+                    "name": "H", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register E", 
+                    "name": "E", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x64": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register H", 
+                    "name": "H", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register H", 
+                    "name": "H", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x65": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register H", 
+                    "name": "H", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register L", 
+                    "name": "L", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x66": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register H", 
+                    "name": "H", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "Memory location pointed to by register pair HL", 
+                    "name": "M", 
+                    "type": "memory"
+                }
+            ]
+        }, 
+        "0x67": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register H", 
+                    "name": "H", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit accumulator B", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x68": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register L", 
+                    "name": "L", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x69": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register L", 
+                    "name": "L", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register C", 
+                    "name": "C", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x6A": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register L", 
+                    "name": "L", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register D", 
+                    "name": "D", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x6B": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register L", 
+                    "name": "L", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register E", 
+                    "name": "E", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x6C": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register L", 
+                    "name": "L", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register H", 
+                    "name": "H", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x6D": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register L", 
+                    "name": "L", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register L", 
+                    "name": "L", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x6E": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register L", 
+                    "name": "L", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "Memory location pointed to by register pair HL", 
+                    "name": "M", 
+                    "type": "memory"
+                }
+            ]
+        }, 
+        "0x6F": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit register L", 
+                    "name": "L", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit accumulator B", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x70": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "Memory location pointed to by register pair HL", 
+                    "name": "M", 
+                    "type": "memory"
+                }, 
+                {
+                    "description": "8-bit register B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x71": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "Memory location pointed to by register pair HL", 
+                    "name": "M", 
+                    "type": "memory"
+                }, 
+                {
+                    "description": "8-bit register C", 
+                    "name": "C", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x72": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "Memory location pointed to by register pair HL", 
+                    "name": "M", 
+                    "type": "memory"
+                }, 
+                {
+                    "description": "8-bit register D", 
+                    "name": "D", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x73": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "Memory location pointed to by register pair HL", 
+                    "name": "M", 
+                    "type": "memory"
+                }, 
+                {
+                    "description": "8-bit register E", 
+                    "name": "E", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x74": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "Memory location pointed to by register pair HL", 
+                    "name": "M", 
+                    "type": "memory"
+                }, 
+                {
+                    "description": "8-bit register H", 
+                    "name": "H", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x75": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "Memory location pointed to by register pair HL", 
+                    "name": "M", 
+                    "type": "memory"
+                }, 
+                {
+                    "description": "8-bit register L", 
+                    "name": "L", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x76": {
+            "instruction": "HLT"
+        }, 
+        "0x77": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "Memory location pointed to by register pair HL", 
+                    "name": "M", 
+                    "type": "memory"
+                }, 
+                {
+                    "description": "8-bit accumulator B", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x78": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator B", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x79": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator B", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register C", 
+                    "name": "C", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x7A": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator B", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register D", 
+                    "name": "D", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x7B": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator B", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register E", 
+                    "name": "E", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x7C": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator B", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register H", 
+                    "name": "H", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x7D": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator B", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit register L", 
+                    "name": "L", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x7E": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator B", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "Memory location pointed to by register pair HL", 
+                    "name": "M", 
+                    "type": "memory"
+                }
+            ]
+        }, 
+        "0x7F": {
+            "instruction": "MOV", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator B", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit accumulator B", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x80": {
+            "instruction": "ADD", 
+            "operands": [
+                {
+                    "description": "8-bit register B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x81": {
+            "instruction": "ADD", 
+            "operands": [
+                {
+                    "description": "8-bit register C", 
+                    "name": "C", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x82": {
+            "instruction": "ADD", 
+            "operands": [
+                {
+                    "description": "8-bit register D", 
+                    "name": "D", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x83": {
+            "instruction": "ADD", 
+            "operands": [
+                {
+                    "description": "8-bit register E", 
+                    "name": "E", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x84": {
+            "instruction": "ADD", 
+            "operands": [
+                {
+                    "description": "8-bit register H", 
+                    "name": "H", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x85": {
+            "instruction": "ADD", 
+            "operands": [
+                {
+                    "description": "8-bit register L", 
+                    "name": "L", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x86": {
+            "instruction": "ADD", 
+            "operands": [
+                {
+                    "description": "Memory location pointed to by register pair HL", 
+                    "name": "M", 
+                    "type": "memory"
+                }
+            ]
+        }, 
+        "0x87": {
+            "instruction": "ADD", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator B", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x88": {
+            "instruction": "ADC", 
+            "operands": [
+                {
+                    "description": "8-bit register B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x89": {
+            "instruction": "ADC", 
+            "operands": [
+                {
+                    "description": "8-bit register C", 
+                    "name": "C", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x8A": {
+            "instruction": "ADC", 
+            "operands": [
+                {
+                    "description": "8-bit register D", 
+                    "name": "D", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x8B": {
+            "instruction": "ADC", 
+            "operands": [
+                {
+                    "description": "8-bit register E", 
+                    "name": "E", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x8C": {
+            "instruction": "ADC", 
+            "operands": [
+                {
+                    "description": "8-bit register H", 
+                    "name": "H", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x8D": {
+            "instruction": "ADC", 
+            "operands": [
+                {
+                    "description": "8-bit register L", 
+                    "name": "L", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x8E": {
+            "instruction": "ADC", 
+            "operands": [
+                {
+                    "description": "Memory location pointed to by register pair HL", 
+                    "name": "M", 
+                    "type": "memory"
+                }
+            ]
+        }, 
+        "0x8F": {
+            "instruction": "ADC", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator B", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x90": {
+            "instruction": "SUB", 
+            "operands": [
+                {
+                    "description": "8-bit register B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x91": {
+            "instruction": "SUB", 
+            "operands": [
+                {
+                    "description": "8-bit register C", 
+                    "name": "C", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x92": {
+            "instruction": "SUB", 
+            "operands": [
+                {
+                    "description": "8-bit register D", 
+                    "name": "D", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x93": {
+            "instruction": "SUB", 
+            "operands": [
+                {
+                    "description": "8-bit register E", 
+                    "name": "E", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x94": {
+            "instruction": "SUB", 
+            "operands": [
+                {
+                    "description": "8-bit register H", 
+                    "name": "H", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x95": {
+            "instruction": "SUB", 
+            "operands": [
+                {
+                    "description": "8-bit register L", 
+                    "name": "L", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x96": {
+            "instruction": "SUB", 
+            "operands": [
+                {
+                    "description": "Memory location pointed to by register pair HL", 
+                    "name": "M", 
+                    "type": "memory"
+                }
+            ]
+        }, 
+        "0x97": {
+            "instruction": "SUB", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator B", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x98": {
+            "instruction": "SBB", 
+            "operands": [
+                {
+                    "description": "8-bit register B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x99": {
+            "instruction": "SBB", 
+            "operands": [
+                {
+                    "description": "8-bit register C", 
+                    "name": "C", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x9A": {
+            "instruction": "SBB", 
+            "operands": [
+                {
+                    "description": "8-bit register D", 
+                    "name": "D", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x9B": {
+            "instruction": "SBB", 
+            "operands": [
+                {
+                    "description": "8-bit register E", 
+                    "name": "E", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x9C": {
+            "instruction": "SBB", 
+            "operands": [
+                {
+                    "description": "8-bit register H", 
+                    "name": "H", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x9D": {
+            "instruction": "SBB", 
+            "operands": [
+                {
+                    "description": "8-bit register L", 
+                    "name": "L", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x9E": {
+            "instruction": "SBB", 
+            "operands": [
+                {
+                    "description": "Memory location pointed to by register pair HL", 
+                    "name": "M", 
+                    "type": "memory"
+                }
+            ]
+        }, 
+        "0x9F": {
+            "instruction": "SBB", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator B", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xA0": {
+            "instruction": "ANA", 
+            "operands": [
+                {
+                    "description": "8-bit register B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xA1": {
+            "instruction": "ANA", 
+            "operands": [
+                {
+                    "description": "8-bit register C", 
+                    "name": "C", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xA2": {
+            "instruction": "ANA", 
+            "operands": [
+                {
+                    "description": "8-bit register D", 
+                    "name": "D", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xA3": {
+            "instruction": "ANA", 
+            "operands": [
+                {
+                    "description": "8-bit register E", 
+                    "name": "E", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xA4": {
+            "instruction": "ANA", 
+            "operands": [
+                {
+                    "description": "8-bit register H", 
+                    "name": "H", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xA5": {
+            "instruction": "ANA", 
+            "operands": [
+                {
+                    "description": "8-bit register L", 
+                    "name": "L", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xA6": {
+            "instruction": "ANA", 
+            "operands": [
+                {
+                    "description": "Memory location pointed to by register pair HL", 
+                    "name": "M", 
+                    "type": "memory"
+                }
+            ]
+        }, 
+        "0xA7": {
+            "instruction": "ANA", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator B", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xA8": {
+            "instruction": "XRA", 
+            "operands": [
+                {
+                    "description": "8-bit register B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xA9": {
+            "instruction": "XRA", 
+            "operands": [
+                {
+                    "description": "8-bit register C", 
+                    "name": "C", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xAA": {
+            "instruction": "XRA", 
+            "operands": [
+                {
+                    "description": "8-bit register D", 
+                    "name": "D", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xAB": {
+            "instruction": "XRA", 
+            "operands": [
+                {
+                    "description": "8-bit register E", 
+                    "name": "E", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xAC": {
+            "instruction": "XRA", 
+            "operands": [
+                {
+                    "description": "8-bit register H", 
+                    "name": "H", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xAD": {
+            "instruction": "XRA", 
+            "operands": [
+                {
+                    "description": "8-bit register L", 
+                    "name": "L", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xAE": {
+            "instruction": "XRA", 
+            "operands": [
+                {
+                    "description": "Memory location pointed to by register pair HL", 
+                    "name": "M", 
+                    "type": "memory"
+                }
+            ]
+        }, 
+        "0xAF": {
+            "instruction": "XRA", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator B", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xB0": {
+            "instruction": "ORA", 
+            "operands": [
+                {
+                    "description": "8-bit register B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xB1": {
+            "instruction": "ORA", 
+            "operands": [
+                {
+                    "description": "8-bit register C", 
+                    "name": "C", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xB2": {
+            "instruction": "ORA", 
+            "operands": [
+                {
+                    "description": "8-bit register D", 
+                    "name": "D", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xB3": {
+            "instruction": "ORA", 
+            "operands": [
+                {
+                    "description": "8-bit register E", 
+                    "name": "E", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xB4": {
+            "instruction": "ORA", 
+            "operands": [
+                {
+                    "description": "8-bit register H", 
+                    "name": "H", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xB5": {
+            "instruction": "ORA", 
+            "operands": [
+                {
+                    "description": "8-bit register L", 
+                    "name": "L", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xB6": {
+            "instruction": "ORA", 
+            "operands": [
+                {
+                    "description": "Memory location pointed to by register pair HL", 
+                    "name": "M", 
+                    "type": "memory"
+                }
+            ]
+        }, 
+        "0xB7": {
+            "instruction": "ORA", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator B", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xB8": {
+            "instruction": "CMP", 
+            "operands": [
+                {
+                    "description": "8-bit register B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xB9": {
+            "instruction": "CMP", 
+            "operands": [
+                {
+                    "description": "8-bit register C", 
+                    "name": "C", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xBA": {
+            "instruction": "CMP", 
+            "operands": [
+                {
+                    "description": "8-bit register D", 
+                    "name": "D", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xBB": {
+            "instruction": "CMP", 
+            "operands": [
+                {
+                    "description": "8-bit register E", 
+                    "name": "E", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xBC": {
+            "instruction": "CMP", 
+            "operands": [
+                {
+                    "description": "8-bit register H", 
+                    "name": "H", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xBD": {
+            "instruction": "CMP", 
+            "operands": [
+                {
+                    "description": "8-bit register L", 
+                    "name": "L", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xBE": {
+            "instruction": "CMP", 
+            "operands": [
+                {
+                    "description": "Memory location pointed to by register pair HL", 
+                    "name": "M", 
+                    "type": "memory"
+                }
+            ]
+        }, 
+        "0xBF": {
+            "instruction": "CMP", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator B", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xC0": {
+            "instruction": "RNZ"
+        }, 
+        "0xC1": {
+            "instruction": "POP", 
+            "operands": [
+                {
+                    "description": "16-bit register pair BC", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xC2": {
+            "instruction": "JNZ", 
+            "operands": [
+                {
+                    "description": "16-bit immediate value", 
+                    "name": "d16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xC3": {
+            "instruction": "JMP", 
+            "operands": [
+                {
+                    "description": "16-bit immediate value", 
+                    "name": "d16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xC4": {
+            "instruction": "CNZ", 
+            "operands": [
+                {
+                    "description": "16-bit immediate value", 
+                    "name": "d16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xC5": {
+            "instruction": "PUSH", 
+            "operands": [
+                {
+                    "description": "16-bit register pair BC", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xC6": {
+            "instruction": "ADI", 
+            "operands": [
+                {
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xC7": {
+            "instruction": "RST", 
+            "operands": [
+                0
+            ]
+        }, 
+        "0xC8": {
+            "instruction": "RZ"
+        }, 
+        "0xC9": {
+            "instruction": "RET"
+        }, 
+        "0xCA": {
+            "instruction": "JZ", 
+            "operands": [
+                {
+                    "description": "16-bit immediate value", 
+                    "name": "d16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xCB": {
+            "instruction": "JMP"
+        }, 
+        "0xCC": {
+            "instruction": "CZ", 
+            "operands": [
+                {
+                    "description": "16-bit immediate value", 
+                    "name": "d16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xCD": {
+            "instruction": "CALL", 
+            "operands": [
+                {
+                    "description": "16-bit immediate value", 
+                    "name": "d16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xCE": {
+            "instruction": "ACI", 
+            "operands": [
+                {
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xCF": {
+            "instruction": "RST", 
+            "operands": [
+                1
+            ]
+        }, 
+        "0xD0": {
+            "instruction": "RNC"
+        }, 
+        "0xD1": {
+            "instruction": "POP", 
+            "operands": [
+                {
+                    "description": "16-bit register pair DE", 
+                    "name": "D", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xD2": {
+            "instruction": "JNC", 
+            "operands": [
+                {
+                    "description": "16-bit immediate value", 
+                    "name": "d16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xD3": {
+            "instruction": "OUT", 
+            "operands": [
+                {
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xD4": {
+            "instruction": "CNC", 
+            "operands": [
+                {
+                    "description": "16-bit immediate value", 
+                    "name": "d16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xD5": {
+            "instruction": "PUSH", 
+            "operands": [
+                {
+                    "description": "16-bit register pair DE", 
+                    "name": "D", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xD6": {
+            "instruction": "SUI", 
+            "operands": [
+                {
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xD7": {
+            "instruction": "RST", 
+            "operands": [
+                2
+            ]
+        }, 
+        "0xD8": {
+            "instruction": "RC"
+        }, 
+        "0xD9": {
+            "instruction": "RET"
+        }, 
+        "0xDA": {
+            "instruction": "JC", 
+            "operands": [
+                {
+                    "description": "16-bit immediate value", 
+                    "name": "d16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xDB": {
+            "instruction": "IN", 
+            "operands": [
+                {
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xDC": {
+            "instruction": "CC", 
+            "operands": [
+                {
+                    "description": "16-bit immediate value", 
+                    "name": "d16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xDD": {
+            "instruction": "CALL"
+        }, 
+        "0xDE": {
+            "instruction": "SBI", 
+            "operands": [
+                {
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xDF": {
+            "instruction": "RST", 
+            "operands": [
+                3
+            ]
+        }, 
+        "0xE0": {
+            "instruction": "RPO"
+        }, 
+        "0xE1": {
+            "instruction": "POP", 
+            "operands": [
+                {
+                    "description": "16-bit register pair HL", 
+                    "name": "H", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xE2": {
+            "instruction": "JPO", 
+            "operands": [
+                {
+                    "description": "16-bit immediate value", 
+                    "name": "d16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xE3": {
+            "instruction": "XTHL"
+        }, 
+        "0xE4": {
+            "instruction": "CPO", 
+            "operands": [
+                {
+                    "description": "16-bit immediate value", 
+                    "name": "d16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xE5": {
+            "instruction": "PUSH", 
+            "operands": [
+                {
+                    "description": "16-bit register pair HL", 
+                    "name": "H", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xE6": {
+            "instruction": "ANI", 
+            "operands": [
+                {
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xE7": {
+            "instruction": "RST", 
+            "operands": [
+                4
+            ]
+        }, 
+        "0xE8": {
+            "instruction": "RPE"
+        }, 
+        "0xE9": {
+            "instruction": "PCHL"
+        }, 
+        "0xEA": {
+            "instruction": "JPE", 
+            "operands": [
+                {
+                    "description": "16-bit immediate value", 
+                    "name": "d16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xEB": {
+            "instruction": "XCHG"
+        }, 
+        "0xEC": {
+            "instruction": "CPE", 
+            "operands": [
+                {
+                    "description": "16-bit immediate value", 
+                    "name": "d16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xED": {
+            "instruction": "CALL"
+        }, 
+        "0xEE": {
+            "instruction": "XRI", 
+            "operands": [
+                {
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xEF": {
+            "instruction": "RST", 
+            "operands": [
+                5
+            ]
+        }, 
+        "0xF0": {
+            "instruction": "RP"
+        }, 
+        "0xF1": {
+            "instruction": "POP", 
+            "operands": [
+                {
+                    "description": "16-bit Stack Pointer", 
+                    "name": "SP", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xF2": {
+            "instruction": "JP", 
+            "operands": [
+                {
+                    "description": "16-bit immediate value", 
+                    "name": "d16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xF3": {
+            "instruction": "DI"
+        }, 
+        "0xF4": {
+            "instruction": "CP", 
+            "operands": [
+                {
+                    "description": "16-bit immediate value", 
+                    "name": "d16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xF5": {
+            "instruction": "PUSH", 
+            "operands": [
+                {
+                    "description": "16-bit Stack Pointer", 
+                    "name": "SP", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xF6": {
+            "instruction": "ORI", 
+            "operands": [
+                {
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xF7": {
+            "instruction": "RST", 
+            "operands": [
+                6
+            ]
+        }, 
+        "0xF8": {
+            "instruction": "RM"
+        }, 
+        "0xF9": {
+            "instruction": "SPHL"
+        }, 
+        "0xFA": {
+            "instruction": "JM", 
+            "operands": [
+                {
+                    "description": "16-bit immediate value", 
+                    "name": "d16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xFB": {
+            "instruction": "EI"
+        }, 
+        "0xFC": {
+            "instruction": "CM", 
+            "operands": [
+                {
+                    "description": "16-bit immediate value", 
+                    "name": "d16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xFD": {
+            "instruction": "CALL"
+        }, 
+        "0xFE": {
+            "instruction": "CPI", 
+            "operands": [
+                {
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }
+    }
+}

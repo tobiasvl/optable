@@ -1,0 +1,350 @@
+{
+    "NOP": {
+        "description": "No operation",
+        "cycles": 4
+    },
+    "MOV": {
+        "description": "Move value from rightmost operand to leftmost operand",
+        "cycles": 5
+    },
+    "MVI": {
+        "description": "Load operand with immediate value",
+        "cycles": 7
+    },
+    "LXI": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "LDA": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "STA": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "LHLD": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "SHLD": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "LDAX": {
+        "description": "Load Accumulator",
+        "cycles": 10
+    },
+    "STAX": {
+        "description": "Store Accumulator",
+        "cycles": 10
+    },
+    "XCHG": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "ADD": {
+        "description": "Add Register or Memory to Accumulator",
+        "cycles": 10
+    },
+    "ADC": {
+        "description": "Add Register or Memory to Accumulator with Carry",
+        "cycles": 10
+    },
+    "ADI": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "ACI": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "SUB": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "SBB": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "SUI": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "SbI": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "ACI": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "ACI": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "ACI": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "INR": {
+        "description": "Increment Register or Memory",
+        "flags": {
+            "Z": "Z",
+            "S": "S",
+            "P": "P",
+            "C": "C"
+        },
+        "cycles": 10
+    },
+    "DCR": {
+        "description": "Decrement Register or Memory",
+        "flags": {
+            "Z": "Z",
+            "S": "S",
+            "P": "P",
+            "C": "C"
+        },
+        "cycles": 10
+    },
+    "INX": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "DCX": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "DAD": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "DAA": {
+        "description": "Decimal Adjust Accumulator",
+        "flags": {
+            "Z": "Z",
+            "S": "S",
+            "P": "P",
+            "C": "C"
+        },
+        "cycles": 10
+    },
+    "ANA": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "ORA": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "XRA": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "ANI": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "ORI": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "XRI": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "CMP": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "CPI": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "RLC": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "RRC": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "RAL": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "RAR": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "CMA": {
+        "description": "Complement Accumulator",
+        "cycles": 10
+    },
+    "CMC": {
+        "description": "Complement Carry flag",
+        "flags": {
+            "C": "C̅"
+        },
+        "cycles": 10
+    },
+    "STC": {
+        "description": "Set Carry flag",
+        "cycles": 10,
+        "flags": {
+            "C": "1"
+        }
+    },
+    "JMP": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "JNZ": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "JZ": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "JNC": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "JC": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "JPO": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "JPE": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "JP": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "JM": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "CALL": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "CNZ": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "CZ": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "CNC": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "CC": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "CPO": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "CPE": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "CM": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "RET": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "RNZ": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "RZ": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "RNC": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "RC": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "RPO": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "RPE": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "RP": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "RM": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "RST": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "PCHL": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "PUSH": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "POP": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "XTHL": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "SPHL": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "EI": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "DI": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "HLT": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "IN": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "OUT": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
+    "CMP": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    }
+}
