@@ -496,7 +496,7 @@
             "operands": [
                 {
                     "description": "16-bit Stack Pointer", 
-                    "name": "PSW", 
+                    "name": "SP", 
                     "type": "register pair"
                 }, 
                 {
@@ -523,7 +523,7 @@
             "operands": [
                 {
                     "description": "16-bit Stack Pointer", 
-                    "name": "PSW", 
+                    "name": "SP", 
                     "type": "register pair"
                 }
             ]
@@ -588,7 +588,7 @@
             "operands": [
                 {
                     "description": "16-bit Stack Pointer", 
-                    "name": "PSW", 
+                    "name": "SP", 
                     "type": "register pair"
                 }
             ]
@@ -609,7 +609,7 @@
             "operands": [
                 {
                     "description": "16-bit Stack Pointer", 
-                    "name": "PSW", 
+                    "name": "SP", 
                     "type": "register pair"
                 }
             ]
@@ -2698,7 +2698,7 @@
             "instruction": "POP", 
             "operands": [
                 {
-                    "description": "16-bit Stack Pointer", 
+                    "description": "16-bit register pair constructed from Accumulator A and flags", 
                     "name": "PSW", 
                     "type": "register pair"
                 }
@@ -2733,7 +2733,7 @@
             "instruction": "PUSH", 
             "operands": [
                 {
-                    "description": "16-bit Stack Pointer", 
+                    "description": "16-bit register pair constructed from Accumulator A and flags", 
                     "name": "PSW", 
                     "type": "register pair"
                 }
