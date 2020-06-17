@@ -5,31 +5,31 @@
         "cycles": 4
     },
     "MOV": {
-        "description": "Move value from rightmost operand to leftmost operand",
+        "description": "Move value right to left",
         "cycles": 5
     },
     "MVI": {
-        "description": "Load operand with immediate value",
+        "description": "Load with immediate value",
         "cycles": 7
     },
     "LXI": {
-        "description": "Load register pair with immediate value",
+        "description": "Load with immediate value",
         "cycles": 10
     },
     "LDA": {
-        "description": "Load register pair with immediate value",
+        "description": "Load A from memory",
         "cycles": 10
     },
     "STA": {
-        "description": "Load register pair with immediate value",
+        "description": "Store A in memory",
         "cycles": 10
     },
     "LHLD": {
-        "description": "Load register pair with immediate value",
+        "description": "Load HL from immediate address",
         "cycles": 10
     },
     "SHLD": {
-        "description": "Load register pair with immediate value",
+        "description": "Store HL at immediate address",
         "cycles": 10
     },
     "LDAX": {
@@ -41,7 +41,7 @@
         "cycles": 10
     },
     "XCHG": {
-        "description": "Load register pair with immediate value",
+        "description": "Exchange DE and HL",
         "cycles": 10
     },
     "ADD": {
@@ -59,7 +59,7 @@
         "cycles": 10
     },
     "ADC": {
-        "description": "Add Register or Memory to Accumulator with Carry",
+        "description": "Add Register or Memory to A with Carry",
         "group": "arithmetic",
         "flags": {
             "S": "S",
@@ -82,12 +82,12 @@
             "P": "P",
             "C": "C"
         },
-        "description": "Load register pair with immediate value",
+        "description": "Add immediate value to A",
         "group": "arithmetic",
         "cycles": 10
     },
     "ACI": {
-        "description": "Load register pair with immediate value",
+        "description": "Add immediate value to A with Carry",
         "group": "arithmetic",
         "flags": {
             "S": "S",
@@ -101,7 +101,7 @@
         "cycles": 10
     },
     "SUB": {
-        "description": "Load register pair with immediate value",
+        "description": "Subtract from A",
         "group": "arithmetic",
         "flags": {
             "S": "S",
@@ -115,7 +115,7 @@
         "cycles": 10
     },
     "SBB": {
-        "description": "Load register pair with immediate value",
+        "description": "Subtract from A with Borrow",
         "group": "arithmetic",
         "flags": {
             "S": "S",
@@ -129,12 +129,12 @@
         "cycles": 10
     },
     "SUI": {
-        "description": "Load register pair with immediate value",
+        "description": "Subtract immediate value from A",
         "group": "arithmetic",
         "cycles": 10
     },
     "SBI": {
-        "description": "Load register pair with immediate value",
+        "description": "Subtract immediate value from A with Borrow",
         "group": "arithmetic",
         "cycles": 10
     },
@@ -161,21 +161,21 @@
         "cycles": 10
     },
     "INX": {
-        "description": "Load register pair with immediate value",
+        "description": "Increment register pair",
         "flags": {
             "K": "K"
         },
         "cycles": 10
     },
     "DCX": {
-        "description": "Load register pair with immediate value",
+        "description": "Decrement register pair",
         "flags": {
             "K": "K"
         },
         "cycles": 10
     },
     "DAD": {
-        "description": "Load register pair with immediate value",
+        "description": "Double Add; register pair is added to HL",
         "flags": {
             "V": "V",
             "C": "C"
@@ -196,7 +196,8 @@
         "cycles": 10
     },
     "ANA": {
-        "description": "Load register pair with immediate value",
+        "description": "AND A with register",
+        "group": "logic",
         "flags": {
             "Z": "Z",
             "S": "S",
@@ -206,7 +207,8 @@
         "cycles": 10
     },
     "ORA": {
-        "description": "Load register pair with immediate value",
+        "description": "OR A with register",
+        "group": "logic",
         "flags": {
             "Z": "Z",
             "S": "S",
@@ -216,7 +218,8 @@
         "cycles": 10
     },
     "XRA": {
-        "description": "Load register pair with immediate value",
+        "description": "XOR A with register",
+        "group": "logic",
         "flags": {
             "Z": "Z",
             "S": "S",
@@ -226,7 +229,8 @@
         "cycles": 10
     },
     "ANI": {
-        "description": "Load register pair with immediate value",
+        "description": "AND A with immediate value",
+        "group": "logic",
         "flags": {
             "Z": "Z",
             "S": "S",
@@ -236,7 +240,8 @@
         "cycles": 10
     },
     "ORI": {
-        "description": "Load register pair with immediate value",
+        "description": "OR A with immediate value",
+        "group": "logic",
         "flags": {
             "Z": "Z",
             "S": "S",
@@ -246,7 +251,8 @@
         "cycles": 10
     },
     "XRI": {
-        "description": "Load register pair with immediate value",
+        "description": "XOR A with immediate value",
+        "group": "logic",
         "flags": {
             "Z": "Z",
             "S": "S",
@@ -264,11 +270,11 @@
         "cycles": 10
     },
     "RLC": {
-        "description": "Load register pair with immediate value",
+        "description": "Rotate A Left through Carry",
         "cycles": 10
     },
     "RRC": {
-        "description": "Load register pair with immediate value",
+        "description": "Rotate A Right through Carry",
         "flags": {
             "V": "0",
             "C": "C"
@@ -276,7 +282,7 @@
         "cycles": 10
     },
     "RAL": {
-        "description": "Load register pair with immediate value",
+        "description": "Rotate A Left",
         "flags": {
             "V": "V",
             "C": "C"
@@ -284,11 +290,11 @@
         "cycles": 10
     },
     "RAR": {
-        "description": "Load register pair with immediate value",
+        "description": "Rotate A Right",
         "cycles": 10
     },
     "CMA": {
-        "description": "Complement Accumulator",
+        "description": "Complement A",
         "cycles": 10
     },
     "CMC": {
@@ -351,17 +357,17 @@
         "cycles": 10
     },
     "CALL": {
-        "description": "Load register pair with immediate value",
+        "description": "Call subroutine",
         "group": "flow",
         "cycles": 10
     },
     "CNZ": {
-        "description": "Load register pair with immediate value",
+        "description": "Call if Not Zero (Z not set)",
         "group": "flow",
         "cycles": 10
     },
     "CZ": {
-        "description": "Load register pair with immediate value",
+        "description": "Call if Zero (Z set)",
         "group": "flow",
         "cycles": 10
     },
@@ -385,71 +391,77 @@
         "group": "flow",
         "cycles": 10
     },
+    "CP": {
+        "description": "Load register pair with immediate value",
+        "group": "flow",
+        "cycles": 10
+    },
     "CM": {
         "description": "Load register pair with immediate value",
         "group": "flow",
         "cycles": 10
     },
     "RET": {
-        "description": "Load register pair with immediate value",
+        "description": "Return from subroutine",
         "group": "flow",
         "cycles": 10
     },
     "RNZ": {
-        "description": "Load register pair with immediate value",
+        "description": "Return if Not Zero (Z is not set)",
         "group": "flow",
         "cycles": 10
     },
     "RZ": {
-        "description": "Load register pair with immediate value",
+        "description": "Return if Zero (Z is set)",
         "group": "flow",
         "cycles": 10
     },
     "RNC": {
-        "description": "Load register pair with immediate value",
+        "description": "Return if Not Carry (C is not set)",
         "group": "flow",
         "cycles": 10
     },
     "RC": {
-        "description": "Load register pair with immediate value",
+        "description": "Return if Carry (C is set)",
         "group": "flow",
         "cycles": 10
     },
     "RPO": {
-        "description": "Load register pair with immediate value",
+        "description": "Return if Parity Odd (P is not set)",
         "group": "flow",
         "cycles": 10
     },
     "RPE": {
-        "description": "Load register pair with immediate value",
+        "description": "Return if Parity Even (P is set)",
         "group": "flow",
         "cycles": 10
     },
     "RP": {
-        "description": "Load register pair with immediate value",
+        "description": "Return if plus (S is set)",
         "group": "flow",
         "cycles": 10
     },
     "RM": {
-        "description": "Load register pair with immediate value",
+        "description": "Return if minus (S is not set)",
         "group": "flow",
         "cycles": 10
     },
     "RST": {
-        "description": "Load register pair with immediate value",
+        "description": "Call restart subroutine",
         "group": "flow",
         "cycles": 10
     },
     "PCHL": {
-        "description": "Load register pair with immediate value",
+        "description": "Load program counter from HL",
+        "group": "flow",
         "cycles": 10
     },
     "PUSH": {
-        "description": "Load register pair with immediate value",
+        "description": "Push register pair to stack",
         "cycles": 10
     },
     "POP": {
-        "description": "Load register pair with immediate value",
+        "description": "Pop from stack into register pair",
         "flags": {
             "S": "S",
             "Z": "Z",
@@ -462,35 +474,40 @@
         "cycles": 10
     },
     "XTHL": {
-        "description": "Load register pair with immediate value",
+        "description": "Exchange SP and HL",
         "cycles": 10
     },
     "SPHL": {
-        "description": "Load register pair with immediate value",
+        "description": "Load SP from HL",
         "cycles": 10
     },
     "EI": {
-        "description": "Load register pair with immediate value",
+        "description": "Enable Interrupts",
+        "group": "control",
         "cycles": 10
     },
     "DI": {
-        "description": "Load register pair with immediate value",
+        "description": "Disable Interrupts",
+        "group": "control",
         "cycles": 10
     },
     "HLT": {
-        "description": "Load register pair with immediate value",
+        "description": "Halt CPU",
+        "group": "control",
         "cycles": 10
     },
     "IN": {
-        "description": "Load register pair with immediate value",
+        "description": "Input port to A",
+        "group": "control",
         "cycles": 10
     },
     "OUT": {
-        "description": "Load register pair with immediate value",
+        "description": "Output A to port",
+        "group": "control",
         "cycles": 10
     },
     "CMP": {
-        "description": "Load register pair with immediate value",
+        "description": "Compare A with operand",
         "cycles": 10
     },
     "ARHL": {
@@ -506,35 +523,38 @@
         "cycles": 10
     },
     "RDEL": {
-        "description": "Arithmetic Right Shift HL",
+        "description": "Shift DE Left into carry",
         "cycles": 10
     },
     "LDHI": {
-        "description": "Arithmetic Right Shift HL",
+        "description": "Load DE with HL plus immediate value",
         "cycles": 10
     },
     "LDSI": {
-        "description": "Arithmetic Right Shift HL",
+        "description": "Load DE with SP plus immediate value",
         "cycles": 10
     },
     "RSTV": {
-        "description": "Arithmetic Right Shift HL",
+        "description": "Call $0040 if overflag (V) flag is set",
+        "group": "flow",
         "cycles": 10
     },
     "SHLX": {
-        "description": "Arithmetic Right Shift HL",
+        "description": "Store HL in memory indexed by DE",
         "cycles": 10
     },
     "JNK": {
-        "description": "Arithmetic Right Shift HL",
+        "description": "Jump if K flag is not set",
+        "group": "flow",
         "cycles": 10
     },
     "JK": {
-        "description": "Arithmetic Right Shift HL",
+        "description": "Jump if K flag is set",
+        "group": "flow",
         "cycles": 10
     },
     "LHLX": {
-        "description": "Arithmetic Right Shift HL",
+        "description": "Load HL from memory indexed by DE",
         "cycles": 10
     }
 }
