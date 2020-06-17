@@ -156,22 +156,13 @@ kbd {
     }
 
 	/* Control / misc */
-	.op-nop,
-	.op-stop,
-	.op-halt,
-	.op-prefix,
-	.op-di,
-	.op-ei {
+	.op-group-control,
+	.op-prefix {
 		@include opcode($op-control, $variant);
 	}
 
 	/* Jumps / calls */
-	.op-call,
-	.op-ret,
-	.op-reti,
-	.op-jp,
-	.op-jr,
-	.op-rst {
+	.op-group-flow {
 		@include opcode($op-jump, $variant);
 	}
 
@@ -181,22 +172,7 @@ kbd {
 		@include opcode($op-load, $variant);
 	}
 
-	.op-inc,
-	.op-dec,
-	.op-daa,
-	.op-scf,
-	.op-inc,
-	.op-dec,
-	.op-cpl,
-	.op-ccf,
-	.op-add,
-	.op-adc,
-	.op-sub,
-	.op-sbc,
-	.op-and,
-	.op-xor,
-	.op-or,
-	.op-cp {
+	.op-group-arithmetic {
 		@include opcode($op-arithmetic, $variant);
 	}
 

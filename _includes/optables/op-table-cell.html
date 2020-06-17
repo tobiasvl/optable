@@ -19,8 +19,8 @@
 	{% assign is16bit = true %}
 {% endif %}
 
-<td id="op-{% if include.set == "cbprefixed" %}cb{% endif %}{{ key | downcase | slice: -2, 2 }}" class="opcode-info {% if is16bit %}is16bit{% else %}is8bit{% endif %} op-{{ op.instruction | downcase }}">
-        <div class="operation op-{{ op.instruction | downcase }}{% if op.illegal %} illegal{% endif %}">
+<td id="op-{% if include.set == "cbprefixed" %}cb{% endif %}{{ key | downcase | slice: -2, 2 }}" class="opcode-info {% if is16bit %}is16bit{% else %}is8bit{% endif %} op-{{ op.instruction | downcase }} op-group-{{ instruction.group }}">
+        <div class="operation op-{{ op.instruction | downcase }} op-group-{{ instruction.group }}{% if op.illegal %} illegal{% endif %}">
             <span class="mnemonic">{{ op.instruction }} {{ op.operands | map: 'name' | join: ',' }}<!--{% include optables/mnemonic.html id=key op=op %}--></span>
             <span class="bytes-cycles">
                 <span class="bytes">{% assign bytes = 1 %}{% assign operands = op.operands | where: 'type', 'immediate' %}{% for operand in operands %}{% assign bytes = bytes | plus: operand.bytes %}{% endfor %}{{ bytes }}</span>&nbsp;&nbsp;<span class="cycles">{{ op.cycles | join: '/' }}</span>
@@ -28,7 +28,7 @@
             <span class="flags">{{ instruction.flags.S | default: "-"}} {{ instruction.flags.Z | default: "-"}} <span class="variant">{{ instruction.flags.K | default: "-"}}</span> {{ instruction.flags.A | default: "-"}} {{ instruction.flags.P | default: "-"}} <span class="variant">{{ instruction.flags.V | default: "-"}}</span> {{ instruction.flags.C | default: "-"}}</span>
         </div>
     {% if op.variant %}
-        <div class="variant operation op-{{ op.instruction | downcase}}{% if op.variant.illegal %} illegal{% endif %}">
+        <div class="variant operation op-{{ op.instruction | downcase}} op-group-{{ instruction.group }}{% if op.variant.illegal %} illegal{% endif %}">
             <span class="mnemonic">{{ op.variant.instruction }} {{ op.variant.operands | map: 'name' | join: ',' }}<!--{% include optables/mnemonic.html id=key op=op %}--></span>
             <span class="bytes-cycles">
                 <span class="bytes">{% assign bytes = 1 %}{% assign operands = op.variant.operands | where: 'type', 'immediate' %}{% for operand in operands %}{% assign bytes = bytes | plus: operand.bytes %}{% endfor %}{{ bytes }}</span>&nbsp;&nbsp;<span class="cycles">{{ op.variant.cycles | join: '/' }}</span>

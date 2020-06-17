@@ -1,6 +1,7 @@
 {
     "NOP": {
         "description": "No operation",
+        "group": "control",
         "cycles": 4
     },
     "MOV": {
@@ -45,6 +46,7 @@
     },
     "ADD": {
         "description": "Add Register or Memory to Accumulator",
+        "group": "arithmetic",
         "flags": {
             "S": "S",
             "Z": "Z",
@@ -58,6 +60,7 @@
     },
     "ADC": {
         "description": "Add Register or Memory to Accumulator with Carry",
+        "group": "arithmetic",
         "flags": {
             "S": "S",
             "Z": "Z",
@@ -80,10 +83,12 @@
             "C": "C"
         },
         "description": "Load register pair with immediate value",
+        "group": "arithmetic",
         "cycles": 10
     },
     "ACI": {
         "description": "Load register pair with immediate value",
+        "group": "arithmetic",
         "flags": {
             "S": "S",
             "Z": "Z",
@@ -97,6 +102,7 @@
     },
     "SUB": {
         "description": "Load register pair with immediate value",
+        "group": "arithmetic",
         "flags": {
             "S": "S",
             "Z": "Z",
@@ -110,6 +116,7 @@
     },
     "SBB": {
         "description": "Load register pair with immediate value",
+        "group": "arithmetic",
         "flags": {
             "S": "S",
             "Z": "Z",
@@ -123,22 +130,12 @@
     },
     "SUI": {
         "description": "Load register pair with immediate value",
+        "group": "arithmetic",
         "cycles": 10
     },
-    "SbI": {
+    "SBI": {
         "description": "Load register pair with immediate value",
-        "cycles": 10
-    },
-    "ACI": {
-        "description": "Load register pair with immediate value",
-        "cycles": 10
-    },
-    "ACI": {
-        "description": "Load register pair with immediate value",
-        "cycles": 10
-    },
-    "ACI": {
-        "description": "Load register pair with immediate value",
+        "group": "arithmetic",
         "cycles": 10
     },
     "INR": {
@@ -310,110 +307,137 @@
     },
     "JMP": {
         "description": "Load register pair with immediate value",
+        "group": "flow",
         "cycles": 10
     },
     "JNZ": {
         "description": "Load register pair with immediate value",
+        "group": "flow",
         "cycles": 10
     },
     "JZ": {
         "description": "Load register pair with immediate value",
+        "group": "flow",
         "cycles": 10
     },
     "JNC": {
         "description": "Load register pair with immediate value",
+        "group": "flow",
         "cycles": 10
     },
     "JC": {
         "description": "Load register pair with immediate value",
+        "group": "flow",
         "cycles": 10
     },
     "JPO": {
         "description": "Load register pair with immediate value",
+        "group": "flow",
         "cycles": 10
     },
     "JPE": {
         "description": "Load register pair with immediate value",
+        "group": "flow",
         "cycles": 10
     },
     "JP": {
         "description": "Load register pair with immediate value",
+        "group": "flow",
         "cycles": 10
     },
     "JM": {
         "description": "Load register pair with immediate value",
+        "group": "flow",
         "cycles": 10
     },
     "CALL": {
         "description": "Load register pair with immediate value",
+        "group": "flow",
         "cycles": 10
     },
     "CNZ": {
         "description": "Load register pair with immediate value",
+        "group": "flow",
         "cycles": 10
     },
     "CZ": {
         "description": "Load register pair with immediate value",
+        "group": "flow",
         "cycles": 10
     },
     "CNC": {
         "description": "Load register pair with immediate value",
+        "group": "flow",
         "cycles": 10
     },
     "CC": {
         "description": "Load register pair with immediate value",
+        "group": "flow",
         "cycles": 10
     },
     "CPO": {
         "description": "Load register pair with immediate value",
+        "group": "flow",
         "cycles": 10
     },
     "CPE": {
         "description": "Load register pair with immediate value",
+        "group": "flow",
         "cycles": 10
     },
     "CM": {
         "description": "Load register pair with immediate value",
+        "group": "flow",
         "cycles": 10
     },
     "RET": {
         "description": "Load register pair with immediate value",
+        "group": "flow",
         "cycles": 10
     },
     "RNZ": {
         "description": "Load register pair with immediate value",
+        "group": "flow",
         "cycles": 10
     },
     "RZ": {
         "description": "Load register pair with immediate value",
+        "group": "flow",
         "cycles": 10
     },
     "RNC": {
         "description": "Load register pair with immediate value",
+        "group": "flow",
         "cycles": 10
     },
     "RC": {
         "description": "Load register pair with immediate value",
+        "group": "flow",
         "cycles": 10
     },
     "RPO": {
         "description": "Load register pair with immediate value",
+        "group": "flow",
         "cycles": 10
     },
     "RPE": {
         "description": "Load register pair with immediate value",
+        "group": "flow",
         "cycles": 10
     },
     "RP": {
         "description": "Load register pair with immediate value",
+        "group": "flow",
         "cycles": 10
     },
     "RM": {
         "description": "Load register pair with immediate value",
+        "group": "flow",
         "cycles": 10
     },
     "RST": {
         "description": "Load register pair with immediate value",
+        "group": "flow",
         "cycles": 10
     },
     "PCHL": {
