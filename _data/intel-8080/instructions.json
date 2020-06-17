@@ -379,6 +379,10 @@
         "description": "Load register pair with immediate value",
         "cycles": 10
     },
+    "ARHL": {
+        "description": "Arithmetic Right Shift HL",
+        "cycles": 10
+    },
     "CMP": {
         "description": "Load register pair with immediate value",
         "cycles": 10

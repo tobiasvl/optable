@@ -5,10 +5,6 @@
 {% assign instruction = site.data.intel-8080.instructions[op.instruction] %}
 {% assign mnemonic = op.instruction %}
 
-{% assign illegal = mnemonic | slice: 0, 7 %}
-{% if illegal == "ILLEGAL" %}{% assign illegal = true %}{% else %}{% assign illegal = false %}{% endif %}
-{% if illegal %}{% assign mnemonic = "ILLEGAL" %}{% endif %}
-
 {% assign is16bit = false %}
 {% if op.operands.size > 0 and op.operands[0].type == "register pair" %}
 	{% assign is16bit = true %}
@@ -23,16 +19,21 @@
 	{% assign is16bit = true %}
 {% endif %}
 
-<td id="op-{% if include.set == "cbprefixed" %}cb{% endif %}{{ key | downcase | slice: -2, 2 }}" class="opcode-info op-{{ mnemonic | downcase }} {% if is16bit %}is16bit{% else %}is8bit{% endif %}">
-	{% if illegal %}
-		—
-	{% else %}
-        <div class="operation{% if op.illegal %} illegal{% endif %}">
-            <span class="mnemonic">{{ mnemonic }} {{ op.operands | map: 'name' | join: ',' }}<!--{% include optables/mnemonic.html id=key op=op %}--></span>
+<td id="op-{% if include.set == "cbprefixed" %}cb{% endif %}{{ key | downcase | slice: -2, 2 }}" class="opcode-info {% if is16bit %}is16bit{% else %}is8bit{% endif %}">
+        <div class="operation op-{{ op.instruction | downcase }}{% if op.illegal %} illegal{% endif %}">
+            <span class="mnemonic">{{ op.instruction }} {{ op.operands | map: 'name' | join: ',' }}<!--{% include optables/mnemonic.html id=key op=op %}--></span>
             <span class="bytes-cycles">
                 <span class="bytes">{% assign bytes = 1 %}{% assign operands = op.operands | where: 'type', 'immediate' %}{% for operand in operands %}{% assign bytes = bytes | plus: operand.bytes %}{% endfor %}{{ bytes }}</span>&nbsp;&nbsp;<span class="cycles">{{ op.cycles | join: '/' }}</span>
             </span>
             <span class="flags">{{ instruction.flags.S | default: "-"}} {{ instruction.flags.Z | default: "-"}} {{ instruction.flags.A | default: "-"}} {{ instruction.flags.P | default: "-"}} {{ instruction.flags.C | default: "-"}}</span>
         </div>
-	{% endif %}
+    {% if op.variant %}
+        <div class="operation op-{{ op.instruction | downcase}}{% if op.variant.illegal %} illegal{% endif %}">
+            <span class="mnemonic">{{ op.variant.instruction }} {{ op.variant.operands | map: 'name' | join: ',' }}<!--{% include optables/mnemonic.html id=key op=op %}--></span>
+            <span class="bytes-cycles">
+                <span class="bytes">{% assign bytes = 1 %}{% assign operands = op.variant.operands | where: 'type', 'immediate' %}{% for operand in operands %}{% assign bytes = bytes | plus: operand.bytes %}{% endfor %}{{ bytes }}</span>&nbsp;&nbsp;<span class="cycles">{{ op.variant.cycles | join: '/' }}</span>
+            </span>
+            <span class="flags">{{ instruction.flags.S | default: "-"}} {{ instruction.flags.Z | default: "-"}} {{ instruction.flags.A | default: "-"}} {{ instruction.flags.P | default: "-"}} {{ instruction.flags.C | default: "-"}}</span>
+        </div>
+    {% endif %}
 </td>
