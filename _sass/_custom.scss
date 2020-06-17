@@ -30,14 +30,15 @@ kbd {
     width: 2px;
 }
 
-.opcode-info > div > span {
-	white-space: nowrap;
-}
-
 .mnemonic, .bytes-cycles, .flags {
 	display: block;
     font-weight: bold;
     font-size: 0.75rem;
+	white-space: nowrap;
+}
+
+.operation {
+	white-space: nowrap;
 }
 
 .mnemonic, .flags {
@@ -248,4 +249,55 @@ kbd {
 
 		@include opcode-table(classic);
 	}
+}
+
+/* Tooltip container */
+
+.tool {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+/* Tooltip text */
+.tool .tooltiptext {
+  white-space: normal;
+  visibility: hidden;
+  /*width: 120px;*/
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltiptext.left {
+  top: -5px;
+  right: 105%;
+}
+.tooltiptext.right {
+  top: -5px;
+  left: 105%;
+}
+.tooltiptext.top {
+  width: 120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px; /* use half of the width (120/2 = 60), to center the tooltip */
+}
+.tooltiptext.bottom {
+  width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px; /* use half of the width (120/2 = 60), to center the tooltip */
+}
+
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tool:hover .tooltiptext {
+  visibility: visible;
 }
