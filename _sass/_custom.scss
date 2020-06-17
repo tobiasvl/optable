@@ -15,19 +15,33 @@ kbd {
 .table-sm {
 	font-size: 0.65rem;
 	line-height: 1.125;
+    table-layout: fixed;
 }
 
 .table-sm td {
 	padding: 0; /*.2rem .5rem;*/
     height: 80px;
+    min-width: 9em;
 }
 
-.opcode-info > span {
+.table-sm td:first-child {
+	padding: 0; /*.2rem .5rem;*/
+    height: 80px;
+    width: 2px;
+}
+
+.opcode-info > div > span {
 	white-space: nowrap;
 }
 
 .mnemonic, .bytes-cycles, .flags {
 	display: block;
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+.mnemonic, .flags {
+    font-family: $font-family-monospace;
 }
 
 .variant {
@@ -123,6 +137,7 @@ kbd {
 
 		&:first-child {
 			vertical-align: middle;
+            width: 1.5em;
 			// min-width: 2rem;
 		}
 	}
@@ -135,6 +150,7 @@ kbd {
 
 	> tbody > tr > td:first-child {
 		font-weight: bold;
+        width: 1.5em;
 	}
 
 	.op-illegal {
