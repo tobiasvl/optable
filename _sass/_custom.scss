@@ -19,6 +19,7 @@ kbd {
 
 .table-sm td {
 	padding: 0; /*.2rem .5rem;*/
+    height: 80px;
 }
 
 .opcode-info > span {
@@ -129,6 +130,7 @@ kbd {
 	> thead > tr > th,
 	> tbody > tr > td {
 		text-align: center;
+        vertical-align: middle;
 	}
 
 	> tbody > tr > td:first-child {
@@ -141,14 +143,13 @@ kbd {
 
     .operation {
         padding: .2rem .5rem;
-        align-self: stretch;
     }
 
     .illegal {
         background: repeating-linear-gradient(
             45deg,
-            map-get($op-control, $variant),
-            map-get($op-control, $variant) 10px,
+            transparent,
+            transparent 10px,
             map-get($op-illegal, $variant) 10px,
             map-get($op-illegal, $variant) 20px
         );

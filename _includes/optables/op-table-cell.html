@@ -19,7 +19,7 @@
 	{% assign is16bit = true %}
 {% endif %}
 
-<td id="op-{% if include.set == "cbprefixed" %}cb{% endif %}{{ key | downcase | slice: -2, 2 }}" class="opcode-info {% if is16bit %}is16bit{% else %}is8bit{% endif %}">
+<td id="op-{% if include.set == "cbprefixed" %}cb{% endif %}{{ key | downcase | slice: -2, 2 }}" class="opcode-info {% if is16bit %}is16bit{% else %}is8bit{% endif %} op-{{ op.instruction | downcase }}">
         <div class="operation op-{{ op.instruction | downcase }}{% if op.illegal %} illegal{% endif %}">
             <span class="mnemonic">{{ op.instruction }} {{ op.operands | map: 'name' | join: ',' }}<!--{% include optables/mnemonic.html id=key op=op %}--></span>
             <span class="bytes-cycles">
