@@ -2,7 +2,6 @@
 {% capture key %}{% include hex.html value=index addPrefix=true %}{% endcapture %}
 {% assign key = key | strip %}
 {% assign op = site.data.intel-8080.result[include.set][key] %}
-{% assign instruction = site.data.intel-8080.instructions[op.instruction] %}
 {% assign mnemonic = op.instruction %}
 
 {% assign is16bit = false %}
@@ -19,15 +18,18 @@
 	{% assign is16bit = true %}
 {% endif %}
 
+{% assign instruction = site.data.intel-8080.instructions[op.instruction] %}
 <td id="op-{% if include.set == "cbprefixed" %}cb{% endif %}{{ key | downcase | slice: -2, 2 }}" class="opcode-info {% if is16bit %}is16bit{% else %}is8bit{% endif %} op-{{ op.instruction | downcase }} op-group-{{ instruction.group }}">
         <div class="operation op-{{ op.instruction | downcase }} op-group-{{ instruction.group }}{% if op.illegal %} illegal{% endif %}">
             <span class="mnemonic">{{ op.instruction }} {{ op.operands | map: 'name' | join: ',' }}<!--{% include optables/mnemonic.html id=key op=op %}--></span>
             <span class="bytes-cycles">
                 <span class="bytes">{% assign bytes = 1 %}{% assign operands = op.operands | where: 'type', 'immediate' %}{% for operand in operands %}{% assign bytes = bytes | plus: operand.bytes %}{% endfor %}{{ bytes }}</span>&nbsp;&nbsp;<span class="cycles">{{ op.cycles | join: '/' }}</span>
             </span>
-            <span class="flags">{{ instruction.flags.S | default: "-"}} {{ instruction.flags.Z | default: "-"}} <span class="variant">{{ instruction.flags.K | default: "-"}}</span> {{ instruction.flags.A | default: "-"}} {{ instruction.flags.P | default: "-"}} <span class="variant">{{ instruction.flags.V | default: "-"}}</span> {{ instruction.flags.C | default: "-"}}</span>
+            <span class="flags">{{ instruction.flags.S | default: "-"}} {{ instruction.flags.Z | default: "-"}} {% unless op.variant %}<span class="variant">{{ instruction.flags.K | default: "-"}}</span> {% endunless %}{{ instruction.flags.A | default: "-"}} {{ instruction.flags.P | default: "-"}} {% unless op.variant %}<span class="variant">{{ instruction.flags.V | default: "-"}}</span> {% endunless %}{{ instruction.flags.C | default: "-"}}</span>
         </div>
+
     {% if op.variant %}
+    {% assign instruction = site.data.intel-8080.instructions[op.variant.instruction] %}
         <div class="variant operation op-{{ op.instruction | downcase}} op-group-{{ instruction.group }}{% if op.variant.illegal %} illegal{% endif %}">
             <span class="mnemonic">{{ op.variant.instruction }} {{ op.variant.operands | map: 'name' | join: ',' }}<!--{% include optables/mnemonic.html id=key op=op %}--></span>
             <span class="bytes-cycles">
