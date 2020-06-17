@@ -79,6 +79,7 @@
             "instruction": "RLC"
         }, 
         "0x08": {
+            "illegal": true, 
             "instruction": "NOP"
         }, 
         "0x09": {
@@ -151,6 +152,7 @@
             "instruction": "RRC"
         }, 
         "0x10": {
+            "illegal": true, 
             "instruction": "NOP"
         }, 
         "0x11": {
@@ -229,6 +231,7 @@
             "instruction": "RAL"
         }, 
         "0x18": {
+            "illegal": true, 
             "instruction": "NOP"
         }, 
         "0x19": {
@@ -301,6 +304,7 @@
             "instruction": "RAR"
         }, 
         "0x20": {
+            "illegal": true, 
             "instruction": "NOP"
         }, 
         "0x21": {
@@ -380,6 +384,7 @@
             "instruction": "DAA"
         }, 
         "0x28": {
+            "illegal": true, 
             "instruction": "NOP"
         }, 
         "0x29": {
@@ -453,6 +458,7 @@
             "instruction": "CMA"
         }, 
         "0x30": {
+            "illegal": true, 
             "instruction": "NOP"
         }, 
         "0x31": {
@@ -532,6 +538,7 @@
             "instruction": "STC"
         }, 
         "0x38": {
+            "illegal": true, 
             "instruction": "NOP"
         }, 
         "0x39": {
@@ -2286,6 +2293,7 @@
             ]
         }, 
         "0xCB": {
+            "illegal": true, 
             "instruction": "JMP"
         }, 
         "0xCC": {
@@ -2410,6 +2418,7 @@
             "instruction": "RC"
         }, 
         "0xD9": {
+            "illegal": true, 
             "instruction": "RET"
         }, 
         "0xDA": {
@@ -2446,6 +2455,7 @@
             ]
         }, 
         "0xDD": {
+            "illegal": true, 
             "instruction": "CALL"
         }, 
         "0xDE": {
@@ -2568,6 +2578,7 @@
             ]
         }, 
         "0xED": {
+            "illegal": true, 
             "instruction": "CALL"
         }, 
         "0xEE": {
@@ -2690,6 +2701,7 @@
             ]
         }, 
         "0xFD": {
+            "illegal": true, 
             "instruction": "CALL"
         }, 
         "0xFE": {

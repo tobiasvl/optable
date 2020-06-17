@@ -18,7 +18,7 @@ kbd {
 }
 
 .table-sm td {
-	padding: .2rem .5rem;
+	padding: 0; /*.2rem .5rem;*/
 }
 
 .opcode-info > span {
@@ -134,6 +134,20 @@ kbd {
 	.op-illegal {
 		@include opcode($op-illegal, $variant);
 	}
+
+    .operation {
+        padding: .2rem .5rem;
+    }
+
+    .illegal {
+        background: repeating-linear-gradient(
+            45deg,
+            map-get($op-control, $variant),
+            map-get($op-control, $variant) 10px,
+            map-get($op-illegal, $variant) 10px,
+            map-get($op-illegal, $variant) 20px
+        );
+    }
 
 	/* Control / misc */
 	.op-nop,

@@ -27,10 +27,12 @@
 	{% if illegal %}
 		—
 	{% else %}
-		<span class="mnemonic">{{ mnemonic }} {{ op.operands | map: 'name' | join: ',' }}<!--{% include optables/mnemonic.html id=key op=op %}--></span>
-		<span class="bytes-cycles">
-			<span class="bytes">{% assign bytes = 1 %}{% assign operands = op.operands | where: 'type', 'immediate' %}{% for operand in operands %}{% assign bytes = bytes | plus: operand.bytes %}{% endfor %}{{ bytes }}</span>&nbsp;&nbsp;<span class="cycles">{{ op.cycles | join: '/' }}</span>
-		</span>
-		<span class="flags">{{ instruction.flags.S | default: "-"}} {{ instruction.flags.Z | default: "-"}} {{ instruction.flags.AC | default: "-"}} {{ instruction.flags.P | default: "-"}} {{ instruction.flags.C | default: "-"}}</span>
+        <div class="operation{% if op.illegal %} illegal{% endif %}">
+            <span class="mnemonic">{{ mnemonic }} {{ op.operands | map: 'name' | join: ',' }}<!--{% include optables/mnemonic.html id=key op=op %}--></span>
+            <span class="bytes-cycles">
+                <span class="bytes">{% assign bytes = 1 %}{% assign operands = op.operands | where: 'type', 'immediate' %}{% for operand in operands %}{% assign bytes = bytes | plus: operand.bytes %}{% endfor %}{{ bytes }}</span>&nbsp;&nbsp;<span class="cycles">{{ op.cycles | join: '/' }}</span>
+            </span>
+            <span class="flags">{{ instruction.flags.S | default: "-"}} {{ instruction.flags.Z | default: "-"}} {{ instruction.flags.A | default: "-"}} {{ instruction.flags.P | default: "-"}} {{ instruction.flags.C | default: "-"}}</span>
+        </div>
 	{% endif %}
 </td>
