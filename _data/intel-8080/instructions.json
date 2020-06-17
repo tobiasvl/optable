@@ -45,26 +45,80 @@
     },
     "ADD": {
         "description": "Add Register or Memory to Accumulator",
+        "flags": {
+            "S": "S",
+            "Z": "Z",
+            "K": "K",
+            "A": "A",
+            "V": "V",
+            "P": "P",
+            "C": "C"
+        },
         "cycles": 10
     },
     "ADC": {
         "description": "Add Register or Memory to Accumulator with Carry",
+        "flags": {
+            "S": "S",
+            "Z": "Z",
+            "K": "K",
+            "A": "A",
+            "V": "V",
+            "P": "P",
+            "C": "C"
+        },
         "cycles": 10
     },
     "ADI": {
+        "flags": {
+            "S": "S",
+            "Z": "Z",
+            "K": "K",
+            "A": "A",
+            "V": "V",
+            "P": "P",
+            "C": "C"
+        },
         "description": "Load register pair with immediate value",
         "cycles": 10
     },
     "ACI": {
         "description": "Load register pair with immediate value",
+        "flags": {
+            "S": "S",
+            "Z": "Z",
+            "K": "K",
+            "A": "A",
+            "V": "V",
+            "P": "P",
+            "C": "C"
+        },
         "cycles": 10
     },
     "SUB": {
         "description": "Load register pair with immediate value",
+        "flags": {
+            "S": "S",
+            "Z": "Z",
+            "K": "K",
+            "A": "A",
+            "V": "V",
+            "P": "P",
+            "C": "C"
+        },
         "cycles": 10
     },
     "SBB": {
         "description": "Load register pair with immediate value",
+        "flags": {
+            "S": "S",
+            "Z": "Z",
+            "K": "K",
+            "A": "A",
+            "V": "V",
+            "P": "P",
+            "C": "C"
+        },
         "cycles": 10
     },
     "SUI": {
@@ -90,9 +144,11 @@
     "INR": {
         "description": "Increment Register or Memory",
         "flags": {
-            "Z": "Z",
             "S": "S",
+            "Z": "Z",
+            "K": "K",
             "A": "A",
+            "V": "V",
             "P": "P"
         },
         "cycles": 10
@@ -109,14 +165,24 @@
     },
     "INX": {
         "description": "Load register pair with immediate value",
+        "flags": {
+            "K": "K"
+        },
         "cycles": 10
     },
     "DCX": {
         "description": "Load register pair with immediate value",
+        "flags": {
+            "K": "K"
+        },
         "cycles": 10
     },
     "DAD": {
         "description": "Load register pair with immediate value",
+        "flags": {
+            "V": "V",
+            "C": "C"
+        },
         "cycles": 10
     },
     "DAA": {
@@ -124,7 +190,10 @@
         "flags": {
             "Z": "Z",
             "S": "S",
+            "K": "K",
+            "A": "A",
             "P": "P",
+            "V": "V",
             "C": "C"
         },
         "cycles": 10
@@ -203,10 +272,18 @@
     },
     "RRC": {
         "description": "Load register pair with immediate value",
+        "flags": {
+            "V": "0",
+            "C": "C"
+        },
         "cycles": 10
     },
     "RAL": {
         "description": "Load register pair with immediate value",
+        "flags": {
+            "V": "V",
+            "C": "C"
+        },
         "cycles": 10
     },
     "RAR": {
@@ -349,6 +426,15 @@
     },
     "POP": {
         "description": "Load register pair with immediate value",
+        "flags": {
+            "S": "S",
+            "Z": "Z",
+            "K": "K",
+            "A": "A",
+            "V": "V",
+            "P": "P",
+            "C": "C"
+        },
         "cycles": 10
     },
     "XTHL": {
@@ -385,6 +471,10 @@
     },
     "ARHL": {
         "description": "Arithmetic Right Shift HL",
+        "flags": {
+            "V": 0,
+            "C": "C"
+        },
         "cycles": 10
     },
     "DSUB": {
