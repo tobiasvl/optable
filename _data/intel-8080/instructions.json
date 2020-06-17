@@ -379,12 +379,48 @@
         "description": "Load register pair with immediate value",
         "cycles": 10
     },
+    "CMP": {
+        "description": "Load register pair with immediate value",
+        "cycles": 10
+    },
     "ARHL": {
         "description": "Arithmetic Right Shift HL",
         "cycles": 10
     },
-    "CMP": {
-        "description": "Load register pair with immediate value",
+    "DSUB": {
+        "description": "Arithmetic Right Shift HL",
+        "cycles": 10
+    },
+    "RDEL": {
+        "description": "Arithmetic Right Shift HL",
+        "cycles": 10
+    },
+    "LDHI": {
+        "description": "Arithmetic Right Shift HL",
+        "cycles": 10
+    },
+    "LDSI": {
+        "description": "Arithmetic Right Shift HL",
+        "cycles": 10
+    },
+    "RSTV": {
+        "description": "Arithmetic Right Shift HL",
+        "cycles": 10
+    },
+    "SHLX": {
+        "description": "Arithmetic Right Shift HL",
+        "cycles": 10
+    },
+    "JNK": {
+        "description": "Arithmetic Right Shift HL",
+        "cycles": 10
+    },
+    "JK": {
+        "description": "Arithmetic Right Shift HL",
+        "cycles": 10
+    },
+    "LHLX": {
+        "description": "Arithmetic Right Shift HL",
         "cycles": 10
     }
 }

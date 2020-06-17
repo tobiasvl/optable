@@ -29,6 +29,10 @@ kbd {
 	display: block;
 }
 
+.variant {
+	color: blue;
+}
+
 #demo-table {
 	border-collapse: collapse;
 
@@ -137,6 +141,7 @@ kbd {
 
     .operation {
         padding: .2rem .5rem;
+        align-self: stretch;
     }
 
     .illegal {

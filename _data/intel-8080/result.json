@@ -80,7 +80,11 @@
         }, 
         "0x08": {
             "illegal": true, 
-            "instruction": "NOP"
+            "instruction": "NOP", 
+            "variant": {
+                "illegal": true, 
+                "instruction": "DSUB"
+            }
         }, 
         "0x09": {
             "instruction": "DAD", 
@@ -236,7 +240,11 @@
         }, 
         "0x18": {
             "illegal": true, 
-            "instruction": "NOP"
+            "instruction": "NOP", 
+            "variant": {
+                "illegal": true, 
+                "instruction": "RDEL"
+            }
         }, 
         "0x19": {
             "instruction": "DAD", 
@@ -309,7 +317,10 @@
         }, 
         "0x20": {
             "illegal": true, 
-            "instruction": "NOP"
+            "instruction": "NOP", 
+            "variant": {
+                "instruction": "RIM"
+            }
         }, 
         "0x21": {
             "instruction": "LXI", 
@@ -389,7 +400,19 @@
         }, 
         "0x28": {
             "illegal": true, 
-            "instruction": "NOP"
+            "instruction": "NOP", 
+            "variant": {
+                "illegal": true, 
+                "instruction": "LDHI", 
+                "operands": [
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "d8", 
+                        "type": "immediate"
+                    }
+                ]
+            }
         }, 
         "0x29": {
             "instruction": "DAD", 
@@ -463,7 +486,10 @@
         }, 
         "0x30": {
             "illegal": true, 
-            "instruction": "NOP"
+            "instruction": "NOP", 
+            "variant": {
+                "instruction": "SIM"
+            }
         }, 
         "0x31": {
             "instruction": "LXI", 
@@ -543,7 +569,19 @@
         }, 
         "0x38": {
             "illegal": true, 
-            "instruction": "NOP"
+            "instruction": "NOP", 
+            "variant": {
+                "illegal": true, 
+                "instruction": "LDSI", 
+                "operands": [
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "d8", 
+                        "type": "immediate"
+                    }
+                ]
+            }
         }, 
         "0x39": {
             "instruction": "DAD", 
@@ -2298,7 +2336,19 @@
         }, 
         "0xCB": {
             "illegal": true, 
-            "instruction": "JMP"
+            "instruction": "JMP", 
+            "operands": [
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ], 
+            "variant": {
+                "illegal": true, 
+                "instruction": "RSTV"
+            }
         }, 
         "0xCC": {
             "instruction": "CZ", 
@@ -2423,7 +2473,11 @@
         }, 
         "0xD9": {
             "illegal": true, 
-            "instruction": "RET"
+            "instruction": "RET", 
+            "variant": {
+                "illegal": true, 
+                "instruction": "SHLX"
+            }
         }, 
         "0xDA": {
             "instruction": "JC", 
@@ -2460,7 +2514,27 @@
         }, 
         "0xDD": {
             "illegal": true, 
-            "instruction": "CALL"
+            "instruction": "CALL", 
+            "operands": [
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ], 
+            "variant": {
+                "illegal": true, 
+                "instruction": "JNK", 
+                "operands": [
+                    {
+                        "bytes": 2, 
+                        "description": "16-bit immediate address", 
+                        "name": "a16", 
+                        "type": "immediate"
+                    }
+                ]
+            }
         }, 
         "0xDE": {
             "instruction": "SBI", 
@@ -2583,7 +2657,19 @@
         }, 
         "0xED": {
             "illegal": true, 
-            "instruction": "CALL"
+            "instruction": "CALL", 
+            "operands": [
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ], 
+            "variant": {
+                "illegal": true, 
+                "instruction": "LHLX"
+            }
         }, 
         "0xEE": {
             "instruction": "XRI", 
@@ -2706,7 +2792,27 @@
         }, 
         "0xFD": {
             "illegal": true, 
-            "instruction": "CALL"
+            "instruction": "CALL", 
+            "operands": [
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ], 
+            "variant": {
+                "illegal": true, 
+                "instruction": "JK", 
+                "operands": [
+                    {
+                        "bytes": 2, 
+                        "description": "16-bit immediate address", 
+                        "name": "a16", 
+                        "type": "immediate"
+                    }
+                ]
+            }
         }, 
         "0xFE": {
             "instruction": "CPI", 
