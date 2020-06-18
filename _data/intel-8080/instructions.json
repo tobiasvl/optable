@@ -153,9 +153,11 @@
     "DCR": {
         "description": "Decrement Register or Memory",
         "flags": {
+            "S": "S",
             "Z": "Z",
             "S": "S",
             "A": "A",
+            "V": "V",
             "P": "P"
         },
         "cycles": 10
@@ -202,7 +204,17 @@
             "Z": "Z",
             "S": "S",
             "A": "A",
-            "P": "P"
+            "P": "P",
+            "C": 0,
+            "variant": {
+                "Z": "Z",
+                "S": "S",
+                "K": "K",
+                "A": "1",
+                "P": "P",
+                "V": 0,
+                "C": 0
+            }
         },
         "cycles": 10
     },
@@ -212,8 +224,11 @@
         "flags": {
             "Z": "Z",
             "S": "S",
+            "K": "K",
             "A": "0",
-            "P": "P"
+            "P": "P",
+            "V": 0,
+            "C": 0
         },
         "cycles": 10
     },
@@ -223,8 +238,10 @@
         "flags": {
             "Z": "Z",
             "S": "S",
+            "K": "K",
             "A": "0",
-            "P": "P"
+            "P": "P",
+            "C": 0
         },
         "cycles": 10
     },
@@ -235,7 +252,17 @@
             "Z": "Z",
             "S": "S",
             "A": "A",
-            "P": "P"
+            "P": "P",
+            "C": 0,
+            "variant": {
+                "Z": "Z",
+                "S": "S",
+                "K": "K",
+                "A": "1",
+                "P": "P",
+                "V": 0,
+                "C": 0
+            }
         },
         "cycles": 10
     },
@@ -245,8 +272,11 @@
         "flags": {
             "Z": "Z",
             "S": "S",
+            "K": "K",
             "A": "0",
-            "P": "P"
+            "P": "P",
+            "V": 0,
+            "C": 0
         },
         "cycles": 10
     },
@@ -256,8 +286,10 @@
         "flags": {
             "Z": "Z",
             "S": "S",
+            "K": "K",
             "A": "0",
-            "P": "P"
+            "P": "P",
+            "C": 0
         },
         "cycles": 10
     },
@@ -271,6 +303,10 @@
     },
     "RLC": {
         "description": "Rotate A Left through Carry",
+        "flags": {
+            "V": "V",
+            "C": "C"
+        },
         "cycles": 10
     },
     "RRC": {
@@ -291,6 +327,9 @@
     },
     "RAR": {
         "description": "Rotate A Right",
+        "flags": {
+            "V": "0"
+        },
         "cycles": 10
     },
     "CMA": {
@@ -524,6 +563,10 @@
     },
     "RDEL": {
         "description": "Shift DE Left into carry",
+        "flags": {
+            "V": "V",
+            "C": "C"
+        },
         "cycles": 10
     },
     "LDHI": {

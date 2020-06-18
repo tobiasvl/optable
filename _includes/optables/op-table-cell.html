@@ -25,7 +25,8 @@
             <span class="bytes-cycles">
                 <span class="bytes">{% assign bytes = 1 %}{% assign operands = op.operands | where: 'type', 'immediate' %}{% for operand in operands %}{% assign bytes = bytes | plus: operand.bytes %}{% endfor %}{{ bytes }}</span>&nbsp;&nbsp;<span class="cycles">{{ op.cycles | join: '/' }}</span>
             </span>
-            <span class="flags">{{ instruction.flags.S | default: "-"}}{{ instruction.flags.Z | default: "-"}}{% unless op.variant %}<span class="variant">{{ instruction.flags.K | default: "-"}}</span>{% endunless %}{{ instruction.flags.A | default: "-"}}{{ instruction.flags.P | default: "-"}}{% unless op.variant %}<span class="variant">{{ instruction.flags.V | default: "-"}}</span>{% endunless %}{{ instruction.flags.C | default: "-"}}</span>
+            <span class="flags">{{ instruction.flags.S | default: "-"}}{{ instruction.flags.Z | default: "-"}}{% unless op.variant or instruction.flags.variant %}<span class="variant">{{ instruction.flags.K | default: "-"}}</span>{% endunless %}{{ instruction.flags.A | default: "-"}}{{ instruction.flags.P | default: "-"}}{% unless op.variant or instruction.flags.variant %}<span class="variant">{{ instruction.flags.V | default: "-"}}</span>{% endunless %}{{ instruction.flags.C | default: "-"}}</span>
+            {% if instruction.flags.variant %}<span class="flags variant">{{ instruction.flags.variant.S | default: "-"}}{{ instruction.flags.variant.Z | default: "-"}}{{ instruction.flags.variant.K | default: "-"}}{{ instruction.flags.variant.A | default: "-"}}{{ instruction.flags.variant.P | default: "-"}}{{ instruction.flags.variant.V | default: "-"}}{{ instruction.flags.variant.C | default: "-"}}</span>{% endif %}
         </div>
 
     {% if op.variant %}

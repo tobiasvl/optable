@@ -618,7 +618,7 @@
             "instruction": "INR", 
             "operands": [
                 {
-                    "description": "8-bit accumulator B", 
+                    "description": "8-bit accumulator A", 
                     "name": "A", 
                     "type": "register"
                 }
@@ -628,7 +628,7 @@
             "instruction": "DCR", 
             "operands": [
                 {
-                    "description": "8-bit accumulator B", 
+                    "description": "8-bit accumulator A", 
                     "name": "A", 
                     "type": "register"
                 }
@@ -638,7 +638,7 @@
             "instruction": "MVI", 
             "operands": [
                 {
-                    "description": "8-bit accumulator B", 
+                    "description": "8-bit accumulator A", 
                     "name": "A", 
                     "type": "register"
                 }, 
@@ -767,7 +767,7 @@
                     "type": "register"
                 }, 
                 {
-                    "description": "8-bit accumulator B", 
+                    "description": "8-bit accumulator A", 
                     "name": "A", 
                     "type": "register"
                 }
@@ -887,7 +887,7 @@
                     "type": "register"
                 }, 
                 {
-                    "description": "8-bit accumulator B", 
+                    "description": "8-bit accumulator A", 
                     "name": "A", 
                     "type": "register"
                 }
@@ -1007,7 +1007,7 @@
                     "type": "register"
                 }, 
                 {
-                    "description": "8-bit accumulator B", 
+                    "description": "8-bit accumulator A", 
                     "name": "A", 
                     "type": "register"
                 }
@@ -1127,7 +1127,7 @@
                     "type": "register"
                 }, 
                 {
-                    "description": "8-bit accumulator B", 
+                    "description": "8-bit accumulator A", 
                     "name": "A", 
                     "type": "register"
                 }
@@ -1247,7 +1247,7 @@
                     "type": "register"
                 }, 
                 {
-                    "description": "8-bit accumulator B", 
+                    "description": "8-bit accumulator A", 
                     "name": "A", 
                     "type": "register"
                 }
@@ -1367,7 +1367,7 @@
                     "type": "register"
                 }, 
                 {
-                    "description": "8-bit accumulator B", 
+                    "description": "8-bit accumulator A", 
                     "name": "A", 
                     "type": "register"
                 }
@@ -1475,7 +1475,7 @@
                     "type": "memory"
                 }, 
                 {
-                    "description": "8-bit accumulator B", 
+                    "description": "8-bit accumulator A", 
                     "name": "A", 
                     "type": "register"
                 }
@@ -1485,7 +1485,7 @@
             "instruction": "MOV", 
             "operands": [
                 {
-                    "description": "8-bit accumulator B", 
+                    "description": "8-bit accumulator A", 
                     "name": "A", 
                     "type": "register"
                 }, 
@@ -1500,7 +1500,7 @@
             "instruction": "MOV", 
             "operands": [
                 {
-                    "description": "8-bit accumulator B", 
+                    "description": "8-bit accumulator A", 
                     "name": "A", 
                     "type": "register"
                 }, 
@@ -1515,7 +1515,7 @@
             "instruction": "MOV", 
             "operands": [
                 {
-                    "description": "8-bit accumulator B", 
+                    "description": "8-bit accumulator A", 
                     "name": "A", 
                     "type": "register"
                 }, 
@@ -1530,7 +1530,7 @@
             "instruction": "MOV", 
             "operands": [
                 {
-                    "description": "8-bit accumulator B", 
+                    "description": "8-bit accumulator A", 
                     "name": "A", 
                     "type": "register"
                 }, 
@@ -1545,7 +1545,7 @@
             "instruction": "MOV", 
             "operands": [
                 {
-                    "description": "8-bit accumulator B", 
+                    "description": "8-bit accumulator A", 
                     "name": "A", 
                     "type": "register"
                 }, 
@@ -1560,7 +1560,7 @@
             "instruction": "MOV", 
             "operands": [
                 {
-                    "description": "8-bit accumulator B", 
+                    "description": "8-bit accumulator A", 
                     "name": "A", 
                     "type": "register"
                 }, 
@@ -1575,7 +1575,7 @@
             "instruction": "MOV", 
             "operands": [
                 {
-                    "description": "8-bit accumulator B", 
+                    "description": "8-bit accumulator A", 
                     "name": "A", 
                     "type": "register"
                 }, 
@@ -1590,12 +1590,12 @@
             "instruction": "MOV", 
             "operands": [
                 {
-                    "description": "8-bit accumulator B", 
+                    "description": "8-bit accumulator A", 
                     "name": "A", 
                     "type": "register"
                 }, 
                 {
-                    "description": "8-bit accumulator B", 
+                    "description": "8-bit accumulator A", 
                     "name": "A", 
                     "type": "register"
                 }
@@ -1675,7 +1675,7 @@
             "instruction": "ADD", 
             "operands": [
                 {
-                    "description": "8-bit accumulator B", 
+                    "description": "8-bit accumulator A", 
                     "name": "A", 
                     "type": "register"
                 }
@@ -1755,7 +1755,7 @@
             "instruction": "ADC", 
             "operands": [
                 {
-                    "description": "8-bit accumulator B", 
+                    "description": "8-bit accumulator A", 
                     "name": "A", 
                     "type": "register"
                 }
@@ -1835,7 +1835,7 @@
             "instruction": "SUB", 
             "operands": [
                 {
-                    "description": "8-bit accumulator B", 
+                    "description": "8-bit accumulator A", 
                     "name": "A", 
                     "type": "register"
                 }
@@ -1915,7 +1915,7 @@
             "instruction": "SBB", 
             "operands": [
                 {
-                    "description": "8-bit accumulator B", 
+                    "description": "8-bit accumulator A", 
                     "name": "A", 
                     "type": "register"
                 }
@@ -1995,7 +1995,7 @@
             "instruction": "ANA", 
             "operands": [
                 {
-                    "description": "8-bit accumulator B", 
+                    "description": "8-bit accumulator A", 
                     "name": "A", 
                     "type": "register"
                 }
@@ -2075,7 +2075,7 @@
             "instruction": "XRA", 
             "operands": [
                 {
-                    "description": "8-bit accumulator B", 
+                    "description": "8-bit accumulator A", 
                     "name": "A", 
                     "type": "register"
                 }
@@ -2155,7 +2155,7 @@
             "instruction": "ORA", 
             "operands": [
                 {
-                    "description": "8-bit accumulator B", 
+                    "description": "8-bit accumulator A", 
                     "name": "A", 
                     "type": "register"
                 }
@@ -2235,7 +2235,7 @@
             "instruction": "CMP", 
             "operands": [
                 {
-                    "description": "8-bit accumulator B", 
+                    "description": "8-bit accumulator A", 
                     "name": "A", 
                     "type": "register"
                 }
@@ -2259,8 +2259,8 @@
             "operands": [
                 {
                     "bytes": 2, 
-                    "description": "16-bit immediate value", 
-                    "name": "d16", 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
                     "type": "immediate"
                 }
             ]
@@ -2281,8 +2281,8 @@
             "operands": [
                 {
                     "bytes": 2, 
-                    "description": "16-bit immediate value", 
-                    "name": "d16", 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
                     "type": "immediate"
                 }
             ]
@@ -2312,6 +2312,7 @@
             "instruction": "RST", 
             "operands": [
                 {
+                    "description": "Restart subroutine 0 at address 0x0000", 
                     "name": "0", 
                     "type": "inherent"
                 }
@@ -2328,8 +2329,8 @@
             "operands": [
                 {
                     "bytes": 2, 
-                    "description": "16-bit immediate value", 
-                    "name": "d16", 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
                     "type": "immediate"
                 }
             ]
@@ -2355,8 +2356,8 @@
             "operands": [
                 {
                     "bytes": 2, 
-                    "description": "16-bit immediate value", 
-                    "name": "d16", 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
                     "type": "immediate"
                 }
             ]
@@ -2387,6 +2388,7 @@
             "instruction": "RST", 
             "operands": [
                 {
+                    "description": "Restart subroutine 1 at address 0x0008", 
                     "name": "1", 
                     "type": "inherent"
                 }
@@ -2410,8 +2412,8 @@
             "operands": [
                 {
                     "bytes": 2, 
-                    "description": "16-bit immediate value", 
-                    "name": "d16", 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
                     "type": "immediate"
                 }
             ]
@@ -2432,8 +2434,8 @@
             "operands": [
                 {
                     "bytes": 2, 
-                    "description": "16-bit immediate value", 
-                    "name": "d16", 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
                     "type": "immediate"
                 }
             ]
@@ -2463,6 +2465,7 @@
             "instruction": "RST", 
             "operands": [
                 {
+                    "description": "Restart subroutine 2 at address 0x0010", 
                     "name": "2", 
                     "type": "inherent"
                 }
@@ -2484,8 +2487,8 @@
             "operands": [
                 {
                     "bytes": 2, 
-                    "description": "16-bit immediate value", 
-                    "name": "d16", 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
                     "type": "immediate"
                 }
             ]
@@ -2506,8 +2509,8 @@
             "operands": [
                 {
                     "bytes": 2, 
-                    "description": "16-bit immediate value", 
-                    "name": "d16", 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
                     "type": "immediate"
                 }
             ]
@@ -2551,6 +2554,7 @@
             "instruction": "RST", 
             "operands": [
                 {
+                    "description": "Restart subroutine 3 at address 0x0018", 
                     "name": "3", 
                     "type": "inherent"
                 }
@@ -2574,8 +2578,8 @@
             "operands": [
                 {
                     "bytes": 2, 
-                    "description": "16-bit immediate value", 
-                    "name": "d16", 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
                     "type": "immediate"
                 }
             ]
@@ -2588,8 +2592,8 @@
             "operands": [
                 {
                     "bytes": 2, 
-                    "description": "16-bit immediate value", 
-                    "name": "d16", 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
                     "type": "immediate"
                 }
             ]
@@ -2619,6 +2623,7 @@
             "instruction": "RST", 
             "operands": [
                 {
+                    "description": "Restart subroutine 4 at address 0x0020", 
                     "name": "4", 
                     "type": "inherent"
                 }
@@ -2635,8 +2640,8 @@
             "operands": [
                 {
                     "bytes": 2, 
-                    "description": "16-bit immediate value", 
-                    "name": "d16", 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
                     "type": "immediate"
                 }
             ]
@@ -2649,8 +2654,8 @@
             "operands": [
                 {
                     "bytes": 2, 
-                    "description": "16-bit immediate value", 
-                    "name": "d16", 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
                     "type": "immediate"
                 }
             ]
@@ -2686,6 +2691,7 @@
             "instruction": "RST", 
             "operands": [
                 {
+                    "description": "Restart subroutine 5 at address 0x0028", 
                     "name": "5", 
                     "type": "inherent"
                 }
@@ -2709,8 +2715,8 @@
             "operands": [
                 {
                     "bytes": 2, 
-                    "description": "16-bit immediate value", 
-                    "name": "d16", 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
                     "type": "immediate"
                 }
             ]
@@ -2723,8 +2729,8 @@
             "operands": [
                 {
                     "bytes": 2, 
-                    "description": "16-bit immediate value", 
-                    "name": "d16", 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
                     "type": "immediate"
                 }
             ]
@@ -2754,6 +2760,7 @@
             "instruction": "RST", 
             "operands": [
                 {
+                    "description": "Restart subroutine 6 at address 0x0030", 
                     "name": "6", 
                     "type": "inherent"
                 }
@@ -2770,8 +2777,8 @@
             "operands": [
                 {
                     "bytes": 2, 
-                    "description": "16-bit immediate value", 
-                    "name": "d16", 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
                     "type": "immediate"
                 }
             ]
@@ -2784,8 +2791,8 @@
             "operands": [
                 {
                     "bytes": 2, 
-                    "description": "16-bit immediate value", 
-                    "name": "d16", 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
                     "type": "immediate"
                 }
             ]
