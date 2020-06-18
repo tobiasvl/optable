@@ -4,21 +4,19 @@
 		<span class="legend"><span class="legend-color legend-jump"></span> Jumps / calls</span>
 		<span class="legend"><span class="legend-color legend-load"></span> 8-bit load instructions</span>
 		<span class="legend"><span class="legend-color legend-load16"></span> 16-bit load instructions</span>
-		<span class="legend"><span class="legend-color legend-arithmetic"></span> 8-bit arithmetic / logical instructions</span>
+		<span class="legend"><span class="legend-color legend-arithmetic"></span> 8-bit arithmetic instructions</span>
+		<span class="legend"><span class="legend-color legend-logic"></span> 8-bit logical instructions</span>
 		<span class="legend"><span class="legend-color legend-arithmetic16"></span> 16-bit arithmetic / logical instructions</span>
-		<span class="legend"><span class="legend-color legend-bit"></span> 8-bit shift, rotate and bit instructions</span>
 	</div>
 
 	<div id="how-to-read" class="col-md-12 col-lg-6 mb-3">
 		<table id="demo-table" class="mb-3">
 			<tbody>
-				<tr><td></td> <td></td> <td><span>INS reg</span><br></td> <td>←</td> <td>Instruction mnemonic</td></tr>
-				<tr><td>Length in bytes</td> <td>→</td> <td><span>2&nbsp;&nbsp;8</span><br></td> <td>←</td> <td>Duration in T-states<sup>*</sup></td></tr>
-				<tr><td></td> <td></td><td><span>Z N H C</span></td> <td>←</td> <td>Flags affected</td></tr>
+				<tr><td></td> <td></td> <td><span>INS op</span><br></td> <td>←</td> <td>Instruction mnemonic</td></tr>
+				<tr><td>Length in bytes</td> <td>→</td> <td><span>2&nbsp;&nbsp;8</span><br></td> <td>←</td> <td>Duration in cycles</td></tr>
+				<tr><td></td> <td></td><td><span>SZKAPVC</span></td> <td>←</td> <td>Flags affected</td></tr>
 			</tbody>
 		</table>
-
-		<p><sup>*)</sup> Often instruction durations are given in “M-cycles” (machine cycles) instead of “T-states” (system clock ticks) because each instruction takes a multiple of four T-states to complete, thus a <kbd>NOP</kbd> takes one M-cycle or four T-states to complete.</p>
 	</div>
 </div>
 
@@ -26,17 +24,44 @@
 	<div class="col-md-12 col-lg-6">
 		<div id="flags" class="card mb-3{% if page.theme == "dark" %} bg-secondary{% endif %}">
 			<div class="card-body">
-				<p>
-					<kbd>Z</kbd> - Zero Flag<br>
-					<kbd>N</kbd> - Subtract Flag<br>
-					<kbd>H</kbd> - Half Carry Flag<br>
-					<kbd>C</kbd> - Carry Flag<br>
-					<kbd>0</kbd> - The flag is reset<br>
-					<kbd>1</kbd> - The flag is set<br>
-					<kbd>-</kbd> - The flag is left untouched
-				</p>
+                <p>Flag registers and their bit positions in PSW:</p>
+                <table border="2px" style="border-collapse: collapse">
+                    <tr>
+                        <th>7</th>
+                        <th>6</th>
+                        <th>5</th>
+                        <th>4</th>
+                        <th>3</th>
+                        <th>2</th>
+                        <th>1</th>
+                        <th>0</th>
+                    </tr>
+                    <tr>
+                        <td>S</td>
+                        <td>Z</td>
+                        <td>K</td>
+                        <td>A</td>
+                        <td>-</td>
+                        <td>P</td>
+                        <td>V</td>
+                        <td>C</td>
+                    </tr>
+                </table>
 
-				<p>If an operation has the flags defined as <kbd>Z</kbd>, <kbd>N</kbd>, <kbd>H</kbd>, or <kbd>C</kbd>, the corresponding flags are set as the operation performed dictates.</p>
+                <ol start="0">
+                    <li><strong>C</strong>: Carry flag; set to carry out of bit 7 in result</li>
+                    <li><strong>V</strong>: Undocumented signed overflow flag<sup><a href="http://www.righto.com/2013/02/looking-at-silicon-to-understanding.html">*</a></sup> (8085 only, on 8080 bit is always 1 in PSW)</li>
+                    <li><strong>P</strong>: Parity flag; set if the number of bits in the result is even, and reset if it's odd</li>
+                    <li>No flag, bit is always 0 in PSW</li>
+                    <li><strong>A</strong>: Auxiliary Carry (A<sub>C</sub>) flag; set to carry out of bit 3 in result</li>
+                    <li><strong>K</strong>: Undocumented signed Underflow Indicator (UI/X5) and comparison flag<sup><a href="http://www.righto.com/2013/02/looking-at-silicon-to-understanding.html">*</a></sup> (8085 only, on 8080 bit is always 0 in PSW)</li>
+                    <li><strong>Z</strong>: Zero flag; set if the result was zero, reset otherwise</li>
+                    <li><strong>S</strong>: Sign flag; set to bit 7 of result</li>
+                </ol>
+
+                <p>Flags affected are always shown in the PSW bit order: SZKAPVC. If a flag is marked by "0" it means it is reset after the instruction. If it is marked by "1" it is set. If it is marked by "-" it is not changed. If it is marked by its letter, the corresponding flag is affected by the instruction.</p>
+
+                <p><span style="color: blue">Blue flags</span> are only affected on 8085. For some instructions that affect flags differently on 8080 and 8085, there are two flag status lines.</p>
 			</div>
 		</div>
 	</div>
@@ -59,20 +84,6 @@
 				<p><kbd>a8</kbd> means 8-bit unsigned data, which is added to $FF00 in certain instructions (replacement for missing IN and OUT instructions)</p>
 				<p><kbd>a16</kbd> means 16-bit address</p>
 				<p><kbd>r8</kbd> means 8-bit signed data</p>
-			</div>
-		</div>
-
-		<div id="alternatives" class="card mb-3{% if page.theme == "dark" %} bg-secondary{% endif %}">
-			<div class="card-body">
-				<p><kbd>LD A, (C)</kbd> has the alternative mnemonic <kbd>LD A, ($FF00+C)</kbd></p>
-				<p><kbd>LD C, (A)</kbd> has the alternative mnemonic <kbd>LD ($FF00+C), A</kbd></p>
-				<p><kbd>LDH A, (a8)</kbd> has the alternative mnemonic <kbd>LD A, ($FF00+a8)</kbd></p>
-				<p><kbd>LDH (a8), A</kbd> has the alternative mnemonic <kbd>LD ($FF00+a8), A</kbd></p>
-				<p><kbd>LD A, (HL+)</kbd> has the alternative mnemonic <kbd>LD A, (HLI)</kbd> or <kbd>LDI A, (HL)</kbd></p>
-				<p><kbd>LD (HL+), A</kbd> has the alternative mnemonic <kbd>LD (HLI), A</kbd> or <kbd>LDI (HL), A</kbd></p>
-				<p><kbd>LD A, (HL-)</kbd> has the alternative mnemonic <kbd>LD A, (HLD)</kbd> or <kbd>LDD A, (HL)</kbd></p>
-				<p><kbd>LD (HL-), A</kbd> has the alternative mnemonic <kbd>LD (HLD), A</kbd> or <kbd>LDD (HL), A</kbd></p>
-				<kbd>LD HL, SP+r8</kbd> has the alternative mnemonic <kbd>LDHL SP, r8</kbd>
 			</div>
 		</div>
 	</div>

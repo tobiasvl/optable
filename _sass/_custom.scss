@@ -96,7 +96,7 @@ kbd {
 .legend-load16 { background-color: map-get($op-load16, default); }
 .legend-arithmetic { background-color: map-get($op-arithmetic, default); }
 .legend-arithmetic16 { background-color: map-get($op-arithmetic16, default); }
-.legend-bit { background-color: map-get($op-bit, default); }
+.legend-logic { background-color: map-get($op-logic, default); }
 
 :target.card {
 	border-left-color: #f0ad4e;
@@ -110,7 +110,7 @@ kbd {
 	.legend-load16 { background-color: map-get($op-load16, dark); }
 	.legend-arithmetic { background-color: map-get($op-arithmetic, dark); }
 	.legend-arithmetic16 { background-color: map-get($op-arithmetic16, dark); }
-	.legend-bit { background-color: map-get($op-bit, dark); }
+	.legend-logic { background-color: map-get($op-logic, dark); }
 }
 
 .theme-classic {
@@ -120,7 +120,7 @@ kbd {
 	.legend-load16 { background-color: map-get($op-load16, classic); }
 	.legend-arithmetic { background-color: map-get($op-arithmetic, classic); }
 	.legend-arithmetic16 { background-color: map-get($op-arithmetic16, classic); }
-	.legend-bit { background-color: map-get($op-bit, classic); }
+	.legend-logic { background-color: map-get($op-logic, classic); }
 }
 
 @mixin opcode($op, $variant) {
@@ -193,23 +193,8 @@ kbd {
 		@include opcode($op-arithmetic, $variant);
 	}
 
-	.op-rlca,
-	.op-rrca,
-	.op-rla,
-	.op-rra,
-	/* Prefixed bit manipulation ops */
-	.op-rlc,
-	.op-rrc,
-	.op-rl,
-	.op-rr,
-	.op-sla,
-	.op-sra,
-	.op-swap,
-	.op-srl,
-	.op-bit,
-	.op-res,
-	.op-set {
-		@include opcode($op-bit, $variant);
+	.op-group-logic {
+		@include opcode($op-logic, $variant);
 	}
 
 	/* 16bit ops */

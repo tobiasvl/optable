@@ -186,6 +186,7 @@
     },
     "DAA": {
         "description": "Decimal Adjust Accumulator",
+        "group": "logic",
         "flags": {
             "Z": "Z",
             "S": "S",
@@ -294,11 +295,13 @@
         "cycles": 10
     },
     "CMP": {
-        "description": "Load register pair with immediate value",
+        "description": "Compare A with register or memory value",
+        "group": "logic",
         "cycles": 10
     },
     "CPI": {
-        "description": "Load register pair with immediate value",
+        "description": "Compare A with immediate value",
+        "group": "logic",
         "cycles": 10
     },
     "RLC": {
@@ -307,10 +310,12 @@
             "V": "V",
             "C": "C"
         },
+        "group": "logic",
         "cycles": 10
     },
     "RRC": {
         "description": "Rotate A Right through Carry",
+        "group": "logic",
         "flags": {
             "V": "0",
             "C": "C"
@@ -319,6 +324,7 @@
     },
     "RAL": {
         "description": "Rotate A Left",
+        "group": "logic",
         "flags": {
             "V": "V",
             "C": "C"
@@ -330,14 +336,17 @@
         "flags": {
             "V": "0"
         },
+        "group": "logic",
         "cycles": 10
     },
     "CMA": {
         "description": "Complement A",
+        "group": "logic",
         "cycles": 10
     },
     "CMC": {
         "description": "Complement Carry flag",
+        "group": "logic",
         "flags": {
             "C": "C̅"
         },
@@ -345,6 +354,7 @@
     },
     "STC": {
         "description": "Set Carry flag",
+        "group": "logic",
         "cycles": 10,
         "flags": {
             "C": "1"
@@ -543,10 +553,6 @@
     "OUT": {
         "description": "Output A to port",
         "group": "control",
-        "cycles": 10
-    },
-    "CMP": {
-        "description": "Compare A with operand",
         "cycles": 10
     },
     "ARHL": {
