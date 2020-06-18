@@ -305,7 +305,7 @@
         "cycles": 10
     },
     "RLC": {
-        "description": "Rotate A Left through Carry",
+        "description": "Rotate A Left (Circular)",
         "flags": {
             "V": "V",
             "C": "C"
@@ -314,7 +314,7 @@
         "cycles": 10
     },
     "RRC": {
-        "description": "Rotate A Right through Carry",
+        "description": "Rotate A Right (Circular)",
         "group": "logic",
         "flags": {
             "V": "0",
@@ -323,7 +323,7 @@
         "cycles": 10
     },
     "RAL": {
-        "description": "Rotate A Left",
+        "description": "Rotate A Left through carry",
         "group": "logic",
         "flags": {
             "V": "V",
@@ -332,7 +332,7 @@
         "cycles": 10
     },
     "RAR": {
-        "description": "Rotate A Right",
+        "description": "Rotate A Right through carry",
         "flags": {
             "V": "0"
         },
