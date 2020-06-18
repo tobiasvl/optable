@@ -6,42 +6,52 @@
     },
     "MOV": {
         "description": "Move value right to left",
+        "group": "transfer",
         "cycles": 5
     },
     "MVI": {
         "description": "Load with immediate value",
+        "group": "transfer",
         "cycles": 7
     },
     "LXI": {
         "description": "Load with immediate value",
+        "group": "transfer",
         "cycles": 10
     },
     "LDA": {
         "description": "Load A from memory",
+        "group": "transfer",
         "cycles": 10
     },
     "STA": {
         "description": "Store A in memory",
+        "group": "transfer",
         "cycles": 10
     },
     "LHLD": {
         "description": "Load HL from immediate address",
+        "group": "transfer",
         "cycles": 10
     },
     "SHLD": {
         "description": "Store HL at immediate address",
+        "group": "transfer",
         "cycles": 10
     },
     "LDAX": {
         "description": "Load Accumulator",
+        "group": "transfer",
         "cycles": 10
     },
     "STAX": {
         "description": "Store Accumulator",
+        "group": "transfer",
         "cycles": 10
     },
     "XCHG": {
         "description": "Exchange DE and HL",
+        "group": "transfer",
         "cycles": 10
     },
     "ADD": {
@@ -140,6 +150,7 @@
     },
     "INR": {
         "description": "Increment Register or Memory",
+        "group": "arithmetic",
         "flags": {
             "S": "S",
             "Z": "Z",
@@ -152,6 +163,7 @@
     },
     "DCR": {
         "description": "Decrement Register or Memory",
+        "group": "arithmetic",
         "flags": {
             "S": "S",
             "Z": "Z",
@@ -164,6 +176,7 @@
     },
     "INX": {
         "description": "Increment register pair",
+        "group": "arithmetic",
         "flags": {
             "K": "K"
         },
@@ -171,6 +184,7 @@
     },
     "DCX": {
         "description": "Decrement register pair",
+        "group": "arithmetic",
         "flags": {
             "K": "K"
         },
@@ -178,6 +192,7 @@
     },
     "DAD": {
         "description": "Double Add; register pair is added to HL",
+        "group": "arithmetic",
         "flags": {
             "V": "V",
             "C": "C"
@@ -507,10 +522,12 @@
     },
     "PUSH": {
         "description": "Push register pair to stack",
+        "group": "control",
         "cycles": 10
     },
     "POP": {
         "description": "Pop from stack into register pair",
+        "group": "control",
         "flags": {
             "S": "S",
             "Z": "Z",
@@ -524,10 +541,12 @@
     },
     "XTHL": {
         "description": "Exchange SP and HL",
+        "group": "control",
         "cycles": 10
     },
     "SPHL": {
         "description": "Load SP from HL",
+        "group": "control",
         "cycles": 10
     },
     "EI": {
@@ -557,6 +576,7 @@
     },
     "ARHL": {
         "description": "Arithmetic Right Shift HL",
+        "group": "logic",
         "flags": {
             "V": 0,
             "C": "C"
@@ -564,11 +584,13 @@
         "cycles": 10
     },
     "DSUB": {
-        "description": "Arithmetic Right Shift HL",
+        "description": "Double subtract BC from HL",
+        "group": "arithmetic",
         "cycles": 10
     },
     "RDEL": {
         "description": "Shift DE Left into carry",
+        "group": "logic",
         "flags": {
             "V": "V",
             "C": "C"
@@ -577,10 +599,12 @@
     },
     "LDHI": {
         "description": "Load DE with HL plus immediate value",
+        "group": "transfer",
         "cycles": 10
     },
     "LDSI": {
         "description": "Load DE with SP plus immediate value",
+        "group": "transfer",
         "cycles": 10
     },
     "RSTV": {
@@ -590,6 +614,7 @@
     },
     "SHLX": {
         "description": "Store HL in memory indexed by DE",
+        "group": "transfer",
         "cycles": 10
     },
     "JNK": {
@@ -604,6 +629,7 @@
     },
     "LHLX": {
         "description": "Load HL from memory indexed by DE",
+        "group": "transfer",
         "cycles": 10
     }
 }

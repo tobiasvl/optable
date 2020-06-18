@@ -15,9 +15,9 @@ $container-max-widths: (
 
 $op-illegal:      ( default: #d6d8db, classic: #bfbfbf, dark: #212529 );
 $op-control:      ( default: #f5c6cb, classic: #ff99cc, dark: #7a171b );
-$op-jump:         ( default: #ffdeba, classic: #ffcc99, dark: #a85e0d );
+$op-flow:         ( default: #ffdeba, classic: #ffcc99, dark: #a85e0d );
 $op-load:         ( default: #c1b8ff, classic: #ccccff, dark: #282877 );
-$op-arithmetic:   ( default: #ffeeba, classic: #ffff99, dark: #95730e );
+$op-load16:       ( default: #ffeeba, classic: #ffff99, dark: #95730e );
 $op-arithmetic16: ( default: #f2c2b5, classic: #ffcccc, dark: #9f4021 );
 $op-logic:        ( default: #d8f5f9, classic: #80ffff, dark: #137d8c );
-$op-load16:       ( default: #c3e6cb, classic: #ccffcc, dark: #035603);
+$op-arithmetic:   ( default: #c3e6cb, classic: #ccffcc, dark: #035603);

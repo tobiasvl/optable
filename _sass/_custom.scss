@@ -90,8 +90,9 @@ kbd {
 	vertical-align: middle;
 }
 
+.legend-illegal { background-color: map-get($op-illegal, default); }
 .legend-control { background-color: map-get($op-control, default); }
-.legend-jump { background-color: map-get($op-jump, default); }
+.legend-flow { background-color: map-get($op-flow, default); }
 .legend-load { background-color: map-get($op-load, default); }
 .legend-load16 { background-color: map-get($op-load16, default); }
 .legend-arithmetic { background-color: map-get($op-arithmetic, default); }
@@ -104,8 +105,9 @@ kbd {
 }
 
 .theme-dark {
+    .legend-illegal { background-color: map-get($op-illegal, default); }
 	.legend-control { background-color: map-get($op-control, dark); }
-	.legend-jump { background-color: map-get($op-jump, dark); }
+	.legend-flow { background-color: map-get($op-flow, dark); }
 	.legend-load { background-color: map-get($op-load, dark); }
 	.legend-load16 { background-color: map-get($op-load16, dark); }
 	.legend-arithmetic { background-color: map-get($op-arithmetic, dark); }
@@ -114,8 +116,9 @@ kbd {
 }
 
 .theme-classic {
+    .legend-illegal { background-color: map-get($op-illegal, default); }
 	.legend-control { background-color: map-get($op-control, classic); }
-	.legend-jump { background-color: map-get($op-jump, classic); }
+	.legend-flow { background-color: map-get($op-flow, classic); }
 	.legend-load { background-color: map-get($op-load, classic); }
 	.legend-load16 { background-color: map-get($op-load16, classic); }
 	.legend-arithmetic { background-color: map-get($op-arithmetic, classic); }
@@ -180,12 +183,11 @@ kbd {
 
 	/* Jumps / calls */
 	.op-group-flow {
-		@include opcode($op-jump, $variant);
+		@include opcode($op-flow, $variant);
 	}
 
 	/* 8bit ops */
-	.op-ld,
-	.op-ldh {
+	.op-group-transfer {
 		@include opcode($op-load, $variant);
 	}
 
@@ -198,6 +200,7 @@ kbd {
 	}
 
 	/* 16bit ops */
+/*
 	.op-ld.is16bit,
 	.op-push,
 	.op-pop {
@@ -209,6 +212,7 @@ kbd {
 	.op-dec.is16bit {
 		@include opcode($op-arithmetic16, $variant);
 	}
+*/
 }
 
 .opcode-table {
