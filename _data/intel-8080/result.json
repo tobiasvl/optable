@@ -2831,6 +2831,16 @@
                     "type": "immediate"
                 }
             ]
+        }, 
+        "0xFF": {
+            "instruction": "RST", 
+            "operands": [
+                {
+                    "description": "Restart subroutine 7 at address 0x0038", 
+                    "name": "7", 
+                    "type": "inherent"
+                }
+            ]
         }
     }
 }
