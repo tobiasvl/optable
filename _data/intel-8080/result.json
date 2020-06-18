@@ -744,7 +744,7 @@
                 "states": 4
             }, 
             "variant": {
-                "instruction": "RIM", 
+                "instruction": "SIM", 
                 "timing": {
                     "cycles": 1, 
                     "states": 4
