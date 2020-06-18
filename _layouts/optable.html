@@ -22,8 +22,6 @@ layout: default
 				<a class="nav-link" href="{{ collection_url | append: page.theme | replace: "default", "" | append: "octal" }}">Octal Display</a>
 			{% endif %}
 		</li>
-
-		{% include awesome.html %}
 	{% endcapture %}
 	{% include nav.html content=nav %}
 </header>

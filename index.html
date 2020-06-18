@@ -7,21 +7,19 @@ layout: default
 		<li class="nav-item">
 			<a class="nav-link" href="{{ "/optables" | relative_url }}">Opcode Tables</a>
 		</li>
-
-		{% include awesome.html %}
 	{% endcapture%}
 	{% include nav.html content=nav %}
 </header>
 
 {% capture _content%}
 <div class="jumbotron mt-4">
-	<h1 class="display-4">Hello, there!</h1>
+	<h1 class="display-4">8-bit CPU family opcode tables</h1>
 	<p class="lead">
-		This page is built by the community but not yet finished.<br>
-		It is meant to become your go-to reference to lookup Game Boy instruction set related information.
-		<hr class="my-4">
-		Why don’t you take a look at our <a href="{{ "/optables" | relative_url }}">Opcode Tables</a> first? :)
+        This website contains (reverse) opcode tables/matrices for some 8-bit CPU families I'm interested in.
 	</p>
+    <p>
+        The tables combine opcodes for binary compatible CPUs within each family, for a comprehensive (if a bit crowded) overview over the differences.
+    </p>
 </div>
 {% endcapture%}
 

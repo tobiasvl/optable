@@ -13,9 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Game Boy CPU (SM83) instruction set
+title: 8-bit CPU family opcode tables
 description: >-
-  Instruction set of the Nintendo Game Boy, Game Boy Pocket, Game Boy Color and Super Game Boy systems.
+  Opcode tables for 8-bit CPU families
 baseurl: "/opcode-tables" # the subpath of your site, e.g. /blog
 url: "http://tobiasvl.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github: "https://github.com/tobiasvl/opcode-tables"
