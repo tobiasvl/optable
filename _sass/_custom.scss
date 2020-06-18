@@ -53,27 +53,47 @@ kbd {
 	border-collapse: collapse;
 
 	> tbody > tr > td:nth-child(3) {
+        font-weight: bold;
 		white-space: nowrap;
 		text-align: center;
 		background-color: #fff;
 		color: #000;
 		border-width: 1px;
+        font-family: $font-family-monospace;
 	}
 
 	// Top
 	> tbody > tr:nth-child(1) > td:nth-child(3) {
+        font-weight: bold;
 		border-style: solid solid none solid;
 		padding: .2rem .5rem 0 .5rem;
 	}
 
 	// Middle
 	> tbody > tr:nth-child(2) > td:nth-child(3) {
+        font-weight: bold;
+		border-style: none solid none solid;
+		padding: 0 .5rem;
+	}
+	> tbody > tr:nth-child(3) > td:nth-child(3) {
+        font-weight: bold;
+		border-style: none solid none solid;
+		padding: 0 .5rem;
+	}
+	> tbody > tr:nth-child(4) > td:nth-child(3) {
+        font-weight: bold;
+		border-style: none solid none solid;
+		padding: 0 .5rem;
+	}
+	> tbody > tr:nth-child(5) > td:nth-child(3) {
+        font-weight: bold;
 		border-style: none solid none solid;
 		padding: 0 .5rem;
 	}
 
 	// Bottom
-	> tbody > tr:nth-child(3) > td:nth-child(3) {
+	> tbody > tr:nth-child(6) > td:nth-child(3) {
+        font-weight: bold;
 		border-style: none solid solid solid;
 		padding: 0 .5rem .2rem .5rem;
 	}

@@ -14,8 +14,11 @@
 		<table id="demo-table" class="mb-3">
 			<tbody>
 				<tr><td></td> <td></td> <td><span>INS op</span><br></td> <td>←</td> <td>Instruction mnemonic</td></tr>
-				<tr><td>Length in bytes</td> <td>→</td> <td><span>2&nbsp;&nbsp;8</span><br></td> <td>←</td> <td>Duration in cycles</td></tr>
-				<tr><td></td> <td></td><td><span>SZKAPVC</span></td> <td>←</td> <td>Flags affected</td></tr>
+				<tr><td>Length in bytes</td> <td>→</td> <td><span>2</span><br></td> <td></td> <td></td></tr>
+				<tr><td>States (8080)</td> <td>→</td> <td><span>2&nbsp;&nbsp;7</span><br></td> <td>←</td> <td>Cycles (8080)</td></tr>
+				<tr><td>States (8085, if different)</td> <td>→</td> <td><span class="variant">2&nbsp;&nbsp;7</span><br></td> <td>←</td> <td>Cycles (8085, if different)</td></tr>
+				<tr><td></td> <td></td><td><span>SZ<span class="variant">K</span>AP<span class="variant">V</span>C</span></td> <td>←</td> <td>Flags affected</td></tr>
+				<tr><td></td> <td></td><td><span class="variant">SZKAPVC</span></td> <td>←</td> <td>Flags affected (8085, if different)</td></tr>
 			</tbody>
 		</table>
 	</div>

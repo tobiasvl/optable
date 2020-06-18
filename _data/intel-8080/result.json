@@ -1,7 +1,11 @@
 {
     "unprefixed": {
         "0x00": {
-            "instruction": "NOP"
+            "instruction": "NOP", 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x01": {
             "instruction": "LXI", 
@@ -17,7 +21,11 @@
                     "name": "d16", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 10
+            }
         }, 
         "0x02": {
             "instruction": "STAX", 
@@ -27,7 +35,11 @@
                     "name": "B", 
                     "type": "register pair"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0x03": {
             "instruction": "INX", 
@@ -37,7 +49,15 @@
                     "name": "B", 
                     "type": "register pair"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 6
+                }
+            }
         }, 
         "0x04": {
             "instruction": "INR", 
@@ -47,7 +67,15 @@
                     "name": "B", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x05": {
             "instruction": "DCR", 
@@ -57,7 +85,15 @@
                     "name": "B", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x06": {
             "instruction": "MVI", 
@@ -73,10 +109,18 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0x07": {
-            "instruction": "RLC"
+            "instruction": "RLC", 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x08": {
             "illegal": true, 
@@ -94,7 +138,11 @@
                     "name": "B", 
                     "type": "register pair"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 10
+            }
         }, 
         "0x0A": {
             "instruction": "LDAX", 
@@ -104,7 +152,11 @@
                     "name": "B", 
                     "type": "register pair"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0x0B": {
             "instruction": "DCX", 
@@ -114,7 +166,15 @@
                     "name": "B", 
                     "type": "register pair"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 6
+                }
+            }
         }, 
         "0x0C": {
             "instruction": "INR", 
@@ -124,7 +184,15 @@
                     "name": "C", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x0D": {
             "instruction": "DCR", 
@@ -134,7 +202,15 @@
                     "name": "C", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x0E": {
             "instruction": "MVI", 
@@ -150,10 +226,18 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0x0F": {
-            "instruction": "RRC"
+            "instruction": "RRC", 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x10": {
             "illegal": true, 
@@ -177,7 +261,11 @@
                     "name": "d16", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 10
+            }
         }, 
         "0x12": {
             "instruction": "STAX", 
@@ -187,7 +275,11 @@
                     "name": "D", 
                     "type": "register pair"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0x13": {
             "instruction": "INX", 
@@ -197,7 +289,15 @@
                     "name": "D", 
                     "type": "register pair"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 6
+                }
+            }
         }, 
         "0x14": {
             "instruction": "INR", 
@@ -207,7 +307,15 @@
                     "name": "D", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x15": {
             "instruction": "DCR", 
@@ -217,7 +325,15 @@
                     "name": "D", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x16": {
             "instruction": "MVI", 
@@ -233,10 +349,18 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0x17": {
-            "instruction": "RAL"
+            "instruction": "RAL", 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x18": {
             "illegal": true, 
@@ -254,7 +378,11 @@
                     "name": "D", 
                     "type": "register pair"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 10
+            }
         }, 
         "0x1A": {
             "instruction": "LDAX", 
@@ -264,7 +392,11 @@
                     "name": "D", 
                     "type": "register pair"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0x1B": {
             "instruction": "DCX", 
@@ -274,7 +406,15 @@
                     "name": "D", 
                     "type": "register pair"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 6
+                }
+            }
         }, 
         "0x1C": {
             "instruction": "INR", 
@@ -284,7 +424,15 @@
                     "name": "E", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x1D": {
             "instruction": "DCR", 
@@ -294,7 +442,15 @@
                     "name": "E", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x1E": {
             "instruction": "MVI", 
@@ -310,16 +466,32 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0x1F": {
-            "instruction": "RAR"
+            "instruction": "RAR", 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x20": {
             "illegal": true, 
             "instruction": "NOP", 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }, 
             "variant": {
-                "instruction": "RIM"
+                "instruction": "RIM", 
+                "timing": {
+                    "cycles": 3, 
+                    "states": 10
+                }
             }
         }, 
         "0x21": {
@@ -336,7 +508,11 @@
                     "name": "d16", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 10
+            }
         }, 
         "0x22": {
             "instruction": "SHLD", 
@@ -347,7 +523,11 @@
                     "name": "d16", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 5, 
+                "states": 16
+            }
         }, 
         "0x23": {
             "instruction": "INX", 
@@ -357,7 +537,15 @@
                     "name": "H", 
                     "type": "register pair"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 6
+                }
+            }
         }, 
         "0x24": {
             "instruction": "INR", 
@@ -367,7 +555,15 @@
                     "name": "H", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x25": {
             "instruction": "DCR", 
@@ -377,7 +573,15 @@
                     "name": "H", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x26": {
             "instruction": "MVI", 
@@ -393,10 +597,18 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0x27": {
-            "instruction": "DAA"
+            "instruction": "DAA", 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x28": {
             "illegal": true, 
@@ -422,7 +634,11 @@
                     "name": "H", 
                     "type": "register pair"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 10
+            }
         }, 
         "0x2A": {
             "instruction": "LHLD", 
@@ -433,7 +649,11 @@
                     "name": "d16", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 5, 
+                "states": 16
+            }
         }, 
         "0x2B": {
             "instruction": "DCX", 
@@ -443,7 +663,15 @@
                     "name": "H", 
                     "type": "register pair"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 6
+                }
+            }
         }, 
         "0x2C": {
             "instruction": "INR", 
@@ -453,7 +681,15 @@
                     "name": "L", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x2D": {
             "instruction": "DCR", 
@@ -463,7 +699,15 @@
                     "name": "L", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x2E": {
             "instruction": "MVI", 
@@ -479,16 +723,32 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0x2F": {
-            "instruction": "CMA"
+            "instruction": "CMA", 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x30": {
             "illegal": true, 
             "instruction": "NOP", 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }, 
             "variant": {
-                "instruction": "SIM"
+                "instruction": "RIM", 
+                "timing": {
+                    "cycles": 1, 
+                    "states": 4
+                }
             }
         }, 
         "0x31": {
@@ -505,7 +765,11 @@
                     "name": "d16", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 10
+            }
         }, 
         "0x32": {
             "instruction": "STA", 
@@ -516,7 +780,11 @@
                     "name": "d16", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4, 
+                "states": 13
+            }
         }, 
         "0x33": {
             "instruction": "INX", 
@@ -526,7 +794,15 @@
                     "name": "SP", 
                     "type": "register pair"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 6
+                }
+            }
         }, 
         "0x34": {
             "instruction": "INR", 
@@ -536,7 +812,11 @@
                     "name": "M", 
                     "type": "memory"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 10
+            }
         }, 
         "0x35": {
             "instruction": "DCR", 
@@ -546,7 +826,11 @@
                     "name": "M", 
                     "type": "memory"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 10
+            }
         }, 
         "0x36": {
             "instruction": "MVI", 
@@ -562,10 +846,18 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 10
+            }
         }, 
         "0x37": {
-            "instruction": "STC"
+            "instruction": "STC", 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x38": {
             "illegal": true, 
@@ -591,7 +883,11 @@
                     "name": "SP", 
                     "type": "register pair"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 10
+            }
         }, 
         "0x3A": {
             "instruction": "LDA", 
@@ -602,7 +898,11 @@
                     "name": "d16", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4, 
+                "states": 13
+            }
         }, 
         "0x3B": {
             "instruction": "DCX", 
@@ -612,7 +912,15 @@
                     "name": "SP", 
                     "type": "register pair"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 6
+                }
+            }
         }, 
         "0x3C": {
             "instruction": "INR", 
@@ -622,7 +930,15 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x3D": {
             "instruction": "DCR", 
@@ -632,7 +948,15 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x3E": {
             "instruction": "MVI", 
@@ -648,10 +972,18 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0x3F": {
-            "instruction": "CMC"
+            "instruction": "CMC", 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x40": {
             "instruction": "MOV", 
@@ -666,7 +998,15 @@
                     "name": "B", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x41": {
             "instruction": "MOV", 
@@ -681,7 +1021,15 @@
                     "name": "C", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x42": {
             "instruction": "MOV", 
@@ -696,7 +1044,15 @@
                     "name": "D", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x43": {
             "instruction": "MOV", 
@@ -711,7 +1067,15 @@
                     "name": "E", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x44": {
             "instruction": "MOV", 
@@ -726,7 +1090,15 @@
                     "name": "H", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x45": {
             "instruction": "MOV", 
@@ -741,7 +1113,15 @@
                     "name": "L", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x46": {
             "instruction": "MOV", 
@@ -756,7 +1136,11 @@
                     "name": "M", 
                     "type": "memory"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0x47": {
             "instruction": "MOV", 
@@ -771,7 +1155,15 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x48": {
             "instruction": "MOV", 
@@ -786,7 +1178,15 @@
                     "name": "B", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x49": {
             "instruction": "MOV", 
@@ -801,7 +1201,15 @@
                     "name": "C", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x4A": {
             "instruction": "MOV", 
@@ -816,7 +1224,15 @@
                     "name": "D", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x4B": {
             "instruction": "MOV", 
@@ -831,7 +1247,15 @@
                     "name": "E", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x4C": {
             "instruction": "MOV", 
@@ -846,7 +1270,15 @@
                     "name": "H", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x4D": {
             "instruction": "MOV", 
@@ -861,7 +1293,15 @@
                     "name": "L", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x4E": {
             "instruction": "MOV", 
@@ -876,7 +1316,11 @@
                     "name": "M", 
                     "type": "memory"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0x4F": {
             "instruction": "MOV", 
@@ -891,7 +1335,15 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x50": {
             "instruction": "MOV", 
@@ -906,7 +1358,15 @@
                     "name": "B", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x51": {
             "instruction": "MOV", 
@@ -921,7 +1381,15 @@
                     "name": "C", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x52": {
             "instruction": "MOV", 
@@ -936,7 +1404,15 @@
                     "name": "D", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x53": {
             "instruction": "MOV", 
@@ -951,7 +1427,15 @@
                     "name": "E", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x54": {
             "instruction": "MOV", 
@@ -966,7 +1450,15 @@
                     "name": "H", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x55": {
             "instruction": "MOV", 
@@ -981,7 +1473,15 @@
                     "name": "L", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x56": {
             "instruction": "MOV", 
@@ -996,7 +1496,11 @@
                     "name": "M", 
                     "type": "memory"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0x57": {
             "instruction": "MOV", 
@@ -1011,7 +1515,15 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x58": {
             "instruction": "MOV", 
@@ -1026,7 +1538,15 @@
                     "name": "B", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x59": {
             "instruction": "MOV", 
@@ -1041,7 +1561,15 @@
                     "name": "C", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x5A": {
             "instruction": "MOV", 
@@ -1056,7 +1584,15 @@
                     "name": "D", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x5B": {
             "instruction": "MOV", 
@@ -1071,7 +1607,15 @@
                     "name": "E", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x5C": {
             "instruction": "MOV", 
@@ -1086,7 +1630,15 @@
                     "name": "H", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x5D": {
             "instruction": "MOV", 
@@ -1101,7 +1653,15 @@
                     "name": "L", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x5E": {
             "instruction": "MOV", 
@@ -1116,7 +1676,11 @@
                     "name": "M", 
                     "type": "memory"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0x5F": {
             "instruction": "MOV", 
@@ -1131,7 +1695,15 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x60": {
             "instruction": "MOV", 
@@ -1146,7 +1718,15 @@
                     "name": "B", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x61": {
             "instruction": "MOV", 
@@ -1161,7 +1741,15 @@
                     "name": "C", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x62": {
             "instruction": "MOV", 
@@ -1176,7 +1764,15 @@
                     "name": "D", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x63": {
             "instruction": "MOV", 
@@ -1191,7 +1787,15 @@
                     "name": "E", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x64": {
             "instruction": "MOV", 
@@ -1206,7 +1810,15 @@
                     "name": "H", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x65": {
             "instruction": "MOV", 
@@ -1221,7 +1833,15 @@
                     "name": "L", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x66": {
             "instruction": "MOV", 
@@ -1236,7 +1856,11 @@
                     "name": "M", 
                     "type": "memory"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0x67": {
             "instruction": "MOV", 
@@ -1251,7 +1875,15 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x68": {
             "instruction": "MOV", 
@@ -1266,7 +1898,15 @@
                     "name": "B", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x69": {
             "instruction": "MOV", 
@@ -1281,7 +1921,15 @@
                     "name": "C", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x6A": {
             "instruction": "MOV", 
@@ -1296,7 +1944,15 @@
                     "name": "D", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x6B": {
             "instruction": "MOV", 
@@ -1311,7 +1967,15 @@
                     "name": "E", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x6C": {
             "instruction": "MOV", 
@@ -1326,7 +1990,15 @@
                     "name": "H", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x6D": {
             "instruction": "MOV", 
@@ -1341,7 +2013,15 @@
                     "name": "L", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x6E": {
             "instruction": "MOV", 
@@ -1356,7 +2036,11 @@
                     "name": "M", 
                     "type": "memory"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0x6F": {
             "instruction": "MOV", 
@@ -1371,7 +2055,15 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x70": {
             "instruction": "MOV", 
@@ -1386,7 +2078,11 @@
                     "name": "B", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0x71": {
             "instruction": "MOV", 
@@ -1401,7 +2097,11 @@
                     "name": "C", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0x72": {
             "instruction": "MOV", 
@@ -1416,7 +2116,11 @@
                     "name": "D", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0x73": {
             "instruction": "MOV", 
@@ -1431,7 +2135,11 @@
                     "name": "E", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0x74": {
             "instruction": "MOV", 
@@ -1446,7 +2154,11 @@
                     "name": "H", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0x75": {
             "instruction": "MOV", 
@@ -1461,10 +2173,22 @@
                     "name": "L", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0x76": {
-            "instruction": "HLT"
+            "instruction": "HLT", 
+            "timing": {
+                "cycles": 1, 
+                "states": 7, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 5
+                }
+            }
         }, 
         "0x77": {
             "instruction": "MOV", 
@@ -1479,7 +2203,11 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0x78": {
             "instruction": "MOV", 
@@ -1494,7 +2222,15 @@
                     "name": "B", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x79": {
             "instruction": "MOV", 
@@ -1509,7 +2245,15 @@
                     "name": "C", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x7A": {
             "instruction": "MOV", 
@@ -1524,7 +2268,15 @@
                     "name": "D", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x7B": {
             "instruction": "MOV", 
@@ -1539,7 +2291,15 @@
                     "name": "E", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x7C": {
             "instruction": "MOV", 
@@ -1554,7 +2314,15 @@
                     "name": "H", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x7D": {
             "instruction": "MOV", 
@@ -1569,7 +2337,15 @@
                     "name": "L", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x7E": {
             "instruction": "MOV", 
@@ -1584,7 +2360,11 @@
                     "name": "M", 
                     "type": "memory"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0x7F": {
             "instruction": "MOV", 
@@ -1599,7 +2379,15 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 4
+                }
+            }
         }, 
         "0x80": {
             "instruction": "ADD", 
@@ -1609,7 +2397,11 @@
                     "name": "B", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x81": {
             "instruction": "ADD", 
@@ -1619,7 +2411,11 @@
                     "name": "C", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x82": {
             "instruction": "ADD", 
@@ -1629,7 +2425,11 @@
                     "name": "D", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x83": {
             "instruction": "ADD", 
@@ -1639,7 +2439,11 @@
                     "name": "E", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x84": {
             "instruction": "ADD", 
@@ -1649,7 +2453,11 @@
                     "name": "H", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x85": {
             "instruction": "ADD", 
@@ -1659,7 +2467,11 @@
                     "name": "L", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x86": {
             "instruction": "ADD", 
@@ -1669,7 +2481,11 @@
                     "name": "M", 
                     "type": "memory"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0x87": {
             "instruction": "ADD", 
@@ -1679,7 +2495,11 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x88": {
             "instruction": "ADC", 
@@ -1689,7 +2509,11 @@
                     "name": "B", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x89": {
             "instruction": "ADC", 
@@ -1699,7 +2523,11 @@
                     "name": "C", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x8A": {
             "instruction": "ADC", 
@@ -1709,7 +2537,11 @@
                     "name": "D", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x8B": {
             "instruction": "ADC", 
@@ -1719,7 +2551,11 @@
                     "name": "E", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x8C": {
             "instruction": "ADC", 
@@ -1729,7 +2565,11 @@
                     "name": "H", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x8D": {
             "instruction": "ADC", 
@@ -1739,7 +2579,11 @@
                     "name": "L", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x8E": {
             "instruction": "ADC", 
@@ -1749,7 +2593,11 @@
                     "name": "M", 
                     "type": "memory"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0x8F": {
             "instruction": "ADC", 
@@ -1759,7 +2607,11 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x90": {
             "instruction": "SUB", 
@@ -1769,7 +2621,11 @@
                     "name": "B", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x91": {
             "instruction": "SUB", 
@@ -1779,7 +2635,11 @@
                     "name": "C", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x92": {
             "instruction": "SUB", 
@@ -1789,7 +2649,11 @@
                     "name": "D", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x93": {
             "instruction": "SUB", 
@@ -1799,7 +2663,11 @@
                     "name": "E", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x94": {
             "instruction": "SUB", 
@@ -1809,7 +2677,11 @@
                     "name": "H", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x95": {
             "instruction": "SUB", 
@@ -1819,7 +2691,11 @@
                     "name": "L", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x96": {
             "instruction": "SUB", 
@@ -1829,7 +2705,11 @@
                     "name": "M", 
                     "type": "memory"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0x97": {
             "instruction": "SUB", 
@@ -1839,7 +2719,11 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x98": {
             "instruction": "SBB", 
@@ -1849,7 +2733,11 @@
                     "name": "B", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x99": {
             "instruction": "SBB", 
@@ -1859,7 +2747,11 @@
                     "name": "C", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x9A": {
             "instruction": "SBB", 
@@ -1869,7 +2761,11 @@
                     "name": "D", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x9B": {
             "instruction": "SBB", 
@@ -1879,7 +2775,11 @@
                     "name": "E", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x9C": {
             "instruction": "SBB", 
@@ -1889,7 +2789,11 @@
                     "name": "H", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x9D": {
             "instruction": "SBB", 
@@ -1899,7 +2803,11 @@
                     "name": "L", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0x9E": {
             "instruction": "SBB", 
@@ -1909,7 +2817,11 @@
                     "name": "M", 
                     "type": "memory"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0x9F": {
             "instruction": "SBB", 
@@ -1919,7 +2831,11 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xA0": {
             "instruction": "ANA", 
@@ -1929,7 +2845,11 @@
                     "name": "B", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xA1": {
             "instruction": "ANA", 
@@ -1939,7 +2859,11 @@
                     "name": "C", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xA2": {
             "instruction": "ANA", 
@@ -1949,7 +2873,11 @@
                     "name": "D", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xA3": {
             "instruction": "ANA", 
@@ -1959,7 +2887,11 @@
                     "name": "E", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xA4": {
             "instruction": "ANA", 
@@ -1969,7 +2901,11 @@
                     "name": "H", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xA5": {
             "instruction": "ANA", 
@@ -1979,7 +2915,11 @@
                     "name": "L", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xA6": {
             "instruction": "ANA", 
@@ -1989,7 +2929,11 @@
                     "name": "M", 
                     "type": "memory"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0xA7": {
             "instruction": "ANA", 
@@ -1999,7 +2943,11 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xA8": {
             "instruction": "XRA", 
@@ -2009,7 +2957,11 @@
                     "name": "B", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xA9": {
             "instruction": "XRA", 
@@ -2019,7 +2971,11 @@
                     "name": "C", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xAA": {
             "instruction": "XRA", 
@@ -2029,7 +2985,11 @@
                     "name": "D", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xAB": {
             "instruction": "XRA", 
@@ -2039,7 +2999,11 @@
                     "name": "E", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xAC": {
             "instruction": "XRA", 
@@ -2049,7 +3013,11 @@
                     "name": "H", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xAD": {
             "instruction": "XRA", 
@@ -2059,7 +3027,11 @@
                     "name": "L", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xAE": {
             "instruction": "XRA", 
@@ -2069,7 +3041,11 @@
                     "name": "M", 
                     "type": "memory"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0xAF": {
             "instruction": "XRA", 
@@ -2079,7 +3055,11 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xB0": {
             "instruction": "ORA", 
@@ -2089,7 +3069,11 @@
                     "name": "B", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xB1": {
             "instruction": "ORA", 
@@ -2099,7 +3083,11 @@
                     "name": "C", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xB2": {
             "instruction": "ORA", 
@@ -2109,7 +3097,11 @@
                     "name": "D", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xB3": {
             "instruction": "ORA", 
@@ -2119,7 +3111,11 @@
                     "name": "E", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xB4": {
             "instruction": "ORA", 
@@ -2129,7 +3125,11 @@
                     "name": "H", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xB5": {
             "instruction": "ORA", 
@@ -2139,7 +3139,11 @@
                     "name": "L", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xB6": {
             "instruction": "ORA", 
@@ -2149,7 +3153,11 @@
                     "name": "M", 
                     "type": "memory"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0xB7": {
             "instruction": "ORA", 
@@ -2159,7 +3167,11 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xB8": {
             "instruction": "CMP", 
@@ -2169,7 +3181,11 @@
                     "name": "B", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xB9": {
             "instruction": "CMP", 
@@ -2179,7 +3195,11 @@
                     "name": "C", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xBA": {
             "instruction": "CMP", 
@@ -2189,7 +3209,11 @@
                     "name": "D", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xBB": {
             "instruction": "CMP", 
@@ -2199,7 +3223,11 @@
                     "name": "E", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xBC": {
             "instruction": "CMP", 
@@ -2209,7 +3237,11 @@
                     "name": "H", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xBD": {
             "instruction": "CMP", 
@@ -2219,7 +3251,11 @@
                     "name": "L", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xBE": {
             "instruction": "CMP", 
@@ -2229,7 +3265,11 @@
                     "name": "M", 
                     "type": "memory"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0xBF": {
             "instruction": "CMP", 
@@ -2239,10 +3279,34 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xC0": {
-            "instruction": "RNZ"
+            "instruction": "RNZ", 
+            "timing": {
+                "cycles": [
+                    1, 
+                    3
+                ], 
+                "states": [
+                    5, 
+                    11
+                ], 
+                "variant": {
+                    "cycles": [
+                        1, 
+                        3
+                    ], 
+                    "states": [
+                        6, 
+                        12
+                    ]
+                }
+            }
         }, 
         "0xC1": {
             "instruction": "POP", 
@@ -2252,7 +3316,11 @@
                     "name": "B", 
                     "type": "register pair"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 10
+            }
         }, 
         "0xC2": {
             "instruction": "JNZ", 
@@ -2263,7 +3331,21 @@
                     "name": "a16", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 10, 
+                "variant": {
+                    "cycles": [
+                        2, 
+                        3
+                    ], 
+                    "states": [
+                        7, 
+                        10
+                    ]
+                }
+            }
         }, 
         "0xC3": {
             "instruction": "JMP", 
@@ -2274,7 +3356,11 @@
                     "name": "d16", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 10
+            }
         }, 
         "0xC4": {
             "instruction": "CNZ", 
@@ -2285,7 +3371,27 @@
                     "name": "a16", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    5
+                ], 
+                "states": [
+                    11, 
+                    17
+                ], 
+                "variant": {
+                    "cycles": [
+                        2, 
+                        5
+                    ], 
+                    "states": [
+                        9, 
+                        18
+                    ]
+                }
+            }
         }, 
         "0xC5": {
             "instruction": "PUSH", 
@@ -2295,7 +3401,15 @@
                     "name": "B", 
                     "type": "register pair"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 11, 
+                "variant": {
+                    "cycles": 3, 
+                    "states": 13
+                }
+            }
         }, 
         "0xC6": {
             "instruction": "ADI", 
@@ -2306,7 +3420,11 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0xC7": {
             "instruction": "RST", 
@@ -2316,13 +3434,45 @@
                     "name": "0", 
                     "type": "inherent"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 11, 
+                "variant": {
+                    "cycles": 3, 
+                    "states": 12
+                }
+            }
         }, 
         "0xC8": {
-            "instruction": "RZ"
+            "instruction": "RZ", 
+            "timing": {
+                "cycles": [
+                    1, 
+                    3
+                ], 
+                "states": [
+                    5, 
+                    11
+                ], 
+                "variant": {
+                    "cycles": [
+                        1, 
+                        3
+                    ], 
+                    "states": [
+                        6, 
+                        12
+                    ]
+                }
+            }
         }, 
         "0xC9": {
-            "instruction": "RET"
+            "instruction": "RET", 
+            "timing": {
+                "cycles": 3, 
+                "states": 10
+            }
         }, 
         "0xCA": {
             "instruction": "JZ", 
@@ -2333,7 +3483,21 @@
                     "name": "a16", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 10, 
+                "variant": {
+                    "cycles": [
+                        2, 
+                        3
+                    ], 
+                    "states": [
+                        7, 
+                        10
+                    ]
+                }
+            }
         }, 
         "0xCB": {
             "illegal": true, 
@@ -2360,7 +3524,27 @@
                     "name": "a16", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    5
+                ], 
+                "states": [
+                    11, 
+                    17
+                ], 
+                "variant": {
+                    "cycles": [
+                        2, 
+                        5
+                    ], 
+                    "states": [
+                        9, 
+                        18
+                    ]
+                }
+            }
         }, 
         "0xCD": {
             "instruction": "CALL", 
@@ -2371,7 +3555,15 @@
                     "name": "d16", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 5, 
+                "states": 17, 
+                "variant": {
+                    "cycles": 5, 
+                    "states": 18
+                }
+            }
         }, 
         "0xCE": {
             "instruction": "ACI", 
@@ -2382,7 +3574,11 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0xCF": {
             "instruction": "RST", 
@@ -2392,10 +3588,38 @@
                     "name": "1", 
                     "type": "inherent"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 11, 
+                "variant": {
+                    "cycles": 3, 
+                    "states": 12
+                }
+            }
         }, 
         "0xD0": {
-            "instruction": "RNC"
+            "instruction": "RNC", 
+            "timing": {
+                "cycles": [
+                    1, 
+                    3
+                ], 
+                "states": [
+                    5, 
+                    11
+                ], 
+                "variant": {
+                    "cycles": [
+                        1, 
+                        3
+                    ], 
+                    "states": [
+                        6, 
+                        12
+                    ]
+                }
+            }
         }, 
         "0xD1": {
             "instruction": "POP", 
@@ -2405,7 +3629,11 @@
                     "name": "D", 
                     "type": "register pair"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 10
+            }
         }, 
         "0xD2": {
             "instruction": "JNC", 
@@ -2416,7 +3644,21 @@
                     "name": "a16", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 10, 
+                "variant": {
+                    "cycles": [
+                        2, 
+                        3
+                    ], 
+                    "states": [
+                        7, 
+                        10
+                    ]
+                }
+            }
         }, 
         "0xD3": {
             "instruction": "OUT", 
@@ -2427,7 +3669,11 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 10
+            }
         }, 
         "0xD4": {
             "instruction": "CNC", 
@@ -2438,7 +3684,27 @@
                     "name": "a16", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    5
+                ], 
+                "states": [
+                    11, 
+                    17
+                ], 
+                "variant": {
+                    "cycles": [
+                        2, 
+                        5
+                    ], 
+                    "states": [
+                        9, 
+                        18
+                    ]
+                }
+            }
         }, 
         "0xD5": {
             "instruction": "PUSH", 
@@ -2448,7 +3714,15 @@
                     "name": "D", 
                     "type": "register pair"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 11, 
+                "variant": {
+                    "cycles": 3, 
+                    "states": 13
+                }
+            }
         }, 
         "0xD6": {
             "instruction": "SUI", 
@@ -2459,7 +3733,11 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0xD7": {
             "instruction": "RST", 
@@ -2469,10 +3747,38 @@
                     "name": "2", 
                     "type": "inherent"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 11, 
+                "variant": {
+                    "cycles": 3, 
+                    "states": 12
+                }
+            }
         }, 
         "0xD8": {
-            "instruction": "RC"
+            "instruction": "RC", 
+            "timing": {
+                "cycles": [
+                    1, 
+                    3
+                ], 
+                "states": [
+                    5, 
+                    11
+                ], 
+                "variant": {
+                    "cycles": [
+                        1, 
+                        3
+                    ], 
+                    "states": [
+                        6, 
+                        12
+                    ]
+                }
+            }
         }, 
         "0xD9": {
             "illegal": true, 
@@ -2491,7 +3797,21 @@
                     "name": "a16", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 10, 
+                "variant": {
+                    "cycles": [
+                        2, 
+                        3
+                    ], 
+                    "states": [
+                        7, 
+                        10
+                    ]
+                }
+            }
         }, 
         "0xDB": {
             "instruction": "IN", 
@@ -2502,7 +3822,11 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 10
+            }
         }, 
         "0xDC": {
             "instruction": "CC", 
@@ -2513,7 +3837,27 @@
                     "name": "a16", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    5
+                ], 
+                "states": [
+                    11, 
+                    17
+                ], 
+                "variant": {
+                    "cycles": [
+                        2, 
+                        5
+                    ], 
+                    "states": [
+                        9, 
+                        18
+                    ]
+                }
+            }
         }, 
         "0xDD": {
             "illegal": true, 
@@ -2548,7 +3892,11 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0xDF": {
             "instruction": "RST", 
@@ -2558,10 +3906,38 @@
                     "name": "3", 
                     "type": "inherent"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 11, 
+                "variant": {
+                    "cycles": 3, 
+                    "states": 12
+                }
+            }
         }, 
         "0xE0": {
-            "instruction": "RPO"
+            "instruction": "RPO", 
+            "timing": {
+                "cycles": [
+                    1, 
+                    3
+                ], 
+                "states": [
+                    5, 
+                    11
+                ], 
+                "variant": {
+                    "cycles": [
+                        1, 
+                        3
+                    ], 
+                    "states": [
+                        6, 
+                        12
+                    ]
+                }
+            }
         }, 
         "0xE1": {
             "instruction": "POP", 
@@ -2571,7 +3947,11 @@
                     "name": "H", 
                     "type": "register pair"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 10
+            }
         }, 
         "0xE2": {
             "instruction": "JPO", 
@@ -2582,10 +3962,32 @@
                     "name": "a16", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 10, 
+                "variant": {
+                    "cycles": [
+                        2, 
+                        3
+                    ], 
+                    "states": [
+                        7, 
+                        10
+                    ]
+                }
+            }
         }, 
         "0xE3": {
-            "instruction": "XTHL"
+            "instruction": "XTHL", 
+            "timing": {
+                "cycles": 5, 
+                "states": 17, 
+                "variant": {
+                    "cycles": 5, 
+                    "states": 18
+                }
+            }
         }, 
         "0xE4": {
             "instruction": "CPO", 
@@ -2596,7 +3998,27 @@
                     "name": "a16", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    5
+                ], 
+                "states": [
+                    11, 
+                    17
+                ], 
+                "variant": {
+                    "cycles": [
+                        2, 
+                        5
+                    ], 
+                    "states": [
+                        9, 
+                        18
+                    ]
+                }
+            }
         }, 
         "0xE5": {
             "instruction": "PUSH", 
@@ -2606,7 +4028,15 @@
                     "name": "H", 
                     "type": "register pair"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 11, 
+                "variant": {
+                    "cycles": 3, 
+                    "states": 13
+                }
+            }
         }, 
         "0xE6": {
             "instruction": "ANI", 
@@ -2617,7 +4047,11 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0xE7": {
             "instruction": "RST", 
@@ -2627,13 +4061,49 @@
                     "name": "4", 
                     "type": "inherent"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 11, 
+                "variant": {
+                    "cycles": 3, 
+                    "states": 12
+                }
+            }
         }, 
         "0xE8": {
-            "instruction": "RPE"
+            "instruction": "RPE", 
+            "timing": {
+                "cycles": [
+                    1, 
+                    3
+                ], 
+                "states": [
+                    5, 
+                    11
+                ], 
+                "variant": {
+                    "cycles": [
+                        1, 
+                        3
+                    ], 
+                    "states": [
+                        6, 
+                        12
+                    ]
+                }
+            }
         }, 
         "0xE9": {
-            "instruction": "PCHL"
+            "instruction": "PCHL", 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 6
+                }
+            }
         }, 
         "0xEA": {
             "instruction": "JPE", 
@@ -2644,10 +4114,28 @@
                     "name": "a16", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 10, 
+                "variant": {
+                    "cycles": [
+                        2, 
+                        3
+                    ], 
+                    "states": [
+                        7, 
+                        10
+                    ]
+                }
+            }
         }, 
         "0xEB": {
-            "instruction": "XCHG"
+            "instruction": "XCHG", 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xEC": {
             "instruction": "CPE", 
@@ -2658,7 +4146,27 @@
                     "name": "a16", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    5
+                ], 
+                "states": [
+                    11, 
+                    17
+                ], 
+                "variant": {
+                    "cycles": [
+                        2, 
+                        5
+                    ], 
+                    "states": [
+                        9, 
+                        18
+                    ]
+                }
+            }
         }, 
         "0xED": {
             "illegal": true, 
@@ -2685,7 +4193,11 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0xEF": {
             "instruction": "RST", 
@@ -2695,10 +4207,38 @@
                     "name": "5", 
                     "type": "inherent"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 11, 
+                "variant": {
+                    "cycles": 3, 
+                    "states": 12
+                }
+            }
         }, 
         "0xF0": {
-            "instruction": "RP"
+            "instruction": "RP", 
+            "timing": {
+                "cycles": [
+                    1, 
+                    3
+                ], 
+                "states": [
+                    5, 
+                    11
+                ], 
+                "variant": {
+                    "cycles": [
+                        1, 
+                        3
+                    ], 
+                    "states": [
+                        6, 
+                        12
+                    ]
+                }
+            }
         }, 
         "0xF1": {
             "instruction": "POP", 
@@ -2708,7 +4248,11 @@
                     "name": "PSW", 
                     "type": "register pair"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 10
+            }
         }, 
         "0xF2": {
             "instruction": "JP", 
@@ -2719,10 +4263,28 @@
                     "name": "a16", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 10, 
+                "variant": {
+                    "cycles": [
+                        2, 
+                        3
+                    ], 
+                    "states": [
+                        7, 
+                        10
+                    ]
+                }
+            }
         }, 
         "0xF3": {
-            "instruction": "DI"
+            "instruction": "DI", 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xF4": {
             "instruction": "CP", 
@@ -2733,7 +4295,27 @@
                     "name": "a16", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    5
+                ], 
+                "states": [
+                    11, 
+                    17
+                ], 
+                "variant": {
+                    "cycles": [
+                        2, 
+                        5
+                    ], 
+                    "states": [
+                        9, 
+                        18
+                    ]
+                }
+            }
         }, 
         "0xF5": {
             "instruction": "PUSH", 
@@ -2743,7 +4325,15 @@
                     "name": "PSW", 
                     "type": "register pair"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 11, 
+                "variant": {
+                    "cycles": 3, 
+                    "states": 13
+                }
+            }
         }, 
         "0xF6": {
             "instruction": "ORI", 
@@ -2754,7 +4344,11 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0xF7": {
             "instruction": "RST", 
@@ -2764,13 +4358,49 @@
                     "name": "6", 
                     "type": "inherent"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 11, 
+                "variant": {
+                    "cycles": 3, 
+                    "states": 12
+                }
+            }
         }, 
         "0xF8": {
-            "instruction": "RM"
+            "instruction": "RM", 
+            "timing": {
+                "cycles": [
+                    1, 
+                    3
+                ], 
+                "states": [
+                    5, 
+                    11
+                ], 
+                "variant": {
+                    "cycles": [
+                        1, 
+                        3
+                    ], 
+                    "states": [
+                        6, 
+                        12
+                    ]
+                }
+            }
         }, 
         "0xF9": {
-            "instruction": "SPHL"
+            "instruction": "SPHL", 
+            "timing": {
+                "cycles": 1, 
+                "states": 5, 
+                "variant": {
+                    "cycles": 1, 
+                    "states": 6
+                }
+            }
         }, 
         "0xFA": {
             "instruction": "JM", 
@@ -2781,10 +4411,28 @@
                     "name": "a16", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 10, 
+                "variant": {
+                    "cycles": [
+                        2, 
+                        3
+                    ], 
+                    "states": [
+                        7, 
+                        10
+                    ]
+                }
+            }
         }, 
         "0xFB": {
-            "instruction": "EI"
+            "instruction": "EI", 
+            "timing": {
+                "cycles": 1, 
+                "states": 4
+            }
         }, 
         "0xFC": {
             "instruction": "CM", 
@@ -2795,7 +4443,27 @@
                     "name": "a16", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    5
+                ], 
+                "states": [
+                    11, 
+                    17
+                ], 
+                "variant": {
+                    "cycles": [
+                        2, 
+                        5
+                    ], 
+                    "states": [
+                        9, 
+                        18
+                    ]
+                }
+            }
         }, 
         "0xFD": {
             "illegal": true, 
@@ -2830,7 +4498,11 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2, 
+                "states": 7
+            }
         }, 
         "0xFF": {
             "instruction": "RST", 
@@ -2840,7 +4512,15 @@
                     "name": "7", 
                     "type": "inherent"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3, 
+                "states": 11, 
+                "variant": {
+                    "cycles": 3, 
+                    "states": 12
+                }
+            }
         }
     }
 }
