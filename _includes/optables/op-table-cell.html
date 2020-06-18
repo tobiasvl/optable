@@ -19,8 +19,8 @@
 {% endif %}
 
 {% assign instruction = site.data.intel-8080.instructions[op.instruction] %}
-<td id="op-{% if include.set == "cbprefixed" %}cb{% endif %}{{ key | downcase | slice: -2, 2 }}" class="opcode-info {% if is16bit %}is16bit{% else %}is8bit{% endif %} op-{{ op.instruction | downcase }} op-group-{{ instruction.group }}">
-        <div class="operation op-{{ op.instruction | downcase }} op-group-{{ instruction.group }}{% if op.illegal %} illegal{% endif %}">
+<td id="op-{% if include.set == "cbprefixed" %}cb{% endif %}{{ key | downcase | slice: -2, 2 }}" class="opcode-info {% if is16bit %}is16bit{% else %}is8bit{% endif %} op-{{ op.instruction | downcase }} op-group-{{ instruction.group | join: ' op-group-' }}">
+        <div class="operation op-{{ op.instruction | downcase }} op-group-{{ instruction.group | join: ' op-group-' }}{% if op.illegal %} illegal{% endif %}">
             <span class="mnemonic"><span class="tool">{{ op.instruction }}<span class="tooltiptext {% if include.column == 0 %}right{% elsif include.column == 15 %}left{% else %}top{% endif %}">{{ instruction.description }}{% if op.illegal %}<br/>(illegal opcode){% endif %}</span></span>{% if op.operands %}&nbsp;<span class="operands">{{ op.operands | map: 'name' | join: ',' }}</span>{% endif %}</span>
             <span class="bytes-cycles">
                 <span class="bytes">{% assign bytes = 1 %}{% assign operands = op.operands | where: 'type', 'immediate' %}{% for operand in operands %}{% assign bytes = bytes | plus: operand.bytes %}{% endfor %}{{ bytes }}</span>&nbsp;&nbsp;<span class="cycles">{{ op.cycles | join: '/' }}</span>

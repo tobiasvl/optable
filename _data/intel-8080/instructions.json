@@ -541,7 +541,10 @@
     },
     "XTHL": {
         "description": "Exchange SP and HL",
-        "group": "control",
+        "group": [
+            "control",
+            "transfer"
+        ],
         "cycles": 10
     },
     "SPHL": {

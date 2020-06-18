@@ -199,6 +199,21 @@ kbd {
 		@include opcode($op-logic, $variant);
 	}
 
+    /* There has to be a better way than to do this
+       for each combo: */
+    td.op-group-control.op-group-transfer {
+        background: repeating-linear-gradient(
+            45deg,
+            map-get($op-control, $variant),
+            map-get($op-control, $variant) 10px,
+            map-get($op-load, $variant) 10px,
+            map-get($op-load, $variant) 20px
+        );
+    }
+    div.op-group-control.op-group-transfer {
+        background: none;
+    }
+
 	/* 16bit ops */
 /*
 	.op-ld.is16bit,
