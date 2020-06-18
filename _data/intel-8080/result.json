@@ -4241,6 +4241,15 @@
             }
         }, 
         "0xF1": {
+            "flags": {
+                "A": "A", 
+                "C": "C", 
+                "K": "K", 
+                "P": "P", 
+                "S": "S", 
+                "V": "V", 
+                "Z": "Z"
+            }, 
             "instruction": "POP", 
             "operands": [
                 {

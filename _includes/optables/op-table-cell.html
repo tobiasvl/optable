@@ -31,21 +31,32 @@
                 {% endif %}
             </span>
 
-            <span class="flags">{{ instruction.flags.S | default: "-"}}{{ instruction.flags.Z | default: "-"}}{% unless op.variant or instruction.flags.variant %}<span class="variant">{{ instruction.flags.K | default: "-"}}</span>{% endunless %}{{ instruction.flags.A | default: "-"}}{{ instruction.flags.P | default: "-"}}{% unless op.variant or instruction.flags.variant %}<span class="variant">{{ instruction.flags.V | default: "-"}}</span>{% endunless %}{{ instruction.flags.C | default: "-"}}</span>
-            {% if instruction.flags.variant %}<span class="flags variant">{{ instruction.flags.variant.S | default: "-"}}{{ instruction.flags.variant.Z | default: "-"}}{{ instruction.flags.variant.K | default: "-"}}{{ instruction.flags.variant.A | default: "-"}}{{ instruction.flags.variant.P | default: "-"}}{{ instruction.flags.variant.V | default: "-"}}{{ instruction.flags.variant.C | default: "-"}}</span>{% endif %}
+            {% if op.flags %}
+                {% assign flags = op.flags %}
+            {% else %}
+                {% assign flags = instruction.flags %}
+            {% endif %}
+            <span class="flags">{{ flags.S | default: "-"}}{{ flags.Z | default: "-"}}{% unless op.variant or flags.variant %}<span class="variant">{{ flags.K | default: "-"}}</span>{% endunless %}{{ flags.A | default: "-"}}{{ flags.P | default: "-"}}{% unless op.variant or flags.variant %}<span class="variant">{{ flags.V | default: "-"}}</span>{% endunless %}{{ flags.C | default: "-"}}</span>
+            {% if flags.variant %}<span class="flags variant">{{ flags.variant.S | default: "-"}}{{ flags.variant.Z | default: "-"}}{{ flags.variant.K | default: "-"}}{{ flags.variant.A | default: "-"}}{{ flags.variant.P | default: "-"}}{{ flags.variant.V | default: "-"}}{{ flags.variant.C | default: "-"}}</span>{% endif %}
         </div>
 
     {% if op.variant %}
-    {% assign instruction = site.data.intel-8080.instructions[op.variant.instruction] %}
-        <div class="variant operation op-{{ op.instruction | downcase}} op-group-{{ instruction.group }}{% if op.variant.illegal %} illegal{% endif %}">
-            <span class="mnemonic"><span class="tool">{{ op.variant.instruction }}<span class="tooltiptext {% if include.column == 0 %}right{% elsif include.column == 15 %}left{% else %}top{% endif %}">{{ instruction.description }}{% if op.variant.illegal %}<br/>(illegal opcode){% endif %}</span></span>{% if op.variant.operands %}&nbsp;<span class="operands">{{ op.variant.operands | map: 'name' | join: ',' }}</span>{% endif %}</span>
+        {% assign op = op.variant %}
+        {% assign instruction = site.data.intel-8080.instructions[op.instruction] %}
+        {% if op.flags %}
+            {% assign flags = op.flags %}
+        {% else %}
+            {% assign flags = instruction.flags %}
+        {% endif %}
+        <div class="variant operation op-{{ op.instruction | downcase}} op-group-{{ instruction.group }}{% if op.illegal %} illegal{% endif %}">
+            <span class="mnemonic"><span class="tool">{{ op.instruction }}<span class="tooltiptext {% if include.column == 0 %}right{% elsif include.column == 15 %}left{% else %}top{% endif %}">{{ instruction.description }}{% if op.illegal %}<br/>(illegal opcode){% endif %}</span></span>{% if op.operands %}&nbsp;<span class="operands">{{ op.operands | map: 'name' | join: ',' }}</span>{% endif %}</span>
 
             <span class="bytes-cycles">
-                <span class="bytes">{% assign bytes = 1 %}{% assign operands = op.variant.operands | where: 'type', 'immediate' %}{% for operand in operands %}{% assign bytes = bytes | plus: operand.bytes %}{% endfor %}{{ bytes }}</span><br/>
-                <span class="cycles">{{ op.variant.timing.cycles | join: '/' }}</span>&nbsp;&nbsp;<span class="states">{{ op.variant.timing.states | join: '/' }}</span>
+                <span class="bytes">{% assign bytes = 1 %}{% assign operands = op.operands | where: 'type', 'immediate' %}{% for operand in operands %}{% assign bytes = bytes | plus: operand.bytes %}{% endfor %}{{ bytes }}</span><br/>
+                <span class="cycles">{{ op.timing.cycles | join: '/' }}</span>&nbsp;&nbsp;<span class="states">{{ op.timing.states | join: '/' }}</span>
             </span>
 
-            <span class="flags">{{ instruction.flags.S | default: "-"}}{{ instruction.flags.Z | default: "-"}}<span class="variant">{{ instruction.flags.K | default: "-"}}</span>{{ instruction.flags.A | default: "-"}}{{ instruction.flags.P | default: "-"}}<span class="variant">{{ instruction.flags.V | default: "-"}}</span>{{ instruction.flags.C | default: "-"}}</span>
+            <span class="flags">{{ flags.S | default: "-"}}{{ flags.Z | default: "-"}}<span class="variant">{{ flags.K | default: "-"}}</span>{{ flags.A | default: "-"}}{{ flags.P | default: "-"}}<span class="variant">{{ flags.V | default: "-"}}</span>{{ flags.C | default: "-"}}</span>
         </div>
     {% endif %}
 </td>

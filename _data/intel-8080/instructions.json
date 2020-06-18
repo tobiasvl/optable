@@ -457,16 +457,7 @@
     },
     "POP": {
         "description": "Pop from stack into register pair",
-        "group": "control",
-        "flags": {
-            "S": "S",
-            "Z": "Z",
-            "K": "K",
-            "A": "A",
-            "V": "V",
-            "P": "P",
-            "C": "C"
-        }
+        "group": "control"
     },
     "XTHL": {
         "description": "Exchange SP and HL",
