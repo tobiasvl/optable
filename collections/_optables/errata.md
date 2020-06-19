@@ -4,25 +4,29 @@ theme: default
 
 ---
 
-Changes from the [PASTRAISER](http://www.pastraiser.com/cpu/gameboy/gameboy_opcodes.html) version
-=================================================================================================
+Changes from Pastraiser's tables
+================================
 
-Errors in the provided tables
------------------------------
-* The old way of referring to opcode `$E9` as `JP (HL)` is confusing and has been changed to `JP HL`.
-* `STOP` is a single byte in size, older documents encode it as `$10 $00`. This was probably done because of the halt bug.
-  - See [TCAGBD](https://github.com/AntonioND/giibiiadvance/blob/master/docs/TCAGBD.pdf), section 4.10. “The HALT Instruction Behaviour”.
-* `$E2` and `$F2` are a single byte in size, not two.
+This table is based on several sources, but heavily inspired by Pastraiser's opcode tables:
 
-Misc
-----
-* Fixed some typos
-* Updated the given descriptions
-* Replaced mentions of LR35902 with SM83. The former was printed on early revisions of the DMG-CPU but current evidence leads
-to the conclusion that the Game Boy’s CPU was based on a Sharp SM83 CPU core.
+* [Pastraiser's 8080 table](https://pastraiser.com/cpu/i8080/i8080_opcodes.html)
+* [Pastraiser's 8085 table](https://pastraiser.com/cpu/i8085/i8085_opcodes.html)
+
+The following are the changes in this table from Pastraiser's.
+
+Errata
+------
+* `SIM` uses 10 cycles (and 3 states), not 4 cycles. (Source: Intel's _8080/8085 Assembly Language Programming Manual_)
+
+Other changes
+-------------
+* Use Intel's own instruction groups for classification
+  * Classify `XTHL` as both "machine control" and "data transfer", as Intel does
 
 New features
 ------------
-* Different color schemes
-* Octal view of the tables
-* Responsive design, enjoy reading large tables on your tiny mobile phone!
+* 8080 and 8085 in the same table
+* Show when a flag is always set/reset (rather than just listing it as changed), like on other Pastraiser tables
+* List duration in states, not just cycles
+* Descriptions of each instruction
+* Octal display, in addition to hexadecimal

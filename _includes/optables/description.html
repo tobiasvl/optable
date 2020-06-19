@@ -73,7 +73,7 @@
 	<div class="col-md-12 col-lg-6">
 		<div id="conditional-durations" class="card mb-3{% if page.theme == "dark" %} bg-secondary{% endif %}">
 			<div class="card-body">
-				The duration of conditional calls and returns is different when action is taken or not. This is indicated by two numbers separated by “/”. The higher number (on the left side of “/”) is the duration of the instruction when action is taken, the lower number (on the right side of “/”) is the duration of the instruction when action is not taken.
+				The duration of conditional calls and returns is different when the branch is taken or not. This is indicated by two numbers separated by “/”. The lower number (on the left side of “/”) is the duration of the instruction when there is no branch, and the higher number (on the right side of “/”) is the duration of the instruction when the branch is taken.
 			</div>
 		</div>
 	</div>
@@ -83,11 +83,9 @@
 	<div class="col">
 		<div id="datatypes" class="card mb-3{% if page.theme == "dark" %} bg-secondary{% endif %}">
 			<div class="card-body">
-				<p><kbd>d8</kbd> means immediate 8-bit data</p>
-				<p><kbd>d16</kbd> means immediate 16-bit data</p>
-				<p><kbd>a8</kbd> means 8-bit unsigned data, which is added to $FF00 in certain instructions (replacement for missing IN and OUT instructions)</p>
-				<p><kbd>a16</kbd> means 16-bit address</p>
-				<p><kbd>r8</kbd> means 8-bit signed data</p>
+				<p><kbd>d8</kbd> immediate 8-bit data</p>
+				<p><kbd>d16</kbd> immediate 16-bit data</p>
+				<p><kbd>a16</kbd> 16-bit address</p>
 			</div>
 		</div>
 	</div>
