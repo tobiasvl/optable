@@ -1,7 +1,7 @@
 {% assign index = include.row | times: 16 | plus: include.column %}
-{% capture key %}{% include hex.html value=index addPrefix=true %}{% endcapture %}
+{% capture key %}{% include hex.html cpu=include.cpu value=index addPrefix=true %}{% endcapture %}
 {% assign key = key | strip %}
-{% assign op = site.data.intel-8080.result[include.set][key] %}
+{% assign op = site.data[include.cpu].opcodes[include.set][key] %}
 {% assign mnemonic = op.instruction %}
 
 {% assign is16bit = false %}
@@ -18,7 +18,7 @@
 	{% assign is16bit = true %}
 {% endif %}
 
-{% assign instruction = site.data.intel-8080.instructions[op.instruction] %}
+{% assign instruction = site.data[include.cpu].instructions[op.instruction] %}
 <td id="op-{% if include.set == "cbprefixed" %}cb{% endif %}{{ key | downcase | slice: -2, 2 }}" class="opcode-info {% if is16bit %}is16bit{% else %}is8bit{% endif %} op-{{ op.instruction | downcase }} op-group-{{ instruction.group | join: ' op-group-' }}">
         <div class="operation op-{{ op.instruction | downcase }} op-group-{{ instruction.group | join: ' op-group-' }}{% if op.illegal %} illegal{% endif %}">
             <span class="mnemonic"><span class="tool">{{ op.instruction }}<span class="tooltiptext {% if include.column == 0 %}right{% elsif include.column == 15 %}left{% else %}top{% endif %}">{{ instruction.description }}{% if op.illegal %}<br/>(illegal opcode){% endif %}</span></span>{% if op.operands %}&nbsp;<span class="operands">{{ op.operands | map: 'name' | join: ',' }}</span>{% endif %}</span>
@@ -42,7 +42,7 @@
 
     {% if op.variant %}
         {% assign op = op.variant %}
-        {% assign instruction = site.data.intel-8080.instructions[op.instruction] %}
+        {% assign instruction = site.data[include.cpu].instructions[op.instruction] %}
         {% if op.flags %}
             {% assign flags = op.flags %}
         {% else %}

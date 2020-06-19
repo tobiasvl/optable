@@ -3,22 +3,22 @@
 <div class="row">
 	<div class="col">
 		{% if page.octalTables %}
-			{% include optables/op-table-oct.html set="unprefixed" id="standard" %}
+			{% include optables/op-table-oct.html cpu=include.cpu set="unprefixed" id="standard" %}
 		{% else %}
-			{% include optables/op-table.html set="unprefixed" id="standard" %}
+			{% include optables/op-table.html cpu=include.cpu set="unprefixed" id="standard" %}
 		{% endif %}
 	</div>
 </div>
 
-{% if site.data.intel-8080.result.prefixed %}
+{% if site.data[include.cpu].opcodes.prefixed %}
 <h2><small><a href="#prefixed">🔗</a></small> Prefixed ($CB $xx)</h2><small><a href="#standard">^</small> 
 
 <div class="row">
 	<div class="col">
 		{% if page.octalTables %}
-			{% include optables/op-table-oct.html set="cbprefixed" id="prefixed" %}
+			{% include optables/op-table-oct.html cpu=include.cpu set="cbprefixed" id="prefixed" %}
 		{% else %}
-			{% include optables/op-table.html set="cbprefixed" id="prefixed" %}
+			{% include optables/op-table.html cpu=include.cpu set="cbprefixed" id="prefixed" %}
 		{% endif %}
 	</div>
 </div>

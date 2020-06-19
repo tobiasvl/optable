@@ -1,0 +1,2409 @@
+{
+    "unprefixed": {
+        "0x00": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "Scratchpad registers 12 (KU) and 13 (KL)", 
+                    "name": "K", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x01": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "Scratchpad registers 12 (KU) and 13 (KL)", 
+                    "name": "K", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x02": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "Scratchpad registers 14 (QU) and 15 (QL)", 
+                    "name": "Q", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x03": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "Scratchpad registers 14 (QU) and 15 (QL)", 
+                    "name": "Q", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x04": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "Scratchpad registers 12 (KU) and 13 (KL)", 
+                    "name": "K", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x05": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "Scratchpad registers 12 (KU) and 13 (KL)", 
+                    "name": "K", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x06": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "Scratchpad registers 14 (QU) and 15 (QL)", 
+                    "name": "Q", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x07": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "Scratchpad registers 14 (QU) and 15 (QL)", 
+                    "name": "Q", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x08": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "Scratchpad registers 12 (KU) and 13 (KL)", 
+                    "name": "K", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "16-bit stack register. Also known as PC1.", 
+                    "name": "P", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x09": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "16-bit stack register. Also known as PC1.", 
+                    "name": "P", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "Scratchpad registers 12 (KU) and 13 (KL)", 
+                    "name": "K", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x0A": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "The scratchpad register currently addressed by ISAR. Also known as IS and 12.", 
+                    "name": "S", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x0B": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "The scratchpad register currently addressed by ISAR. Also known as IS and 12.", 
+                    "name": "S", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x0C": {
+            "instruction": "PK"
+        }, 
+        "0x0D": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "Program Counter. Also known as PC0.", 
+                    "name": "P0", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "Scratchpad registers 14 (QU) and 15 (QL)", 
+                    "name": "Q", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x0E": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "Scratchpad registers 10 (HU) and 11 (HL)", 
+                    "name": "H", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "Data Counter. Also known as DC0.", 
+                    "name": "DC", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x0F": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "Scratchpad registers 14 (QU) and 15 (QL)", 
+                    "name": "Q", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "Data Counter. Also known as DC0.", 
+                    "name": "DC", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x10": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "Data Counter. Also known as DC0.", 
+                    "name": "DC", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "Scratchpad registers 14 (QU) and 15 (QL)", 
+                    "name": "Q", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x11": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "Scratchpad registers 10 (HU) and 11 (HL)", 
+                    "name": "H", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "Data Counter. Also known as DC0.", 
+                    "name": "DC", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x12": {
+            "instruction": "SR", 
+            "operands": [
+                {
+                    "name": 1
+                }
+            ]
+        }, 
+        "0x13": {
+            "instruction": "SL", 
+            "operands": [
+                {
+                    "name": 1
+                }
+            ]
+        }, 
+        "0x14": {
+            "instruction": "SR", 
+            "operands": [
+                {
+                    "name": 4
+                }
+            ]
+        }, 
+        "0x15": {
+            "instruction": "SL", 
+            "operands": [
+                {
+                    "name": 4
+                }
+            ]
+        }, 
+        "0x16": {
+            "instruction": "LM"
+        }, 
+        "0x17": {
+            "instruction": "ST"
+        }, 
+        "0x18": {
+            "instruction": "COM"
+        }, 
+        "0x19": {
+            "instruction": "LNK"
+        }, 
+        "0x1A": {
+            "instruction": "DI"
+        }, 
+        "0x1B": {
+            "instruction": "EI"
+        }, 
+        "0x1C": {
+            "instruction": "POP"
+        }, 
+        "0x1D": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "Status register", 
+                    "name": "W", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "Scratchpad register 9", 
+                    "name": "J", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x1E": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "Status register", 
+                    "name": "W", 
+                    "type": "register"
+                }, 
+                {
+                    "description": "Scratchpad register 9", 
+                    "name": "J", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x1F": {
+            "instruction": "INC"
+        }, 
+        "0x20": {
+            "instruction": "LI", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x21": {
+            "instruction": "NI", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x22": {
+            "instruction": "OI", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x23": {
+            "instruction": "XI", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x24": {
+            "instruction": "AI", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x25": {
+            "instruction": "CI", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x26": {
+            "instruction": "IN", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x27": {
+            "instruction": "OUT", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x28": {
+            "instruction": "PI", 
+            "operands": [
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate value", 
+                    "name": "d16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x29": {
+            "instruction": "JMP", 
+            "operands": [
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate value", 
+                    "name": "d16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x2A": {
+            "instruction": "DCI", 
+            "operands": [
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate value", 
+                    "name": "d16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x2B": {
+            "instruction": "NOP"
+        }, 
+        "0x2C": {
+            "instruction": "XDC"
+        }, 
+        "0x2D": {}, 
+        "0x2E": {}, 
+        "0x2F": {}, 
+        "0x30": {
+            "instruction": "DS", 
+            "operands": [
+                {
+                    "name": "R0"
+                }
+            ]
+        }, 
+        "0x31": {
+            "instruction": "DS", 
+            "operands": [
+                {
+                    "name": "R1"
+                }
+            ]
+        }, 
+        "0x32": {
+            "instruction": "DS", 
+            "operands": [
+                {
+                    "name": "R2"
+                }
+            ]
+        }, 
+        "0x33": {
+            "instruction": "DS", 
+            "operands": [
+                {
+                    "name": "R3"
+                }
+            ]
+        }, 
+        "0x34": {
+            "instruction": "DS", 
+            "operands": [
+                {
+                    "name": "R4"
+                }
+            ]
+        }, 
+        "0x35": {
+            "instruction": "DS", 
+            "operands": [
+                {
+                    "name": "R5"
+                }
+            ]
+        }, 
+        "0x36": {
+            "instruction": "DS", 
+            "operands": [
+                {
+                    "name": "R6"
+                }
+            ]
+        }, 
+        "0x37": {
+            "instruction": "DS", 
+            "operands": [
+                {
+                    "name": "R7"
+                }
+            ]
+        }, 
+        "0x38": {
+            "instruction": "DS", 
+            "operands": [
+                {
+                    "name": "R8"
+                }
+            ]
+        }, 
+        "0x39": {
+            "instruction": "DS", 
+            "operands": [
+                {
+                    "name": "R9"
+                }
+            ]
+        }, 
+        "0x3A": {
+            "instruction": "DS", 
+            "operands": [
+                {
+                    "name": "R10"
+                }
+            ]
+        }, 
+        "0x3B": {
+            "instruction": "DS", 
+            "operands": [
+                {
+                    "name": "R11"
+                }
+            ]
+        }, 
+        "0x3C": {
+            "instruction": "DS", 
+            "operands": [
+                {
+                    "name": "S"
+                }
+            ]
+        }, 
+        "0x3D": {
+            "instruction": "DS", 
+            "operands": [
+                {
+                    "name": "I"
+                }
+            ]
+        }, 
+        "0x3E": {
+            "instruction": "DS", 
+            "operands": [
+                {
+                    "name": "D"
+                }
+            ]
+        }, 
+        "0x3F": {
+            "instruction": "DS", 
+            "operands": [
+                {
+                    "name": "R15"
+                }
+            ]
+        }, 
+        "0x40": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "name": "R0"
+                }
+            ]
+        }, 
+        "0x41": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "name": "R1"
+                }
+            ]
+        }, 
+        "0x42": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "name": "R2"
+                }
+            ]
+        }, 
+        "0x43": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "name": "R3"
+                }
+            ]
+        }, 
+        "0x44": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "name": "R4"
+                }
+            ]
+        }, 
+        "0x45": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "name": "R5"
+                }
+            ]
+        }, 
+        "0x46": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "name": "R6"
+                }
+            ]
+        }, 
+        "0x47": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "name": "R7"
+                }
+            ]
+        }, 
+        "0x48": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "name": "R8"
+                }
+            ]
+        }, 
+        "0x49": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "name": "R9"
+                }
+            ]
+        }, 
+        "0x4A": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "name": "R10"
+                }
+            ]
+        }, 
+        "0x4B": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "name": "R11"
+                }
+            ]
+        }, 
+        "0x4C": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "name": "S"
+                }
+            ]
+        }, 
+        "0x4D": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "name": "I"
+                }
+            ]
+        }, 
+        "0x4E": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "name": "D"
+                }
+            ]
+        }, 
+        "0x4F": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "name": "R15"
+                }
+            ]
+        }, 
+        "0x50": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "name": "R0"
+                }, 
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x51": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "name": "R1"
+                }, 
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x52": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "name": "R2"
+                }, 
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x53": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "name": "R3"
+                }, 
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x54": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "name": "R4"
+                }, 
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x55": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "name": "R5"
+                }, 
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x56": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "name": "R6"
+                }, 
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x57": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "name": "R7"
+                }, 
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x58": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "name": "R8"
+                }, 
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x59": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "name": "R9"
+                }, 
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x5A": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "name": "R10"
+                }, 
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x5B": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "name": "R11"
+                }, 
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x5C": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "name": "S"
+                }, 
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x5D": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "name": "I"
+                }, 
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x5E": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "name": "D"
+                }, 
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x5F": {
+            "instruction": "LR", 
+            "operands": [
+                {
+                    "name": "R15"
+                }, 
+                {
+                    "description": "8-bit accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x60": {
+            "instruction": "LISU", 
+            "operands": [
+                {
+                    "name": 0
+                }
+            ]
+        }, 
+        "0x61": {
+            "instruction": "LISU", 
+            "operands": [
+                {
+                    "name": 1
+                }
+            ]
+        }, 
+        "0x62": {
+            "instruction": "LISU", 
+            "operands": [
+                {
+                    "name": 2
+                }
+            ]
+        }, 
+        "0x63": {
+            "instruction": "LISU", 
+            "operands": [
+                {
+                    "name": 3
+                }
+            ]
+        }, 
+        "0x64": {
+            "instruction": "LISU", 
+            "operands": [
+                {
+                    "name": 4
+                }
+            ]
+        }, 
+        "0x65": {
+            "instruction": "LISU", 
+            "operands": [
+                {
+                    "name": 5
+                }
+            ]
+        }, 
+        "0x66": {
+            "instruction": "LISU", 
+            "operands": [
+                {
+                    "name": 6
+                }
+            ]
+        }, 
+        "0x67": {
+            "instruction": "LISU", 
+            "operands": [
+                {
+                    "name": 7
+                }
+            ]
+        }, 
+        "0x68": {
+            "instruction": "LISL", 
+            "operands": [
+                {
+                    "name": 0
+                }
+            ]
+        }, 
+        "0x69": {
+            "instruction": "LISL", 
+            "operands": [
+                {
+                    "name": 1
+                }
+            ]
+        }, 
+        "0x6A": {
+            "instruction": "LISL", 
+            "operands": [
+                {
+                    "name": 2
+                }
+            ]
+        }, 
+        "0x6B": {
+            "instruction": "LISL", 
+            "operands": [
+                {
+                    "name": 3
+                }
+            ]
+        }, 
+        "0x6C": {
+            "instruction": "LISL", 
+            "operands": [
+                {
+                    "name": 4
+                }
+            ]
+        }, 
+        "0x6D": {
+            "instruction": "LISL", 
+            "operands": [
+                {
+                    "name": 5
+                }
+            ]
+        }, 
+        "0x6E": {
+            "instruction": "LISL", 
+            "operands": [
+                {
+                    "name": 6
+                }
+            ]
+        }, 
+        "0x6F": {
+            "instruction": "LISL", 
+            "operands": [
+                {
+                    "name": 7
+                }
+            ]
+        }, 
+        "0x70": {
+            "instruction": "CLR"
+        }, 
+        "0x71": {
+            "instruction": "LIS", 
+            "operands": [
+                {
+                    "name": 1
+                }
+            ]
+        }, 
+        "0x72": {
+            "instruction": "LIS", 
+            "operands": [
+                {
+                    "name": 2
+                }
+            ]
+        }, 
+        "0x73": {
+            "instruction": "LIS", 
+            "operands": [
+                {
+                    "name": 3
+                }
+            ]
+        }, 
+        "0x74": {
+            "instruction": "LIS", 
+            "operands": [
+                {
+                    "name": 4
+                }
+            ]
+        }, 
+        "0x75": {
+            "instruction": "LIS", 
+            "operands": [
+                {
+                    "name": 5
+                }
+            ]
+        }, 
+        "0x76": {
+            "instruction": "LIS", 
+            "operands": [
+                {
+                    "name": 6
+                }
+            ]
+        }, 
+        "0x77": {
+            "instruction": "LIS", 
+            "operands": [
+                {
+                    "name": 7
+                }
+            ]
+        }, 
+        "0x78": {
+            "instruction": "LIS", 
+            "operands": [
+                {
+                    "name": 8
+                }
+            ]
+        }, 
+        "0x79": {
+            "instruction": "LIS", 
+            "operands": [
+                {
+                    "name": 9
+                }
+            ]
+        }, 
+        "0x7A": {
+            "instruction": "LIS", 
+            "operands": [
+                {
+                    "name": 10
+                }
+            ]
+        }, 
+        "0x7B": {
+            "instruction": "LIS", 
+            "operands": [
+                {
+                    "name": 11
+                }
+            ]
+        }, 
+        "0x7C": {
+            "instruction": "LIS", 
+            "operands": [
+                {
+                    "name": 12
+                }
+            ]
+        }, 
+        "0x7D": {
+            "instruction": "LIS", 
+            "operands": [
+                {
+                    "name": 13
+                }
+            ]
+        }, 
+        "0x7E": {
+            "instruction": "LIS", 
+            "operands": [
+                {
+                    "name": 14
+                }
+            ]
+        }, 
+        "0x7F": {
+            "instruction": "LIS", 
+            "operands": [
+                {
+                    "name": 15
+                }
+            ]
+        }, 
+        "0x80": {
+            "instruction": "BT", 
+            "operands": [
+                {
+                    "name": 0
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x81": {
+            "instruction": "BT", 
+            "operands": [
+                {
+                    "name": 1
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x82": {
+            "instruction": "BT", 
+            "operands": [
+                {
+                    "name": 2
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x83": {
+            "instruction": "BT", 
+            "operands": [
+                {
+                    "name": 3
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x84": {
+            "instruction": "BT", 
+            "operands": [
+                {
+                    "name": 4
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x85": {
+            "instruction": "BT", 
+            "operands": [
+                {
+                    "name": 5
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x86": {
+            "instruction": "BT", 
+            "operands": [
+                {
+                    "name": 6
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x87": {
+            "instruction": "BT", 
+            "operands": [
+                {
+                    "name": 7
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x88": {
+            "instruction": "AM"
+        }, 
+        "0x89": {
+            "instruction": "AMD"
+        }, 
+        "0x8A": {
+            "instruction": "NM"
+        }, 
+        "0x8B": {
+            "instruction": "OM"
+        }, 
+        "0x8C": {
+            "instruction": "XM"
+        }, 
+        "0x8D": {
+            "instruction": "CM"
+        }, 
+        "0x8E": {
+            "instruction": "ADC"
+        }, 
+        "0x8F": {
+            "instruction": "BR7", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x90": {
+            "instruction": "BF", 
+            "operands": [
+                {
+                    "name": 0
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x91": {
+            "instruction": "BF", 
+            "operands": [
+                {
+                    "name": 1
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x92": {
+            "instruction": "BF", 
+            "operands": [
+                {
+                    "name": 2
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x93": {
+            "instruction": "BF", 
+            "operands": [
+                {
+                    "name": 3
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x94": {
+            "instruction": "BF", 
+            "operands": [
+                {
+                    "name": 4
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x95": {
+            "instruction": "BF", 
+            "operands": [
+                {
+                    "name": 5
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x96": {
+            "instruction": "BF", 
+            "operands": [
+                {
+                    "name": 6
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x97": {
+            "instruction": "BF", 
+            "operands": [
+                {
+                    "name": 7
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x98": {
+            "instruction": "BF", 
+            "operands": [
+                {
+                    "name": 8
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x99": {
+            "instruction": "BF", 
+            "operands": [
+                {
+                    "name": 9
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x9A": {
+            "instruction": "BF", 
+            "operands": [
+                {
+                    "name": 10
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x9B": {
+            "instruction": "BF", 
+            "operands": [
+                {
+                    "name": 11
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x9C": {
+            "instruction": "BF", 
+            "operands": [
+                {
+                    "name": 12
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x9D": {
+            "instruction": "BF", 
+            "operands": [
+                {
+                    "name": 13
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x9E": {
+            "instruction": "BF", 
+            "operands": [
+                {
+                    "name": 14
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x9F": {
+            "instruction": "BF", 
+            "operands": [
+                {
+                    "name": 15
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xA0": {
+            "instruction": "INS", 
+            "operands": [
+                {
+                    "name": 0
+                }
+            ]
+        }, 
+        "0xA1": {
+            "instruction": "INS", 
+            "operands": [
+                {
+                    "name": 1
+                }
+            ]
+        }, 
+        "0xA2": {
+            "instruction": "INS", 
+            "operands": [
+                {
+                    "name": 2
+                }
+            ]
+        }, 
+        "0xA3": {
+            "instruction": "INS", 
+            "operands": [
+                {
+                    "name": 3
+                }
+            ]
+        }, 
+        "0xA4": {
+            "instruction": "INS", 
+            "operands": [
+                {
+                    "name": 4
+                }
+            ]
+        }, 
+        "0xA5": {
+            "instruction": "INS", 
+            "operands": [
+                {
+                    "name": 5
+                }
+            ]
+        }, 
+        "0xA6": {
+            "instruction": "INS", 
+            "operands": [
+                {
+                    "name": 6
+                }
+            ]
+        }, 
+        "0xA7": {
+            "instruction": "INS", 
+            "operands": [
+                {
+                    "name": 7
+                }
+            ]
+        }, 
+        "0xA8": {
+            "instruction": "INS", 
+            "operands": [
+                {
+                    "name": 8
+                }
+            ]
+        }, 
+        "0xA9": {
+            "instruction": "INS", 
+            "operands": [
+                {
+                    "name": 9
+                }
+            ]
+        }, 
+        "0xAA": {
+            "instruction": "INS", 
+            "operands": [
+                {
+                    "name": 10
+                }
+            ]
+        }, 
+        "0xAB": {
+            "instruction": "INS", 
+            "operands": [
+                {
+                    "name": 11
+                }
+            ]
+        }, 
+        "0xAC": {
+            "instruction": "INS", 
+            "operands": [
+                {
+                    "name": 12
+                }
+            ]
+        }, 
+        "0xAD": {
+            "instruction": "INS", 
+            "operands": [
+                {
+                    "name": 13
+                }
+            ]
+        }, 
+        "0xAE": {
+            "instruction": "INS", 
+            "operands": [
+                {
+                    "name": 14
+                }
+            ]
+        }, 
+        "0xAF": {
+            "instruction": "INS", 
+            "operands": [
+                {
+                    "name": 15
+                }
+            ]
+        }, 
+        "0xB0": {
+            "instruction": "OUTS", 
+            "operands": [
+                {
+                    "name": 0
+                }
+            ]
+        }, 
+        "0xB1": {
+            "instruction": "OUTS", 
+            "operands": [
+                {
+                    "name": 1
+                }
+            ]
+        }, 
+        "0xB2": {
+            "instruction": "OUTS", 
+            "operands": [
+                {
+                    "name": 2
+                }
+            ]
+        }, 
+        "0xB3": {
+            "instruction": "OUTS", 
+            "operands": [
+                {
+                    "name": 3
+                }
+            ]
+        }, 
+        "0xB4": {
+            "instruction": "OUTS", 
+            "operands": [
+                {
+                    "name": 4
+                }
+            ]
+        }, 
+        "0xB5": {
+            "instruction": "OUTS", 
+            "operands": [
+                {
+                    "name": 5
+                }
+            ]
+        }, 
+        "0xB6": {
+            "instruction": "OUTS", 
+            "operands": [
+                {
+                    "name": 6
+                }
+            ]
+        }, 
+        "0xB7": {
+            "instruction": "OUTS", 
+            "operands": [
+                {
+                    "name": 7
+                }
+            ]
+        }, 
+        "0xB8": {
+            "instruction": "OUTS", 
+            "operands": [
+                {
+                    "name": 8
+                }
+            ]
+        }, 
+        "0xB9": {
+            "instruction": "OUTS", 
+            "operands": [
+                {
+                    "name": 9
+                }
+            ]
+        }, 
+        "0xBA": {
+            "instruction": "OUTS", 
+            "operands": [
+                {
+                    "name": 10
+                }
+            ]
+        }, 
+        "0xBB": {
+            "instruction": "OUTS", 
+            "operands": [
+                {
+                    "name": 11
+                }
+            ]
+        }, 
+        "0xBC": {
+            "instruction": "OUTS", 
+            "operands": [
+                {
+                    "name": 12
+                }
+            ]
+        }, 
+        "0xBD": {
+            "instruction": "OUTS", 
+            "operands": [
+                {
+                    "name": 13
+                }
+            ]
+        }, 
+        "0xBE": {
+            "instruction": "OUTS", 
+            "operands": [
+                {
+                    "name": 14
+                }
+            ]
+        }, 
+        "0xBF": {
+            "instruction": "OUTS", 
+            "operands": [
+                {
+                    "name": 15
+                }
+            ]
+        }, 
+        "0xC0": {
+            "instruction": "AS", 
+            "operands": [
+                {
+                    "name": "R0"
+                }
+            ]
+        }, 
+        "0xC1": {
+            "instruction": "AS", 
+            "operands": [
+                {
+                    "name": "R1"
+                }
+            ]
+        }, 
+        "0xC2": {
+            "instruction": "AS", 
+            "operands": [
+                {
+                    "name": "R2"
+                }
+            ]
+        }, 
+        "0xC3": {
+            "instruction": "AS", 
+            "operands": [
+                {
+                    "name": "R3"
+                }
+            ]
+        }, 
+        "0xC4": {
+            "instruction": "AS", 
+            "operands": [
+                {
+                    "name": "R4"
+                }
+            ]
+        }, 
+        "0xC5": {
+            "instruction": "AS", 
+            "operands": [
+                {
+                    "name": "R5"
+                }
+            ]
+        }, 
+        "0xC6": {
+            "instruction": "AS", 
+            "operands": [
+                {
+                    "name": "R6"
+                }
+            ]
+        }, 
+        "0xC7": {
+            "instruction": "AS", 
+            "operands": [
+                {
+                    "name": "R7"
+                }
+            ]
+        }, 
+        "0xC8": {
+            "instruction": "AS", 
+            "operands": [
+                {
+                    "name": "R8"
+                }
+            ]
+        }, 
+        "0xC9": {
+            "instruction": "AS", 
+            "operands": [
+                {
+                    "name": "R9"
+                }
+            ]
+        }, 
+        "0xCA": {
+            "instruction": "AS", 
+            "operands": [
+                {
+                    "name": "R10"
+                }
+            ]
+        }, 
+        "0xCB": {
+            "instruction": "AS", 
+            "operands": [
+                {
+                    "name": "R11"
+                }
+            ]
+        }, 
+        "0xCC": {
+            "instruction": "AS", 
+            "operands": [
+                {
+                    "name": "S"
+                }
+            ]
+        }, 
+        "0xCD": {
+            "instruction": "AS", 
+            "operands": [
+                {
+                    "name": "I"
+                }
+            ]
+        }, 
+        "0xCE": {
+            "instruction": "AS", 
+            "operands": [
+                {
+                    "name": "D"
+                }
+            ]
+        }, 
+        "0xCF": {
+            "instruction": "AS", 
+            "operands": [
+                {
+                    "name": "R15"
+                }
+            ]
+        }, 
+        "0xD0": {
+            "instruction": "ASD", 
+            "operands": [
+                {
+                    "name": "R0"
+                }
+            ]
+        }, 
+        "0xD1": {
+            "instruction": "ASD", 
+            "operands": [
+                {
+                    "name": "R1"
+                }
+            ]
+        }, 
+        "0xD2": {
+            "instruction": "ASD", 
+            "operands": [
+                {
+                    "name": "R2"
+                }
+            ]
+        }, 
+        "0xD3": {
+            "instruction": "ASD", 
+            "operands": [
+                {
+                    "name": "R3"
+                }
+            ]
+        }, 
+        "0xD4": {
+            "instruction": "ASD", 
+            "operands": [
+                {
+                    "name": "R4"
+                }
+            ]
+        }, 
+        "0xD5": {
+            "instruction": "ASD", 
+            "operands": [
+                {
+                    "name": "R5"
+                }
+            ]
+        }, 
+        "0xD6": {
+            "instruction": "ASD", 
+            "operands": [
+                {
+                    "name": "R6"
+                }
+            ]
+        }, 
+        "0xD7": {
+            "instruction": "ASD", 
+            "operands": [
+                {
+                    "name": "R7"
+                }
+            ]
+        }, 
+        "0xD8": {
+            "instruction": "ASD", 
+            "operands": [
+                {
+                    "name": "R8"
+                }
+            ]
+        }, 
+        "0xD9": {
+            "instruction": "ASD", 
+            "operands": [
+                {
+                    "name": "R9"
+                }
+            ]
+        }, 
+        "0xDA": {
+            "instruction": "ASD", 
+            "operands": [
+                {
+                    "name": "R10"
+                }
+            ]
+        }, 
+        "0xDB": {
+            "instruction": "ASD", 
+            "operands": [
+                {
+                    "name": "R11"
+                }
+            ]
+        }, 
+        "0xDC": {
+            "instruction": "ASD", 
+            "operands": [
+                {
+                    "name": "S"
+                }
+            ]
+        }, 
+        "0xDD": {
+            "instruction": "ASD", 
+            "operands": [
+                {
+                    "name": "I"
+                }
+            ]
+        }, 
+        "0xDE": {
+            "instruction": "ASD", 
+            "operands": [
+                {
+                    "name": "D"
+                }
+            ]
+        }, 
+        "0xDF": {
+            "instruction": "ASD", 
+            "operands": [
+                {
+                    "name": "R15"
+                }
+            ]
+        }, 
+        "0xE0": {
+            "instruction": "XS", 
+            "operands": [
+                {
+                    "name": "R0"
+                }
+            ]
+        }, 
+        "0xE1": {
+            "instruction": "XS", 
+            "operands": [
+                {
+                    "name": "R1"
+                }
+            ]
+        }, 
+        "0xE2": {
+            "instruction": "XS", 
+            "operands": [
+                {
+                    "name": "R2"
+                }
+            ]
+        }, 
+        "0xE3": {
+            "instruction": "XS", 
+            "operands": [
+                {
+                    "name": "R3"
+                }
+            ]
+        }, 
+        "0xE4": {
+            "instruction": "XS", 
+            "operands": [
+                {
+                    "name": "R4"
+                }
+            ]
+        }, 
+        "0xE5": {
+            "instruction": "XS", 
+            "operands": [
+                {
+                    "name": "R5"
+                }
+            ]
+        }, 
+        "0xE6": {
+            "instruction": "XS", 
+            "operands": [
+                {
+                    "name": "R6"
+                }
+            ]
+        }, 
+        "0xE7": {
+            "instruction": "XS", 
+            "operands": [
+                {
+                    "name": "R7"
+                }
+            ]
+        }, 
+        "0xE8": {
+            "instruction": "XS", 
+            "operands": [
+                {
+                    "name": "R8"
+                }
+            ]
+        }, 
+        "0xE9": {
+            "instruction": "XS", 
+            "operands": [
+                {
+                    "name": "R9"
+                }
+            ]
+        }, 
+        "0xEA": {
+            "instruction": "XS", 
+            "operands": [
+                {
+                    "name": "R10"
+                }
+            ]
+        }, 
+        "0xEB": {
+            "instruction": "XS", 
+            "operands": [
+                {
+                    "name": "R11"
+                }
+            ]
+        }, 
+        "0xEC": {
+            "instruction": "XS", 
+            "operands": [
+                {
+                    "name": "S"
+                }
+            ]
+        }, 
+        "0xED": {
+            "instruction": "XS", 
+            "operands": [
+                {
+                    "name": "I"
+                }
+            ]
+        }, 
+        "0xEE": {
+            "instruction": "XS", 
+            "operands": [
+                {
+                    "name": "D"
+                }
+            ]
+        }, 
+        "0xEF": {
+            "instruction": "XS", 
+            "operands": [
+                {
+                    "name": "R15"
+                }
+            ]
+        }, 
+        "0xF0": {
+            "instruction": "NS", 
+            "operands": [
+                {
+                    "name": "R0"
+                }
+            ]
+        }, 
+        "0xF1": {
+            "instruction": "NS", 
+            "operands": [
+                {
+                    "name": "R1"
+                }
+            ]
+        }, 
+        "0xF2": {
+            "instruction": "NS", 
+            "operands": [
+                {
+                    "name": "R2"
+                }
+            ]
+        }, 
+        "0xF3": {
+            "instruction": "NS", 
+            "operands": [
+                {
+                    "name": "R3"
+                }
+            ]
+        }, 
+        "0xF4": {
+            "instruction": "NS", 
+            "operands": [
+                {
+                    "name": "R4"
+                }
+            ]
+        }, 
+        "0xF5": {
+            "instruction": "NS", 
+            "operands": [
+                {
+                    "name": "R5"
+                }
+            ]
+        }, 
+        "0xF6": {
+            "instruction": "NS", 
+            "operands": [
+                {
+                    "name": "R6"
+                }
+            ]
+        }, 
+        "0xF7": {
+            "instruction": "NS", 
+            "operands": [
+                {
+                    "name": "R7"
+                }
+            ]
+        }, 
+        "0xF8": {
+            "instruction": "NS", 
+            "operands": [
+                {
+                    "name": "R8"
+                }
+            ]
+        }, 
+        "0xF9": {
+            "instruction": "NS", 
+            "operands": [
+                {
+                    "name": "R9"
+                }
+            ]
+        }, 
+        "0xFA": {
+            "instruction": "NS", 
+            "operands": [
+                {
+                    "name": "R10"
+                }
+            ]
+        }, 
+        "0xFB": {
+            "instruction": "NS", 
+            "operands": [
+                {
+                    "name": "R11"
+                }
+            ]
+        }, 
+        "0xFC": {
+            "instruction": "NS", 
+            "operands": [
+                {
+                    "name": "S"
+                }
+            ]
+        }, 
+        "0xFD": {
+            "instruction": "NS", 
+            "operands": [
+                {
+                    "name": "I"
+                }
+            ]
+        }, 
+        "0xFE": {
+            "instruction": "NS", 
+            "operands": [
+                {
+                    "name": "D"
+                }
+            ]
+        }, 
+        "0xFF": {
+            "instruction": "NS", 
+            "operands": [
+                {
+                    "name": "R15"
+                }
+            ]
+        }
+    }
+}

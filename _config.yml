@@ -25,6 +25,10 @@ encoding: UTF-8
 collections_dir: collections
 
 collections:
+  intel-8080:
+    output: true
+  f8:
+    output: true
   optables:
     output: true
   opdescriptions:

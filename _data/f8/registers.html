@@ -1,0 +1,80 @@
+ISAR:
+
+The Indirect Scratchpad Address Register (ISAR) consists of two 3-bit octal registers (ISARU and ISARL). It is used to access the 64 scratchpad registers (although the first 12 scratchpad registers can be accessed directly as well).
+
+
+
+
+Scratchpad registers:
+
+There are 64 8-bit scratchpad registers.
+
+The first 12 (0–11) can be accessed directly through the corresponding number.
+
+Scratchpad 9 uses the alternate name J when used with `LR J, W` or `LR W, J`.
+
+Scratchpads 10 and 11 together form the 16-bit register H when used with `LR DC, H` and `LR H, DC`. They can also alternately use the names HU and HL when used with `LR A, HU`, `LR HU, A`, `LR A, HL` and `LR HL, A`, but 10 and 11 are also valid in that case.
+
+Scratchpads 12 and 13 together form the 16-bit register K when used with `LR K, P` and `LR P, K`. They also use the names KU and KL when used with `LR A, KU`, `LR KU, A`, `LR A, KL` and `LR KL, A`. The names 12 and 13 are not valid here, but instead load through ISAR.
+
+Scratchpads 14 and 15 together form the 16-bit register Q when used with `LR P0, Q`, `LR DC, Q` and `LR Q, DC`. They also use the names QU and QL when used with `LR A, QU`, `LR QU, A`, `LR A, QL` and `LR QL, A`. The names 14 and 15 are not valid here; 14 instead loads through ISAR, and 15 is invalid.
+
+All the scratchpad registers can be addressed through ISAR, but scratchpads 12–64 must use ISAR.
+
+<table>
+    <tr>
+        <td>ISAR
+    <tr>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>J</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>HU</td>
+        <td rowspan="2">H</td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>HL</td>
+    </tr>
+    <tr>
+        <td>KU</td>
+        <td rowspan="2">K</td>
+    </tr>
+    <tr>
+        <td>KL</td>
+    </tr>
+    <tr>
+        <td>QU</td>
+        <td rowspan="2">Q</td>
+    </tr>
+    <tr>
+        <td>QL</td>
+    </tr>

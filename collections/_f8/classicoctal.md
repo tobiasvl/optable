@@ -7,4 +7,4 @@ canonical: https://gbdev.github.io/gb-opcodes/optables/
 ogimage: /assets/opengraph-image-classic-octal.png
 ---
 
-{% include optables/content.html cpu=include.cpu %}
+{% include optables/content.html cpu="f8" %}

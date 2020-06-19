@@ -3,7 +3,7 @@
 		<thead>
 			<tr>
 				{% for i in (-1..7) %}
-					<th>{% unless i == -1 %}x{% include oct.html value=i prepend=false %}{% endunless %}</th>
+					<th>{% unless i == -1 %}x{% include oct.html cpu=include.cpu value=i prepend=false %}{% endunless %}</th>
 				{% endfor %}
 			</tr>
 		</thead>
@@ -11,19 +11,19 @@
 			{% assign x = 0 %}
 			{% for i in (0..15) %}
 				<tr>
-					<td>{% include oct.html value=x prepend=false %}x</td>
+					<td>{% include oct.html cpu=include.cpu value=x prepend=false %}x</td>
 
 					{% for j in (0..7) %}
-						{% include optables/op-table-cell.html set=include.set row=i column=j %}
+						{% include optables/op-table-cell.html cpu=include.cpu set=include.set row=i column=j %}
 					{% endfor %}
 				</tr>
 				{% assign x = x | plus: 1 %}
 
 				<tr>
-					<td>{% include oct.html value=x prepend=false %}x</td>
+					<td>{% include oct.html cpu=include.cpu value=x prepend=false %}x</td>
 
 					{% for j in (8..15) %}
-						{% include optables/op-table-cell.html set=include.set row=i column=j %}
+						{% include optables/op-table-cell.html cpu=include.cpu set=include.set row=i column=j %}
 					{% endfor %}
 				</tr>
 				{% assign x = x | plus: 1 %}

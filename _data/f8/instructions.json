@@ -1,0 +1,328 @@
+{
+    "ADC": {
+        "description": "Add A (signed) to DC0",
+        "group": "control"
+    },
+    "AI": {
+        "description": "Add immediate to A",
+        "group": "arithmetic",
+        "flags": {
+            "O": "O",
+            "Z": "Z",
+            "C": "C",
+            "S": "S"
+        }
+    },
+    "AM": {
+        "description": "Add Memory to A",
+        "group": "arithmetic",
+        "flags": {
+            "O": "O",
+            "Z": "Z",
+            "C": "C",
+            "S": "S"
+        }
+    },
+    "AMD": {
+        "description": "Add memory to A as decimal (BCD)",
+        "group": "arithmetic"
+    },
+    "AS": {
+        "description": "Add scratchpad memory to A",
+        "group": "arithmetic"
+    },
+    "ASD": {
+        "description": "Add scratchpad memory to A as decimal (BCD)",
+        "group": "arithmetic"
+    },
+    "BF": {
+        "description": "AND operand mask with W and Branch if False",
+        "group": "flow"
+    },
+    "BT": {
+        "description": "AND operand mask with W and Branch if True",
+        "group": "flow"
+    },
+    "BC": {
+        "description": "Branch if Carry (C flag is set)",
+        "group": "flow"
+    },
+    "BZ": {
+        "description": "Branch if Zero (Z flag is set)",
+        "group": "flow"
+    },
+    "BNZ": {
+        "description": "Branch if Not Zero (Z flag is reset)",
+        "group": "flow"
+    },
+    "BNC": {
+        "description": "Branch if No Carry (C flag is reset)",
+        "group": "flow"
+    },
+    "BNO": {
+        "description": "Branch if No Overflow (O flag is reset)",
+        "group": "flow"
+    },
+    "BM": {
+        "description": "Branch if Minus (S flag is reset)",
+        "group": "flow"
+    },
+    "BP": {
+        "description": "Branch if Positive (S flag is set)",
+        "group": "flow"
+    },
+    "BR7": {
+        "description": "Branch if the low octal digit of ISAR is not 7",
+        "group": "flow"
+    },
+    "CI": {
+        "description": "Compare Immediate",
+        "group": "logic"
+    },
+    "CLR": {
+        "description": "Clear A",
+        "group": "logic"
+    },
+    "CM": {
+        "description": "Compare Memory to A",
+        "group": "logic"
+    },
+    "COM": {
+        "description": "Complement A",
+        "group": "logic",
+        "flags": {
+            "S": "S",
+            "Z": "Z",
+            "O": 0,
+            "C": 0
+        }
+    },
+    "DCI": {
+        "description": "Load DC Immediate",
+        "group": "arithmetic"
+    },
+    "DI": {
+        "flags": {
+            "I": 0
+        },
+        "description": "Disable Interrupt",
+        "group": "control"
+    },
+    "DS": {
+        "description": "Decrement Scratchpad content and ISAR",
+        "group": "arithmetic",
+        "flags": {
+            "O": "O",
+            "Z": "Z",
+            "C": "C",
+            "S": "S"
+        }
+    },
+    "EI": {
+        "description": "Enable Interrupt",
+        "group": "control",
+        "flags": {
+            "I": 1
+        }
+    },
+    "IN": {
+        "description": "Input long address",
+        "group": "control",
+        "flags": {
+            "O": 0,
+            "Z": "Z",
+            "C": 0,
+            "S": "S"
+        }
+    },
+    "INC": {
+        "description": "Increment A",
+        "group": "arithmetic",
+        "flags": {
+            "O": "O",
+            "Z": "Z",
+            "C": "C",
+            "S": "S"
+        }
+    },
+    "INS": {
+        "description": "Input Short address",
+        "group": "control",
+        "flags": {
+            "O": 0,
+            "Z": "Z",
+            "C": 0,
+            "S": "S"
+        }
+    },
+    "JMP": {
+        "description": "Jump immediate",
+        "group": "flow"
+    },
+    "LI": {
+        "description": "Load Immediate",
+        "group": "transfer"
+    },
+    "LIS": {
+        "description": "Load Immediate Short",
+        "group": "transfer"
+    },
+    "LISL": {
+        "description": "Load ISAR, Lower octal digit",
+        "group": "control"
+    },
+    "LISU": {
+        "description": "Load ISAR, Upper octal digit",
+        "group": "control"
+    },
+    "LM": {
+        "description": "Load A from Memory address in DC0",
+        "group": "transfer"
+    },
+    "LNK": {
+        "description": "Add (Link) carry flag to A",
+        "group": "arithmetic",
+        "flags": {
+            "O": "O",
+            "Z": "Z",
+            "C": "C",
+            "S": "S"
+        }
+    },
+    "LR": {
+        "description": "Load Register",
+        "group": "transfer"
+    },
+    "NI": {
+        "description": "AND A with Immediate",
+        "group": "logic",
+        "flags": {
+            "O": 0,
+            "Z": "Z",
+            "C": 0,
+            "S": "S"
+        }
+    },
+    "NM": {
+        "description": "AND A with Memory",
+        "group": "logic",
+        "flags": {
+            "O": 0,
+            "Z": "Z",
+            "C": 0,
+            "S": "S"
+        }
+    },
+    "NOP": {
+        "description": "No Operation",
+        "group": "control"
+    },
+    "NS": {
+        "description": "AND A with Scratchpad memory",
+        "group": "logic",
+        "flags": {
+            "O": 0,
+            "Z": "Z",
+            "C": 0,
+            "S": "S"
+        }
+    },
+    "OI": {
+        "description": "OR A with Immediate",
+        "group": "logic",
+        "flags": {
+            "O": 0,
+            "Z": "Z",
+            "C": 0,
+            "S": "S"
+        }
+    },
+    "OM": {
+        "description": "OR A with Memory",
+        "group": "logic",
+        "flags": {
+            "O": 0,
+            "Z": "Z",
+            "C": 0,
+            "S": "S"
+        }
+    },
+    "OUT": {
+        "description": "Output long address",
+        "group": "control"
+    },
+    "OUTS": {
+        "description": "Output Short address",
+        "group": "control"
+    },
+    "PI": {
+        "description": "Call subroutine Immediate (changes A)",
+        "group": "flow"
+    },
+    "PK": {
+        "description": "Call subroutine in K",
+        "group": "flow"
+    },
+    "POP": {
+        "description": "Return from subroutine",
+        "group": "flow"
+    },
+    "SL": {
+        "description": "Shift Left",
+        "group": "logic",
+        "flags": {
+            "O": 0,
+            "Z": "Z",
+            "C": 0,
+            "S": "S"
+        }
+    },
+    "SR": {
+        "description": "Shift Right",
+        "group": "logic",
+        "flags": {
+            "O": 0,
+            "Z": "Z",
+            "C": 0,
+            "S": "S"
+        }
+    },
+    "ST": {
+        "description": "Store A to memory addressed by DC0",
+        "group": "transfer"
+    },
+    "XDC": {
+        "description": "Exchange Data Counters (swap DC0 and DC1)",
+        "group": "control"
+    },
+    "XI": {
+        "description": "XOR A with Immediate",
+        "group": "logic",
+        "flags": {
+            "O": 0,
+            "Z": "Z",
+            "C": 0,
+            "S": "S"
+        }
+    },
+    "XM": {
+        "description": "XOR A with Memory",
+        "group": "logic",
+        "flags": {
+            "O": 0,
+            "Z": "Z",
+            "C": 0,
+            "S": "S"
+        }
+    },
+    "XS": {
+        "description": "XOR A with Scratchpad",
+        "group": "logic",
+        "flags": {
+            "O": 0,
+            "Z": "Z",
+            "C": 0,
+            "S": "S"
+        }
+    }
+}
