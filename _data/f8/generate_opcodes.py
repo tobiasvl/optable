@@ -1,22 +1,22 @@
 import json
 
 scratchpad = [
-    { "name": "R0"},
-    { "name": "R1"},
-    { "name": "R2"},
-    { "name": "R3"},
-    { "name": "R4"},
-    { "name": "R5"},
-    { "name": "R6"},
-    { "name": "R7"},
-    { "name": "R8"},
-    { "name": "R9"},
-    { "name": "R10"},
-    { "name": "R11"},
+    { "name": "0"},
+    { "name": "1"},
+    { "name": "2"},
+    { "name": "3"},
+    { "name": "4"},
+    { "name": "5"},
+    { "name": "6"},
+    { "name": "7"},
+    { "name": "8"},
+    { "name": "9"},
+    { "name": "10"},
+    { "name": "11"},
     { "name": "S"},
     { "name": "I"},
     { "name": "D"},
-    { "name": "R15"} 
+    { "name": "15"} 
 ]
 
 registers = {

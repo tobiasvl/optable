@@ -484,7 +484,7 @@
             "instruction": "DS", 
             "operands": [
                 {
-                    "name": "R0"
+                    "name": "0"
                 }
             ]
         }, 
@@ -492,7 +492,7 @@
             "instruction": "DS", 
             "operands": [
                 {
-                    "name": "R1"
+                    "name": "1"
                 }
             ]
         }, 
@@ -500,7 +500,7 @@
             "instruction": "DS", 
             "operands": [
                 {
-                    "name": "R2"
+                    "name": "2"
                 }
             ]
         }, 
@@ -508,7 +508,7 @@
             "instruction": "DS", 
             "operands": [
                 {
-                    "name": "R3"
+                    "name": "3"
                 }
             ]
         }, 
@@ -516,7 +516,7 @@
             "instruction": "DS", 
             "operands": [
                 {
-                    "name": "R4"
+                    "name": "4"
                 }
             ]
         }, 
@@ -524,7 +524,7 @@
             "instruction": "DS", 
             "operands": [
                 {
-                    "name": "R5"
+                    "name": "5"
                 }
             ]
         }, 
@@ -532,7 +532,7 @@
             "instruction": "DS", 
             "operands": [
                 {
-                    "name": "R6"
+                    "name": "6"
                 }
             ]
         }, 
@@ -540,7 +540,7 @@
             "instruction": "DS", 
             "operands": [
                 {
-                    "name": "R7"
+                    "name": "7"
                 }
             ]
         }, 
@@ -548,7 +548,7 @@
             "instruction": "DS", 
             "operands": [
                 {
-                    "name": "R8"
+                    "name": "8"
                 }
             ]
         }, 
@@ -556,7 +556,7 @@
             "instruction": "DS", 
             "operands": [
                 {
-                    "name": "R9"
+                    "name": "9"
                 }
             ]
         }, 
@@ -564,7 +564,7 @@
             "instruction": "DS", 
             "operands": [
                 {
-                    "name": "R10"
+                    "name": "10"
                 }
             ]
         }, 
@@ -572,7 +572,7 @@
             "instruction": "DS", 
             "operands": [
                 {
-                    "name": "R11"
+                    "name": "11"
                 }
             ]
         }, 
@@ -604,7 +604,7 @@
             "instruction": "DS", 
             "operands": [
                 {
-                    "name": "R15"
+                    "name": "15"
                 }
             ]
         }, 
@@ -617,7 +617,7 @@
                     "type": "register"
                 }, 
                 {
-                    "name": "R0"
+                    "name": "0"
                 }
             ]
         }, 
@@ -630,7 +630,7 @@
                     "type": "register"
                 }, 
                 {
-                    "name": "R1"
+                    "name": "1"
                 }
             ]
         }, 
@@ -643,7 +643,7 @@
                     "type": "register"
                 }, 
                 {
-                    "name": "R2"
+                    "name": "2"
                 }
             ]
         }, 
@@ -656,7 +656,7 @@
                     "type": "register"
                 }, 
                 {
-                    "name": "R3"
+                    "name": "3"
                 }
             ]
         }, 
@@ -669,7 +669,7 @@
                     "type": "register"
                 }, 
                 {
-                    "name": "R4"
+                    "name": "4"
                 }
             ]
         }, 
@@ -682,7 +682,7 @@
                     "type": "register"
                 }, 
                 {
-                    "name": "R5"
+                    "name": "5"
                 }
             ]
         }, 
@@ -695,7 +695,7 @@
                     "type": "register"
                 }, 
                 {
-                    "name": "R6"
+                    "name": "6"
                 }
             ]
         }, 
@@ -708,7 +708,7 @@
                     "type": "register"
                 }, 
                 {
-                    "name": "R7"
+                    "name": "7"
                 }
             ]
         }, 
@@ -721,7 +721,7 @@
                     "type": "register"
                 }, 
                 {
-                    "name": "R8"
+                    "name": "8"
                 }
             ]
         }, 
@@ -734,7 +734,7 @@
                     "type": "register"
                 }, 
                 {
-                    "name": "R9"
+                    "name": "9"
                 }
             ]
         }, 
@@ -747,7 +747,7 @@
                     "type": "register"
                 }, 
                 {
-                    "name": "R10"
+                    "name": "10"
                 }
             ]
         }, 
@@ -760,7 +760,7 @@
                     "type": "register"
                 }, 
                 {
-                    "name": "R11"
+                    "name": "11"
                 }
             ]
         }, 
@@ -812,7 +812,7 @@
                     "type": "register"
                 }, 
                 {
-                    "name": "R15"
+                    "name": "15"
                 }
             ]
         }, 
@@ -820,7 +820,7 @@
             "instruction": "LR", 
             "operands": [
                 {
-                    "name": "R0"
+                    "name": "0"
                 }, 
                 {
                     "description": "8-bit accumulator A", 
@@ -833,7 +833,7 @@
             "instruction": "LR", 
             "operands": [
                 {
-                    "name": "R1"
+                    "name": "1"
                 }, 
                 {
                     "description": "8-bit accumulator A", 
@@ -846,7 +846,7 @@
             "instruction": "LR", 
             "operands": [
                 {
-                    "name": "R2"
+                    "name": "2"
                 }, 
                 {
                     "description": "8-bit accumulator A", 
@@ -859,7 +859,7 @@
             "instruction": "LR", 
             "operands": [
                 {
-                    "name": "R3"
+                    "name": "3"
                 }, 
                 {
                     "description": "8-bit accumulator A", 
@@ -872,7 +872,7 @@
             "instruction": "LR", 
             "operands": [
                 {
-                    "name": "R4"
+                    "name": "4"
                 }, 
                 {
                     "description": "8-bit accumulator A", 
@@ -885,7 +885,7 @@
             "instruction": "LR", 
             "operands": [
                 {
-                    "name": "R5"
+                    "name": "5"
                 }, 
                 {
                     "description": "8-bit accumulator A", 
@@ -898,7 +898,7 @@
             "instruction": "LR", 
             "operands": [
                 {
-                    "name": "R6"
+                    "name": "6"
                 }, 
                 {
                     "description": "8-bit accumulator A", 
@@ -911,7 +911,7 @@
             "instruction": "LR", 
             "operands": [
                 {
-                    "name": "R7"
+                    "name": "7"
                 }, 
                 {
                     "description": "8-bit accumulator A", 
@@ -924,7 +924,7 @@
             "instruction": "LR", 
             "operands": [
                 {
-                    "name": "R8"
+                    "name": "8"
                 }, 
                 {
                     "description": "8-bit accumulator A", 
@@ -937,7 +937,7 @@
             "instruction": "LR", 
             "operands": [
                 {
-                    "name": "R9"
+                    "name": "9"
                 }, 
                 {
                     "description": "8-bit accumulator A", 
@@ -950,7 +950,7 @@
             "instruction": "LR", 
             "operands": [
                 {
-                    "name": "R10"
+                    "name": "10"
                 }, 
                 {
                     "description": "8-bit accumulator A", 
@@ -963,7 +963,7 @@
             "instruction": "LR", 
             "operands": [
                 {
-                    "name": "R11"
+                    "name": "11"
                 }, 
                 {
                     "description": "8-bit accumulator A", 
@@ -1015,7 +1015,7 @@
             "instruction": "LR", 
             "operands": [
                 {
-                    "name": "R15"
+                    "name": "15"
                 }, 
                 {
                     "description": "8-bit accumulator A", 
@@ -1879,7 +1879,7 @@
             "instruction": "AS", 
             "operands": [
                 {
-                    "name": "R0"
+                    "name": "0"
                 }
             ]
         }, 
@@ -1887,7 +1887,7 @@
             "instruction": "AS", 
             "operands": [
                 {
-                    "name": "R1"
+                    "name": "1"
                 }
             ]
         }, 
@@ -1895,7 +1895,7 @@
             "instruction": "AS", 
             "operands": [
                 {
-                    "name": "R2"
+                    "name": "2"
                 }
             ]
         }, 
@@ -1903,7 +1903,7 @@
             "instruction": "AS", 
             "operands": [
                 {
-                    "name": "R3"
+                    "name": "3"
                 }
             ]
         }, 
@@ -1911,7 +1911,7 @@
             "instruction": "AS", 
             "operands": [
                 {
-                    "name": "R4"
+                    "name": "4"
                 }
             ]
         }, 
@@ -1919,7 +1919,7 @@
             "instruction": "AS", 
             "operands": [
                 {
-                    "name": "R5"
+                    "name": "5"
                 }
             ]
         }, 
@@ -1927,7 +1927,7 @@
             "instruction": "AS", 
             "operands": [
                 {
-                    "name": "R6"
+                    "name": "6"
                 }
             ]
         }, 
@@ -1935,7 +1935,7 @@
             "instruction": "AS", 
             "operands": [
                 {
-                    "name": "R7"
+                    "name": "7"
                 }
             ]
         }, 
@@ -1943,7 +1943,7 @@
             "instruction": "AS", 
             "operands": [
                 {
-                    "name": "R8"
+                    "name": "8"
                 }
             ]
         }, 
@@ -1951,7 +1951,7 @@
             "instruction": "AS", 
             "operands": [
                 {
-                    "name": "R9"
+                    "name": "9"
                 }
             ]
         }, 
@@ -1959,7 +1959,7 @@
             "instruction": "AS", 
             "operands": [
                 {
-                    "name": "R10"
+                    "name": "10"
                 }
             ]
         }, 
@@ -1967,7 +1967,7 @@
             "instruction": "AS", 
             "operands": [
                 {
-                    "name": "R11"
+                    "name": "11"
                 }
             ]
         }, 
@@ -1999,7 +1999,7 @@
             "instruction": "AS", 
             "operands": [
                 {
-                    "name": "R15"
+                    "name": "15"
                 }
             ]
         }, 
@@ -2007,7 +2007,7 @@
             "instruction": "ASD", 
             "operands": [
                 {
-                    "name": "R0"
+                    "name": "0"
                 }
             ]
         }, 
@@ -2015,7 +2015,7 @@
             "instruction": "ASD", 
             "operands": [
                 {
-                    "name": "R1"
+                    "name": "1"
                 }
             ]
         }, 
@@ -2023,7 +2023,7 @@
             "instruction": "ASD", 
             "operands": [
                 {
-                    "name": "R2"
+                    "name": "2"
                 }
             ]
         }, 
@@ -2031,7 +2031,7 @@
             "instruction": "ASD", 
             "operands": [
                 {
-                    "name": "R3"
+                    "name": "3"
                 }
             ]
         }, 
@@ -2039,7 +2039,7 @@
             "instruction": "ASD", 
             "operands": [
                 {
-                    "name": "R4"
+                    "name": "4"
                 }
             ]
         }, 
@@ -2047,7 +2047,7 @@
             "instruction": "ASD", 
             "operands": [
                 {
-                    "name": "R5"
+                    "name": "5"
                 }
             ]
         }, 
@@ -2055,7 +2055,7 @@
             "instruction": "ASD", 
             "operands": [
                 {
-                    "name": "R6"
+                    "name": "6"
                 }
             ]
         }, 
@@ -2063,7 +2063,7 @@
             "instruction": "ASD", 
             "operands": [
                 {
-                    "name": "R7"
+                    "name": "7"
                 }
             ]
         }, 
@@ -2071,7 +2071,7 @@
             "instruction": "ASD", 
             "operands": [
                 {
-                    "name": "R8"
+                    "name": "8"
                 }
             ]
         }, 
@@ -2079,7 +2079,7 @@
             "instruction": "ASD", 
             "operands": [
                 {
-                    "name": "R9"
+                    "name": "9"
                 }
             ]
         }, 
@@ -2087,7 +2087,7 @@
             "instruction": "ASD", 
             "operands": [
                 {
-                    "name": "R10"
+                    "name": "10"
                 }
             ]
         }, 
@@ -2095,7 +2095,7 @@
             "instruction": "ASD", 
             "operands": [
                 {
-                    "name": "R11"
+                    "name": "11"
                 }
             ]
         }, 
@@ -2127,7 +2127,7 @@
             "instruction": "ASD", 
             "operands": [
                 {
-                    "name": "R15"
+                    "name": "15"
                 }
             ]
         }, 
@@ -2135,7 +2135,7 @@
             "instruction": "XS", 
             "operands": [
                 {
-                    "name": "R0"
+                    "name": "0"
                 }
             ]
         }, 
@@ -2143,7 +2143,7 @@
             "instruction": "XS", 
             "operands": [
                 {
-                    "name": "R1"
+                    "name": "1"
                 }
             ]
         }, 
@@ -2151,7 +2151,7 @@
             "instruction": "XS", 
             "operands": [
                 {
-                    "name": "R2"
+                    "name": "2"
                 }
             ]
         }, 
@@ -2159,7 +2159,7 @@
             "instruction": "XS", 
             "operands": [
                 {
-                    "name": "R3"
+                    "name": "3"
                 }
             ]
         }, 
@@ -2167,7 +2167,7 @@
             "instruction": "XS", 
             "operands": [
                 {
-                    "name": "R4"
+                    "name": "4"
                 }
             ]
         }, 
@@ -2175,7 +2175,7 @@
             "instruction": "XS", 
             "operands": [
                 {
-                    "name": "R5"
+                    "name": "5"
                 }
             ]
         }, 
@@ -2183,7 +2183,7 @@
             "instruction": "XS", 
             "operands": [
                 {
-                    "name": "R6"
+                    "name": "6"
                 }
             ]
         }, 
@@ -2191,7 +2191,7 @@
             "instruction": "XS", 
             "operands": [
                 {
-                    "name": "R7"
+                    "name": "7"
                 }
             ]
         }, 
@@ -2199,7 +2199,7 @@
             "instruction": "XS", 
             "operands": [
                 {
-                    "name": "R8"
+                    "name": "8"
                 }
             ]
         }, 
@@ -2207,7 +2207,7 @@
             "instruction": "XS", 
             "operands": [
                 {
-                    "name": "R9"
+                    "name": "9"
                 }
             ]
         }, 
@@ -2215,7 +2215,7 @@
             "instruction": "XS", 
             "operands": [
                 {
-                    "name": "R10"
+                    "name": "10"
                 }
             ]
         }, 
@@ -2223,7 +2223,7 @@
             "instruction": "XS", 
             "operands": [
                 {
-                    "name": "R11"
+                    "name": "11"
                 }
             ]
         }, 
@@ -2255,7 +2255,7 @@
             "instruction": "XS", 
             "operands": [
                 {
-                    "name": "R15"
+                    "name": "15"
                 }
             ]
         }, 
@@ -2263,7 +2263,7 @@
             "instruction": "NS", 
             "operands": [
                 {
-                    "name": "R0"
+                    "name": "0"
                 }
             ]
         }, 
@@ -2271,7 +2271,7 @@
             "instruction": "NS", 
             "operands": [
                 {
-                    "name": "R1"
+                    "name": "1"
                 }
             ]
         }, 
@@ -2279,7 +2279,7 @@
             "instruction": "NS", 
             "operands": [
                 {
-                    "name": "R2"
+                    "name": "2"
                 }
             ]
         }, 
@@ -2287,7 +2287,7 @@
             "instruction": "NS", 
             "operands": [
                 {
-                    "name": "R3"
+                    "name": "3"
                 }
             ]
         }, 
@@ -2295,7 +2295,7 @@
             "instruction": "NS", 
             "operands": [
                 {
-                    "name": "R4"
+                    "name": "4"
                 }
             ]
         }, 
@@ -2303,7 +2303,7 @@
             "instruction": "NS", 
             "operands": [
                 {
-                    "name": "R5"
+                    "name": "5"
                 }
             ]
         }, 
@@ -2311,7 +2311,7 @@
             "instruction": "NS", 
             "operands": [
                 {
-                    "name": "R6"
+                    "name": "6"
                 }
             ]
         }, 
@@ -2319,7 +2319,7 @@
             "instruction": "NS", 
             "operands": [
                 {
-                    "name": "R7"
+                    "name": "7"
                 }
             ]
         }, 
@@ -2327,7 +2327,7 @@
             "instruction": "NS", 
             "operands": [
                 {
-                    "name": "R8"
+                    "name": "8"
                 }
             ]
         }, 
@@ -2335,7 +2335,7 @@
             "instruction": "NS", 
             "operands": [
                 {
-                    "name": "R9"
+                    "name": "9"
                 }
             ]
         }, 
@@ -2343,7 +2343,7 @@
             "instruction": "NS", 
             "operands": [
                 {
-                    "name": "R10"
+                    "name": "10"
                 }
             ]
         }, 
@@ -2351,7 +2351,7 @@
             "instruction": "NS", 
             "operands": [
                 {
-                    "name": "R11"
+                    "name": "11"
                 }
             ]
         }, 
@@ -2383,7 +2383,7 @@
             "instruction": "NS", 
             "operands": [
                 {
-                    "name": "R15"
+                    "name": "15"
                 }
             ]
         }
