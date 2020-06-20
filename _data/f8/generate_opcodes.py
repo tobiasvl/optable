@@ -54,7 +54,7 @@ opcodes = {}
 
 for opcode in range(0x00, 0x100):
     r = scratchpad[opcode & 0x0F]
-    foo = {}
+    foo = {"timing": {"cycles": 1}}
 
     if opcode == 0x00:
         foo['instruction'] = 'LR'
@@ -106,12 +106,14 @@ for opcode in range(0x00, 0x100):
         ]
     elif opcode == 0x08:
         foo['instruction'] = 'LR'
+        foo['timing'] = { 'cycles': 4 }
         foo['operands'] = [
             registers['K'],
             registers['P'],
         ]
     elif opcode == 0x09:
         foo['instruction'] = 'LR'
+        foo['timing'] = { 'cycles': 4 }
         foo['operands'] = [
             registers['P'],
             registers['K'],
@@ -130,32 +132,38 @@ for opcode in range(0x00, 0x100):
         ]
     elif opcode == 0x0C:
         foo['instruction'] = 'PK'
+        foo['timing'] = { 'cycles': 2.5 }
     elif opcode == 0x0D:
         foo['instruction'] = 'LR'
+        foo['timing'] = { 'cycles': 4 }
         foo['operands'] = [
             registers['P0'],
             registers['Q'],
         ]
     elif opcode == 0x0E:
         foo['instruction'] = 'LR'
+        foo['timing'] = { 'cycles': 4 }
         foo['operands'] = [
             registers['H'],
             registers['DC'],
         ]
     elif opcode == 0x0F:
         foo['instruction'] = 'LR'
+        foo['timing'] = { 'cycles': 4 }
         foo['operands'] = [
             registers['Q'],
             registers['DC'],
         ]
     elif opcode == 0x10:
         foo['instruction'] = 'LR'
+        foo['timing'] = { 'cycles': 4 }
         foo['operands'] = [
             registers['DC'],
             registers['Q'],
         ]
     elif opcode == 0x11:
         foo['instruction'] = 'LR'
+        foo['timing'] = { 'cycles': 4 }
         foo['operands'] = [
             registers['H'],
             registers['DC'],
@@ -174,8 +182,10 @@ for opcode in range(0x00, 0x100):
         foo['operands'] = [ inherent[4] ]
     elif opcode == 0x16:
         foo['instruction'] = 'LM'
+        foo['timing'] = { 'cycles': 2.5 }
     elif opcode == 0x17:
         foo['instruction'] = 'ST'
+        foo['timing'] = { 'cycles': 2.5 }
     elif opcode == 0x18:
         foo['instruction'] = 'COM'
     elif opcode == 0x19:
@@ -186,6 +196,7 @@ for opcode in range(0x00, 0x100):
         foo['instruction'] = 'EI'
     elif opcode == 0x1C:
         foo['instruction'] = 'POP'
+        foo['timing'] = { 'cycles': 2 }
     elif opcode == 0x1D:
         foo['instruction'] = 'LR'
         foo['operands'] = [
@@ -194,6 +205,7 @@ for opcode in range(0x00, 0x100):
         ]
     elif opcode == 0x1E:
         foo['instruction'] = 'LR'
+        foo['timing'] = { 'cycles': 2 }
         foo['operands'] = [
             registers['W'],
             registers['J'],
@@ -207,32 +219,43 @@ for opcode in range(0x00, 0x100):
             ]
         if opcode == 0x20:
             foo['instruction'] = 'LI'
+            foo['timing'] = { 'cycles': 2.5 }
         elif opcode == 0x21:
             foo['instruction'] = 'NI'
+            foo['timing'] = { 'cycles': 2.5 }
         elif opcode == 0x22:
             foo['instruction'] = 'OI'
+            foo['timing'] = { 'cycles': 2.5 }
         elif opcode == 0x23:
             foo['instruction'] = 'XI'
+            foo['timing'] = { 'cycles': 2.5 }
         elif opcode == 0x24:
             foo['instruction'] = 'AI'
+            foo['timing'] = { 'cycles': 2.5 }
         elif opcode == 0x25:
             foo['instruction'] = 'CI'
+            foo['timing'] = { 'cycles': 2.5 }
         elif opcode == 0x26:
             foo['instruction'] = 'IN'
+            foo['timing'] = { 'cycles': 4 }
         elif opcode == 0x27:
             foo['instruction'] = 'OUT'
+            foo['timing'] = { 'cycles': 4 }
         elif opcode == 0x28:
             foo['instruction'] = 'PI'
+            foo['timing'] = { 'cycles': 6.5 }
             foo['operands'] = [
                 immediate["d16"]
             ]
         elif opcode == 0x29:
             foo['instruction'] = 'JMP'
+            foo['timing'] = { 'cycles': 5.5 }
             foo['operands'] = [
                 immediate["d16"]
             ]
         elif opcode == 0x2A:
             foo['instruction'] = 'DCI'
+            foo['timing'] = { 'cycles': 6 }
             foo['operands'] = [
                 immediate["d16"]
             ]
@@ -240,8 +263,10 @@ for opcode in range(0x00, 0x100):
             foo['instruction'] = 'NOP'
         elif opcode == 0x2C:
             foo['instruction'] = 'XDC'
+            foo['timing'] = { 'cycles': 2 }
     elif opcode & 0xF0 == 0x30:
         foo['instruction'] = 'DS'
+        foo['timing'] = { 'cycles': 1.5 }
         foo['operands'] = [
             r
         ]
@@ -277,55 +302,84 @@ for opcode in range(0x00, 0x100):
         foo['operands'] = []
         if condition == 0x01:
             foo['instruction'] = "BP"
+            foo['timing'] = { 'cycles': [3, 3.5] }
         elif condition == 0x02:
             foo['instruction'] = "BC"
+            foo['timing'] = { 'cycles': [3, 3.5] }
         elif condition == 0x04:
             foo['instruction'] = "BZ"
+            foo['timing'] = { 'cycles': [3, 3.5] }
         else:
             foo['instruction'] = "BT"
+            if condition == 0:
+                foo['timing'] = { 'cycles': 3 }
+            else:
+                foo['timing'] = { 'cycles': [3, 3.5] }
             foo['operands'].append(inherent[condition])
         foo['operands'].append(immediate["d8"])
     elif opcode == 0x88:
         foo['instruction'] = 'AM'
+        foo['timing'] = { 'cycles': 2.5 }
     elif opcode == 0x89:
         foo['instruction'] = 'AMD'
+        foo['timing'] = { 'cycles': 2.5 }
     elif opcode == 0x8A:
         foo['instruction'] = 'NM'
+        foo['timing'] = { 'cycles': 2.5 }
     elif opcode == 0x8B:
         foo['instruction'] = 'OM'
+        foo['timing'] = { 'cycles': 2.5 }
     elif opcode == 0x8C:
         foo['instruction'] = 'XM'
+        foo['timing'] = { 'cycles': 2.5 }
     elif opcode == 0x8D:
         foo['instruction'] = 'CM'
+        foo['timing'] = { 'cycles': 2.5 }
     elif opcode == 0x8E:
         foo['instruction'] = 'ADC'
+        foo['timing'] = { 'cycles': 2.5 }
     elif opcode == 0x8F:
         foo['instruction'] = 'BR7'
+        foo['timing'] = { 'cycles': [3, 3.5] }
         foo['operands'] = [immediate["d8"]]
     elif opcode & 0xF0 == 0x90:
         condition = opcode & 0x0F
         foo['operands'] = []
         if condition == 0x00:
             foo['instruction'] = "BR"
+            foo['timing'] = { 'cycles': 3.5 }
         elif condition == 0x01:
             foo['instruction'] = "BM"
+            foo['timing'] = { 'cycles': [3, 3.5] }
         elif condition == 0x02:
             foo['instruction'] = "BNC"
+            foo['timing'] = { 'cycles': [3, 3.5] }
         elif condition == 0x04:
             foo['instruction'] = "BNZ"
+            foo['timing'] = { 'cycles': [3, 3.5] }
         elif condition == 0x08:
             foo['instruction'] = "BNO"
+            foo['timing'] = { 'cycles': [3, 3.5] }
         else:
             foo['instruction'] = "BF"
+            foo['timing'] = { 'cycles': [3, 3.5] }
             foo['operands'].append(inherent[condition])
         foo['operands'].append(immediate["d8"])
     elif opcode & 0xF0 == 0xA0:
         foo['instruction'] = 'INS'
+        if opcode & 0x0F < 2:
+            foo['timing'] = { 'cycles': 2 }
+        else:
+            foo['timing'] = { 'cycles': 4 }
         foo['operands'] = [
             inherent[opcode & 0x0F]
         ]
     elif opcode & 0xF0 == 0xB0:
         foo['instruction'] = 'OUTS'
+        if opcode & 0x0F < 2:
+            foo['timing'] = { 'cycles': 2 }
+        else:
+            foo['timing'] = { 'cycles': 4 }
         foo['operands'] = [
             inherent[opcode & 0x0F]
         ]
@@ -336,6 +390,7 @@ for opcode in range(0x00, 0x100):
         ]
     elif opcode & 0xF0 == 0xD0:
         foo['instruction'] = 'ASD'
+        foo['timing'] = { 'cycles': 2 }
         foo['operands'] = [
             r
         ]
@@ -350,8 +405,8 @@ for opcode in range(0x00, 0x100):
             r
         ]
 
-    if not 'instruction' in foo:
-        foo['illegal'] = True
+    #if not 'instruction' in foo:
+    #    foo['illegal'] = True
 
     opcodes["0x%02X" % opcode] = foo
 

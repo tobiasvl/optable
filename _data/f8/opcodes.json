@@ -13,7 +13,10 @@
                     "name": "K", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x01": {
             "instruction": "LR", 
@@ -28,7 +31,10 @@
                     "name": "K", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x02": {
             "instruction": "LR", 
@@ -43,7 +49,10 @@
                     "name": "Q", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x03": {
             "instruction": "LR", 
@@ -58,7 +67,10 @@
                     "name": "Q", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x04": {
             "instruction": "LR", 
@@ -73,7 +85,10 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x05": {
             "instruction": "LR", 
@@ -88,7 +103,10 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x06": {
             "instruction": "LR", 
@@ -103,7 +121,10 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x07": {
             "instruction": "LR", 
@@ -118,7 +139,10 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x08": {
             "instruction": "LR", 
@@ -133,7 +157,10 @@
                     "name": "P", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0x09": {
             "instruction": "LR", 
@@ -148,7 +175,10 @@
                     "name": "K", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0x0A": {
             "instruction": "LR", 
@@ -163,7 +193,10 @@
                     "name": "S", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x0B": {
             "instruction": "LR", 
@@ -178,10 +211,16 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x0C": {
-            "instruction": "PK"
+            "instruction": "PK", 
+            "timing": {
+                "cycles": 2.5
+            }
         }, 
         "0x0D": {
             "instruction": "LR", 
@@ -196,7 +235,10 @@
                     "name": "Q", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0x0E": {
             "instruction": "LR", 
@@ -211,7 +253,10 @@
                     "name": "DC", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0x0F": {
             "instruction": "LR", 
@@ -226,7 +271,10 @@
                     "name": "DC", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0x10": {
             "instruction": "LR", 
@@ -241,7 +289,10 @@
                     "name": "Q", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0x11": {
             "instruction": "LR", 
@@ -256,7 +307,10 @@
                     "name": "DC", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0x12": {
             "instruction": "SR", 
@@ -264,7 +318,10 @@
                 {
                     "name": 1
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x13": {
             "instruction": "SL", 
@@ -272,7 +329,10 @@
                 {
                     "name": 1
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x14": {
             "instruction": "SR", 
@@ -280,7 +340,10 @@
                 {
                     "name": 4
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x15": {
             "instruction": "SL", 
@@ -288,28 +351,52 @@
                 {
                     "name": 4
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x16": {
-            "instruction": "LM"
+            "instruction": "LM", 
+            "timing": {
+                "cycles": 2.5
+            }
         }, 
         "0x17": {
-            "instruction": "ST"
+            "instruction": "ST", 
+            "timing": {
+                "cycles": 2.5
+            }
         }, 
         "0x18": {
-            "instruction": "COM"
+            "instruction": "COM", 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x19": {
-            "instruction": "LNK"
+            "instruction": "LNK", 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x1A": {
-            "instruction": "DI"
+            "instruction": "DI", 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x1B": {
-            "instruction": "EI"
+            "instruction": "EI", 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x1C": {
-            "instruction": "POP"
+            "instruction": "POP", 
+            "timing": {
+                "cycles": 2
+            }
         }, 
         "0x1D": {
             "instruction": "LR", 
@@ -324,7 +411,10 @@
                     "name": "J", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x1E": {
             "instruction": "LR", 
@@ -339,10 +429,16 @@
                     "name": "J", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2
+            }
         }, 
         "0x1F": {
-            "instruction": "INC"
+            "instruction": "INC", 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x20": {
             "instruction": "LI", 
@@ -353,7 +449,10 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2.5
+            }
         }, 
         "0x21": {
             "instruction": "NI", 
@@ -364,7 +463,10 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2.5
+            }
         }, 
         "0x22": {
             "instruction": "OI", 
@@ -375,7 +477,10 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2.5
+            }
         }, 
         "0x23": {
             "instruction": "XI", 
@@ -386,7 +491,10 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2.5
+            }
         }, 
         "0x24": {
             "instruction": "AI", 
@@ -397,7 +505,10 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2.5
+            }
         }, 
         "0x25": {
             "instruction": "CI", 
@@ -408,7 +519,10 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2.5
+            }
         }, 
         "0x26": {
             "instruction": "IN", 
@@ -419,7 +533,10 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0x27": {
             "instruction": "OUT", 
@@ -430,7 +547,10 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0x28": {
             "instruction": "PI", 
@@ -441,7 +561,10 @@
                     "name": "d16", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 6.5
+            }
         }, 
         "0x29": {
             "instruction": "JMP", 
@@ -452,7 +575,10 @@
                     "name": "d16", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 5.5
+            }
         }, 
         "0x2A": {
             "instruction": "DCI", 
@@ -463,22 +589,37 @@
                     "name": "d16", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 6
+            }
         }, 
         "0x2B": {
-            "instruction": "NOP"
+            "instruction": "NOP", 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x2C": {
-            "instruction": "XDC"
+            "instruction": "XDC", 
+            "timing": {
+                "cycles": 2
+            }
         }, 
         "0x2D": {
-            "illegal": true
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x2E": {
-            "illegal": true
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x2F": {
-            "illegal": true
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x30": {
             "instruction": "DS", 
@@ -486,7 +627,10 @@
                 {
                     "name": "0"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1.5
+            }
         }, 
         "0x31": {
             "instruction": "DS", 
@@ -494,7 +638,10 @@
                 {
                     "name": "1"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1.5
+            }
         }, 
         "0x32": {
             "instruction": "DS", 
@@ -502,7 +649,10 @@
                 {
                     "name": "2"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1.5
+            }
         }, 
         "0x33": {
             "instruction": "DS", 
@@ -510,7 +660,10 @@
                 {
                     "name": "3"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1.5
+            }
         }, 
         "0x34": {
             "instruction": "DS", 
@@ -518,7 +671,10 @@
                 {
                     "name": "4"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1.5
+            }
         }, 
         "0x35": {
             "instruction": "DS", 
@@ -526,7 +682,10 @@
                 {
                     "name": "5"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1.5
+            }
         }, 
         "0x36": {
             "instruction": "DS", 
@@ -534,7 +693,10 @@
                 {
                     "name": "6"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1.5
+            }
         }, 
         "0x37": {
             "instruction": "DS", 
@@ -542,7 +704,10 @@
                 {
                     "name": "7"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1.5
+            }
         }, 
         "0x38": {
             "instruction": "DS", 
@@ -550,7 +715,10 @@
                 {
                     "name": "8"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1.5
+            }
         }, 
         "0x39": {
             "instruction": "DS", 
@@ -558,7 +726,10 @@
                 {
                     "name": "9"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1.5
+            }
         }, 
         "0x3A": {
             "instruction": "DS", 
@@ -566,7 +737,10 @@
                 {
                     "name": "10"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1.5
+            }
         }, 
         "0x3B": {
             "instruction": "DS", 
@@ -574,7 +748,10 @@
                 {
                     "name": "11"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1.5
+            }
         }, 
         "0x3C": {
             "instruction": "DS", 
@@ -582,7 +759,10 @@
                 {
                     "name": "S"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1.5
+            }
         }, 
         "0x3D": {
             "instruction": "DS", 
@@ -590,7 +770,10 @@
                 {
                     "name": "I"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1.5
+            }
         }, 
         "0x3E": {
             "instruction": "DS", 
@@ -598,7 +781,10 @@
                 {
                     "name": "D"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1.5
+            }
         }, 
         "0x3F": {
             "instruction": "DS", 
@@ -606,7 +792,10 @@
                 {
                     "name": "15"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1.5
+            }
         }, 
         "0x40": {
             "instruction": "LR", 
@@ -619,7 +808,10 @@
                 {
                     "name": "0"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x41": {
             "instruction": "LR", 
@@ -632,7 +824,10 @@
                 {
                     "name": "1"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x42": {
             "instruction": "LR", 
@@ -645,7 +840,10 @@
                 {
                     "name": "2"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x43": {
             "instruction": "LR", 
@@ -658,7 +856,10 @@
                 {
                     "name": "3"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x44": {
             "instruction": "LR", 
@@ -671,7 +872,10 @@
                 {
                     "name": "4"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x45": {
             "instruction": "LR", 
@@ -684,7 +888,10 @@
                 {
                     "name": "5"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x46": {
             "instruction": "LR", 
@@ -697,7 +904,10 @@
                 {
                     "name": "6"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x47": {
             "instruction": "LR", 
@@ -710,7 +920,10 @@
                 {
                     "name": "7"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x48": {
             "instruction": "LR", 
@@ -723,7 +936,10 @@
                 {
                     "name": "8"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x49": {
             "instruction": "LR", 
@@ -736,7 +952,10 @@
                 {
                     "name": "9"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x4A": {
             "instruction": "LR", 
@@ -749,7 +968,10 @@
                 {
                     "name": "10"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x4B": {
             "instruction": "LR", 
@@ -762,7 +984,10 @@
                 {
                     "name": "11"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x4C": {
             "instruction": "LR", 
@@ -775,7 +1000,10 @@
                 {
                     "name": "S"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x4D": {
             "instruction": "LR", 
@@ -788,7 +1016,10 @@
                 {
                     "name": "I"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x4E": {
             "instruction": "LR", 
@@ -801,7 +1032,10 @@
                 {
                     "name": "D"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x4F": {
             "instruction": "LR", 
@@ -814,7 +1048,10 @@
                 {
                     "name": "15"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x50": {
             "instruction": "LR", 
@@ -827,7 +1064,10 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x51": {
             "instruction": "LR", 
@@ -840,7 +1080,10 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x52": {
             "instruction": "LR", 
@@ -853,7 +1096,10 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x53": {
             "instruction": "LR", 
@@ -866,7 +1112,10 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x54": {
             "instruction": "LR", 
@@ -879,7 +1128,10 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x55": {
             "instruction": "LR", 
@@ -892,7 +1144,10 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x56": {
             "instruction": "LR", 
@@ -905,7 +1160,10 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x57": {
             "instruction": "LR", 
@@ -918,7 +1176,10 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x58": {
             "instruction": "LR", 
@@ -931,7 +1192,10 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x59": {
             "instruction": "LR", 
@@ -944,7 +1208,10 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x5A": {
             "instruction": "LR", 
@@ -957,7 +1224,10 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x5B": {
             "instruction": "LR", 
@@ -970,7 +1240,10 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x5C": {
             "instruction": "LR", 
@@ -983,7 +1256,10 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x5D": {
             "instruction": "LR", 
@@ -996,7 +1272,10 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x5E": {
             "instruction": "LR", 
@@ -1009,7 +1288,10 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x5F": {
             "instruction": "LR", 
@@ -1022,7 +1304,10 @@
                     "name": "A", 
                     "type": "register"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x60": {
             "instruction": "LISU", 
@@ -1030,7 +1315,10 @@
                 {
                     "name": 0
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x61": {
             "instruction": "LISU", 
@@ -1038,7 +1326,10 @@
                 {
                     "name": 1
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x62": {
             "instruction": "LISU", 
@@ -1046,7 +1337,10 @@
                 {
                     "name": 2
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x63": {
             "instruction": "LISU", 
@@ -1054,7 +1348,10 @@
                 {
                     "name": 3
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x64": {
             "instruction": "LISU", 
@@ -1062,7 +1359,10 @@
                 {
                     "name": 4
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x65": {
             "instruction": "LISU", 
@@ -1070,7 +1370,10 @@
                 {
                     "name": 5
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x66": {
             "instruction": "LISU", 
@@ -1078,7 +1381,10 @@
                 {
                     "name": 6
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x67": {
             "instruction": "LISU", 
@@ -1086,7 +1392,10 @@
                 {
                     "name": 7
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x68": {
             "instruction": "LISL", 
@@ -1094,7 +1403,10 @@
                 {
                     "name": 0
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x69": {
             "instruction": "LISL", 
@@ -1102,7 +1414,10 @@
                 {
                     "name": 1
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x6A": {
             "instruction": "LISL", 
@@ -1110,7 +1425,10 @@
                 {
                     "name": 2
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x6B": {
             "instruction": "LISL", 
@@ -1118,7 +1436,10 @@
                 {
                     "name": 3
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x6C": {
             "instruction": "LISL", 
@@ -1126,7 +1447,10 @@
                 {
                     "name": 4
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x6D": {
             "instruction": "LISL", 
@@ -1134,7 +1458,10 @@
                 {
                     "name": 5
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x6E": {
             "instruction": "LISL", 
@@ -1142,7 +1469,10 @@
                 {
                     "name": 6
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x6F": {
             "instruction": "LISL", 
@@ -1150,10 +1480,16 @@
                 {
                     "name": 7
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x70": {
-            "instruction": "CLR"
+            "instruction": "CLR", 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x71": {
             "instruction": "LIS", 
@@ -1161,7 +1497,10 @@
                 {
                     "name": 1
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x72": {
             "instruction": "LIS", 
@@ -1169,7 +1508,10 @@
                 {
                     "name": 2
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x73": {
             "instruction": "LIS", 
@@ -1177,7 +1519,10 @@
                 {
                     "name": 3
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x74": {
             "instruction": "LIS", 
@@ -1185,7 +1530,10 @@
                 {
                     "name": 4
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x75": {
             "instruction": "LIS", 
@@ -1193,7 +1541,10 @@
                 {
                     "name": 5
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x76": {
             "instruction": "LIS", 
@@ -1201,7 +1552,10 @@
                 {
                     "name": 6
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x77": {
             "instruction": "LIS", 
@@ -1209,7 +1563,10 @@
                 {
                     "name": 7
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x78": {
             "instruction": "LIS", 
@@ -1217,7 +1574,10 @@
                 {
                     "name": 8
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x79": {
             "instruction": "LIS", 
@@ -1225,7 +1585,10 @@
                 {
                     "name": 9
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x7A": {
             "instruction": "LIS", 
@@ -1233,7 +1596,10 @@
                 {
                     "name": 10
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x7B": {
             "instruction": "LIS", 
@@ -1241,7 +1607,10 @@
                 {
                     "name": 11
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x7C": {
             "instruction": "LIS", 
@@ -1249,7 +1618,10 @@
                 {
                     "name": 12
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x7D": {
             "instruction": "LIS", 
@@ -1257,7 +1629,10 @@
                 {
                     "name": 13
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x7E": {
             "instruction": "LIS", 
@@ -1265,7 +1640,10 @@
                 {
                     "name": 14
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x7F": {
             "instruction": "LIS", 
@@ -1273,7 +1651,10 @@
                 {
                     "name": 15
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0x80": {
             "instruction": "BT", 
@@ -1287,7 +1668,10 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3
+            }
         }, 
         "0x81": {
             "instruction": "BP", 
@@ -1298,7 +1682,13 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    3.5
+                ]
+            }
         }, 
         "0x82": {
             "instruction": "BC", 
@@ -1309,7 +1699,13 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    3.5
+                ]
+            }
         }, 
         "0x83": {
             "instruction": "BT", 
@@ -1323,7 +1719,13 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    3.5
+                ]
+            }
         }, 
         "0x84": {
             "instruction": "BZ", 
@@ -1334,7 +1736,13 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    3.5
+                ]
+            }
         }, 
         "0x85": {
             "instruction": "BT", 
@@ -1348,7 +1756,13 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    3.5
+                ]
+            }
         }, 
         "0x86": {
             "instruction": "BT", 
@@ -1362,7 +1776,13 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    3.5
+                ]
+            }
         }, 
         "0x87": {
             "instruction": "BT", 
@@ -1376,28 +1796,55 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    3.5
+                ]
+            }
         }, 
         "0x88": {
-            "instruction": "AM"
+            "instruction": "AM", 
+            "timing": {
+                "cycles": 2.5
+            }
         }, 
         "0x89": {
-            "instruction": "AMD"
+            "instruction": "AMD", 
+            "timing": {
+                "cycles": 2.5
+            }
         }, 
         "0x8A": {
-            "instruction": "NM"
+            "instruction": "NM", 
+            "timing": {
+                "cycles": 2.5
+            }
         }, 
         "0x8B": {
-            "instruction": "OM"
+            "instruction": "OM", 
+            "timing": {
+                "cycles": 2.5
+            }
         }, 
         "0x8C": {
-            "instruction": "XM"
+            "instruction": "XM", 
+            "timing": {
+                "cycles": 2.5
+            }
         }, 
         "0x8D": {
-            "instruction": "CM"
+            "instruction": "CM", 
+            "timing": {
+                "cycles": 2.5
+            }
         }, 
         "0x8E": {
-            "instruction": "ADC"
+            "instruction": "ADC", 
+            "timing": {
+                "cycles": 2.5
+            }
         }, 
         "0x8F": {
             "instruction": "BR7", 
@@ -1408,7 +1855,13 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    3.5
+                ]
+            }
         }, 
         "0x90": {
             "instruction": "BR", 
@@ -1419,7 +1872,10 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 3.5
+            }
         }, 
         "0x91": {
             "instruction": "BM", 
@@ -1430,7 +1886,13 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    3.5
+                ]
+            }
         }, 
         "0x92": {
             "instruction": "BNC", 
@@ -1441,7 +1903,13 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    3.5
+                ]
+            }
         }, 
         "0x93": {
             "instruction": "BF", 
@@ -1455,7 +1923,13 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    3.5
+                ]
+            }
         }, 
         "0x94": {
             "instruction": "BNZ", 
@@ -1466,7 +1940,13 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    3.5
+                ]
+            }
         }, 
         "0x95": {
             "instruction": "BF", 
@@ -1480,7 +1960,13 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    3.5
+                ]
+            }
         }, 
         "0x96": {
             "instruction": "BF", 
@@ -1494,7 +1980,13 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    3.5
+                ]
+            }
         }, 
         "0x97": {
             "instruction": "BF", 
@@ -1508,7 +2000,13 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    3.5
+                ]
+            }
         }, 
         "0x98": {
             "instruction": "BNO", 
@@ -1519,7 +2017,13 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    3.5
+                ]
+            }
         }, 
         "0x99": {
             "instruction": "BF", 
@@ -1533,7 +2037,13 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    3.5
+                ]
+            }
         }, 
         "0x9A": {
             "instruction": "BF", 
@@ -1547,7 +2057,13 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    3.5
+                ]
+            }
         }, 
         "0x9B": {
             "instruction": "BF", 
@@ -1561,7 +2077,13 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    3.5
+                ]
+            }
         }, 
         "0x9C": {
             "instruction": "BF", 
@@ -1575,7 +2097,13 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    3.5
+                ]
+            }
         }, 
         "0x9D": {
             "instruction": "BF", 
@@ -1589,7 +2117,13 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    3.5
+                ]
+            }
         }, 
         "0x9E": {
             "instruction": "BF", 
@@ -1603,7 +2137,13 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    3.5
+                ]
+            }
         }, 
         "0x9F": {
             "instruction": "BF", 
@@ -1617,7 +2157,13 @@
                     "name": "d8", 
                     "type": "immediate"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": [
+                    3, 
+                    3.5
+                ]
+            }
         }, 
         "0xA0": {
             "instruction": "INS", 
@@ -1625,7 +2171,10 @@
                 {
                     "name": 0
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2
+            }
         }, 
         "0xA1": {
             "instruction": "INS", 
@@ -1633,7 +2182,10 @@
                 {
                     "name": 1
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2
+            }
         }, 
         "0xA2": {
             "instruction": "INS", 
@@ -1641,7 +2193,10 @@
                 {
                     "name": 2
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0xA3": {
             "instruction": "INS", 
@@ -1649,7 +2204,10 @@
                 {
                     "name": 3
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0xA4": {
             "instruction": "INS", 
@@ -1657,7 +2215,10 @@
                 {
                     "name": 4
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0xA5": {
             "instruction": "INS", 
@@ -1665,7 +2226,10 @@
                 {
                     "name": 5
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0xA6": {
             "instruction": "INS", 
@@ -1673,7 +2237,10 @@
                 {
                     "name": 6
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0xA7": {
             "instruction": "INS", 
@@ -1681,7 +2248,10 @@
                 {
                     "name": 7
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0xA8": {
             "instruction": "INS", 
@@ -1689,7 +2259,10 @@
                 {
                     "name": 8
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0xA9": {
             "instruction": "INS", 
@@ -1697,7 +2270,10 @@
                 {
                     "name": 9
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0xAA": {
             "instruction": "INS", 
@@ -1705,7 +2281,10 @@
                 {
                     "name": 10
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0xAB": {
             "instruction": "INS", 
@@ -1713,7 +2292,10 @@
                 {
                     "name": 11
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0xAC": {
             "instruction": "INS", 
@@ -1721,7 +2303,10 @@
                 {
                     "name": 12
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0xAD": {
             "instruction": "INS", 
@@ -1729,7 +2314,10 @@
                 {
                     "name": 13
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0xAE": {
             "instruction": "INS", 
@@ -1737,7 +2325,10 @@
                 {
                     "name": 14
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0xAF": {
             "instruction": "INS", 
@@ -1745,7 +2336,10 @@
                 {
                     "name": 15
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0xB0": {
             "instruction": "OUTS", 
@@ -1753,7 +2347,10 @@
                 {
                     "name": 0
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2
+            }
         }, 
         "0xB1": {
             "instruction": "OUTS", 
@@ -1761,7 +2358,10 @@
                 {
                     "name": 1
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2
+            }
         }, 
         "0xB2": {
             "instruction": "OUTS", 
@@ -1769,7 +2369,10 @@
                 {
                     "name": 2
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0xB3": {
             "instruction": "OUTS", 
@@ -1777,7 +2380,10 @@
                 {
                     "name": 3
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0xB4": {
             "instruction": "OUTS", 
@@ -1785,7 +2391,10 @@
                 {
                     "name": 4
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0xB5": {
             "instruction": "OUTS", 
@@ -1793,7 +2402,10 @@
                 {
                     "name": 5
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0xB6": {
             "instruction": "OUTS", 
@@ -1801,7 +2413,10 @@
                 {
                     "name": 6
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0xB7": {
             "instruction": "OUTS", 
@@ -1809,7 +2424,10 @@
                 {
                     "name": 7
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0xB8": {
             "instruction": "OUTS", 
@@ -1817,7 +2435,10 @@
                 {
                     "name": 8
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0xB9": {
             "instruction": "OUTS", 
@@ -1825,7 +2446,10 @@
                 {
                     "name": 9
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0xBA": {
             "instruction": "OUTS", 
@@ -1833,7 +2457,10 @@
                 {
                     "name": 10
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0xBB": {
             "instruction": "OUTS", 
@@ -1841,7 +2468,10 @@
                 {
                     "name": 11
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0xBC": {
             "instruction": "OUTS", 
@@ -1849,7 +2479,10 @@
                 {
                     "name": 12
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0xBD": {
             "instruction": "OUTS", 
@@ -1857,7 +2490,10 @@
                 {
                     "name": 13
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0xBE": {
             "instruction": "OUTS", 
@@ -1865,7 +2501,10 @@
                 {
                     "name": 14
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0xBF": {
             "instruction": "OUTS", 
@@ -1873,7 +2512,10 @@
                 {
                     "name": 15
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 4
+            }
         }, 
         "0xC0": {
             "instruction": "AS", 
@@ -1881,7 +2523,10 @@
                 {
                     "name": "0"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xC1": {
             "instruction": "AS", 
@@ -1889,7 +2534,10 @@
                 {
                     "name": "1"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xC2": {
             "instruction": "AS", 
@@ -1897,7 +2545,10 @@
                 {
                     "name": "2"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xC3": {
             "instruction": "AS", 
@@ -1905,7 +2556,10 @@
                 {
                     "name": "3"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xC4": {
             "instruction": "AS", 
@@ -1913,7 +2567,10 @@
                 {
                     "name": "4"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xC5": {
             "instruction": "AS", 
@@ -1921,7 +2578,10 @@
                 {
                     "name": "5"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xC6": {
             "instruction": "AS", 
@@ -1929,7 +2589,10 @@
                 {
                     "name": "6"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xC7": {
             "instruction": "AS", 
@@ -1937,7 +2600,10 @@
                 {
                     "name": "7"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xC8": {
             "instruction": "AS", 
@@ -1945,7 +2611,10 @@
                 {
                     "name": "8"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xC9": {
             "instruction": "AS", 
@@ -1953,7 +2622,10 @@
                 {
                     "name": "9"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xCA": {
             "instruction": "AS", 
@@ -1961,7 +2633,10 @@
                 {
                     "name": "10"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xCB": {
             "instruction": "AS", 
@@ -1969,7 +2644,10 @@
                 {
                     "name": "11"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xCC": {
             "instruction": "AS", 
@@ -1977,7 +2655,10 @@
                 {
                     "name": "S"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xCD": {
             "instruction": "AS", 
@@ -1985,7 +2666,10 @@
                 {
                     "name": "I"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xCE": {
             "instruction": "AS", 
@@ -1993,7 +2677,10 @@
                 {
                     "name": "D"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xCF": {
             "instruction": "AS", 
@@ -2001,7 +2688,10 @@
                 {
                     "name": "15"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xD0": {
             "instruction": "ASD", 
@@ -2009,7 +2699,10 @@
                 {
                     "name": "0"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2
+            }
         }, 
         "0xD1": {
             "instruction": "ASD", 
@@ -2017,7 +2710,10 @@
                 {
                     "name": "1"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2
+            }
         }, 
         "0xD2": {
             "instruction": "ASD", 
@@ -2025,7 +2721,10 @@
                 {
                     "name": "2"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2
+            }
         }, 
         "0xD3": {
             "instruction": "ASD", 
@@ -2033,7 +2732,10 @@
                 {
                     "name": "3"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2
+            }
         }, 
         "0xD4": {
             "instruction": "ASD", 
@@ -2041,7 +2743,10 @@
                 {
                     "name": "4"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2
+            }
         }, 
         "0xD5": {
             "instruction": "ASD", 
@@ -2049,7 +2754,10 @@
                 {
                     "name": "5"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2
+            }
         }, 
         "0xD6": {
             "instruction": "ASD", 
@@ -2057,7 +2765,10 @@
                 {
                     "name": "6"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2
+            }
         }, 
         "0xD7": {
             "instruction": "ASD", 
@@ -2065,7 +2776,10 @@
                 {
                     "name": "7"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2
+            }
         }, 
         "0xD8": {
             "instruction": "ASD", 
@@ -2073,7 +2787,10 @@
                 {
                     "name": "8"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2
+            }
         }, 
         "0xD9": {
             "instruction": "ASD", 
@@ -2081,7 +2798,10 @@
                 {
                     "name": "9"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2
+            }
         }, 
         "0xDA": {
             "instruction": "ASD", 
@@ -2089,7 +2809,10 @@
                 {
                     "name": "10"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2
+            }
         }, 
         "0xDB": {
             "instruction": "ASD", 
@@ -2097,7 +2820,10 @@
                 {
                     "name": "11"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2
+            }
         }, 
         "0xDC": {
             "instruction": "ASD", 
@@ -2105,7 +2831,10 @@
                 {
                     "name": "S"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2
+            }
         }, 
         "0xDD": {
             "instruction": "ASD", 
@@ -2113,7 +2842,10 @@
                 {
                     "name": "I"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2
+            }
         }, 
         "0xDE": {
             "instruction": "ASD", 
@@ -2121,7 +2853,10 @@
                 {
                     "name": "D"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2
+            }
         }, 
         "0xDF": {
             "instruction": "ASD", 
@@ -2129,7 +2864,10 @@
                 {
                     "name": "15"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 2
+            }
         }, 
         "0xE0": {
             "instruction": "XS", 
@@ -2137,7 +2875,10 @@
                 {
                     "name": "0"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xE1": {
             "instruction": "XS", 
@@ -2145,7 +2886,10 @@
                 {
                     "name": "1"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xE2": {
             "instruction": "XS", 
@@ -2153,7 +2897,10 @@
                 {
                     "name": "2"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xE3": {
             "instruction": "XS", 
@@ -2161,7 +2908,10 @@
                 {
                     "name": "3"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xE4": {
             "instruction": "XS", 
@@ -2169,7 +2919,10 @@
                 {
                     "name": "4"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xE5": {
             "instruction": "XS", 
@@ -2177,7 +2930,10 @@
                 {
                     "name": "5"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xE6": {
             "instruction": "XS", 
@@ -2185,7 +2941,10 @@
                 {
                     "name": "6"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xE7": {
             "instruction": "XS", 
@@ -2193,7 +2952,10 @@
                 {
                     "name": "7"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xE8": {
             "instruction": "XS", 
@@ -2201,7 +2963,10 @@
                 {
                     "name": "8"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xE9": {
             "instruction": "XS", 
@@ -2209,7 +2974,10 @@
                 {
                     "name": "9"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xEA": {
             "instruction": "XS", 
@@ -2217,7 +2985,10 @@
                 {
                     "name": "10"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xEB": {
             "instruction": "XS", 
@@ -2225,7 +2996,10 @@
                 {
                     "name": "11"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xEC": {
             "instruction": "XS", 
@@ -2233,7 +3007,10 @@
                 {
                     "name": "S"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xED": {
             "instruction": "XS", 
@@ -2241,7 +3018,10 @@
                 {
                     "name": "I"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xEE": {
             "instruction": "XS", 
@@ -2249,7 +3029,10 @@
                 {
                     "name": "D"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xEF": {
             "instruction": "XS", 
@@ -2257,7 +3040,10 @@
                 {
                     "name": "15"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xF0": {
             "instruction": "NS", 
@@ -2265,7 +3051,10 @@
                 {
                     "name": "0"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xF1": {
             "instruction": "NS", 
@@ -2273,7 +3062,10 @@
                 {
                     "name": "1"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xF2": {
             "instruction": "NS", 
@@ -2281,7 +3073,10 @@
                 {
                     "name": "2"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xF3": {
             "instruction": "NS", 
@@ -2289,7 +3084,10 @@
                 {
                     "name": "3"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xF4": {
             "instruction": "NS", 
@@ -2297,7 +3095,10 @@
                 {
                     "name": "4"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xF5": {
             "instruction": "NS", 
@@ -2305,7 +3106,10 @@
                 {
                     "name": "5"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xF6": {
             "instruction": "NS", 
@@ -2313,7 +3117,10 @@
                 {
                     "name": "6"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xF7": {
             "instruction": "NS", 
@@ -2321,7 +3128,10 @@
                 {
                     "name": "7"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xF8": {
             "instruction": "NS", 
@@ -2329,7 +3139,10 @@
                 {
                     "name": "8"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xF9": {
             "instruction": "NS", 
@@ -2337,7 +3150,10 @@
                 {
                     "name": "9"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xFA": {
             "instruction": "NS", 
@@ -2345,7 +3161,10 @@
                 {
                     "name": "10"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xFB": {
             "instruction": "NS", 
@@ -2353,7 +3172,10 @@
                 {
                     "name": "11"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xFC": {
             "instruction": "NS", 
@@ -2361,7 +3183,10 @@
                 {
                     "name": "S"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xFD": {
             "instruction": "NS", 
@@ -2369,7 +3194,10 @@
                 {
                     "name": "I"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xFE": {
             "instruction": "NS", 
@@ -2377,7 +3205,10 @@
                 {
                     "name": "D"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }, 
         "0xFF": {
             "instruction": "NS", 
@@ -2385,7 +3216,10 @@
                 {
                     "name": "15"
                 }
-            ]
+            ], 
+            "timing": {
+                "cycles": 1
+            }
         }
     }
 }
