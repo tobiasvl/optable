@@ -36,8 +36,15 @@
             {% else %}
                 {% assign flags = instruction.flags %}
             {% endif %}
-            <span class="flags">{{ flags.S | default: "-"}}{{ flags.Z | default: "-"}}{% unless op.variant or flags.variant %}<span class="variant">{{ flags.K | default: "-"}}</span>{% endunless %}{{ flags.A | default: "-"}}{{ flags.P | default: "-"}}{% unless op.variant or flags.variant %}<span class="variant">{{ flags.V | default: "-"}}</span>{% endunless %}{{ flags.C | default: "-"}}</span>
-            {% if flags.variant %}<span class="flags variant">{{ flags.variant.S | default: "-"}}{{ flags.variant.Z | default: "-"}}{{ flags.variant.K | default: "-"}}{{ flags.variant.A | default: "-"}}{{ flags.variant.P | default: "-"}}{{ flags.variant.V | default: "-"}}{{ flags.variant.C | default: "-"}}</span>{% endif %}
+            <span class="flags">
+                {% for flag in site.data[include.cpu].flags %}<span{% if flag.variant %} class="variant"{% endif %}>{{ flags[flag.name] | default: "-" }}</span>{% endfor %}
+            </span>
+
+            {% if flags.variant %}
+                <span class="flags variant">
+                    {% for flag in site.data[include.cpu].flags %}<span class="variant">{{ flags.variant[flag.name] | default: "-" }}</span>{% endfor %}
+                </span>
+            {% endif %}
         </div>
 
     {% if op.variant %}
@@ -56,7 +63,9 @@
                 <span class="cycles">{{ op.timing.cycles | join: '/' }}</span>&nbsp;&nbsp;<span class="states">{{ op.timing.states | join: '/' }}</span>
             </span>
 
-            <span class="flags">{{ flags.S | default: "-"}}{{ flags.Z | default: "-"}}<span class="variant">{{ flags.K | default: "-"}}</span>{{ flags.A | default: "-"}}{{ flags.P | default: "-"}}<span class="variant">{{ flags.V | default: "-"}}</span>{{ flags.C | default: "-"}}</span>
+            <span class="flags variant">
+                {% for flag in site.data[include.cpu].flags %}<span>{{ flags[flag.name] | default: "-" }}</span>{% endfor %}
+            </span>
         </div>
     {% endif %}
 </td>

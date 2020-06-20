@@ -1,0 +1,26 @@
+[
+    {
+        "name": "S",
+        "description": "Sign"
+    }, {
+        "name": "Z",
+        "description": "Zero"
+    }, {
+        "name": "K",
+        "variant": true,
+        "description": "Signed underflow indicator (undocumented, 8085 only)"
+    }, {
+        "name": "A",
+        "description": "Auxiliary Carry"
+    }, {
+        "name": "V",
+        "variant": true,
+        "description": "Signed overflow (undocumented, 8085 only)"
+    }, {
+        "name": "P",
+        "description": "Parity"
+    }, {
+        "name": "C",
+        "description": "Carry"
+    }
+]
