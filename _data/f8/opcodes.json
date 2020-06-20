@@ -10,7 +10,7 @@
                 }, 
                 {
                     "description": "Scratchpad registers 12 (KU) and 13 (KL)", 
-                    "name": "K", 
+                    "name": "KU", 
                     "type": "register"
                 }
             ], 
@@ -28,7 +28,7 @@
                 }, 
                 {
                     "description": "Scratchpad registers 12 (KU) and 13 (KL)", 
-                    "name": "K", 
+                    "name": "KL", 
                     "type": "register"
                 }
             ], 
@@ -46,7 +46,7 @@
                 }, 
                 {
                     "description": "Scratchpad registers 14 (QU) and 15 (QL)", 
-                    "name": "Q", 
+                    "name": "QU", 
                     "type": "register"
                 }
             ], 
@@ -64,7 +64,7 @@
                 }, 
                 {
                     "description": "Scratchpad registers 14 (QU) and 15 (QL)", 
-                    "name": "Q", 
+                    "name": "QL", 
                     "type": "register"
                 }
             ], 
@@ -77,7 +77,7 @@
             "operands": [
                 {
                     "description": "Scratchpad registers 12 (KU) and 13 (KL)", 
-                    "name": "K", 
+                    "name": "KU", 
                     "type": "register"
                 }, 
                 {
@@ -95,7 +95,7 @@
             "operands": [
                 {
                     "description": "Scratchpad registers 12 (KU) and 13 (KL)", 
-                    "name": "K", 
+                    "name": "KL", 
                     "type": "register"
                 }, 
                 {
@@ -113,7 +113,7 @@
             "operands": [
                 {
                     "description": "Scratchpad registers 14 (QU) and 15 (QL)", 
-                    "name": "Q", 
+                    "name": "QU", 
                     "type": "register"
                 }, 
                 {
@@ -131,7 +131,7 @@
             "operands": [
                 {
                     "description": "Scratchpad registers 14 (QU) and 15 (QL)", 
-                    "name": "Q", 
+                    "name": "QL", 
                     "type": "register"
                 }, 
                 {
