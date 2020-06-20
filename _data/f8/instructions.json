@@ -25,15 +25,33 @@
     },
     "AMD": {
         "description": "Add memory to A as decimal (BCD)",
-        "group": "arithmetic"
+        "group": "arithmetic",
+        "flags": {
+            "O": 0,
+            "Z": "Z",
+            "C": 0,
+            "S": "S"
+        }
     },
     "AS": {
         "description": "Add scratchpad memory to A",
-        "group": "arithmetic"
+        "group": "arithmetic",
+        "flags": {
+            "O": "O",
+            "Z": "Z",
+            "C": "C",
+            "S": "S"
+        }
     },
     "ASD": {
         "description": "Add scratchpad memory to A as decimal (BCD)",
-        "group": "arithmetic"
+        "group": "arithmetic",
+        "flags": {
+            "O": "O",
+            "Z": "Z",
+            "C": "C",
+            "S": "S"
+        }
     },
     "BF": {
         "description": "AND operand mask with W and Branch if False",
@@ -41,6 +59,10 @@
     },
     "BT": {
         "description": "AND operand mask with W and Branch if True",
+        "group": "flow"
+    },
+    "BR": {
+        "description": "Branch unconditionally",
         "group": "flow"
     },
     "BC": {
@@ -77,11 +99,17 @@
     },
     "CI": {
         "description": "Compare Immediate",
-        "group": "logic"
+        "group": "logic",
+        "flags": {
+            "S": "S",
+            "Z": "Z",
+            "O": "O",
+            "C": "C"
+        }
     },
     "CLR": {
         "description": "Clear A",
-        "group": "logic"
+        "group": "transfer"
     },
     "CM": {
         "description": "Compare Memory to A",
@@ -284,7 +312,7 @@
             "O": 0,
             "Z": "Z",
             "C": 0,
-            "S": "S"
+            "S": 1
         }
     },
     "ST": {

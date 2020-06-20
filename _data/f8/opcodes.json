@@ -471,9 +471,15 @@
         "0x2C": {
             "instruction": "XDC"
         }, 
-        "0x2D": {}, 
-        "0x2E": {}, 
-        "0x2F": {}, 
+        "0x2D": {
+            "illegal": true
+        }, 
+        "0x2E": {
+            "illegal": true
+        }, 
+        "0x2F": {
+            "illegal": true
+        }, 
         "0x30": {
             "instruction": "DS", 
             "operands": [
@@ -1284,11 +1290,8 @@
             ]
         }, 
         "0x81": {
-            "instruction": "BT", 
+            "instruction": "BP", 
             "operands": [
-                {
-                    "name": 1
-                }, 
                 {
                     "bytes": 1, 
                     "description": "8-bit immediate value", 
@@ -1298,11 +1301,8 @@
             ]
         }, 
         "0x82": {
-            "instruction": "BT", 
+            "instruction": "BC", 
             "operands": [
-                {
-                    "name": 2
-                }, 
                 {
                     "bytes": 1, 
                     "description": "8-bit immediate value", 
@@ -1326,11 +1326,8 @@
             ]
         }, 
         "0x84": {
-            "instruction": "BT", 
+            "instruction": "BZ", 
             "operands": [
-                {
-                    "name": 4
-                }, 
                 {
                     "bytes": 1, 
                     "description": "8-bit immediate value", 
@@ -1414,11 +1411,8 @@
             ]
         }, 
         "0x90": {
-            "instruction": "BF", 
+            "instruction": "BR", 
             "operands": [
-                {
-                    "name": 0
-                }, 
                 {
                     "bytes": 1, 
                     "description": "8-bit immediate value", 
@@ -1428,11 +1422,8 @@
             ]
         }, 
         "0x91": {
-            "instruction": "BF", 
+            "instruction": "BM", 
             "operands": [
-                {
-                    "name": 1
-                }, 
                 {
                     "bytes": 1, 
                     "description": "8-bit immediate value", 
@@ -1442,11 +1433,8 @@
             ]
         }, 
         "0x92": {
-            "instruction": "BF", 
+            "instruction": "BNC", 
             "operands": [
-                {
-                    "name": 2
-                }, 
                 {
                     "bytes": 1, 
                     "description": "8-bit immediate value", 
@@ -1470,11 +1458,8 @@
             ]
         }, 
         "0x94": {
-            "instruction": "BF", 
+            "instruction": "BNZ", 
             "operands": [
-                {
-                    "name": 4
-                }, 
                 {
                     "bytes": 1, 
                     "description": "8-bit immediate value", 
@@ -1526,11 +1511,8 @@
             ]
         }, 
         "0x98": {
-            "instruction": "BF", 
+            "instruction": "BNO", 
             "operands": [
-                {
-                    "name": 8
-                }, 
                 {
                     "bytes": 1, 
                     "description": "8-bit immediate value", 

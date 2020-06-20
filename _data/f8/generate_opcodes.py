@@ -273,7 +273,7 @@ for opcode in range(0x00, 0x100):
             inherent[opcode & 0x0F]
         ]
     elif opcode & 0xF8 == 0x80:
-        condition = inherent[opcode & 0x07]
+        condition = opcode & 0x07
         foo['operands'] = []
         if condition == 0x01:
             foo['instruction'] = "BP"
@@ -283,7 +283,7 @@ for opcode in range(0x00, 0x100):
             foo['instruction'] = "BZ"
         else:
             foo['instruction'] = "BT"
-            foo['operands'].append(condition)
+            foo['operands'].append(inherent[condition])
         foo['operands'].append(immediate["d8"])
     elif opcode == 0x88:
         foo['instruction'] = 'AM'
@@ -303,7 +303,7 @@ for opcode in range(0x00, 0x100):
         foo['instruction'] = 'BR7'
         foo['operands'] = [immediate["d8"]]
     elif opcode & 0xF0 == 0x90:
-        condition = inherent[opcode & 0x0F]
+        condition = opcode & 0x0F
         foo['operands'] = []
         if condition == 0x00:
             foo['instruction'] = "BR"
@@ -317,7 +317,7 @@ for opcode in range(0x00, 0x100):
             foo['instruction'] = "BNO"
         else:
             foo['instruction'] = "BF"
-            foo['operands'].append(condition)
+            foo['operands'].append(inherent[condition])
         foo['operands'].append(immediate["d8"])
     elif opcode & 0xF0 == 0xA0:
         foo['instruction'] = 'INS'
@@ -349,6 +349,9 @@ for opcode in range(0x00, 0x100):
         foo['operands'] = [
             r
         ]
+
+    if not 'instruction' in foo:
+        foo['illegal'] = True
 
     opcodes["0x%02X" % opcode] = foo
 
