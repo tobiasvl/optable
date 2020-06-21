@@ -672,14 +672,29 @@ for opcode in range(0x00, 0x100):
 # Undocumented opcodes
 opcodes["0x10"] = {
     'instruction': "NOP",
+    'timing': {
+        'cycles': 1,
+        'states': 4
+    },
     "illegal": True,
     "variant": {
         'instruction': 'ARHL',
+        'timing': {
+            'cycles': 2,
+            'states': 7,
+        },
+        'flags': {
+            'C': 'C'
+        },
         'illegal': True
     }
 }
 opcodes["0x20"] = {
     'instruction': "NOP",
+    'timing': {
+        'cycles': 1,
+        'states': 4
+    },
     "illegal": True,
     'timing': {
         'cycles': 1,
@@ -695,6 +710,10 @@ opcodes["0x20"] = {
 }
 opcodes["0x30"] = {
     'instruction': "NOP",
+    'timing': {
+        'cycles': 1,
+        'states': 4
+    },
     "illegal": True,
     'timing': {
         'cycles': 1,
@@ -710,22 +729,169 @@ opcodes["0x30"] = {
 }
 opcodes["0x08"] = {
     'instruction': "NOP",
+    'timing': {
+        'cycles': 1,
+        'states': 4
+    },
     "illegal": True,
     "variant": {
         'instruction': 'DSUB',
+        'timing': {
+            'cycles': 3,
+            'states': 10,
+        },
+        "flags": {
+            "S": "S",
+            "Z": "Z",
+            "K": "K",
+            "A": "A",
+            "V": "V",
+            "P": "P",
+            "C": "C"
+        },
         'illegal': True
     }
 }
-opcodes["0x18"] = {'instruction': "NOP", "illegal": True, "variant": { 'instruction': 'RDEL', 'illegal': True } }
-opcodes["0x28"] = {'instruction': "NOP", "illegal": True, "variant": { 'instruction': 'LDHI', "operands": [ immediate["d8"] ], 'illegal': True } }
-opcodes["0x38"] = {'instruction': "NOP", "illegal": True, "variant": { 'instruction': 'LDSI', "operands": [ immediate["d8"] ], 'illegal': True } }
-opcodes["0xD9"] = {'instruction': "RET", "illegal": True, "variant": { 'instruction': 'SHLX', 'illegal': True } }
-opcodes["0xCB"] = {'instruction': "JMP", "operands": [ immediate["a16"] ], "illegal": True, "variant": { 'instruction': 'RSTV', 'illegal': True } }
-opcodes["0xDD"] = {'instruction': "CALL", "operands": [ immediate["a16"] ], "illegal": True, "variant": { 'instruction': 'JNK', "operands": [ immediate["a16"] ], 'illegal': True } }
-opcodes["0xED"] = {'instruction': "CALL", "operands": [ immediate["a16"] ], "illegal": True, "variant": { 'instruction': 'LHLX', 'illegal': True } }
-opcodes["0xFD"] = {'instruction': "CALL", "operands": [ immediate["a16"] ], "illegal": True, "variant": { 'instruction': 'JK', "operands": [ immediate["a16"] ], 'illegal': True } }
+opcodes["0x18"] = {
+    'instruction': "NOP",
+    'timing': {
+        'cycles': 1,
+        'states': 4
+    },
+    "illegal": True,
+    "variant": {
+        'instruction': 'RDEL',
+        'timing': {
+            'cycles': 3,
+            'states': 10,
+        },
+        'flags': {
+            'C': 'C',
+            'V': 'V'
+        },
+        'illegal': True
+    }
+}
+opcodes["0x28"] = {
+    'instruction': "NOP",
+    'timing': {
+        'cycles': 1,
+        'states': 4
+    },
+    "illegal": True,
+    "variant": {
+        'instruction': 'LDHI',
+        "operands": [ immediate["d8"] ],
+        'timing': {
+            'cycles': 3,
+            'states': 10,
+        },
+        'illegal': True
+    }
+}
+opcodes["0x38"] = {
+    'instruction': "NOP",
+    'timing': {
+        'cycles': 1,
+        'states': 4
+    },
+    "illegal": True,
+    "variant": {
+        'instruction': 'LDSI',
+        "operands": [ immediate["d8"] ],
+        'timing': {
+            'cycles': 3,
+            'states': 10,
+        },
+        'illegal': True
+    }
+}
+opcodes["0xD9"] = {
+    'instruction': "RET",
+    'timing': {
+        'cycles': 3,
+        'states': 10,
+    },
+    "illegal": True,
+    "variant": {
+        'instruction': 'SHLX',
+        'timing': {
+            'cycles': 3,
+            'states': 10,
+        },
+        'illegal': True
+    }
+}
+opcodes["0xCB"] = {
+    'instruction': "JMP",
+    'timing': {
+        'cycles': 3,
+        'states': 10,
+    },
+    "operands": [ immediate["a16"] ],
+    "illegal": True,
+    "variant": {
+        'instruction': 'RSTV',
+        'timing': {
+            'cycles': [1, 3],
+            'states': [6, 12]
+        },
+        'illegal': True
+    }
+}
+opcodes["0xDD"] = {
+    'instruction': "CALL",
+    'timing': {
+        'cycles': 5,
+        'states': 17,
+    },
+    "operands": [ immediate["a16"] ],
+    "illegal": True,
+    "variant": {
+        'instruction': 'JNK',
+        "operands": [ immediate["a16"] ],
+        'timing': {
+            'cycles': [2, 3],
+            'states': [7, 10]
+        },
+        'illegal': True
+    }
+}
+opcodes["0xED"] = {
+    'instruction': "CALL",
+    'timing': {
+        'cycles': 5,
+        'states': 17,
+    },
+    "operands": [ immediate["a16"] ],
+    "illegal": True,
+    "variant": {
+        'instruction': 'LHLX',
+        'timing': {
+            'cycles': 3,
+            'states': 10,
+        },
+        'illegal': True
+    }
+}
+opcodes["0xFD"] = {
+    'instruction': "CALL",
+    'timing': {
+        'cycles': 5,
+        'states': 17,
+    },
+    "operands": [ immediate["a16"] ],
+    "illegal": True,
+    "variant": {
+        'instruction': 'JNK',
+        "operands": [ immediate["a16"] ],
+        'timing': {
+            'cycles': [2, 3],
+            'states': [7, 10]
+        },
+        'illegal': True
+    }
+}
 
 with open('opcodes.json', 'w') as fp:
     json.dump({'unprefixed': opcodes}, fp, sort_keys=True, indent=4)
-
-
