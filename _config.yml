@@ -29,7 +29,7 @@ collections:
     output: true
   f8:
     output: true
-  optables:
+  m6800:
     output: true
   opdescriptions:
     output: true

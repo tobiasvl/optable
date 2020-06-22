@@ -1,0 +1,21 @@
+[
+    {
+        "name": "H",
+        "description": "Half Carry"
+    }, {
+        "name": "I",
+        "description": "Interrupt Mask"
+    }, {
+        "name": "N",
+        "description": "Negative"
+    }, {
+        "name": "Z",
+        "description": "Zero"
+    }, {
+        "name": "V",
+        "description": "Signed overflow"
+    }, {
+        "name": "C",
+        "description": "Carry"
+    }
+]

@@ -1,0 +1,396 @@
+{
+    "NOP": {
+        "description": "No operation",
+        "group": "control"
+    },
+    "LDA": {
+        "description": "Load accumulator from memory",
+        "group": "transfer"
+    },
+    "ABA": {
+        "description": "Add B to A",
+        "group": "arithmetic",
+        "flags": {
+            "N": "N",
+            "Z": "Z",
+            "H": "H",
+            "V": "V",
+            "C": "C"
+        }
+    },
+    "ADD": {
+        "description": "Add memory to accumulator",
+        "group": "arithmetic",
+        "flags": {
+            "N": "N",
+            "Z": "Z",
+            "H": "H",
+            "V": "V",
+            "C": "C"
+        }
+    },
+    "ADC": {
+        "description": "Add memory to accumulator with Carry",
+        "group": "arithmetic",
+        "flags": {
+            "N": "N",
+            "Z": "Z",
+            "H": "H",
+            "V": "V",
+            "C": "C"
+        }
+    },
+    "SUB": {
+        "description": "Subtract memory from accumulator",
+        "group": "arithmetic",
+        "flags": {
+            "N": "N",
+            "Z": "Z",
+            "H": "H",
+            "V": "V",
+            "C": "C"
+        }
+    },
+    "SBC": {
+        "description": "Subtract memory and Carry from accumulator",
+        "group": "arithmetic",
+        "flags": {
+            "N": "N",
+            "Z": "Z",
+            "H": "H",
+            "V": "V",
+            "C": "C"
+        }
+    },
+    "INC": {
+        "description": "Increment Register or Memory",
+        "group": "arithmetic",
+        "flags": {
+            "N": "N",
+            "Z": "Z",
+            "V": "V"
+        }
+    },
+    "INX": {
+        "description": "Increment index register X",
+        "group": "control",
+        "flags": {
+            "Z": "Z"
+        }
+    },
+    "INS": {
+        "description": "Increment Stack Pointer",
+        "group": "control"
+    },
+    "DEC": {
+        "description": "Decrement Register or Memory",
+        "group": "arithmetic",
+        "flags": {
+            "N": "N",
+            "Z": "Z",
+            "V": "V"
+        }
+    },
+    "DEX": {
+        "description": "Decrement index register X",
+        "group": "control",
+        "flags": {
+            "Z": "Z"
+        }
+    },
+    "DES": {
+        "description": "Decrement Stack Pointer",
+        "group": "control"
+    },
+    "DAA": {
+        "description": "Decimal Adjust Accumulator",
+        "group": "logic",
+        "flags": {
+            "N": "N",
+            "Z": "Z",
+            "V": "V",
+            "C": "C"
+        }
+    },
+    "AND": {
+        "description": "AND memory with accumulator",
+        "group": "logic",
+        "flags": {
+            "Z": "Z",
+            "N": "N",
+            "V": 0
+        }
+    },
+    "ORA": {
+        "description": "OR memory with accumulator",
+        "group": "logic",
+        "flags": {
+            "Z": "Z",
+            "N": "N",
+            "V": 0
+        }
+    },
+    "EOR": {
+        "description": "Exclusive OR (XOR) memory with accumulator",
+        "group": "logic",
+        "flags": {
+            "Z": "Z",
+            "N": "N",
+            "V": 0
+        }
+    },
+    "CMP": {
+        "description": "Compare memory with accumulator",
+        "group": "logic",
+        "flags": {
+            "N": "N",
+            "Z": "Z",
+            "V": "V",
+            "C": "C"
+        }
+    },
+    "CPX": {
+        "description": "Compare memory with index register X",
+        "group": "logic",
+        "flags": {
+            "N": "N",
+            "Z": "Z",
+            "V": "V",
+            "variant": {
+                "N": "N",
+                "Z": "Z",
+                "V": "V",
+                "C": "C"
+            }
+        }
+    },
+    "ROL": {
+        "description": "Rotate Left through carry",
+        "group": "logic",
+        "flags": {
+            "N": "N",
+            "Z": "Z",
+            "V": "V",
+            "C": "C"
+        }
+    },
+    "ROR": {
+        "description": "Rotate Right through carry",
+        "flags": {
+            "N": "N",
+            "Z": "Z",
+            "V": "V",
+            "C": "C"
+        },
+        "group": "logic"
+    },
+    "COM": {
+        "description": "Complement",
+        "flags": {
+            "N": "N",
+            "Z": "Z",
+            "V": 0,
+            "C": 1
+        },
+        "group": "logic"
+    },
+    "CLC": {
+        "description": "Clear Carry flag",
+        "group": "logic",
+        "flags": {
+            "C": 0
+        }
+    },
+    "SEC": {
+        "description": "Set Carry flag",
+        "group": "logic",
+        "flags": {
+            "C": 1
+        }
+    },
+    "SEI": {
+        "description": "Set Interrupt flag",
+        "group": "logic",
+        "flags": {
+            "I": 1
+        }
+    },
+    "SEV": {
+        "description": "Set Overflow flag",
+        "group": "logic",
+        "flags": {
+            "V": 1
+        }
+    },
+    "JMP": {
+        "description": "Load register pair with immediate value",
+        "group": "flow"
+    },
+    "JSR": {
+        "description": "Call subroutine; push Program Counter to stack",
+        "group": "flow"
+    },
+    "RTS": {
+        "description": "Return from subroutine; pop Program Counter from stack",
+        "group": "flow"
+    },
+    "PSH": {
+        "description": "Push accumulator to stack",
+        "group": "control"
+    },
+    "PUL": {
+        "description": "Pop from stack into accumulator",
+        "group": "control"
+    },
+    "BRA": {
+        "description": "Branch Always",
+        "group": "flow"
+    },
+    "BRN": {
+        "description": "Branch Never (NOP)",
+        "group": "flow"
+    },
+    "BCC": {
+        "description": "Branch if Carry Clear",
+        "group": "flow"
+    },
+    "BCS": {
+        "description": "Branch if Carry Set",
+        "group": "flow"
+    },
+    "BEQ": {
+        "description": "Branch if Equal to 0",
+        "group": "flow"
+    },
+    "BGE": {
+        "description": "Branch if Greater than or Equal to 0",
+        "group": "flow"
+    },
+    "BGT": {
+        "description": "Branch if Greater Than 0",
+        "group": "flow"
+    },
+    "BHI": {
+        "description": "Branch if Higher",
+        "group": "flow"
+    },
+    "BLE": {
+        "description": "Branch if Less Than or Equal to 0 (either S or V is 1, but not both, or Z is 1)",
+        "group": "flow"
+    },
+    "BLS": {
+        "description": "Branch if Less Than or Same (C or V is 1)",
+        "group": "flow"
+    },
+    "BLT": {
+        "description": "Branch if Less Than (either S or V is 1, but not both)",
+        "group": "flow"
+    },
+    "BMI": {
+        "description": "Branch if Minus (negative flag is set, N is 1)",
+        "group": "flow"
+    },
+    "BNE": {
+        "description": "Branch if Not Equal to 0 (Z is 0)",
+        "group": "flow"
+    },
+    "BPL": {
+        "description": "Branch if plus (negative flag is cleared, N is 0)",
+        "group": "flow"
+    },
+    "BVC": {
+        "description": "Branch if overflow flag cleared (V is 0)",
+        "group": "flow"
+    },
+    "BVS": {
+        "description": "Branch if overflow flag set (V is 1)",
+        "group": "flow"
+    },
+    "BSR": {
+        "description": "Branch to Subroutine",
+        "group": "flow"
+    },
+    "TAP": {
+        "description": "Transfer A to status register",
+        "flags": {
+            "N": "N",
+            "Z": "Z",
+            "V": "V",
+            "C": "C",
+            "H": "H"
+        },
+        "group": "transfer"
+    },
+    "TPA": {
+        "description": "Transfer status register to A",
+        "group": "transfer"
+    },
+    "CLV": {
+        "description": "Clear overflow flag",
+        "flags": {
+            "V": 0
+        },
+        "group": "control"
+    },
+    "CLI": {
+        "description": "Clear Interrupt flag",
+        "flags": {
+            "I": 0
+        },
+        "group": "control"
+    },
+    "TAB": {
+        "description": "Transfer A to B",
+        "group": "transfer"
+    },
+    "TBA": {
+        "description": "Transfer B to A",
+        "group": "transfer"
+    },
+    "TXS": {
+        "description": "Transfer X to Stack Pointer and increment",
+        "group": "transfer"
+    },
+    "TSX": {
+        "description": "Transfer Stack Pointer to X and increment",
+        "group": "transfer"
+    },
+    "WAI": {
+        "description": "Push registers to stack and Wait for Interrupt",
+        "group": "control"
+    },
+    "SWI": {
+        "description": "Software Interrupt; push registers to stack and jump to interrupt subroutine at ($FFFA)",
+        "group": "control"
+    },
+    "RTI": {
+        "description": "Return from Interrupt; pop registers from stack",
+        "flags": {
+            "N": "N",
+            "Z": "Z",
+            "V": "V",
+            "C": "C",
+            "I": "I",
+            "H": "H"
+        },
+        "group": "control"
+    },
+    "SBA": {
+        "description": "Subtract B from A",
+        "group": "control"
+    },
+    "HCF": {
+        "description": "Halt and Catch Fire",
+        "group": "control"
+    },
+    "CBA": {
+        "description": "Compare B to A",
+        "group": "control",
+        "flags": {
+            "N": "N",
+            "Z": "Z",
+            "V": "V",
+            "C": "C"
+        },
+    },
+}

@@ -1,0 +1,88 @@
+<div class="row">
+	<div id="legend" class="col-md-12 col-lg-6 mb-3">
+		<span class="legend"><span class="legend-color legend-illegal"></span> Illegal/undocumented instructions</span>
+		<span class="legend"><span class="legend-color legend-control"></span> Stack, I/O and machine control instructions</span>
+		<span class="legend"><span class="legend-color legend-flow"></span> Branch and program flow instructions</span>
+		<span class="legend"><span class="legend-color legend-load"></span> Data transfer instructions</span>
+		<!-- <span class="legend"><span class="legend-color legend-load16"></span> 16-bit load instructions</span> -->
+		<span class="legend"><span class="legend-color legend-arithmetic"></span> Arithmetic instructions</span>
+		<span class="legend"><span class="legend-color legend-logic"></span> Logical instructions</span>
+		<!-- <span class="legend"><span class="legend-color legend-arithmetic16"></span> 16-bit arithmetic / logical instructions</span> -->
+	</div>
+
+	<div id="how-to-read" class="col-md-12 col-lg-6 mb-3">
+		<table id="demo-table" class="mb-3">
+			<tbody>
+				<tr><td></td> <td></td> <td><span>INS op</span><br></td> <td>←</td> <td>Instruction mnemonic</td></tr>
+				<tr><td>Length in bytes</td> <td>→</td> <td><span>2</span><br></td> <td></td> <td></td></tr>
+				<tr><td>States</td> <td>→</td> <td><span>2&nbsp;&nbsp;7</span><br></td> <td>←</td> <td>Cycles</td></tr>
+				<tr><td></td> <td></td><td><span>IOZCS</span></td> <td>←</td> <td>Flags affected</td></tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12 col-lg-6">
+		<div id="flags" class="card mb-3{% if page.theme == "dark" %} bg-secondary{% endif %}">
+			<div class="card-body">
+                <p>Flag registers and their bit positions in W:</p>
+                <table border="2px" style="border-collapse: collapse">
+                    <tr>
+                        <th>7</th>
+                        <th>6</th>
+                        <th>5</th>
+                        <th>4</th>
+                        <th>3</th>
+                        <th>2</th>
+                        <th>1</th>
+                        <th>0</th>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>I</td>
+                        <td>O</td>
+                        <td>Z</td>
+                        <td>C</td>
+                        <td>S</td>
+                    </tr>
+                </table>
+
+                <ol start="0">
+                    <li><strong>S</strong>: Sign flag; set to bit 7 of result</li>
+                    <li><strong>C</strong>: Carry flag; set to carry out of bit 7 in result</li>
+                    <li><strong>Z</strong>: Zero flag; set if the result was zero, reset otherwise</li>
+                    <li><strong>O</strong>: Overflow flag (OVF); set to carry out of bit 6 in result</li>
+                    <li><strong>I</strong>: Interrupt Control Bit (ICB)</li>
+                    <li>No flag, bit is always 0 in W</li>
+                    <li>No flag, bit is always 0 in W</li>
+                    <li>No flag, bit is always 0 in W</li>
+                </ol>
+
+                <p>Flags affected are always shown in the W bit order: IOZCS. If a flag is marked by "0" it means it is reset after the instruction. If it is marked by "1" it is set. If it is marked by "-" it is not changed. If it is marked by its letter, the corresponding flag is affected by the instruction.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-12 col-lg-6">
+		<div id="conditional-durations" class="card mb-3{% if page.theme == "dark" %} bg-secondary{% endif %}">
+			<div class="card-body">
+				The duration of conditional calls and returns is different when the branch is taken or not. This is indicated by two numbers separated by “/”. The lower number (on the left side of “/”) is the duration of the instruction when there is no branch, and the higher number (on the right side of “/”) is the duration of the instruction when the branch is taken.
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col">
+		<div id="datatypes" class="card mb-3{% if page.theme == "dark" %} bg-secondary{% endif %}">
+			<div class="card-body">
+				<p><kbd>d8</kbd> immediate 8-bit data</p>
+				<p><kbd>d16</kbd> immediate 16-bit data</p>
+				<p><kbd>a16</kbd> 16-bit address</p>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,3108 @@
+{
+    "unprefixed": {
+        "0x00": {
+            "operands": []
+        }, 
+        "0x01": {
+            "instruction": "NOP", 
+            "operands": []
+        }, 
+        "0x02": {
+            "operands": []
+        }, 
+        "0x03": {
+            "operands": []
+        }, 
+        "0x04": {
+            "operands": [], 
+            "variant": {
+                "instruction": "LSRD", 
+                "operands": []
+            }
+        }, 
+        "0x05": {
+            "operands": [], 
+            "variant": {
+                "instruction": "ASLD", 
+                "operands": []
+            }
+        }, 
+        "0x06": {
+            "instruction": "TAP", 
+            "operands": []
+        }, 
+        "0x07": {
+            "instruction": "TPA", 
+            "operands": []
+        }, 
+        "0x08": {
+            "instruction": "INX", 
+            "operands": []
+        }, 
+        "0x09": {
+            "instruction": "DEX", 
+            "operands": []
+        }, 
+        "0x0A": {
+            "instruction": "CLV", 
+            "operands": []
+        }, 
+        "0x0B": {
+            "instruction": "SEV", 
+            "operands": []
+        }, 
+        "0x0C": {
+            "instruction": "CLC", 
+            "operands": []
+        }, 
+        "0x0D": {
+            "instruction": "SEC", 
+            "operands": []
+        }, 
+        "0x0E": {
+            "instruction": "CLI", 
+            "operands": []
+        }, 
+        "0x0F": {
+            "instruction": "SEI", 
+            "operands": []
+        }, 
+        "0x10": {
+            "instruction": "SBA", 
+            "operands": []
+        }, 
+        "0x11": {
+            "instruction": "CBA", 
+            "operands": []
+        }, 
+        "0x12": {
+            "operands": []
+        }, 
+        "0x13": {
+            "operands": []
+        }, 
+        "0x14": {
+            "illegal": true, 
+            "instruction": "NBA", 
+            "operands": []
+        }, 
+        "0x15": {
+            "illegal": true, 
+            "instruction": "NOP", 
+            "operands": []
+        }, 
+        "0x16": {
+            "instruction": "TAB", 
+            "operands": []
+        }, 
+        "0x17": {
+            "instruction": "TBA", 
+            "operands": []
+        }, 
+        "0x18": {
+            "operands": []
+        }, 
+        "0x19": {
+            "instruction": "DAA", 
+            "operands": []
+        }, 
+        "0x1A": {
+            "operands": []
+        }, 
+        "0x1B": {
+            "instruction": "ABA", 
+            "operands": []
+        }, 
+        "0x1C": {
+            "operands": []
+        }, 
+        "0x1D": {
+            "operands": []
+        }, 
+        "0x1E": {
+            "operands": []
+        }, 
+        "0x1F": {
+            "operands": []
+        }, 
+        "0x20": {
+            "instruction": "BRA", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "s8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x21": {
+            "operands": [], 
+            "variant": {
+                "group": "flow", 
+                "instruction": "BRN", 
+                "operands": [
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "s8", 
+                        "type": "immediate"
+                    }
+                ]
+            }
+        }, 
+        "0x22": {
+            "instruction": "BHI", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "s8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x23": {
+            "instruction": "BLS", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "s8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x24": {
+            "instruction": "BCC", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "s8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x25": {
+            "instruction": "BCS", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "s8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x26": {
+            "instruction": "BNE", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "s8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x27": {
+            "instruction": "BEQ", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "s8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x28": {
+            "instruction": "BVC", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "s8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x29": {
+            "instruction": "BVS", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "s8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x2A": {
+            "instruction": "BPL", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "s8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x2B": {
+            "instruction": "BMI", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "s8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x2C": {
+            "instruction": "BGE", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "s8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x2D": {
+            "instruction": "BLT", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "s8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x2E": {
+            "instruction": "BGT", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "s8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x2F": {
+            "instruction": "BLE", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "s8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x30": {
+            "instruction": "TSX", 
+            "operands": []
+        }, 
+        "0x31": {
+            "instruction": "INS", 
+            "operands": []
+        }, 
+        "0x32": {
+            "instruction": "PUL", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x33": {
+            "instruction": "PUL", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x34": {
+            "instruction": "DES", 
+            "operands": []
+        }, 
+        "0x35": {
+            "instruction": "TXS", 
+            "operands": []
+        }, 
+        "0x36": {
+            "instruction": "PSH", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x37": {
+            "instruction": "PSH", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x38": {
+            "operands": [], 
+            "variant": {
+                "instruction": "PULX", 
+                "operands": []
+            }
+        }, 
+        "0x39": {
+            "instruction": "RTS", 
+            "operands": []
+        }, 
+        "0x3A": {
+            "operands": [], 
+            "variant": {
+                "instruction": "ABX", 
+                "operands": []
+            }
+        }, 
+        "0x3B": {
+            "instruction": "RTI", 
+            "operands": []
+        }, 
+        "0x3C": {
+            "operands": [], 
+            "variant": {
+                "instruction": "PUSHX", 
+                "operands": []
+            }
+        }, 
+        "0x3D": {
+            "operands": [], 
+            "variant": {
+                "instruction": "MUL", 
+                "operands": []
+            }
+        }, 
+        "0x3E": {
+            "operands": []
+        }, 
+        "0x3F": {
+            "instruction": "SWI", 
+            "operands": []
+        }, 
+        "0x40": {
+            "instruction": "NEG", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x41": {
+            "operands": []
+        }, 
+        "0x42": {
+            "operands": []
+        }, 
+        "0x43": {
+            "instruction": "COM", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x44": {
+            "instruction": "LSR", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x45": {
+            "operands": []
+        }, 
+        "0x46": {
+            "instruction": "ROR", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x47": {
+            "instruction": "ASR", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x48": {
+            "instruction": "ASL", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x49": {
+            "instruction": "ROL", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x4A": {
+            "instruction": "DEC", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x4B": {
+            "operands": []
+        }, 
+        "0x4C": {
+            "instruction": "INC", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x4D": {
+            "instruction": "TST", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x4E": {
+            "operands": []
+        }, 
+        "0x4F": {
+            "instruction": "CLR", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x50": {
+            "instruction": "NEG", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x51": {
+            "operands": []
+        }, 
+        "0x52": {
+            "operands": []
+        }, 
+        "0x53": {
+            "instruction": "COM", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x54": {
+            "instruction": "LSR", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x55": {
+            "operands": []
+        }, 
+        "0x56": {
+            "instruction": "ROR", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x57": {
+            "instruction": "ASR", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x58": {
+            "instruction": "ASL", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x59": {
+            "instruction": "ROL", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x5A": {
+            "instruction": "DEC", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x5B": {
+            "operands": []
+        }, 
+        "0x5C": {
+            "instruction": "INC", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x5D": {
+            "instruction": "TST", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x5E": {
+            "operands": []
+        }, 
+        "0x5F": {
+            "instruction": "CLR", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x60": {
+            "instruction": "NEG", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x61": {
+            "operands": []
+        }, 
+        "0x62": {
+            "operands": []
+        }, 
+        "0x63": {
+            "instruction": "COM", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x64": {
+            "instruction": "LSR", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x65": {
+            "operands": []
+        }, 
+        "0x66": {
+            "instruction": "ROR", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x67": {
+            "instruction": "ASR", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x68": {
+            "instruction": "ASL", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x69": {
+            "instruction": "ROL", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x6A": {
+            "instruction": "DEC", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x6B": {
+            "operands": []
+        }, 
+        "0x6C": {
+            "instruction": "INC", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x6D": {
+            "instruction": "TST", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x6E": {
+            "instruction": "JMP", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x6F": {
+            "instruction": "CLR", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x70": {
+            "instruction": "NEG", 
+            "operands": [
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x71": {
+            "operands": []
+        }, 
+        "0x72": {
+            "operands": []
+        }, 
+        "0x73": {
+            "instruction": "COM", 
+            "operands": [
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x74": {
+            "instruction": "LSR", 
+            "operands": [
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x75": {
+            "operands": []
+        }, 
+        "0x76": {
+            "instruction": "ROR", 
+            "operands": [
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x77": {
+            "instruction": "ASR", 
+            "operands": [
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x78": {
+            "instruction": "ASL", 
+            "operands": [
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x79": {
+            "instruction": "ROL", 
+            "operands": [
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x7A": {
+            "instruction": "DEC", 
+            "operands": [
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x7B": {
+            "operands": []
+        }, 
+        "0x7C": {
+            "instruction": "INC", 
+            "operands": [
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x7D": {
+            "instruction": "TST", 
+            "operands": [
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x7E": {
+            "instruction": "JMP", 
+            "operands": [
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x7F": {
+            "instruction": "CLR", 
+            "operands": [
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x80": {
+            "instruction": "SUB", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "#d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x81": {
+            "instruction": "CMP", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "#d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x82": {
+            "instruction": "SBC", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "#d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x83": {
+            "operands": [], 
+            "variant": {
+                "instruction": "SUBD", 
+                "operands": [
+                    {
+                        "description": "Accumulator A", 
+                        "name": "A", 
+                        "type": "register"
+                    }, 
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "#d8", 
+                        "type": "immediate"
+                    }
+                ]
+            }
+        }, 
+        "0x84": {
+            "instruction": "AND", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "#d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x85": {
+            "instruction": "BIT", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "#d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x86": {
+            "instruction": "LDA", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "#d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x87": {
+            "illegal": true, 
+            "instruction": "STA", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "#d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x88": {
+            "instruction": "EOR", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "#d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x89": {
+            "instruction": "ADC", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "#d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x8A": {
+            "instruction": "ORA", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "#d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x8B": {
+            "instruction": "ADD", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "#d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x8C": {
+            "instruction": "CPX", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "#d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x8D": {
+            "instruction": "BSR", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "s8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x8E": {
+            "instruction": "LDS", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "#d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x8F": {
+            "illegal": true, 
+            "instruction": "STS", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "#d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x90": {
+            "instruction": "SUB", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "a8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x91": {
+            "instruction": "CMP", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "a8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x92": {
+            "instruction": "SBC", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "a8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x93": {
+            "operands": [], 
+            "variant": {
+                "instruction": "SUBD", 
+                "operands": [
+                    {
+                        "description": "Accumulator A", 
+                        "name": "A", 
+                        "type": "register"
+                    }, 
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "a8", 
+                        "type": "immediate"
+                    }
+                ]
+            }
+        }, 
+        "0x94": {
+            "instruction": "AND", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "a8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x95": {
+            "instruction": "BIT", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "a8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x96": {
+            "instruction": "LDA", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "a8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x97": {
+            "instruction": "STA", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "a8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x98": {
+            "instruction": "EOR", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "a8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x99": {
+            "instruction": "ADC", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "a8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x9A": {
+            "instruction": "ORA", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "a8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x9B": {
+            "instruction": "ADD", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "a8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x9C": {
+            "instruction": "CPX", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "a8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x9D": {
+            "illegal": true, 
+            "instruction": "HCF", 
+            "operands": [], 
+            "variant": {
+                "instruction": "JSR", 
+                "operands": [
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "a8", 
+                        "type": "immediate"
+                    }
+                ]
+            }
+        }, 
+        "0x9E": {
+            "instruction": "LDS", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "a8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x9F": {
+            "instruction": "STS", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "a8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xA0": {
+            "instruction": "SUB", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xA1": {
+            "instruction": "CMP", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xA2": {
+            "instruction": "SBC", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xA3": {
+            "operands": [], 
+            "variant": {
+                "instruction": "SUBD", 
+                "operands": [
+                    {
+                        "description": "Accumulator A", 
+                        "name": "A", 
+                        "type": "register"
+                    }, 
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "d8", 
+                        "type": "immediate"
+                    }, 
+                    {
+                        "description": "Index register", 
+                        "name": "X", 
+                        "type": "register"
+                    }
+                ]
+            }
+        }, 
+        "0xA4": {
+            "instruction": "AND", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xA5": {
+            "instruction": "BIT", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xA6": {
+            "instruction": "LDA", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xA7": {
+            "instruction": "STA", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xA8": {
+            "instruction": "EOR", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xA9": {
+            "instruction": "ADC", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xAA": {
+            "instruction": "ORA", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xAB": {
+            "instruction": "ADD", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xAC": {
+            "instruction": "CPX", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xAD": {
+            "instruction": "JSR", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xAE": {
+            "instruction": "LDS", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xAF": {
+            "instruction": "STS", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xB0": {
+            "instruction": "SUB", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xB1": {
+            "instruction": "CMP", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xB2": {
+            "instruction": "SBC", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xB3": {
+            "operands": [], 
+            "variant": {
+                "instruction": "SUBD", 
+                "operands": [
+                    {
+                        "description": "Accumulator A", 
+                        "name": "A", 
+                        "type": "register"
+                    }, 
+                    {
+                        "bytes": 2, 
+                        "description": "16-bit immediate address", 
+                        "name": "a16", 
+                        "type": "immediate"
+                    }
+                ]
+            }
+        }, 
+        "0xB4": {
+            "instruction": "AND", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xB5": {
+            "instruction": "BIT", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xB6": {
+            "instruction": "LDA", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xB7": {
+            "instruction": "STA", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xB8": {
+            "instruction": "EOR", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xB9": {
+            "instruction": "ADC", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xBA": {
+            "instruction": "ORA", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xBB": {
+            "instruction": "ADD", 
+            "operands": [
+                {
+                    "description": "Accumulator A", 
+                    "name": "A", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xBC": {
+            "instruction": "CPX", 
+            "operands": [
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xBD": {
+            "instruction": "JSR", 
+            "operands": [
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xBE": {
+            "instruction": "LDS", 
+            "operands": [
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xBF": {
+            "instruction": "STS", 
+            "operands": [
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xC0": {
+            "instruction": "SUB", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "#d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xC1": {
+            "instruction": "CMP", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "#d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xC2": {
+            "instruction": "SBC", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "#d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xC3": {
+            "operands": [], 
+            "variant": {
+                "instruction": "ADDD", 
+                "operands": [
+                    {
+                        "description": "Accumulator B", 
+                        "name": "B", 
+                        "type": "register"
+                    }, 
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "#d8", 
+                        "type": "immediate"
+                    }
+                ]
+            }
+        }, 
+        "0xC4": {
+            "instruction": "AND", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "#d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xC5": {
+            "instruction": "BIT", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "#d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xC6": {
+            "instruction": "LDA", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "#d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xC7": {
+            "illegal": true, 
+            "instruction": "STA", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "#d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xC8": {
+            "instruction": "EOR", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "#d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xC9": {
+            "instruction": "ADC", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "#d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xCA": {
+            "instruction": "ORA", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "#d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xCB": {
+            "instruction": "ADD", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "#d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xCC": {
+            "operands": [], 
+            "variant": {
+                "instruction": "LDD", 
+                "operands": [
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "#d8", 
+                        "type": "immediate"
+                    }
+                ]
+            }
+        }, 
+        "0xCD": {
+            "illegal": true, 
+            "instruction": "HCF", 
+            "operands": []
+        }, 
+        "0xCE": {
+            "instruction": "LDX", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "#d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xCF": {
+            "illegal": true, 
+            "instruction": "STX", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "#d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xD0": {
+            "instruction": "SUB", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "a8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xD1": {
+            "instruction": "CMP", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "a8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xD2": {
+            "instruction": "SBC", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "a8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xD3": {
+            "operands": [], 
+            "variant": {
+                "instruction": "ADDD", 
+                "operands": [
+                    {
+                        "description": "Accumulator B", 
+                        "name": "B", 
+                        "type": "register"
+                    }, 
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "a8", 
+                        "type": "immediate"
+                    }
+                ]
+            }
+        }, 
+        "0xD4": {
+            "instruction": "AND", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "a8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xD5": {
+            "instruction": "BIT", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "a8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xD6": {
+            "instruction": "LDA", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "a8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xD7": {
+            "instruction": "STA", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "a8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xD8": {
+            "instruction": "EOR", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "a8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xD9": {
+            "instruction": "ADC", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "a8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xDA": {
+            "instruction": "ORA", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "a8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xDB": {
+            "instruction": "ADD", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "a8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xDC": {
+            "operands": [], 
+            "variant": {
+                "instruction": "LDD", 
+                "operands": [
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "a8", 
+                        "type": "immediate"
+                    }
+                ]
+            }
+        }, 
+        "0xDD": {
+            "illegal": true, 
+            "instruction": "HCF", 
+            "operands": [], 
+            "variant": {
+                "instruction": "STD", 
+                "operands": [
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "a8", 
+                        "type": "immediate"
+                    }
+                ]
+            }
+        }, 
+        "0xDE": {
+            "instruction": "LDX", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "a8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xDF": {
+            "instruction": "STX", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "a8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xE0": {
+            "instruction": "SUB", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xE1": {
+            "instruction": "CMP", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xE2": {
+            "instruction": "SBC", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xE3": {
+            "operands": [], 
+            "variant": {
+                "instruction": "ADDD", 
+                "operands": [
+                    {
+                        "description": "Accumulator B", 
+                        "name": "B", 
+                        "type": "register"
+                    }, 
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "d8", 
+                        "type": "immediate"
+                    }, 
+                    {
+                        "description": "Index register", 
+                        "name": "X", 
+                        "type": "register"
+                    }
+                ]
+            }
+        }, 
+        "0xE4": {
+            "instruction": "AND", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xE5": {
+            "instruction": "BIT", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xE6": {
+            "instruction": "LDA", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xE7": {
+            "instruction": "STA", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xE8": {
+            "instruction": "EOR", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xE9": {
+            "instruction": "ADC", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xEA": {
+            "instruction": "ORA", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xEB": {
+            "instruction": "ADD", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xEC": {
+            "operands": [], 
+            "variant": {
+                "instruction": "LDD", 
+                "operands": [
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "d8", 
+                        "type": "immediate"
+                    }, 
+                    {
+                        "description": "Index register", 
+                        "name": "X", 
+                        "type": "register"
+                    }
+                ]
+            }
+        }, 
+        "0xED": {
+            "illegal": true, 
+            "instruction": "HCF", 
+            "operands": [], 
+            "variant": {
+                "instruction": "STD", 
+                "operands": [
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "d8", 
+                        "type": "immediate"
+                    }, 
+                    {
+                        "description": "Index register", 
+                        "name": "X", 
+                        "type": "register"
+                    }
+                ]
+            }
+        }, 
+        "0xEE": {
+            "instruction": "LDX", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xEF": {
+            "instruction": "STX", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "description": "8-bit immediate value", 
+                    "name": "d8", 
+                    "type": "immediate"
+                }, 
+                {
+                    "description": "Index register", 
+                    "name": "X", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xF0": {
+            "instruction": "SUB", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xF1": {
+            "instruction": "CMP", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xF2": {
+            "instruction": "SBC", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xF3": {
+            "operands": [], 
+            "variant": {
+                "instruction": "ADDD", 
+                "operands": [
+                    {
+                        "description": "Accumulator B", 
+                        "name": "B", 
+                        "type": "register"
+                    }, 
+                    {
+                        "bytes": 2, 
+                        "description": "16-bit immediate address", 
+                        "name": "a16", 
+                        "type": "immediate"
+                    }
+                ]
+            }
+        }, 
+        "0xF4": {
+            "instruction": "AND", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xF5": {
+            "instruction": "BIT", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xF6": {
+            "instruction": "LDA", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xF7": {
+            "instruction": "STA", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xF8": {
+            "instruction": "EOR", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xF9": {
+            "instruction": "ADC", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xFA": {
+            "instruction": "ORA", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xFB": {
+            "instruction": "ADD", 
+            "operands": [
+                {
+                    "description": "Accumulator B", 
+                    "name": "B", 
+                    "type": "register"
+                }, 
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xFC": {
+            "operands": [], 
+            "variant": {
+                "instruction": "LDD", 
+                "operands": [
+                    {
+                        "bytes": 2, 
+                        "description": "16-bit immediate address", 
+                        "name": "a16", 
+                        "type": "immediate"
+                    }
+                ]
+            }
+        }, 
+        "0xFD": {
+            "illegal": true, 
+            "instruction": "HCF", 
+            "operands": [], 
+            "variant": {
+                "instruction": "STD", 
+                "operands": [
+                    {
+                        "bytes": 2, 
+                        "description": "16-bit immediate address", 
+                        "name": "a16", 
+                        "type": "immediate"
+                    }
+                ]
+            }
+        }, 
+        "0xFE": {
+            "instruction": "LDX", 
+            "operands": [
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xFF": {
+            "instruction": "STX", 
+            "operands": [
+                {
+                    "bytes": 2, 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
+                    "type": "immediate"
+                }
+            ]
+        }
+    }
+}
