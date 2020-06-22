@@ -265,23 +265,26 @@ for opcode in range(0x00, 0x100):
             foo['instruction'] = 'XDC'
             foo['timing'] = { 'cycles': 2 }
     elif opcode & 0xF0 == 0x30:
-        foo['instruction'] = 'DS'
-        foo['timing'] = { 'cycles': 1.5 }
-        foo['operands'] = [
-            r
-        ]
+        if r['name'] != "15":
+            foo['instruction'] = 'DS'
+            foo['timing'] = { 'cycles': 1.5 }
+            foo['operands'] = [
+                r
+            ]
     elif opcode & 0xF0 == 0x40:
-        foo['instruction'] = 'LR'
-        foo['operands'] = [
-            registers['A'],
-            r
-        ]
+        if r['name'] != "15":
+            foo['instruction'] = 'LR'
+            foo['operands'] = [
+                registers['A'],
+                r
+            ]
     elif opcode & 0xF0 == 0x50:
-        foo['instruction'] = 'LR'
-        foo['operands'] = [
-            r,
-            registers['A']
-        ]
+        if r['name'] != "15":
+            foo['instruction'] = 'LR'
+            foo['operands'] = [
+                r,
+                registers['A']
+            ]
     elif opcode & 0xF0 == 0x60:
         foo['operands'] = [
             inherent[opcode & 0x07]
@@ -384,29 +387,34 @@ for opcode in range(0x00, 0x100):
             inherent[opcode & 0x0F]
         ]
     elif opcode & 0xF0 == 0xC0:
-        foo['instruction'] = 'AS'
-        foo['operands'] = [
-            r
-        ]
+        if r['name'] != "15":
+            foo['instruction'] = 'AS'
+            foo['operands'] = [
+                r
+            ]
     elif opcode & 0xF0 == 0xD0:
-        foo['instruction'] = 'ASD'
-        foo['timing'] = { 'cycles': 2 }
-        foo['operands'] = [
-            r
-        ]
+        if r['name'] != "15":
+            foo['instruction'] = 'ASD'
+            foo['timing'] = { 'cycles': 2 }
+            foo['operands'] = [
+                r
+            ]
     elif opcode & 0xF0 == 0xE0:
-        foo['instruction'] = 'XS'
-        foo['operands'] = [
-            r
-        ]
+        if r['name'] != "15":
+            foo['instruction'] = 'XS'
+            foo['operands'] = [
+                r
+            ]
     elif opcode & 0xF0 == 0xF0:
-        foo['instruction'] = 'NS'
-        foo['operands'] = [
-            r
-        ]
+        if r['name'] != "15":
+            foo['instruction'] = 'NS'
+            foo['operands'] = [
+                r
+            ]
 
-    #if not 'instruction' in foo:
-    #    foo['illegal'] = True
+    if not 'instruction' in foo:
+        foo['instruction'] = 'NOP'
+        foo['illegal'] = True
 
     opcodes["0x%02X" % opcode] = foo
 

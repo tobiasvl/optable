@@ -607,16 +607,22 @@
             }
         }, 
         "0x2D": {
+            "illegal": true, 
+            "instruction": "NOP", 
             "timing": {
                 "cycles": 1
             }
         }, 
         "0x2E": {
+            "illegal": true, 
+            "instruction": "NOP", 
             "timing": {
                 "cycles": 1
             }
         }, 
         "0x2F": {
+            "illegal": true, 
+            "instruction": "NOP", 
             "timing": {
                 "cycles": 1
             }
@@ -787,14 +793,10 @@
             }
         }, 
         "0x3F": {
-            "instruction": "DS", 
-            "operands": [
-                {
-                    "name": "15"
-                }
-            ], 
+            "illegal": true, 
+            "instruction": "NOP", 
             "timing": {
-                "cycles": 1.5
+                "cycles": 1
             }
         }, 
         "0x40": {
@@ -1038,17 +1040,8 @@
             }
         }, 
         "0x4F": {
-            "instruction": "LR", 
-            "operands": [
-                {
-                    "description": "8-bit accumulator A", 
-                    "name": "A", 
-                    "type": "register"
-                }, 
-                {
-                    "name": "15"
-                }
-            ], 
+            "illegal": true, 
+            "instruction": "NOP", 
             "timing": {
                 "cycles": 1
             }
@@ -1294,17 +1287,8 @@
             }
         }, 
         "0x5F": {
-            "instruction": "LR", 
-            "operands": [
-                {
-                    "name": "15"
-                }, 
-                {
-                    "description": "8-bit accumulator A", 
-                    "name": "A", 
-                    "type": "register"
-                }
-            ], 
+            "illegal": true, 
+            "instruction": "NOP", 
             "timing": {
                 "cycles": 1
             }
@@ -2683,12 +2667,8 @@
             }
         }, 
         "0xCF": {
-            "instruction": "AS", 
-            "operands": [
-                {
-                    "name": "15"
-                }
-            ], 
+            "illegal": true, 
+            "instruction": "NOP", 
             "timing": {
                 "cycles": 1
             }
@@ -2859,14 +2839,10 @@
             }
         }, 
         "0xDF": {
-            "instruction": "ASD", 
-            "operands": [
-                {
-                    "name": "15"
-                }
-            ], 
+            "illegal": true, 
+            "instruction": "NOP", 
             "timing": {
-                "cycles": 2
+                "cycles": 1
             }
         }, 
         "0xE0": {
@@ -3035,12 +3011,8 @@
             }
         }, 
         "0xEF": {
-            "instruction": "XS", 
-            "operands": [
-                {
-                    "name": "15"
-                }
-            ], 
+            "illegal": true, 
+            "instruction": "NOP", 
             "timing": {
                 "cycles": 1
             }
@@ -3211,12 +3183,8 @@
             }
         }, 
         "0xFF": {
-            "instruction": "NS", 
-            "operands": [
-                {
-                    "name": "15"
-                }
-            ], 
+            "illegal": true, 
+            "instruction": "NOP", 
             "timing": {
                 "cycles": 1
             }
