@@ -13,12 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: 8-bit CPU family opcode tables
+title: Optable
 description: >-
   Opcode tables for 8-bit CPU families
-baseurl: "/opcode-tables" # the subpath of your site, e.g. /blog
+baseurl: "/optable" # the subpath of your site, e.g. /blog
 url: "http://tobiasvl.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-github: "https://github.com/tobiasvl/opcode-tables"
+github: "https://github.com/tobiasvl/optable"
 
 encoding: UTF-8
 
