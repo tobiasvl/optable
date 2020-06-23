@@ -1,42 +1,39 @@
 import json
 
 scratchpad = [
-    { "name": "0"},
-    { "name": "1"},
-    { "name": "2"},
-    { "name": "3"},
-    { "name": "4"},
-    { "name": "5"},
-    { "name": "6"},
-    { "name": "7"},
-    { "name": "8"},
-    { "name": "9"},
-    { "name": "10"},
-    { "name": "11"},
-    { "name": "S"},
-    { "name": "I"},
-    { "name": "D"},
-    { "name": "15"} 
+    { "name": "0", "description": "Scratchpad register 0" },
+    { "name": "1", "description": "Scratchpad register 1" },
+    { "name": "2", "description": "Scratchpad register 2" },
+    { "name": "3", "description": "Scratchpad register 3" },
+    { "name": "4", "description": "Scratchpad register 4" },
+    { "name": "5", "description": "Scratchpad register 5" },
+    { "name": "6", "description": "Scratchpad register 6" },
+    { "name": "7", "description": "Scratchpad register 7" },
+    { "name": "8", "description": "Scratchpad register 8" },
+    { "name": "9", "description": "Scratchpad register 9 (J)" },
+    { "name": "10", "description": "Scratchpad register 10 (HU)" },
+    { "name": "11", "description": "Scratchpad register 11 (HL)" },
+    {"name": "S", "description": "Scratchpad register addressed by ISAR. Also known as IS and 12.", "type": "register"},
+    {"name": "I", "description": "Scratchpad register addressed by ISAR; ISAR is post-incremented. Also known as 13.", "type": "register"},
+    {"name": "D", "description": "Scratchpad register addressed by ISAR; ISAR is post-decremented. Also known as 14.", "type": "register"},
+    { "name": "15", "description": "N/A" },
 ]
 
 registers = {
     "J": {"name": "J", "description": "Scratchpad register 9", "type": "register"},
     "H": {"name": "H", "description": "Scratchpad registers 10 (HU) and 11 (HL)", "type": "register"},
     "K": {"name": "K", "description": "Scratchpad registers 12 (KU) and 13 (KL)", "type": "register"},
-    "KU": {"name": "KU", "description": "Scratchpad registers 12 (KU) and 13 (KL)", "type": "register"},
-    "KL": {"name": "KL", "description": "Scratchpad registers 12 (KU) and 13 (KL)", "type": "register"},
+    "KU": {"name": "KU", "description": "Scratchpad register 12", "type": "register"},
+    "KL": {"name": "KL", "description": "Scratchpad register 13", "type": "register"},
     "Q": {"name": "Q", "description": "Scratchpad registers 14 (QU) and 15 (QL)", "type": "register"},
-    "QU": {"name": "QU", "description": "Scratchpad registers 14 (QU) and 15 (QL)", "type": "register"},
-    "QL": {"name": "QL", "description": "Scratchpad registers 14 (QU) and 15 (QL)", "type": "register"},
-    "P": {"name": "P", "description": "16-bit stack register. Also known as PC1.", "type": "register"},
-    "S": {"name": "S", "description": "The scratchpad register currently addressed by ISAR. Also known as IS and 12.", "type": "register"},
-    "IS": {"name": "S", "description": "The scratchpad register currently addressed by ISAR. Also known as IS and 12.", "type": "register"},
-    "I": {"name": "I", "description": "The scratchpad register currently addressed by ISAR; ISAR is then post-incremented. Also known as 13.", "type": "register"},
-    "D": {"name": "D", "description": "The scratchpad register currently addressed by ISAR; ISAR is then post-decremented. Also known as 14.", "type": "register"},
-    "P0": {"name": "P0", "description": "Program Counter. Also known as PC0.", "type": "register"},
-    "DC": {"name": "DC", "description": "Data Counter. Also known as DC0.", "type": "register"},
+    "QU": {"name": "QU", "description": "Scratchpad register 14", "type": "register"},
+    "QL": {"name": "QL", "description": "Scratchpad register 15", "type": "register"},
+    "P": {"name": "P", "description": "16-bit stack register (PC1)", "type": "register"},
+    "P0": {"name": "P0", "description": "Program Counter (PC0)", "type": "register"},
+    "DC": {"name": "DC", "description": "Data Counter (DC0)", "type": "register"},
     "DC1": {"name": "DC1", "description": "Data Counter storage", "type": "register"},
     "A": {"name": "A", "description": "8-bit accumulator A", "type": "register"},
+    "IS": {"name": "IS", "description": "6-bit Indirect Scratchpad Address Register (ISAR)", "type": "register"},
     "W": {"name": "W", "description": "Status register", "type": "register"},
 }
 
@@ -48,7 +45,7 @@ immediate = {
 
 inherent = [None] * 16
 for i in range(16):
-    inherent[i] = {"name": i}
+    inherent[i] = {"name": i, "description": "Constant number"}
     
 opcodes = {}
 

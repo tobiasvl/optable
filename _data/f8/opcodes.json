@@ -9,7 +9,7 @@
                     "type": "register"
                 }, 
                 {
-                    "description": "Scratchpad registers 12 (KU) and 13 (KL)", 
+                    "description": "Scratchpad register 12", 
                     "name": "KU", 
                     "type": "register"
                 }
@@ -27,7 +27,7 @@
                     "type": "register"
                 }, 
                 {
-                    "description": "Scratchpad registers 12 (KU) and 13 (KL)", 
+                    "description": "Scratchpad register 13", 
                     "name": "KL", 
                     "type": "register"
                 }
@@ -45,7 +45,7 @@
                     "type": "register"
                 }, 
                 {
-                    "description": "Scratchpad registers 14 (QU) and 15 (QL)", 
+                    "description": "Scratchpad register 14", 
                     "name": "QU", 
                     "type": "register"
                 }
@@ -63,7 +63,7 @@
                     "type": "register"
                 }, 
                 {
-                    "description": "Scratchpad registers 14 (QU) and 15 (QL)", 
+                    "description": "Scratchpad register 15", 
                     "name": "QL", 
                     "type": "register"
                 }
@@ -76,7 +76,7 @@
             "instruction": "LR", 
             "operands": [
                 {
-                    "description": "Scratchpad registers 12 (KU) and 13 (KL)", 
+                    "description": "Scratchpad register 12", 
                     "name": "KU", 
                     "type": "register"
                 }, 
@@ -94,7 +94,7 @@
             "instruction": "LR", 
             "operands": [
                 {
-                    "description": "Scratchpad registers 12 (KU) and 13 (KL)", 
+                    "description": "Scratchpad register 13", 
                     "name": "KL", 
                     "type": "register"
                 }, 
@@ -112,7 +112,7 @@
             "instruction": "LR", 
             "operands": [
                 {
-                    "description": "Scratchpad registers 14 (QU) and 15 (QL)", 
+                    "description": "Scratchpad register 14", 
                     "name": "QU", 
                     "type": "register"
                 }, 
@@ -130,7 +130,7 @@
             "instruction": "LR", 
             "operands": [
                 {
-                    "description": "Scratchpad registers 14 (QU) and 15 (QL)", 
+                    "description": "Scratchpad register 15", 
                     "name": "QL", 
                     "type": "register"
                 }, 
@@ -153,7 +153,7 @@
                     "type": "register"
                 }, 
                 {
-                    "description": "16-bit stack register. Also known as PC1.", 
+                    "description": "16-bit stack register (PC1)", 
                     "name": "P", 
                     "type": "register"
                 }
@@ -166,7 +166,7 @@
             "instruction": "LR", 
             "operands": [
                 {
-                    "description": "16-bit stack register. Also known as PC1.", 
+                    "description": "16-bit stack register (PC1)", 
                     "name": "P", 
                     "type": "register"
                 }, 
@@ -189,8 +189,8 @@
                     "type": "register"
                 }, 
                 {
-                    "description": "The scratchpad register currently addressed by ISAR. Also known as IS and 12.", 
-                    "name": "S", 
+                    "description": "6-bit Indirect Scratchpad Address Register (ISAR)", 
+                    "name": "IS", 
                     "type": "register"
                 }
             ], 
@@ -202,8 +202,8 @@
             "instruction": "LR", 
             "operands": [
                 {
-                    "description": "The scratchpad register currently addressed by ISAR. Also known as IS and 12.", 
-                    "name": "S", 
+                    "description": "6-bit Indirect Scratchpad Address Register (ISAR)", 
+                    "name": "IS", 
                     "type": "register"
                 }, 
                 {
@@ -226,7 +226,7 @@
             "instruction": "LR", 
             "operands": [
                 {
-                    "description": "Program Counter. Also known as PC0.", 
+                    "description": "Program Counter (PC0)", 
                     "name": "P0", 
                     "type": "register"
                 }, 
@@ -249,7 +249,7 @@
                     "type": "register"
                 }, 
                 {
-                    "description": "Data Counter. Also known as DC0.", 
+                    "description": "Data Counter (DC0)", 
                     "name": "DC", 
                     "type": "register"
                 }
@@ -267,7 +267,7 @@
                     "type": "register"
                 }, 
                 {
-                    "description": "Data Counter. Also known as DC0.", 
+                    "description": "Data Counter (DC0)", 
                     "name": "DC", 
                     "type": "register"
                 }
@@ -280,7 +280,7 @@
             "instruction": "LR", 
             "operands": [
                 {
-                    "description": "Data Counter. Also known as DC0.", 
+                    "description": "Data Counter (DC0)", 
                     "name": "DC", 
                     "type": "register"
                 }, 
@@ -303,7 +303,7 @@
                     "type": "register"
                 }, 
                 {
-                    "description": "Data Counter. Also known as DC0.", 
+                    "description": "Data Counter (DC0)", 
                     "name": "DC", 
                     "type": "register"
                 }
@@ -316,6 +316,7 @@
             "instruction": "SR", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 1
                 }
             ], 
@@ -327,6 +328,7 @@
             "instruction": "SL", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 1
                 }
             ], 
@@ -338,6 +340,7 @@
             "instruction": "SR", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 4
                 }
             ], 
@@ -349,6 +352,7 @@
             "instruction": "SL", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 4
                 }
             ], 
@@ -631,6 +635,7 @@
             "instruction": "DS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 0", 
                     "name": "0"
                 }
             ], 
@@ -642,6 +647,7 @@
             "instruction": "DS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 1", 
                     "name": "1"
                 }
             ], 
@@ -653,6 +659,7 @@
             "instruction": "DS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 2", 
                     "name": "2"
                 }
             ], 
@@ -664,6 +671,7 @@
             "instruction": "DS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 3", 
                     "name": "3"
                 }
             ], 
@@ -675,6 +683,7 @@
             "instruction": "DS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 4", 
                     "name": "4"
                 }
             ], 
@@ -686,6 +695,7 @@
             "instruction": "DS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 5", 
                     "name": "5"
                 }
             ], 
@@ -697,6 +707,7 @@
             "instruction": "DS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 6", 
                     "name": "6"
                 }
             ], 
@@ -708,6 +719,7 @@
             "instruction": "DS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 7", 
                     "name": "7"
                 }
             ], 
@@ -719,6 +731,7 @@
             "instruction": "DS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 8", 
                     "name": "8"
                 }
             ], 
@@ -730,6 +743,7 @@
             "instruction": "DS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 9 (J)", 
                     "name": "9"
                 }
             ], 
@@ -741,6 +755,7 @@
             "instruction": "DS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 10 (HU)", 
                     "name": "10"
                 }
             ], 
@@ -752,6 +767,7 @@
             "instruction": "DS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 11 (HL)", 
                     "name": "11"
                 }
             ], 
@@ -763,7 +779,9 @@
             "instruction": "DS", 
             "operands": [
                 {
-                    "name": "S"
+                    "description": "Scratchpad register addressed by ISAR. Also known as IS and 12.", 
+                    "name": "S", 
+                    "type": "register"
                 }
             ], 
             "timing": {
@@ -774,7 +792,9 @@
             "instruction": "DS", 
             "operands": [
                 {
-                    "name": "I"
+                    "description": "Scratchpad register addressed by ISAR; ISAR is post-incremented. Also known as 13.", 
+                    "name": "I", 
+                    "type": "register"
                 }
             ], 
             "timing": {
@@ -785,7 +805,9 @@
             "instruction": "DS", 
             "operands": [
                 {
-                    "name": "D"
+                    "description": "Scratchpad register addressed by ISAR; ISAR is post-decremented. Also known as 14.", 
+                    "name": "D", 
+                    "type": "register"
                 }
             ], 
             "timing": {
@@ -808,6 +830,7 @@
                     "type": "register"
                 }, 
                 {
+                    "description": "Scratchpad register 0", 
                     "name": "0"
                 }
             ], 
@@ -824,6 +847,7 @@
                     "type": "register"
                 }, 
                 {
+                    "description": "Scratchpad register 1", 
                     "name": "1"
                 }
             ], 
@@ -840,6 +864,7 @@
                     "type": "register"
                 }, 
                 {
+                    "description": "Scratchpad register 2", 
                     "name": "2"
                 }
             ], 
@@ -856,6 +881,7 @@
                     "type": "register"
                 }, 
                 {
+                    "description": "Scratchpad register 3", 
                     "name": "3"
                 }
             ], 
@@ -872,6 +898,7 @@
                     "type": "register"
                 }, 
                 {
+                    "description": "Scratchpad register 4", 
                     "name": "4"
                 }
             ], 
@@ -888,6 +915,7 @@
                     "type": "register"
                 }, 
                 {
+                    "description": "Scratchpad register 5", 
                     "name": "5"
                 }
             ], 
@@ -904,6 +932,7 @@
                     "type": "register"
                 }, 
                 {
+                    "description": "Scratchpad register 6", 
                     "name": "6"
                 }
             ], 
@@ -920,6 +949,7 @@
                     "type": "register"
                 }, 
                 {
+                    "description": "Scratchpad register 7", 
                     "name": "7"
                 }
             ], 
@@ -936,6 +966,7 @@
                     "type": "register"
                 }, 
                 {
+                    "description": "Scratchpad register 8", 
                     "name": "8"
                 }
             ], 
@@ -952,6 +983,7 @@
                     "type": "register"
                 }, 
                 {
+                    "description": "Scratchpad register 9 (J)", 
                     "name": "9"
                 }
             ], 
@@ -968,6 +1000,7 @@
                     "type": "register"
                 }, 
                 {
+                    "description": "Scratchpad register 10 (HU)", 
                     "name": "10"
                 }
             ], 
@@ -984,6 +1017,7 @@
                     "type": "register"
                 }, 
                 {
+                    "description": "Scratchpad register 11 (HL)", 
                     "name": "11"
                 }
             ], 
@@ -1000,7 +1034,9 @@
                     "type": "register"
                 }, 
                 {
-                    "name": "S"
+                    "description": "Scratchpad register addressed by ISAR. Also known as IS and 12.", 
+                    "name": "S", 
+                    "type": "register"
                 }
             ], 
             "timing": {
@@ -1016,7 +1052,9 @@
                     "type": "register"
                 }, 
                 {
-                    "name": "I"
+                    "description": "Scratchpad register addressed by ISAR; ISAR is post-incremented. Also known as 13.", 
+                    "name": "I", 
+                    "type": "register"
                 }
             ], 
             "timing": {
@@ -1032,7 +1070,9 @@
                     "type": "register"
                 }, 
                 {
-                    "name": "D"
+                    "description": "Scratchpad register addressed by ISAR; ISAR is post-decremented. Also known as 14.", 
+                    "name": "D", 
+                    "type": "register"
                 }
             ], 
             "timing": {
@@ -1050,6 +1090,7 @@
             "instruction": "LR", 
             "operands": [
                 {
+                    "description": "Scratchpad register 0", 
                     "name": "0"
                 }, 
                 {
@@ -1066,6 +1107,7 @@
             "instruction": "LR", 
             "operands": [
                 {
+                    "description": "Scratchpad register 1", 
                     "name": "1"
                 }, 
                 {
@@ -1082,6 +1124,7 @@
             "instruction": "LR", 
             "operands": [
                 {
+                    "description": "Scratchpad register 2", 
                     "name": "2"
                 }, 
                 {
@@ -1098,6 +1141,7 @@
             "instruction": "LR", 
             "operands": [
                 {
+                    "description": "Scratchpad register 3", 
                     "name": "3"
                 }, 
                 {
@@ -1114,6 +1158,7 @@
             "instruction": "LR", 
             "operands": [
                 {
+                    "description": "Scratchpad register 4", 
                     "name": "4"
                 }, 
                 {
@@ -1130,6 +1175,7 @@
             "instruction": "LR", 
             "operands": [
                 {
+                    "description": "Scratchpad register 5", 
                     "name": "5"
                 }, 
                 {
@@ -1146,6 +1192,7 @@
             "instruction": "LR", 
             "operands": [
                 {
+                    "description": "Scratchpad register 6", 
                     "name": "6"
                 }, 
                 {
@@ -1162,6 +1209,7 @@
             "instruction": "LR", 
             "operands": [
                 {
+                    "description": "Scratchpad register 7", 
                     "name": "7"
                 }, 
                 {
@@ -1178,6 +1226,7 @@
             "instruction": "LR", 
             "operands": [
                 {
+                    "description": "Scratchpad register 8", 
                     "name": "8"
                 }, 
                 {
@@ -1194,6 +1243,7 @@
             "instruction": "LR", 
             "operands": [
                 {
+                    "description": "Scratchpad register 9 (J)", 
                     "name": "9"
                 }, 
                 {
@@ -1210,6 +1260,7 @@
             "instruction": "LR", 
             "operands": [
                 {
+                    "description": "Scratchpad register 10 (HU)", 
                     "name": "10"
                 }, 
                 {
@@ -1226,6 +1277,7 @@
             "instruction": "LR", 
             "operands": [
                 {
+                    "description": "Scratchpad register 11 (HL)", 
                     "name": "11"
                 }, 
                 {
@@ -1242,7 +1294,9 @@
             "instruction": "LR", 
             "operands": [
                 {
-                    "name": "S"
+                    "description": "Scratchpad register addressed by ISAR. Also known as IS and 12.", 
+                    "name": "S", 
+                    "type": "register"
                 }, 
                 {
                     "description": "8-bit accumulator A", 
@@ -1258,7 +1312,9 @@
             "instruction": "LR", 
             "operands": [
                 {
-                    "name": "I"
+                    "description": "Scratchpad register addressed by ISAR; ISAR is post-incremented. Also known as 13.", 
+                    "name": "I", 
+                    "type": "register"
                 }, 
                 {
                     "description": "8-bit accumulator A", 
@@ -1274,7 +1330,9 @@
             "instruction": "LR", 
             "operands": [
                 {
-                    "name": "D"
+                    "description": "Scratchpad register addressed by ISAR; ISAR is post-decremented. Also known as 14.", 
+                    "name": "D", 
+                    "type": "register"
                 }, 
                 {
                     "description": "8-bit accumulator A", 
@@ -1297,6 +1355,7 @@
             "instruction": "LISU", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 0
                 }
             ], 
@@ -1308,6 +1367,7 @@
             "instruction": "LISU", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 1
                 }
             ], 
@@ -1319,6 +1379,7 @@
             "instruction": "LISU", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 2
                 }
             ], 
@@ -1330,6 +1391,7 @@
             "instruction": "LISU", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 3
                 }
             ], 
@@ -1341,6 +1403,7 @@
             "instruction": "LISU", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 4
                 }
             ], 
@@ -1352,6 +1415,7 @@
             "instruction": "LISU", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 5
                 }
             ], 
@@ -1363,6 +1427,7 @@
             "instruction": "LISU", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 6
                 }
             ], 
@@ -1374,6 +1439,7 @@
             "instruction": "LISU", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 7
                 }
             ], 
@@ -1385,6 +1451,7 @@
             "instruction": "LISL", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 0
                 }
             ], 
@@ -1396,6 +1463,7 @@
             "instruction": "LISL", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 1
                 }
             ], 
@@ -1407,6 +1475,7 @@
             "instruction": "LISL", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 2
                 }
             ], 
@@ -1418,6 +1487,7 @@
             "instruction": "LISL", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 3
                 }
             ], 
@@ -1429,6 +1499,7 @@
             "instruction": "LISL", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 4
                 }
             ], 
@@ -1440,6 +1511,7 @@
             "instruction": "LISL", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 5
                 }
             ], 
@@ -1451,6 +1523,7 @@
             "instruction": "LISL", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 6
                 }
             ], 
@@ -1462,6 +1535,7 @@
             "instruction": "LISL", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 7
                 }
             ], 
@@ -1479,6 +1553,7 @@
             "instruction": "LIS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 1
                 }
             ], 
@@ -1490,6 +1565,7 @@
             "instruction": "LIS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 2
                 }
             ], 
@@ -1501,6 +1577,7 @@
             "instruction": "LIS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 3
                 }
             ], 
@@ -1512,6 +1589,7 @@
             "instruction": "LIS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 4
                 }
             ], 
@@ -1523,6 +1601,7 @@
             "instruction": "LIS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 5
                 }
             ], 
@@ -1534,6 +1613,7 @@
             "instruction": "LIS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 6
                 }
             ], 
@@ -1545,6 +1625,7 @@
             "instruction": "LIS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 7
                 }
             ], 
@@ -1556,6 +1637,7 @@
             "instruction": "LIS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 8
                 }
             ], 
@@ -1567,6 +1649,7 @@
             "instruction": "LIS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 9
                 }
             ], 
@@ -1578,6 +1661,7 @@
             "instruction": "LIS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 10
                 }
             ], 
@@ -1589,6 +1673,7 @@
             "instruction": "LIS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 11
                 }
             ], 
@@ -1600,6 +1685,7 @@
             "instruction": "LIS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 12
                 }
             ], 
@@ -1611,6 +1697,7 @@
             "instruction": "LIS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 13
                 }
             ], 
@@ -1622,6 +1709,7 @@
             "instruction": "LIS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 14
                 }
             ], 
@@ -1633,6 +1721,7 @@
             "instruction": "LIS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 15
                 }
             ], 
@@ -1644,6 +1733,7 @@
             "instruction": "BT", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 0
                 }, 
                 {
@@ -1695,6 +1785,7 @@
             "instruction": "BT", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 3
                 }, 
                 {
@@ -1732,6 +1823,7 @@
             "instruction": "BT", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 5
                 }, 
                 {
@@ -1752,6 +1844,7 @@
             "instruction": "BT", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 6
                 }, 
                 {
@@ -1772,6 +1865,7 @@
             "instruction": "BT", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 7
                 }, 
                 {
@@ -1899,6 +1993,7 @@
             "instruction": "BF", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 3
                 }, 
                 {
@@ -1936,6 +2031,7 @@
             "instruction": "BF", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 5
                 }, 
                 {
@@ -1956,6 +2052,7 @@
             "instruction": "BF", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 6
                 }, 
                 {
@@ -1976,6 +2073,7 @@
             "instruction": "BF", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 7
                 }, 
                 {
@@ -2013,6 +2111,7 @@
             "instruction": "BF", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 9
                 }, 
                 {
@@ -2033,6 +2132,7 @@
             "instruction": "BF", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 10
                 }, 
                 {
@@ -2053,6 +2153,7 @@
             "instruction": "BF", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 11
                 }, 
                 {
@@ -2073,6 +2174,7 @@
             "instruction": "BF", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 12
                 }, 
                 {
@@ -2093,6 +2195,7 @@
             "instruction": "BF", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 13
                 }, 
                 {
@@ -2113,6 +2216,7 @@
             "instruction": "BF", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 14
                 }, 
                 {
@@ -2133,6 +2237,7 @@
             "instruction": "BF", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 15
                 }, 
                 {
@@ -2153,6 +2258,7 @@
             "instruction": "INS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 0
                 }
             ], 
@@ -2164,6 +2270,7 @@
             "instruction": "INS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 1
                 }
             ], 
@@ -2175,6 +2282,7 @@
             "instruction": "INS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 2
                 }
             ], 
@@ -2186,6 +2294,7 @@
             "instruction": "INS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 3
                 }
             ], 
@@ -2197,6 +2306,7 @@
             "instruction": "INS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 4
                 }
             ], 
@@ -2208,6 +2318,7 @@
             "instruction": "INS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 5
                 }
             ], 
@@ -2219,6 +2330,7 @@
             "instruction": "INS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 6
                 }
             ], 
@@ -2230,6 +2342,7 @@
             "instruction": "INS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 7
                 }
             ], 
@@ -2241,6 +2354,7 @@
             "instruction": "INS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 8
                 }
             ], 
@@ -2252,6 +2366,7 @@
             "instruction": "INS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 9
                 }
             ], 
@@ -2263,6 +2378,7 @@
             "instruction": "INS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 10
                 }
             ], 
@@ -2274,6 +2390,7 @@
             "instruction": "INS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 11
                 }
             ], 
@@ -2285,6 +2402,7 @@
             "instruction": "INS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 12
                 }
             ], 
@@ -2296,6 +2414,7 @@
             "instruction": "INS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 13
                 }
             ], 
@@ -2307,6 +2426,7 @@
             "instruction": "INS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 14
                 }
             ], 
@@ -2318,6 +2438,7 @@
             "instruction": "INS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 15
                 }
             ], 
@@ -2329,6 +2450,7 @@
             "instruction": "OUTS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 0
                 }
             ], 
@@ -2340,6 +2462,7 @@
             "instruction": "OUTS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 1
                 }
             ], 
@@ -2351,6 +2474,7 @@
             "instruction": "OUTS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 2
                 }
             ], 
@@ -2362,6 +2486,7 @@
             "instruction": "OUTS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 3
                 }
             ], 
@@ -2373,6 +2498,7 @@
             "instruction": "OUTS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 4
                 }
             ], 
@@ -2384,6 +2510,7 @@
             "instruction": "OUTS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 5
                 }
             ], 
@@ -2395,6 +2522,7 @@
             "instruction": "OUTS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 6
                 }
             ], 
@@ -2406,6 +2534,7 @@
             "instruction": "OUTS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 7
                 }
             ], 
@@ -2417,6 +2546,7 @@
             "instruction": "OUTS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 8
                 }
             ], 
@@ -2428,6 +2558,7 @@
             "instruction": "OUTS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 9
                 }
             ], 
@@ -2439,6 +2570,7 @@
             "instruction": "OUTS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 10
                 }
             ], 
@@ -2450,6 +2582,7 @@
             "instruction": "OUTS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 11
                 }
             ], 
@@ -2461,6 +2594,7 @@
             "instruction": "OUTS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 12
                 }
             ], 
@@ -2472,6 +2606,7 @@
             "instruction": "OUTS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 13
                 }
             ], 
@@ -2483,6 +2618,7 @@
             "instruction": "OUTS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 14
                 }
             ], 
@@ -2494,6 +2630,7 @@
             "instruction": "OUTS", 
             "operands": [
                 {
+                    "description": "Constant number", 
                     "name": 15
                 }
             ], 
@@ -2505,6 +2642,7 @@
             "instruction": "AS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 0", 
                     "name": "0"
                 }
             ], 
@@ -2516,6 +2654,7 @@
             "instruction": "AS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 1", 
                     "name": "1"
                 }
             ], 
@@ -2527,6 +2666,7 @@
             "instruction": "AS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 2", 
                     "name": "2"
                 }
             ], 
@@ -2538,6 +2678,7 @@
             "instruction": "AS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 3", 
                     "name": "3"
                 }
             ], 
@@ -2549,6 +2690,7 @@
             "instruction": "AS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 4", 
                     "name": "4"
                 }
             ], 
@@ -2560,6 +2702,7 @@
             "instruction": "AS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 5", 
                     "name": "5"
                 }
             ], 
@@ -2571,6 +2714,7 @@
             "instruction": "AS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 6", 
                     "name": "6"
                 }
             ], 
@@ -2582,6 +2726,7 @@
             "instruction": "AS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 7", 
                     "name": "7"
                 }
             ], 
@@ -2593,6 +2738,7 @@
             "instruction": "AS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 8", 
                     "name": "8"
                 }
             ], 
@@ -2604,6 +2750,7 @@
             "instruction": "AS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 9 (J)", 
                     "name": "9"
                 }
             ], 
@@ -2615,6 +2762,7 @@
             "instruction": "AS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 10 (HU)", 
                     "name": "10"
                 }
             ], 
@@ -2626,6 +2774,7 @@
             "instruction": "AS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 11 (HL)", 
                     "name": "11"
                 }
             ], 
@@ -2637,7 +2786,9 @@
             "instruction": "AS", 
             "operands": [
                 {
-                    "name": "S"
+                    "description": "Scratchpad register addressed by ISAR. Also known as IS and 12.", 
+                    "name": "S", 
+                    "type": "register"
                 }
             ], 
             "timing": {
@@ -2648,7 +2799,9 @@
             "instruction": "AS", 
             "operands": [
                 {
-                    "name": "I"
+                    "description": "Scratchpad register addressed by ISAR; ISAR is post-incremented. Also known as 13.", 
+                    "name": "I", 
+                    "type": "register"
                 }
             ], 
             "timing": {
@@ -2659,7 +2812,9 @@
             "instruction": "AS", 
             "operands": [
                 {
-                    "name": "D"
+                    "description": "Scratchpad register addressed by ISAR; ISAR is post-decremented. Also known as 14.", 
+                    "name": "D", 
+                    "type": "register"
                 }
             ], 
             "timing": {
@@ -2677,6 +2832,7 @@
             "instruction": "ASD", 
             "operands": [
                 {
+                    "description": "Scratchpad register 0", 
                     "name": "0"
                 }
             ], 
@@ -2688,6 +2844,7 @@
             "instruction": "ASD", 
             "operands": [
                 {
+                    "description": "Scratchpad register 1", 
                     "name": "1"
                 }
             ], 
@@ -2699,6 +2856,7 @@
             "instruction": "ASD", 
             "operands": [
                 {
+                    "description": "Scratchpad register 2", 
                     "name": "2"
                 }
             ], 
@@ -2710,6 +2868,7 @@
             "instruction": "ASD", 
             "operands": [
                 {
+                    "description": "Scratchpad register 3", 
                     "name": "3"
                 }
             ], 
@@ -2721,6 +2880,7 @@
             "instruction": "ASD", 
             "operands": [
                 {
+                    "description": "Scratchpad register 4", 
                     "name": "4"
                 }
             ], 
@@ -2732,6 +2892,7 @@
             "instruction": "ASD", 
             "operands": [
                 {
+                    "description": "Scratchpad register 5", 
                     "name": "5"
                 }
             ], 
@@ -2743,6 +2904,7 @@
             "instruction": "ASD", 
             "operands": [
                 {
+                    "description": "Scratchpad register 6", 
                     "name": "6"
                 }
             ], 
@@ -2754,6 +2916,7 @@
             "instruction": "ASD", 
             "operands": [
                 {
+                    "description": "Scratchpad register 7", 
                     "name": "7"
                 }
             ], 
@@ -2765,6 +2928,7 @@
             "instruction": "ASD", 
             "operands": [
                 {
+                    "description": "Scratchpad register 8", 
                     "name": "8"
                 }
             ], 
@@ -2776,6 +2940,7 @@
             "instruction": "ASD", 
             "operands": [
                 {
+                    "description": "Scratchpad register 9 (J)", 
                     "name": "9"
                 }
             ], 
@@ -2787,6 +2952,7 @@
             "instruction": "ASD", 
             "operands": [
                 {
+                    "description": "Scratchpad register 10 (HU)", 
                     "name": "10"
                 }
             ], 
@@ -2798,6 +2964,7 @@
             "instruction": "ASD", 
             "operands": [
                 {
+                    "description": "Scratchpad register 11 (HL)", 
                     "name": "11"
                 }
             ], 
@@ -2809,7 +2976,9 @@
             "instruction": "ASD", 
             "operands": [
                 {
-                    "name": "S"
+                    "description": "Scratchpad register addressed by ISAR. Also known as IS and 12.", 
+                    "name": "S", 
+                    "type": "register"
                 }
             ], 
             "timing": {
@@ -2820,7 +2989,9 @@
             "instruction": "ASD", 
             "operands": [
                 {
-                    "name": "I"
+                    "description": "Scratchpad register addressed by ISAR; ISAR is post-incremented. Also known as 13.", 
+                    "name": "I", 
+                    "type": "register"
                 }
             ], 
             "timing": {
@@ -2831,7 +3002,9 @@
             "instruction": "ASD", 
             "operands": [
                 {
-                    "name": "D"
+                    "description": "Scratchpad register addressed by ISAR; ISAR is post-decremented. Also known as 14.", 
+                    "name": "D", 
+                    "type": "register"
                 }
             ], 
             "timing": {
@@ -2849,6 +3022,7 @@
             "instruction": "XS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 0", 
                     "name": "0"
                 }
             ], 
@@ -2860,6 +3034,7 @@
             "instruction": "XS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 1", 
                     "name": "1"
                 }
             ], 
@@ -2871,6 +3046,7 @@
             "instruction": "XS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 2", 
                     "name": "2"
                 }
             ], 
@@ -2882,6 +3058,7 @@
             "instruction": "XS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 3", 
                     "name": "3"
                 }
             ], 
@@ -2893,6 +3070,7 @@
             "instruction": "XS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 4", 
                     "name": "4"
                 }
             ], 
@@ -2904,6 +3082,7 @@
             "instruction": "XS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 5", 
                     "name": "5"
                 }
             ], 
@@ -2915,6 +3094,7 @@
             "instruction": "XS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 6", 
                     "name": "6"
                 }
             ], 
@@ -2926,6 +3106,7 @@
             "instruction": "XS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 7", 
                     "name": "7"
                 }
             ], 
@@ -2937,6 +3118,7 @@
             "instruction": "XS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 8", 
                     "name": "8"
                 }
             ], 
@@ -2948,6 +3130,7 @@
             "instruction": "XS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 9 (J)", 
                     "name": "9"
                 }
             ], 
@@ -2959,6 +3142,7 @@
             "instruction": "XS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 10 (HU)", 
                     "name": "10"
                 }
             ], 
@@ -2970,6 +3154,7 @@
             "instruction": "XS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 11 (HL)", 
                     "name": "11"
                 }
             ], 
@@ -2981,7 +3166,9 @@
             "instruction": "XS", 
             "operands": [
                 {
-                    "name": "S"
+                    "description": "Scratchpad register addressed by ISAR. Also known as IS and 12.", 
+                    "name": "S", 
+                    "type": "register"
                 }
             ], 
             "timing": {
@@ -2992,7 +3179,9 @@
             "instruction": "XS", 
             "operands": [
                 {
-                    "name": "I"
+                    "description": "Scratchpad register addressed by ISAR; ISAR is post-incremented. Also known as 13.", 
+                    "name": "I", 
+                    "type": "register"
                 }
             ], 
             "timing": {
@@ -3003,7 +3192,9 @@
             "instruction": "XS", 
             "operands": [
                 {
-                    "name": "D"
+                    "description": "Scratchpad register addressed by ISAR; ISAR is post-decremented. Also known as 14.", 
+                    "name": "D", 
+                    "type": "register"
                 }
             ], 
             "timing": {
@@ -3021,6 +3212,7 @@
             "instruction": "NS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 0", 
                     "name": "0"
                 }
             ], 
@@ -3032,6 +3224,7 @@
             "instruction": "NS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 1", 
                     "name": "1"
                 }
             ], 
@@ -3043,6 +3236,7 @@
             "instruction": "NS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 2", 
                     "name": "2"
                 }
             ], 
@@ -3054,6 +3248,7 @@
             "instruction": "NS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 3", 
                     "name": "3"
                 }
             ], 
@@ -3065,6 +3260,7 @@
             "instruction": "NS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 4", 
                     "name": "4"
                 }
             ], 
@@ -3076,6 +3272,7 @@
             "instruction": "NS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 5", 
                     "name": "5"
                 }
             ], 
@@ -3087,6 +3284,7 @@
             "instruction": "NS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 6", 
                     "name": "6"
                 }
             ], 
@@ -3098,6 +3296,7 @@
             "instruction": "NS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 7", 
                     "name": "7"
                 }
             ], 
@@ -3109,6 +3308,7 @@
             "instruction": "NS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 8", 
                     "name": "8"
                 }
             ], 
@@ -3120,6 +3320,7 @@
             "instruction": "NS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 9 (J)", 
                     "name": "9"
                 }
             ], 
@@ -3131,6 +3332,7 @@
             "instruction": "NS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 10 (HU)", 
                     "name": "10"
                 }
             ], 
@@ -3142,6 +3344,7 @@
             "instruction": "NS", 
             "operands": [
                 {
+                    "description": "Scratchpad register 11 (HL)", 
                     "name": "11"
                 }
             ], 
@@ -3153,7 +3356,9 @@
             "instruction": "NS", 
             "operands": [
                 {
-                    "name": "S"
+                    "description": "Scratchpad register addressed by ISAR. Also known as IS and 12.", 
+                    "name": "S", 
+                    "type": "register"
                 }
             ], 
             "timing": {
@@ -3164,7 +3369,9 @@
             "instruction": "NS", 
             "operands": [
                 {
-                    "name": "I"
+                    "description": "Scratchpad register addressed by ISAR; ISAR is post-incremented. Also known as 13.", 
+                    "name": "I", 
+                    "type": "register"
                 }
             ], 
             "timing": {
@@ -3175,7 +3382,9 @@
             "instruction": "NS", 
             "operands": [
                 {
-                    "name": "D"
+                    "description": "Scratchpad register addressed by ISAR; ISAR is post-decremented. Also known as 14.", 
+                    "name": "D", 
+                    "type": "register"
                 }
             ], 
             "timing": {

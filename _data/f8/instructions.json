@@ -14,7 +14,7 @@
         }
     },
     "AM": {
-        "description": "Add Memory to A",
+        "description": "Add Memory (DC0) to A",
         "group": "arithmetic",
         "flags": {
             "O": "O",
@@ -24,7 +24,7 @@
         }
     },
     "AMD": {
-        "description": "Add memory to A as decimal (BCD)",
+        "description": "Add memory (DC0) to A as decimal (BCD)",
         "group": "arithmetic",
         "flags": {
             "O": 0,
@@ -34,7 +34,7 @@
         }
     },
     "AS": {
-        "description": "Add scratchpad memory to A",
+        "description": "Add Scratchpad register to A",
         "group": "arithmetic",
         "flags": {
             "O": "O",
@@ -44,7 +44,7 @@
         }
     },
     "ASD": {
-        "description": "Add scratchpad memory to A as decimal (BCD)",
+        "description": "Add Scratchpad register to A as Decimal (BCD)",
         "group": "arithmetic",
         "flags": {
             "O": "O",
@@ -112,7 +112,7 @@
         "group": "transfer"
     },
     "CM": {
-        "description": "Compare Memory to A",
+        "description": "Compare Memory (DC0) to A",
         "group": "logic"
     },
     "COM": {
@@ -137,7 +137,7 @@
         "group": "control"
     },
     "DS": {
-        "description": "Decrement Scratchpad content and ISAR",
+        "description": "Decrement Scratchpad content; post-decrement ISAR's lower octal digit",
         "group": "arithmetic",
         "flags": {
             "O": "O",
@@ -154,7 +154,7 @@
         }
     },
     "IN": {
-        "description": "Input long address",
+        "description": "Input port with long address to A",
         "group": "control",
         "flags": {
             "O": 0,
@@ -174,7 +174,7 @@
         }
     },
     "INS": {
-        "description": "Input Short address",
+        "description": "Input port with Short address to A",
         "group": "control",
         "flags": {
             "O": 0,
@@ -204,7 +204,7 @@
         "group": "control"
     },
     "LM": {
-        "description": "Load A from Memory address in DC0",
+        "description": "Load A from Memory (DC0)",
         "group": "transfer"
     },
     "LNK": {
@@ -232,7 +232,7 @@
         }
     },
     "NM": {
-        "description": "AND A with Memory",
+        "description": "AND A with Memory (DC0)",
         "group": "logic",
         "flags": {
             "O": 0,
@@ -246,7 +246,7 @@
         "group": "control"
     },
     "NS": {
-        "description": "AND A with Scratchpad memory",
+        "description": "AND A with Scratchpad register",
         "group": "logic",
         "flags": {
             "O": 0,
@@ -266,7 +266,7 @@
         }
     },
     "OM": {
-        "description": "OR A with Memory",
+        "description": "OR A with Memory (DC0)",
         "group": "logic",
         "flags": {
             "O": 0,
@@ -276,11 +276,11 @@
         }
     },
     "OUT": {
-        "description": "Output long address",
+        "description": "Output A to port with long address",
         "group": "control"
     },
     "OUTS": {
-        "description": "Output Short address",
+        "description": "Output A to port with Short address",
         "group": "control"
     },
     "PI": {
@@ -316,7 +316,7 @@
         }
     },
     "ST": {
-        "description": "Store A to memory addressed by DC0",
+        "description": "Store A to memory (DC0)",
         "group": "transfer"
     },
     "XDC": {
@@ -334,7 +334,7 @@
         }
     },
     "XM": {
-        "description": "XOR A with Memory",
+        "description": "XOR A with Memory (DC0)",
         "group": "logic",
         "flags": {
             "O": 0,
