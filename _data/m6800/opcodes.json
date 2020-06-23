@@ -671,10 +671,54 @@
             ]
         }, 
         "0x61": {
-            "operands": []
+            "operands": [], 
+            "variant": {
+                "instruction": "AIM", 
+                "operands": [
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "d8", 
+                        "type": "immediate"
+                    }, 
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "d8", 
+                        "type": "immediate"
+                    }, 
+                    {
+                        "description": "Index register", 
+                        "name": "X", 
+                        "type": "register"
+                    }
+                ]
+            }
         }, 
         "0x62": {
-            "operands": []
+            "operands": [], 
+            "variant": {
+                "instruction": "OIM", 
+                "operands": [
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "d8", 
+                        "type": "immediate"
+                    }, 
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "d8", 
+                        "type": "immediate"
+                    }, 
+                    {
+                        "description": "Index register", 
+                        "name": "X", 
+                        "type": "register"
+                    }
+                ]
+            }
         }, 
         "0x63": {
             "instruction": "COM", 
@@ -709,7 +753,29 @@
             ]
         }, 
         "0x65": {
-            "operands": []
+            "operands": [], 
+            "variant": {
+                "instruction": "EIM", 
+                "operands": [
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "d8", 
+                        "type": "immediate"
+                    }, 
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "d8", 
+                        "type": "immediate"
+                    }, 
+                    {
+                        "description": "Index register", 
+                        "name": "X", 
+                        "type": "register"
+                    }
+                ]
+            }
         }, 
         "0x66": {
             "instruction": "ROR", 
@@ -792,7 +858,29 @@
             ]
         }, 
         "0x6B": {
-            "operands": []
+            "operands": [], 
+            "variant": {
+                "instruction": "TIM", 
+                "operands": [
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "d8", 
+                        "type": "immediate"
+                    }, 
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "d8", 
+                        "type": "immediate"
+                    }, 
+                    {
+                        "description": "Index register", 
+                        "name": "X", 
+                        "type": "register"
+                    }
+                ]
+            }
         }, 
         "0x6C": {
             "instruction": "INC", 
@@ -870,10 +958,44 @@
             ]
         }, 
         "0x71": {
-            "operands": []
+            "operands": [], 
+            "variant": {
+                "instruction": "AIM", 
+                "operands": [
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "d8", 
+                        "type": "immediate"
+                    }, 
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "a8", 
+                        "type": "immediate"
+                    }
+                ]
+            }
         }, 
         "0x72": {
-            "operands": []
+            "operands": [], 
+            "variant": {
+                "instruction": "OIM", 
+                "operands": [
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "d8", 
+                        "type": "immediate"
+                    }, 
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "a8", 
+                        "type": "immediate"
+                    }
+                ]
+            }
         }, 
         "0x73": {
             "instruction": "COM", 
@@ -898,7 +1020,24 @@
             ]
         }, 
         "0x75": {
-            "operands": []
+            "operands": [], 
+            "variant": {
+                "instruction": "EIM", 
+                "operands": [
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "d8", 
+                        "type": "immediate"
+                    }, 
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "a8", 
+                        "type": "immediate"
+                    }
+                ]
+            }
         }, 
         "0x76": {
             "instruction": "ROR", 
@@ -956,7 +1095,24 @@
             ]
         }, 
         "0x7B": {
-            "operands": []
+            "operands": [], 
+            "variant": {
+                "instruction": "TIM", 
+                "operands": [
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "d8", 
+                        "type": "immediate"
+                    }, 
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "a8", 
+                        "type": "immediate"
+                    }
+                ]
+            }
         }, 
         "0x7C": {
             "instruction": "INC", 
@@ -1456,6 +1612,12 @@
             "variant": {
                 "instruction": "JSR", 
                 "operands": [
+                    {
+                        "bytes": 1, 
+                        "description": "8-bit immediate value", 
+                        "name": "d8", 
+                        "type": "immediate"
+                    }, 
                     {
                         "bytes": 1, 
                         "description": "8-bit immediate value", 

@@ -51,6 +51,11 @@ for opcode in range(0x00, 0x100):
             }
         elif nibble1 == 3:
             foo['instruction'] = 'INS'
+        elif nibble1 == 6 or nibble1 == 7:
+            foo['variant'] = {
+                'instruction': 'AIM',
+                'operands': [ immediate['d8'] ]
+            }
         elif nibble1 > 0x7:
             foo['instruction'] = 'CMP'
         else:
@@ -61,6 +66,11 @@ for opcode in range(0x00, 0x100):
             foo['instruction'] = 'BHI'
         elif nibble1 == 3:
             foo['instruction'] = 'PUL'
+        elif nibble1 == 6 or nibble1 == 7:
+            foo['variant'] = {
+                'instruction': 'OIM',
+                'operands': [ immediate['d8'] ]
+            }
         elif nibble1 > 0x7:
             foo['instruction'] = 'SBC'
         else:
@@ -112,6 +122,11 @@ for opcode in range(0x00, 0x100):
             foo['instruction'] = 'BCS'
         elif nibble1 == 3:
             foo['instruction'] = 'TXS'
+        elif nibble1 == 6 or nibble1 == 7:
+            foo['variant'] = {
+                'instruction': 'EIM',
+                'operands': [ immediate['d8'] ]
+            }
         elif nibble1 > 7:
             foo['instruction'] = 'BIT'
     elif nibble2 == 6:
@@ -196,6 +211,11 @@ for opcode in range(0x00, 0x100):
             foo['instruction'] = 'BMI'
         elif nibble1 == 3:
             foo['instruction'] = 'RTI'
+        elif nibble1 == 6 or nibble1 == 7:
+            foo['variant'] = {
+                'instruction': 'TIM',
+                'operands': [ immediate['d8'] ]
+            }
         elif nibble1 > 7:
             foo['instruction'] = 'ADD'
     elif nibble2 == 0xC:
@@ -297,14 +317,19 @@ for opcode in range(0x00, 0x100):
     elif nibble1 == 0x6 or nibble1 == 0xA or nibble1 == 0xE:
         foo['operands'] += [immediate['d8'], registers['X']]
     elif nibble1 == 0x7 or nibble1 == 0xB or nibble1 == 0xF:
-        foo['operands'].append(immediate['a16'])
+        if nibble1 == 0x7 and nibble2 in (0x1, 0x2, 0x5, 0xB):
+            foo['operands'].append(immediate['a8'])
+        else:
+            foo['operands'].append(immediate['a16'])
     elif nibble1 == 0x8 or nibble1 == 0xC:
         foo['operands'].append(immediate['#d8'])
     elif nibble1 == 0x9 or nibble1 == 0xD:
         foo['operands'].append(immediate['a8'])
 
     if 'variant' in foo:
-        foo['variant']['operands'] = foo['operands']
+        if 'operands' not in foo['variant']:
+            foo['variant']['operands'] = []
+        foo['variant']['operands'] += foo['operands']
 
     if 'instruction' not in foo or foo['instruction'] == 'HCF':
         foo['operands'] = []
