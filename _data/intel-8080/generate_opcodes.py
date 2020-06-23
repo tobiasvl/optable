@@ -111,7 +111,7 @@ for opcode in range(0x00, 0x100):
             if opcode == 0x22:
                 foo['instruction'] = "SHLD"
                 foo['operands'] = [
-                    immediate["d16"]
+                    immediate["a16"]
                 ]
                 foo['timing'] = {
                     'cycles': 5,
@@ -120,7 +120,7 @@ for opcode in range(0x00, 0x100):
             elif opcode == 0x2A:
                 foo['instruction'] = "LHLD"
                 foo['operands'] = [
-                    immediate["d16"]
+                    immediate["a16"]
                 ]
                 foo['timing'] = {
                     'cycles': 5,
@@ -129,7 +129,7 @@ for opcode in range(0x00, 0x100):
             elif opcode == 0x32:
                 foo['instruction'] = "STA"
                 foo['operands'] = [
-                    immediate["d16"]
+                    immediate["a16"]
                 ]
                 foo['timing'] = {
                     'cycles': 4,
@@ -138,7 +138,7 @@ for opcode in range(0x00, 0x100):
             elif opcode == 0x3A:
                 foo['instruction'] = "LDA"
                 foo['operands'] = [
-                    immediate["d16"]
+                    immediate["a16"]
                 ]
                 foo['timing'] = {
                     'cycles': 4,
@@ -478,7 +478,7 @@ for opcode in range(0x00, 0x100):
             if op == 0:
                 foo['instruction'] = "JMP"
                 foo['operands'] = [
-                    immediate["d16"]
+                    immediate["a16"]
                 ]
                 foo['timing'] = {
                     'cycles': 3,
@@ -570,7 +570,7 @@ for opcode in range(0x00, 0x100):
             else:
                 foo['instruction'] = "CALL"
                 foo['operands'] = [
-                    immediate["d16"]
+                    immediate["a16"]
                 ]
                 foo['timing'] = {
                     'cycles': 5,

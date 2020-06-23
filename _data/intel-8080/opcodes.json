@@ -559,8 +559,8 @@
             "operands": [
                 {
                     "bytes": 2, 
-                    "description": "16-bit immediate value", 
-                    "name": "d16", 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
                     "type": "immediate"
                 }
             ], 
@@ -693,8 +693,8 @@
             "operands": [
                 {
                     "bytes": 2, 
-                    "description": "16-bit immediate value", 
-                    "name": "d16", 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
                     "type": "immediate"
                 }
             ], 
@@ -824,8 +824,8 @@
             "operands": [
                 {
                     "bytes": 2, 
-                    "description": "16-bit immediate value", 
-                    "name": "d16", 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
                     "type": "immediate"
                 }
             ], 
@@ -950,8 +950,8 @@
             "operands": [
                 {
                     "bytes": 2, 
-                    "description": "16-bit immediate value", 
-                    "name": "d16", 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
                     "type": "immediate"
                 }
             ], 
@@ -3408,8 +3408,8 @@
             "operands": [
                 {
                     "bytes": 2, 
-                    "description": "16-bit immediate value", 
-                    "name": "d16", 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
                     "type": "immediate"
                 }
             ], 
@@ -3621,8 +3621,8 @@
             "operands": [
                 {
                     "bytes": 2, 
-                    "description": "16-bit immediate value", 
-                    "name": "d16", 
+                    "description": "16-bit immediate address", 
+                    "name": "a16", 
                     "type": "immediate"
                 }
             ], 

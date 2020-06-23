@@ -32,11 +32,11 @@
         "group": "transfer"
     },
     "LDAX": {
-        "description": "Load Accumulator",
+        "description": "Load A from memory address in register pair",
         "group": "transfer"
     },
     "STAX": {
-        "description": "Store Accumulator",
+        "description": "Store A in memory address in register pair",
         "group": "transfer"
     },
     "XCHG": {
@@ -355,39 +355,39 @@
         }
     },
     "JMP": {
-        "description": "Load register pair with immediate value",
+        "description": "Jump to address",
         "group": "flow"
     },
     "JNZ": {
-        "description": "Load register pair with immediate value",
+        "description": "Jump if Not Zero (Z not set)",
         "group": "flow"
     },
     "JZ": {
-        "description": "Load register pair with immediate value",
+        "description": "Jump if Zero (Z set)",
         "group": "flow"
     },
     "JNC": {
-        "description": "Load register pair with immediate value",
+        "description": "Jump if Not Jarry (C is not set)",
         "group": "flow"
     },
     "JC": {
-        "description": "Load register pair with immediate value",
+        "description": "Jump if Jarry (C is set)",
         "group": "flow"
     },
     "JPO": {
-        "description": "Load register pair with immediate value",
+        "description": "Jump if Parity Odd (P is not set)",
         "group": "flow"
     },
     "JPE": {
-        "description": "Load register pair with immediate value",
+        "description": "Jump if Parity Even (P is set)",
         "group": "flow"
     },
     "JP": {
-        "description": "Load register pair with immediate value",
+        "description": "Jump if plus (S is set)",
         "group": "flow"
     },
     "JM": {
-        "description": "Load register pair with immediate value",
+        "description": "Jump if minus (S is not set)",
         "group": "flow"
     },
     "CALL": {
@@ -403,27 +403,27 @@
         "group": "flow"
     },
     "CNC": {
-        "description": "Load register pair with immediate value",
+        "description": "Call if Not Carry (C is not set)",
         "group": "flow"
     },
     "CC": {
-        "description": "Load register pair with immediate value",
+        "description": "Call if Carry (C is set)",
         "group": "flow"
     },
     "CPO": {
-        "description": "Load register pair with immediate value",
+        "description": "Call if Parity Odd (P is not set)",
         "group": "flow"
     },
     "CPE": {
-        "description": "Load register pair with immediate value",
+        "description": "Call if Parity Even (P is set)",
         "group": "flow"
     },
     "CP": {
-        "description": "Load register pair with immediate value",
+        "description": "Call if plus (S is set)",
         "group": "flow"
     },
     "CM": {
-        "description": "Load register pair with immediate value",
+        "description": "Call if minus (S is not set)",
         "group": "flow"
     },
     "RET": {
