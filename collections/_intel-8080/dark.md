@@ -1,8 +1,9 @@
 ---
 layout: optable
+title: Intel 8080/8085 opcode table
 theme: dark
 containerFluid: true
-canonical: https://gbdev.github.io/gb-opcodes/optables/
+canonical: https://tobiasvl.github.io/optable/intel-8080/dark
 ogimage: /assets/opengraph-image-dark.png
 ---
 

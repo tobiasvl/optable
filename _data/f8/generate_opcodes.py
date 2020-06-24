@@ -14,8 +14,8 @@ scratchpad = [
     { "name": "10", "description": "Scratchpad register 10 (HU)" },
     { "name": "11", "description": "Scratchpad register 11 (HL)" },
     {"name": "S", "description": "Scratchpad register addressed by ISAR. Also known as IS and 12.", "type": "register"},
-    {"name": "I", "description": "Scratchpad register addressed by ISAR; ISAR is post-incremented. Also known as 13.", "type": "register"},
-    {"name": "D", "description": "Scratchpad register addressed by ISAR; ISAR is post-decremented. Also known as 14.", "type": "register"},
+    {"name": "I", "description": "Scratchpad register addressed by ISAR; post-increment ISAR's lower octal digit. Also known as 13.", "type": "register"},
+    {"name": "D", "description": "Scratchpad register addressed by ISAR; post-decrement ISAR's lower octal digit. Also known as 14.", "type": "register"},
     { "name": "15", "description": "N/A" },
 ]
 

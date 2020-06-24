@@ -1,9 +1,10 @@
 ---
 layout: optable
+title: Intel 8080/8085 opcode table
 theme: classic
 containerFluid: true
 octalTables: true
-canonical: https://gbdev.github.io/gb-opcodes/optables/
+canonical: https://tobiasvl.github.io/optable/intel-8080/classicoctal
 ogimage: /assets/opengraph-image-classic-octal.png
 ---
 
