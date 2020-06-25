@@ -306,9 +306,9 @@ for opcode in range(0x00, 0x100):
                 foo['illegal'] = True
 
     # set accumulator
-    if (nibble1 > 0xB and nibble2 < 0xC) or nibble1 == 0x5 or opcode == 0x33 or opcode == 0x37:
+    if (nibble1 > 0xB and nibble2 < 0xC and nibble2 != 0x3) or nibble1 == 0x5 or opcode == 0x33 or opcode == 0x37:
         foo['operands'].append(registers['B'])
-    elif (nibble1 > 0x7 and nibble2 < 0xC) or nibble1 == 0x4 or opcode == 0x32 or opcode == 0x36:
+    elif (nibble1 > 0x7 and nibble2 < 0xC and nibble2 != 0x3) or nibble1 == 0x4 or opcode == 0x32 or opcode == 0x36:
         foo['operands'].append(registers['A'])
     
     # set addressing mode
@@ -322,7 +322,10 @@ for opcode in range(0x00, 0x100):
         else:
             foo['operands'].append(immediate['a16'])
     elif nibble1 == 0x8 or nibble1 == 0xC:
-        foo['operands'].append(immediate['#d8'])
+        if nibble2 in [0x3, 0xC, 0xE, 0xF]:
+            foo['operands'].append(immediate['#d16'])
+        else:
+            foo['operands'].append(immediate['#d8'])
     elif nibble1 == 0x9 or nibble1 == 0xD:
         foo['operands'].append(immediate['a8'])
 

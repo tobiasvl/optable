@@ -1212,14 +1212,9 @@
                 "instruction": "SUBD", 
                 "operands": [
                     {
-                        "description": "Accumulator A", 
-                        "name": "A", 
-                        "type": "register"
-                    }, 
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "#d8", 
+                        "bytes": 2, 
+                        "description": "16-bit immediate value", 
+                        "name": "#d16", 
                         "type": "immediate"
                     }
                 ]
@@ -1358,9 +1353,9 @@
             "instruction": "CPX", 
             "operands": [
                 {
-                    "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "#d8", 
+                    "bytes": 2, 
+                    "description": "16-bit immediate value", 
+                    "name": "#d16", 
                     "type": "immediate"
                 }
             ]
@@ -1380,9 +1375,9 @@
             "instruction": "LDS", 
             "operands": [
                 {
-                    "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "#d8", 
+                    "bytes": 2, 
+                    "description": "16-bit immediate value", 
+                    "name": "#d16", 
                     "type": "immediate"
                 }
             ]
@@ -1392,9 +1387,9 @@
             "instruction": "STS", 
             "operands": [
                 {
-                    "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "#d8", 
+                    "bytes": 2, 
+                    "description": "16-bit immediate value", 
+                    "name": "#d16", 
                     "type": "immediate"
                 }
             ]
@@ -1452,11 +1447,6 @@
             "variant": {
                 "instruction": "SUBD", 
                 "operands": [
-                    {
-                        "description": "Accumulator A", 
-                        "name": "A", 
-                        "type": "register"
-                    }, 
                     {
                         "bytes": 1, 
                         "description": "8-bit immediate value", 
@@ -1717,11 +1707,6 @@
             "variant": {
                 "instruction": "SUBD", 
                 "operands": [
-                    {
-                        "description": "Accumulator A", 
-                        "name": "A", 
-                        "type": "register"
-                    }, 
                     {
                         "bytes": 1, 
                         "description": "8-bit immediate value", 
@@ -2022,11 +2007,6 @@
                 "instruction": "SUBD", 
                 "operands": [
                     {
-                        "description": "Accumulator A", 
-                        "name": "A", 
-                        "type": "register"
-                    }, 
-                    {
                         "bytes": 2, 
                         "description": "16-bit immediate address", 
                         "name": "a16", 
@@ -2261,14 +2241,9 @@
                 "instruction": "ADDD", 
                 "operands": [
                     {
-                        "description": "Accumulator B", 
-                        "name": "B", 
-                        "type": "register"
-                    }, 
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "#d8", 
+                        "bytes": 2, 
+                        "description": "16-bit immediate value", 
+                        "name": "#d16", 
                         "type": "immediate"
                     }
                 ]
@@ -2409,9 +2384,9 @@
                 "instruction": "LDD", 
                 "operands": [
                     {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "#d8", 
+                        "bytes": 2, 
+                        "description": "16-bit immediate value", 
+                        "name": "#d16", 
                         "type": "immediate"
                     }
                 ]
@@ -2426,9 +2401,9 @@
             "instruction": "LDX", 
             "operands": [
                 {
-                    "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "#d8", 
+                    "bytes": 2, 
+                    "description": "16-bit immediate value", 
+                    "name": "#d16", 
                     "type": "immediate"
                 }
             ]
@@ -2438,9 +2413,9 @@
             "instruction": "STX", 
             "operands": [
                 {
-                    "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "#d8", 
+                    "bytes": 2, 
+                    "description": "16-bit immediate value", 
+                    "name": "#d16", 
                     "type": "immediate"
                 }
             ]
@@ -2498,11 +2473,6 @@
             "variant": {
                 "instruction": "ADDD", 
                 "operands": [
-                    {
-                        "description": "Accumulator B", 
-                        "name": "B", 
-                        "type": "register"
-                    }, 
                     {
                         "bytes": 1, 
                         "description": "8-bit immediate value", 
@@ -2760,11 +2730,6 @@
             "variant": {
                 "instruction": "ADDD", 
                 "operands": [
-                    {
-                        "description": "Accumulator B", 
-                        "name": "B", 
-                        "type": "register"
-                    }, 
                     {
                         "bytes": 1, 
                         "description": "8-bit immediate value", 
@@ -3072,11 +3037,6 @@
             "variant": {
                 "instruction": "ADDD", 
                 "operands": [
-                    {
-                        "description": "Accumulator B", 
-                        "name": "B", 
-                        "type": "register"
-                    }, 
                     {
                         "bytes": 2, 
                         "description": "16-bit immediate address", 
