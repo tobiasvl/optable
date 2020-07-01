@@ -104,14 +104,32 @@
             "operands": []
         }, 
         "0x18": {
-            "operands": []
+            "operands": [], 
+            "variants": [
+                {
+                    "operands": []
+                }, 
+                {
+                    "instruction": "XGDX", 
+                    "operands": []
+                }
+            ]
         }, 
         "0x19": {
             "instruction": "DAA", 
             "operands": []
         }, 
         "0x1A": {
-            "operands": []
+            "operands": [], 
+            "variants": [
+                {
+                    "operands": []
+                }, 
+                {
+                    "instruction": "SLP", 
+                    "operands": []
+                }
+            ]
         }, 
         "0x1B": {
             "instruction": "ABA", 

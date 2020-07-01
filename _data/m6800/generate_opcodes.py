@@ -180,8 +180,12 @@ for opcode in range(0x00, 0x100):
         if nibble1 == 0:
             foo['instruction'] = 'INX'
         elif nibble1 == 1:
-            # undefined opcode
-            pass
+            foo['variants'] = [
+                {},
+                {
+                    'instruction': 'XGDX'
+                }
+            ]
         elif nibble1 == 2:
             foo['instruction'] = 'BVC'
         elif nibble1 == 3:
@@ -211,8 +215,12 @@ for opcode in range(0x00, 0x100):
         if nibble1 == 0:
             foo['instruction'] = 'CLV'
         elif nibble1 == 1:
-            # undefined opcode
-            pass
+            foo['variants'] = [
+                {},
+                {
+                    'instruction': 'SLP'
+                }
+            ]
         elif nibble1 == 2:
             foo['instruction'] = 'BPL'
         elif nibble1 == 3:

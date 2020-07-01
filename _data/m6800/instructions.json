@@ -238,8 +238,16 @@
         "description": "Push accumulator to stack",
         "group": "control"
     },
+    "PSHX": {
+        "description": "Push X to stack",
+        "group": "control"
+    },
     "PUL": {
         "description": "Pop from stack into accumulator",
+        "group": "control"
+    },
+    "PULX": {
+        "description": "Pop from stack into X",
         "group": "control"
     },
     "BRA": {
@@ -383,6 +391,59 @@
         "description": "Halt and Catch Fire",
         "group": "control"
     },
+    "SLP": {
+        "description": "Sleep until interrupt",
+        "group": "control"
+    },
+    "NBA": {
+        "description": "AND A with B",
+        "group": "logic",
+        "flags": {
+            "Z": "Z",
+            "N": "N",
+            "V": 0
+        }
+    },
+    "AIM": {
+        "description": "AND immediate value with memory",
+        "group": "logic",
+        "flags": {
+            "Z": "Z",
+            "N": "N",
+            "V": 0
+        }
+    },
+    "TIM": {
+        "description": "AND immediate value with memory (test; only sets flags)",
+        "group": "logic",
+        "flags": {
+            "Z": "Z",
+            "N": "N",
+            "V": 0
+        }
+    },
+    "EIM": {
+        "description": "Exclusive OR immediate value with memory",
+        "group": "logic",
+        "flags": {
+            "Z": "Z",
+            "N": "N",
+            "V": 0
+        }
+    },
+    "OIM": {
+        "description": "OR immediate value with memory",
+        "group": "logic",
+        "flags": {
+            "Z": "Z",
+            "N": "N",
+            "V": 0
+        }
+    },
+    "XGDX": {
+        "description": "Exchange X and double accumulator D",
+        "group": "control"
+    },
     "CBA": {
         "description": "Compare B to A",
         "group": "control",
@@ -391,6 +452,6 @@
             "Z": "Z",
             "V": "V",
             "C": "C"
-        },
-    },
+        }
+    }
 }
