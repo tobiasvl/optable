@@ -49,6 +49,10 @@ kbd {
 	color: blue;
 }
 
+.variant-2 {
+	color: red;
+}
+
 #demo-table {
 	border-collapse: collapse;
 
@@ -326,6 +330,6 @@ kbd {
   visibility: visible;
 }
 
-.variant.operation {
+.variant.operation, .variant-2.operation {
     border-top: 1px solid #dee2e6;
 }

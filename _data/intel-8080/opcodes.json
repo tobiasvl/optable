@@ -129,23 +129,25 @@
                 "cycles": 1, 
                 "states": 4
             }, 
-            "variant": {
-                "flags": {
-                    "A": "A", 
-                    "C": "C", 
-                    "K": "K", 
-                    "P": "P", 
-                    "S": "S", 
-                    "V": "V", 
-                    "Z": "Z"
-                }, 
-                "illegal": true, 
-                "instruction": "DSUB", 
-                "timing": {
-                    "cycles": 3, 
-                    "states": 10
+            "variants": [
+                {
+                    "flags": {
+                        "A": "A", 
+                        "C": "C", 
+                        "K": "K", 
+                        "P": "P", 
+                        "S": "S", 
+                        "V": "V", 
+                        "Z": "Z"
+                    }, 
+                    "illegal": true, 
+                    "instruction": "DSUB", 
+                    "timing": {
+                        "cycles": 3, 
+                        "states": 10
+                    }
                 }
-            }
+            ]
         }, 
         "0x09": {
             "instruction": "DAD", 
@@ -263,17 +265,19 @@
                 "cycles": 1, 
                 "states": 4
             }, 
-            "variant": {
-                "flags": {
-                    "C": "C"
-                }, 
-                "illegal": true, 
-                "instruction": "ARHL", 
-                "timing": {
-                    "cycles": 2, 
-                    "states": 7
+            "variants": [
+                {
+                    "flags": {
+                        "C": "C"
+                    }, 
+                    "illegal": true, 
+                    "instruction": "ARHL", 
+                    "timing": {
+                        "cycles": 2, 
+                        "states": 7
+                    }
                 }
-            }
+            ]
         }, 
         "0x11": {
             "instruction": "LXI", 
@@ -397,18 +401,20 @@
                 "cycles": 1, 
                 "states": 4
             }, 
-            "variant": {
-                "flags": {
-                    "C": "C", 
-                    "V": "V"
-                }, 
-                "illegal": true, 
-                "instruction": "RDEL", 
-                "timing": {
-                    "cycles": 3, 
-                    "states": 10
+            "variants": [
+                {
+                    "flags": {
+                        "C": "C", 
+                        "V": "V"
+                    }, 
+                    "illegal": true, 
+                    "instruction": "RDEL", 
+                    "timing": {
+                        "cycles": 3, 
+                        "states": 10
+                    }
                 }
-            }
+            ]
         }, 
         "0x19": {
             "instruction": "DAD", 
@@ -526,13 +532,15 @@
                 "cycles": 1, 
                 "states": 4
             }, 
-            "variant": {
-                "instruction": "RIM", 
-                "timing": {
-                    "cycles": 3, 
-                    "states": 10
+            "variants": [
+                {
+                    "instruction": "RIM", 
+                    "timing": {
+                        "cycles": 3, 
+                        "states": 10
+                    }
                 }
-            }
+            ]
         }, 
         "0x21": {
             "instruction": "LXI", 
@@ -657,22 +665,24 @@
                 "cycles": 1, 
                 "states": 4
             }, 
-            "variant": {
-                "illegal": true, 
-                "instruction": "LDHI", 
-                "operands": [
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "d8", 
-                        "type": "immediate"
+            "variants": [
+                {
+                    "illegal": true, 
+                    "instruction": "LDHI", 
+                    "operands": [
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "d8", 
+                            "type": "immediate"
+                        }
+                    ], 
+                    "timing": {
+                        "cycles": 3, 
+                        "states": 10
                     }
-                ], 
-                "timing": {
-                    "cycles": 3, 
-                    "states": 10
                 }
-            }
+            ]
         }, 
         "0x29": {
             "instruction": "DAD", 
@@ -791,13 +801,15 @@
                 "cycles": 1, 
                 "states": 4
             }, 
-            "variant": {
-                "instruction": "SIM", 
-                "timing": {
-                    "cycles": 1, 
-                    "states": 4
+            "variants": [
+                {
+                    "instruction": "SIM", 
+                    "timing": {
+                        "cycles": 1, 
+                        "states": 4
+                    }
                 }
-            }
+            ]
         }, 
         "0x31": {
             "instruction": "LXI", 
@@ -914,22 +926,24 @@
                 "cycles": 1, 
                 "states": 4
             }, 
-            "variant": {
-                "illegal": true, 
-                "instruction": "LDSI", 
-                "operands": [
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "d8", 
-                        "type": "immediate"
+            "variants": [
+                {
+                    "illegal": true, 
+                    "instruction": "LDSI", 
+                    "operands": [
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "d8", 
+                            "type": "immediate"
+                        }
+                    ], 
+                    "timing": {
+                        "cycles": 3, 
+                        "states": 10
                     }
-                ], 
-                "timing": {
-                    "cycles": 3, 
-                    "states": 10
                 }
-            }
+            ]
         }, 
         "0x39": {
             "instruction": "DAD", 
@@ -3570,20 +3584,22 @@
                 "cycles": 3, 
                 "states": 10
             }, 
-            "variant": {
-                "illegal": true, 
-                "instruction": "RSTV", 
-                "timing": {
-                    "cycles": [
-                        1, 
-                        3
-                    ], 
-                    "states": [
-                        6, 
-                        12
-                    ]
+            "variants": [
+                {
+                    "illegal": true, 
+                    "instruction": "RSTV", 
+                    "timing": {
+                        "cycles": [
+                            1, 
+                            3
+                        ], 
+                        "states": [
+                            6, 
+                            12
+                        ]
+                    }
                 }
-            }
+            ]
         }, 
         "0xCC": {
             "instruction": "CZ", 
@@ -3857,14 +3873,16 @@
                 "cycles": 3, 
                 "states": 10
             }, 
-            "variant": {
-                "illegal": true, 
-                "instruction": "SHLX", 
-                "timing": {
-                    "cycles": 3, 
-                    "states": 10
+            "variants": [
+                {
+                    "illegal": true, 
+                    "instruction": "SHLX", 
+                    "timing": {
+                        "cycles": 3, 
+                        "states": 10
+                    }
                 }
-            }
+            ]
         }, 
         "0xDA": {
             "instruction": "JC", 
@@ -3952,28 +3970,30 @@
                 "cycles": 5, 
                 "states": 17
             }, 
-            "variant": {
-                "illegal": true, 
-                "instruction": "JNK", 
-                "operands": [
-                    {
-                        "bytes": 2, 
-                        "description": "16-bit immediate address", 
-                        "name": "a16", 
-                        "type": "immediate"
-                    }
-                ], 
-                "timing": {
-                    "cycles": [
-                        2, 
-                        3
+            "variants": [
+                {
+                    "illegal": true, 
+                    "instruction": "JNK", 
+                    "operands": [
+                        {
+                            "bytes": 2, 
+                            "description": "16-bit immediate address", 
+                            "name": "a16", 
+                            "type": "immediate"
+                        }
                     ], 
-                    "states": [
-                        7, 
-                        10
-                    ]
+                    "timing": {
+                        "cycles": [
+                            2, 
+                            3
+                        ], 
+                        "states": [
+                            7, 
+                            10
+                        ]
+                    }
                 }
-            }
+            ]
         }, 
         "0xDE": {
             "instruction": "SBI", 
@@ -4275,14 +4295,16 @@
                 "cycles": 5, 
                 "states": 17
             }, 
-            "variant": {
-                "illegal": true, 
-                "instruction": "LHLX", 
-                "timing": {
-                    "cycles": 3, 
-                    "states": 10
+            "variants": [
+                {
+                    "illegal": true, 
+                    "instruction": "LHLX", 
+                    "timing": {
+                        "cycles": 3, 
+                        "states": 10
+                    }
                 }
-            }
+            ]
         }, 
         "0xEE": {
             "instruction": "XRI", 
@@ -4589,28 +4611,30 @@
                 "cycles": 5, 
                 "states": 17
             }, 
-            "variant": {
-                "illegal": true, 
-                "instruction": "JNK", 
-                "operands": [
-                    {
-                        "bytes": 2, 
-                        "description": "16-bit immediate address", 
-                        "name": "a16", 
-                        "type": "immediate"
-                    }
-                ], 
-                "timing": {
-                    "cycles": [
-                        2, 
-                        3
+            "variants": [
+                {
+                    "illegal": true, 
+                    "instruction": "JNK", 
+                    "operands": [
+                        {
+                            "bytes": 2, 
+                            "description": "16-bit immediate address", 
+                            "name": "a16", 
+                            "type": "immediate"
+                        }
                     ], 
-                    "states": [
-                        7, 
-                        10
-                    ]
+                    "timing": {
+                        "cycles": [
+                            2, 
+                            3
+                        ], 
+                        "states": [
+                            7, 
+                            10
+                        ]
+                    }
                 }
-            }
+            ]
         }, 
         "0xFE": {
             "instruction": "CPI", 

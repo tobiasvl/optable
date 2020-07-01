@@ -45,17 +45,22 @@ for opcode in range(0x00, 0x100):
         elif nibble1 == 1:
             foo['instruction'] = 'CBA'
         elif nibble1 == 2:
-            foo['variant'] = {
-                'instruction': 'BRN',
-                'group': 'flow'
-            }
+            foo['variants'] = [
+                {
+                    'instruction': 'BRN',
+                    'group': 'flow'
+                }
+            ]
         elif nibble1 == 3:
             foo['instruction'] = 'INS'
         elif nibble1 == 6 or nibble1 == 7:
-            foo['variant'] = {
-                'instruction': 'AIM',
-                'operands': [ immediate['d8'] ]
-            }
+            foo['variants'] = [
+                {},
+                {
+                    'instruction': 'AIM',
+                    'operands': [ immediate['d8'] ]
+                }
+            ]
         elif nibble1 > 0x7:
             foo['instruction'] = 'CMP'
         else:
@@ -67,10 +72,13 @@ for opcode in range(0x00, 0x100):
         elif nibble1 == 3:
             foo['instruction'] = 'PUL'
         elif nibble1 == 6 or nibble1 == 7:
-            foo['variant'] = {
-                'instruction': 'OIM',
-                'operands': [ immediate['d8'] ]
-            }
+            foo['variants'] = [
+                {},
+                {
+                    'instruction': 'OIM',
+                    'operands': [ immediate['d8'] ]
+                }
+            ]
         elif nibble1 > 0x7:
             foo['instruction'] = 'SBC'
         else:
@@ -87,18 +95,24 @@ for opcode in range(0x00, 0x100):
         elif nibble1 < 8:
             foo['instruction'] = 'COM'
         elif nibble1 < 0xC:
-            foo['variant'] = {
-                'instruction': 'SUBD'
-            }
+            foo['variants'] = [
+                {
+                    'instruction': 'SUBD'
+                }
+            ]
         else:
-            foo['variant'] = {
-                'instruction': 'ADDD'
-            }
+            foo['variants'] = [
+                {
+                    'instruction': 'ADDD'
+                }
+            ]
     elif nibble2 == 4:
         if nibble1 == 0:
-            foo['variant'] = {
-                'instruction': 'LSRD'
-            }
+            foo['variants'] = [
+                {
+                    'instruction': 'LSRD'
+                }
+            ]
         elif nibble1 == 1:
             foo['instruction'] = 'NBA'
             foo['illegal'] = True
@@ -112,9 +126,11 @@ for opcode in range(0x00, 0x100):
             foo['instruction'] = 'AND'
     elif nibble2 == 5:
         if nibble1 == 0:
-            foo['variant'] = {
-                'instruction': 'ASLD'
-            }
+            foo['variants'] = [
+                {
+                    'instruction': 'ASLD'
+                }
+            ]
         elif nibble1 == 1:
             foo['instruction'] = 'NOP'
             foo['illegal'] = True
@@ -123,10 +139,13 @@ for opcode in range(0x00, 0x100):
         elif nibble1 == 3:
             foo['instruction'] = 'TXS'
         elif nibble1 == 6 or nibble1 == 7:
-            foo['variant'] = {
-                'instruction': 'EIM',
-                'operands': [ immediate['d8'] ]
-            }
+            foo['variants'] = [
+                {},
+                {
+                    'instruction': 'EIM',
+                    'operands': [ immediate['d8'] ]
+                }
+            ]
         elif nibble1 > 7:
             foo['instruction'] = 'BIT'
     elif nibble2 == 6:
@@ -166,9 +185,11 @@ for opcode in range(0x00, 0x100):
         elif nibble1 == 2:
             foo['instruction'] = 'BVC'
         elif nibble1 == 3:
-            foo['variant'] = {
-                'instruction': 'PULX'
-            }
+            foo['variants'] = [
+                {
+                    'instruction': 'PULX'
+                }
+            ]
         elif nibble1 < 8:
             foo['instruction'] = 'ASL'
         elif nibble1 > 7:
@@ -195,9 +216,11 @@ for opcode in range(0x00, 0x100):
         elif nibble1 == 2:
             foo['instruction'] = 'BPL'
         elif nibble1 == 3:
-            foo['variant'] = {
-                'instruction': 'ABX'
-            }
+            foo['variants'] = [
+                {
+                    'instruction': 'ABX'
+                }
+            ]
         elif nibble1 < 8:
             foo['instruction'] = 'DEC'
         elif nibble1 > 7:
@@ -212,10 +235,13 @@ for opcode in range(0x00, 0x100):
         elif nibble1 == 3:
             foo['instruction'] = 'RTI'
         elif nibble1 == 6 or nibble1 == 7:
-            foo['variant'] = {
-                'instruction': 'TIM',
-                'operands': [ immediate['d8'] ]
-            }
+            foo['variants'] = [
+                {},
+                {
+                    'instruction': 'TIM',
+                    'operands': [ immediate['d8'] ]
+                }
+            ]
         elif nibble1 > 7:
             foo['instruction'] = 'ADD'
     elif nibble2 == 0xC:
@@ -227,17 +253,21 @@ for opcode in range(0x00, 0x100):
         elif nibble1 == 2:
             foo['instruction'] = 'BGE'
         elif nibble1 == 3:
-            foo['variant'] = {
-                'instruction': 'PUSHX'
-            }
+            foo['variants'] = [
+                {
+                    'instruction': 'PUSHX'
+                }
+            ]
         elif nibble1 < 8:
             foo['instruction'] = 'INC'
         elif nibble1 < 0xC:
             foo['instruction'] = 'CPX'
         else:
-            foo['variant'] = {
-                'instruction': 'LDD'
-            }
+            foo['variants'] = [
+                {
+                    'instruction': 'LDD'
+                }
+            ]
     elif nibble2 == 0xD:
         if nibble1 == 0:
             foo['instruction'] = 'SEC'
@@ -247,9 +277,11 @@ for opcode in range(0x00, 0x100):
         elif nibble1 == 2:
             foo['instruction'] = 'BLT'
         elif nibble1 == 3:
-            foo['variant'] = {
-                'instruction': 'MUL'
-            }
+            foo['variants'] = [
+                {
+                    'instruction': 'MUL'
+                }
+            ]
         elif nibble1 < 8:
             foo['instruction'] = 'TST'
         elif nibble1 == 8:
@@ -260,14 +292,18 @@ for opcode in range(0x00, 0x100):
             foo['instruction'] = 'HCF'
             foo['illegal'] = True
             if nibble1 == 0x9:
-                foo['variant'] = {
-                    'instruction': 'JSR',
-                    'operands': [ immediate['d8'] ]
-                }
+                foo['variants'] = [
+                    {
+                        'instruction': 'JSR',
+                        'operands': [ immediate['d8'] ]
+                    }
+                ]
             elif nibble1 > 0xC:
-                foo['variant'] = {
-                    'instruction': 'STD',
-                }
+                foo['variants'] = [
+                    {
+                        'instruction': 'STD',
+                    }
+                ]
     elif nibble2 == 0xE:
         if nibble1 == 0:
             foo['instruction'] = 'CLI'
@@ -329,10 +365,11 @@ for opcode in range(0x00, 0x100):
     elif nibble1 == 0x9 or nibble1 == 0xD:
         foo['operands'].append(immediate['a8'])
 
-    if 'variant' in foo:
-        if 'operands' not in foo['variant']:
-            foo['variant']['operands'] = []
-        foo['variant']['operands'] += foo['operands']
+    if 'variants' in foo:
+        for variant in foo['variants']:
+            if 'operands' not in variant:
+                variant['operands'] = []
+            variant['operands'] += foo['operands']
 
     if 'instruction' not in foo or foo['instruction'] == 'HCF':
         foo['operands'] = []

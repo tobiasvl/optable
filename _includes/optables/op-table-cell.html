@@ -47,25 +47,26 @@
             {% endif %}
         </div>
 
-    {% if op.variant %}
-        {% assign op = op.variant %}
-        {% assign instruction = site.data[include.cpu].instructions[op.instruction] %}
-        {% if op.flags %}
-            {% assign flags = op.flags %}
-        {% else %}
-            {% assign flags = instruction.flags %}
+    {% for variant in op.variants %}
+        {% if variant.instruction %}
+            {% assign instruction = site.data[include.cpu].instructions[variant.instruction] %}
+            {% if variant.flags %}
+                {% assign flags = variant.flags %}
+            {% else %}
+                {% assign flags = instruction.flags %}
+            {% endif %}
+            <div class="variant{% unless forloop.first %}-{{ forloop.index }}{% endunless %} operation op-{{ variant.instruction | downcase}} op-group-{{ instruction.group }}{% if variant.illegal %} illegal{% endif %}">
+                <span class="mnemonic"><span class="tool">{{ variant.instruction }}<span class="tooltiptext {% if include.column == 0 %}right{% elsif include.column == 15 %}left{% elsif include.row == 0 %}bottom{% else %}top{% endif %}">{{ instruction.description }}{% if variant.illegal %}<br/>(illegal opcode){% endif %}</span></span>{% if variant.operands %}&nbsp;<span class="operands">{% for operand in variant.operands %}<span class="tool">{{ operand.name }}<span class="tooltiptext {% if include.column == 0 %}right{% elsif include.column == 15 %}left{% elsif include.row == 0 %}bottom{% else %}top{% endif %}">{{ operand.description }}</span></span>{% if forloop.last == false %},{% endif %}{% endfor %}</span>{% endif %}</span>
+
+                <span class="bytes-cycles">
+                    <span class="bytes">{% assign bytes = 1 %}{% assign operands = variant.operands | where: 'type', 'immediate' %}{% for operand in operands %}{% assign bytes = bytes | plus: operand.bytes %}{% endfor %}{{ bytes }}</span><br/>
+                    <span class="cycles">{{ variant.timing.cycles | join: '/' }}</span>&nbsp;&nbsp;<span class="states">{{ variant.timing.states | join: '/' }}</span>
+                </span>
+
+                <span class="flags variant{% unless forloop.first %}-{{ forloop.index }}{% endunless %}">
+                    {% for flag in site.data[include.cpu].flags %}<span>{{ flags[flag.name] | default: "-" }}</span>{% endfor %}
+                </span>
+            </div>
         {% endif %}
-        <div class="variant operation op-{{ op.instruction | downcase}} op-group-{{ instruction.group }}{% if op.illegal %} illegal{% endif %}">
-            <span class="mnemonic"><span class="tool">{{ op.instruction }}<span class="tooltiptext {% if include.column == 0 %}right{% elsif include.column == 15 %}left{% elsif include.row == 0 %}bottom{% else %}top{% endif %}">{{ instruction.description }}{% if op.illegal %}<br/>(illegal opcode){% endif %}</span></span>{% if op.operands %}&nbsp;<span class="operands">{% for operand in op.operands %}<span class="tool">{{ operand.name }}<span class="tooltiptext {% if include.column == 0 %}right{% elsif include.column == 15 %}left{% elsif include.row == 0 %}bottom{% else %}top{% endif %}">{{ operand.description }}</span></span>{% if forloop.last == false %},{% endif %}{% endfor %}</span>{% endif %}</span>
-
-            <span class="bytes-cycles">
-                <span class="bytes">{% assign bytes = 1 %}{% assign operands = op.operands | where: 'type', 'immediate' %}{% for operand in operands %}{% assign bytes = bytes | plus: operand.bytes %}{% endfor %}{{ bytes }}</span><br/>
-                <span class="cycles">{{ op.timing.cycles | join: '/' }}</span>&nbsp;&nbsp;<span class="states">{{ op.timing.states | join: '/' }}</span>
-            </span>
-
-            <span class="flags variant">
-                {% for flag in site.data[include.cpu].flags %}<span>{{ flags[flag.name] | default: "-" }}</span>{% endfor %}
-            </span>
-        </div>
-    {% endif %}
+    {% endfor %}
 </td>

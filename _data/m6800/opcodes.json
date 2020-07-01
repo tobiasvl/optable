@@ -15,17 +15,21 @@
         }, 
         "0x04": {
             "operands": [], 
-            "variant": {
-                "instruction": "LSRD", 
-                "operands": []
-            }
+            "variants": [
+                {
+                    "instruction": "LSRD", 
+                    "operands": []
+                }
+            ]
         }, 
         "0x05": {
             "operands": [], 
-            "variant": {
-                "instruction": "ASLD", 
-                "operands": []
-            }
+            "variants": [
+                {
+                    "instruction": "ASLD", 
+                    "operands": []
+                }
+            ]
         }, 
         "0x06": {
             "instruction": "TAP", 
@@ -138,18 +142,20 @@
         }, 
         "0x21": {
             "operands": [], 
-            "variant": {
-                "group": "flow", 
-                "instruction": "BRN", 
-                "operands": [
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "s8", 
-                        "type": "immediate"
-                    }
-                ]
-            }
+            "variants": [
+                {
+                    "group": "flow", 
+                    "instruction": "BRN", 
+                    "operands": [
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "s8", 
+                            "type": "immediate"
+                        }
+                    ]
+                }
+            ]
         }, 
         "0x22": {
             "instruction": "BHI", 
@@ -363,10 +369,12 @@
         }, 
         "0x38": {
             "operands": [], 
-            "variant": {
-                "instruction": "PULX", 
-                "operands": []
-            }
+            "variants": [
+                {
+                    "instruction": "PULX", 
+                    "operands": []
+                }
+            ]
         }, 
         "0x39": {
             "instruction": "RTS", 
@@ -374,10 +382,12 @@
         }, 
         "0x3A": {
             "operands": [], 
-            "variant": {
-                "instruction": "ABX", 
-                "operands": []
-            }
+            "variants": [
+                {
+                    "instruction": "ABX", 
+                    "operands": []
+                }
+            ]
         }, 
         "0x3B": {
             "instruction": "RTI", 
@@ -385,17 +395,21 @@
         }, 
         "0x3C": {
             "operands": [], 
-            "variant": {
-                "instruction": "PUSHX", 
-                "operands": []
-            }
+            "variants": [
+                {
+                    "instruction": "PUSHX", 
+                    "operands": []
+                }
+            ]
         }, 
         "0x3D": {
             "operands": [], 
-            "variant": {
-                "instruction": "MUL", 
-                "operands": []
-            }
+            "variants": [
+                {
+                    "instruction": "MUL", 
+                    "operands": []
+                }
+            ]
         }, 
         "0x3E": {
             "operands": []
@@ -672,53 +686,87 @@
         }, 
         "0x61": {
             "operands": [], 
-            "variant": {
-                "instruction": "AIM", 
-                "operands": [
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "d8", 
-                        "type": "immediate"
-                    }, 
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "d8", 
-                        "type": "immediate"
-                    }, 
-                    {
-                        "description": "Index register", 
-                        "name": "X", 
-                        "type": "register"
-                    }
-                ]
-            }
+            "variants": [
+                {
+                    "operands": [
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "d8", 
+                            "type": "immediate"
+                        }, 
+                        {
+                            "description": "Index register", 
+                            "name": "X", 
+                            "type": "register"
+                        }
+                    ]
+                }, 
+                {
+                    "instruction": "AIM", 
+                    "operands": [
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "d8", 
+                            "type": "immediate"
+                        }, 
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "d8", 
+                            "type": "immediate"
+                        }, 
+                        {
+                            "description": "Index register", 
+                            "name": "X", 
+                            "type": "register"
+                        }
+                    ]
+                }
+            ]
         }, 
         "0x62": {
             "operands": [], 
-            "variant": {
-                "instruction": "OIM", 
-                "operands": [
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "d8", 
-                        "type": "immediate"
-                    }, 
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "d8", 
-                        "type": "immediate"
-                    }, 
-                    {
-                        "description": "Index register", 
-                        "name": "X", 
-                        "type": "register"
-                    }
-                ]
-            }
+            "variants": [
+                {
+                    "operands": [
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "d8", 
+                            "type": "immediate"
+                        }, 
+                        {
+                            "description": "Index register", 
+                            "name": "X", 
+                            "type": "register"
+                        }
+                    ]
+                }, 
+                {
+                    "instruction": "OIM", 
+                    "operands": [
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "d8", 
+                            "type": "immediate"
+                        }, 
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "d8", 
+                            "type": "immediate"
+                        }, 
+                        {
+                            "description": "Index register", 
+                            "name": "X", 
+                            "type": "register"
+                        }
+                    ]
+                }
+            ]
         }, 
         "0x63": {
             "instruction": "COM", 
@@ -754,28 +802,45 @@
         }, 
         "0x65": {
             "operands": [], 
-            "variant": {
-                "instruction": "EIM", 
-                "operands": [
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "d8", 
-                        "type": "immediate"
-                    }, 
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "d8", 
-                        "type": "immediate"
-                    }, 
-                    {
-                        "description": "Index register", 
-                        "name": "X", 
-                        "type": "register"
-                    }
-                ]
-            }
+            "variants": [
+                {
+                    "operands": [
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "d8", 
+                            "type": "immediate"
+                        }, 
+                        {
+                            "description": "Index register", 
+                            "name": "X", 
+                            "type": "register"
+                        }
+                    ]
+                }, 
+                {
+                    "instruction": "EIM", 
+                    "operands": [
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "d8", 
+                            "type": "immediate"
+                        }, 
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "d8", 
+                            "type": "immediate"
+                        }, 
+                        {
+                            "description": "Index register", 
+                            "name": "X", 
+                            "type": "register"
+                        }
+                    ]
+                }
+            ]
         }, 
         "0x66": {
             "instruction": "ROR", 
@@ -859,28 +924,45 @@
         }, 
         "0x6B": {
             "operands": [], 
-            "variant": {
-                "instruction": "TIM", 
-                "operands": [
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "d8", 
-                        "type": "immediate"
-                    }, 
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "d8", 
-                        "type": "immediate"
-                    }, 
-                    {
-                        "description": "Index register", 
-                        "name": "X", 
-                        "type": "register"
-                    }
-                ]
-            }
+            "variants": [
+                {
+                    "operands": [
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "d8", 
+                            "type": "immediate"
+                        }, 
+                        {
+                            "description": "Index register", 
+                            "name": "X", 
+                            "type": "register"
+                        }
+                    ]
+                }, 
+                {
+                    "instruction": "TIM", 
+                    "operands": [
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "d8", 
+                            "type": "immediate"
+                        }, 
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "d8", 
+                            "type": "immediate"
+                        }, 
+                        {
+                            "description": "Index register", 
+                            "name": "X", 
+                            "type": "register"
+                        }
+                    ]
+                }
+            ]
         }, 
         "0x6C": {
             "instruction": "INC", 
@@ -959,43 +1041,67 @@
         }, 
         "0x71": {
             "operands": [], 
-            "variant": {
-                "instruction": "AIM", 
-                "operands": [
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "d8", 
-                        "type": "immediate"
-                    }, 
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "a8", 
-                        "type": "immediate"
-                    }
-                ]
-            }
+            "variants": [
+                {
+                    "operands": [
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "a8", 
+                            "type": "immediate"
+                        }
+                    ]
+                }, 
+                {
+                    "instruction": "AIM", 
+                    "operands": [
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "d8", 
+                            "type": "immediate"
+                        }, 
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "a8", 
+                            "type": "immediate"
+                        }
+                    ]
+                }
+            ]
         }, 
         "0x72": {
             "operands": [], 
-            "variant": {
-                "instruction": "OIM", 
-                "operands": [
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "d8", 
-                        "type": "immediate"
-                    }, 
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "a8", 
-                        "type": "immediate"
-                    }
-                ]
-            }
+            "variants": [
+                {
+                    "operands": [
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "a8", 
+                            "type": "immediate"
+                        }
+                    ]
+                }, 
+                {
+                    "instruction": "OIM", 
+                    "operands": [
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "d8", 
+                            "type": "immediate"
+                        }, 
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "a8", 
+                            "type": "immediate"
+                        }
+                    ]
+                }
+            ]
         }, 
         "0x73": {
             "instruction": "COM", 
@@ -1021,23 +1127,35 @@
         }, 
         "0x75": {
             "operands": [], 
-            "variant": {
-                "instruction": "EIM", 
-                "operands": [
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "d8", 
-                        "type": "immediate"
-                    }, 
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "a8", 
-                        "type": "immediate"
-                    }
-                ]
-            }
+            "variants": [
+                {
+                    "operands": [
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "a8", 
+                            "type": "immediate"
+                        }
+                    ]
+                }, 
+                {
+                    "instruction": "EIM", 
+                    "operands": [
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "d8", 
+                            "type": "immediate"
+                        }, 
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "a8", 
+                            "type": "immediate"
+                        }
+                    ]
+                }
+            ]
         }, 
         "0x76": {
             "instruction": "ROR", 
@@ -1096,23 +1214,35 @@
         }, 
         "0x7B": {
             "operands": [], 
-            "variant": {
-                "instruction": "TIM", 
-                "operands": [
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "d8", 
-                        "type": "immediate"
-                    }, 
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "a8", 
-                        "type": "immediate"
-                    }
-                ]
-            }
+            "variants": [
+                {
+                    "operands": [
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "a8", 
+                            "type": "immediate"
+                        }
+                    ]
+                }, 
+                {
+                    "instruction": "TIM", 
+                    "operands": [
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "d8", 
+                            "type": "immediate"
+                        }, 
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "a8", 
+                            "type": "immediate"
+                        }
+                    ]
+                }
+            ]
         }, 
         "0x7C": {
             "instruction": "INC", 
@@ -1208,17 +1338,19 @@
         }, 
         "0x83": {
             "operands": [], 
-            "variant": {
-                "instruction": "SUBD", 
-                "operands": [
-                    {
-                        "bytes": 2, 
-                        "description": "16-bit immediate value", 
-                        "name": "#d16", 
-                        "type": "immediate"
-                    }
-                ]
-            }
+            "variants": [
+                {
+                    "instruction": "SUBD", 
+                    "operands": [
+                        {
+                            "bytes": 2, 
+                            "description": "16-bit immediate value", 
+                            "name": "#d16", 
+                            "type": "immediate"
+                        }
+                    ]
+                }
+            ]
         }, 
         "0x84": {
             "instruction": "AND", 
@@ -1444,17 +1576,19 @@
         }, 
         "0x93": {
             "operands": [], 
-            "variant": {
-                "instruction": "SUBD", 
-                "operands": [
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "a8", 
-                        "type": "immediate"
-                    }
-                ]
-            }
+            "variants": [
+                {
+                    "instruction": "SUBD", 
+                    "operands": [
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "a8", 
+                            "type": "immediate"
+                        }
+                    ]
+                }
+            ]
         }, 
         "0x94": {
             "instruction": "AND", 
@@ -1599,23 +1733,25 @@
             "illegal": true, 
             "instruction": "HCF", 
             "operands": [], 
-            "variant": {
-                "instruction": "JSR", 
-                "operands": [
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "d8", 
-                        "type": "immediate"
-                    }, 
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "a8", 
-                        "type": "immediate"
-                    }
-                ]
-            }
+            "variants": [
+                {
+                    "instruction": "JSR", 
+                    "operands": [
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "d8", 
+                            "type": "immediate"
+                        }, 
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "a8", 
+                            "type": "immediate"
+                        }
+                    ]
+                }
+            ]
         }, 
         "0x9E": {
             "instruction": "LDS", 
@@ -1704,22 +1840,24 @@
         }, 
         "0xA3": {
             "operands": [], 
-            "variant": {
-                "instruction": "SUBD", 
-                "operands": [
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "d8", 
-                        "type": "immediate"
-                    }, 
-                    {
-                        "description": "Index register", 
-                        "name": "X", 
-                        "type": "register"
-                    }
-                ]
-            }
+            "variants": [
+                {
+                    "instruction": "SUBD", 
+                    "operands": [
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "d8", 
+                            "type": "immediate"
+                        }, 
+                        {
+                            "description": "Index register", 
+                            "name": "X", 
+                            "type": "register"
+                        }
+                    ]
+                }
+            ]
         }, 
         "0xA4": {
             "instruction": "AND", 
@@ -2003,17 +2141,19 @@
         }, 
         "0xB3": {
             "operands": [], 
-            "variant": {
-                "instruction": "SUBD", 
-                "operands": [
-                    {
-                        "bytes": 2, 
-                        "description": "16-bit immediate address", 
-                        "name": "a16", 
-                        "type": "immediate"
-                    }
-                ]
-            }
+            "variants": [
+                {
+                    "instruction": "SUBD", 
+                    "operands": [
+                        {
+                            "bytes": 2, 
+                            "description": "16-bit immediate address", 
+                            "name": "a16", 
+                            "type": "immediate"
+                        }
+                    ]
+                }
+            ]
         }, 
         "0xB4": {
             "instruction": "AND", 
@@ -2237,17 +2377,19 @@
         }, 
         "0xC3": {
             "operands": [], 
-            "variant": {
-                "instruction": "ADDD", 
-                "operands": [
-                    {
-                        "bytes": 2, 
-                        "description": "16-bit immediate value", 
-                        "name": "#d16", 
-                        "type": "immediate"
-                    }
-                ]
-            }
+            "variants": [
+                {
+                    "instruction": "ADDD", 
+                    "operands": [
+                        {
+                            "bytes": 2, 
+                            "description": "16-bit immediate value", 
+                            "name": "#d16", 
+                            "type": "immediate"
+                        }
+                    ]
+                }
+            ]
         }, 
         "0xC4": {
             "instruction": "AND", 
@@ -2380,17 +2522,19 @@
         }, 
         "0xCC": {
             "operands": [], 
-            "variant": {
-                "instruction": "LDD", 
-                "operands": [
-                    {
-                        "bytes": 2, 
-                        "description": "16-bit immediate value", 
-                        "name": "#d16", 
-                        "type": "immediate"
-                    }
-                ]
-            }
+            "variants": [
+                {
+                    "instruction": "LDD", 
+                    "operands": [
+                        {
+                            "bytes": 2, 
+                            "description": "16-bit immediate value", 
+                            "name": "#d16", 
+                            "type": "immediate"
+                        }
+                    ]
+                }
+            ]
         }, 
         "0xCD": {
             "illegal": true, 
@@ -2470,17 +2614,19 @@
         }, 
         "0xD3": {
             "operands": [], 
-            "variant": {
-                "instruction": "ADDD", 
-                "operands": [
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "a8", 
-                        "type": "immediate"
-                    }
-                ]
-            }
+            "variants": [
+                {
+                    "instruction": "ADDD", 
+                    "operands": [
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "a8", 
+                            "type": "immediate"
+                        }
+                    ]
+                }
+            ]
         }, 
         "0xD4": {
             "instruction": "AND", 
@@ -2612,33 +2758,37 @@
         }, 
         "0xDC": {
             "operands": [], 
-            "variant": {
-                "instruction": "LDD", 
-                "operands": [
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "a8", 
-                        "type": "immediate"
-                    }
-                ]
-            }
+            "variants": [
+                {
+                    "instruction": "LDD", 
+                    "operands": [
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "a8", 
+                            "type": "immediate"
+                        }
+                    ]
+                }
+            ]
         }, 
         "0xDD": {
             "illegal": true, 
             "instruction": "HCF", 
             "operands": [], 
-            "variant": {
-                "instruction": "STD", 
-                "operands": [
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "a8", 
-                        "type": "immediate"
-                    }
-                ]
-            }
+            "variants": [
+                {
+                    "instruction": "STD", 
+                    "operands": [
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "a8", 
+                            "type": "immediate"
+                        }
+                    ]
+                }
+            ]
         }, 
         "0xDE": {
             "instruction": "LDX", 
@@ -2727,22 +2877,24 @@
         }, 
         "0xE3": {
             "operands": [], 
-            "variant": {
-                "instruction": "ADDD", 
-                "operands": [
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "d8", 
-                        "type": "immediate"
-                    }, 
-                    {
-                        "description": "Index register", 
-                        "name": "X", 
-                        "type": "register"
-                    }
-                ]
-            }
+            "variants": [
+                {
+                    "instruction": "ADDD", 
+                    "operands": [
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "d8", 
+                            "type": "immediate"
+                        }, 
+                        {
+                            "description": "Index register", 
+                            "name": "X", 
+                            "type": "register"
+                        }
+                    ]
+                }
+            ]
         }, 
         "0xE4": {
             "instruction": "AND", 
@@ -2914,43 +3066,47 @@
         }, 
         "0xEC": {
             "operands": [], 
-            "variant": {
-                "instruction": "LDD", 
-                "operands": [
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "d8", 
-                        "type": "immediate"
-                    }, 
-                    {
-                        "description": "Index register", 
-                        "name": "X", 
-                        "type": "register"
-                    }
-                ]
-            }
+            "variants": [
+                {
+                    "instruction": "LDD", 
+                    "operands": [
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "d8", 
+                            "type": "immediate"
+                        }, 
+                        {
+                            "description": "Index register", 
+                            "name": "X", 
+                            "type": "register"
+                        }
+                    ]
+                }
+            ]
         }, 
         "0xED": {
             "illegal": true, 
             "instruction": "HCF", 
             "operands": [], 
-            "variant": {
-                "instruction": "STD", 
-                "operands": [
-                    {
-                        "bytes": 1, 
-                        "description": "8-bit immediate value", 
-                        "name": "d8", 
-                        "type": "immediate"
-                    }, 
-                    {
-                        "description": "Index register", 
-                        "name": "X", 
-                        "type": "register"
-                    }
-                ]
-            }
+            "variants": [
+                {
+                    "instruction": "STD", 
+                    "operands": [
+                        {
+                            "bytes": 1, 
+                            "description": "8-bit immediate value", 
+                            "name": "d8", 
+                            "type": "immediate"
+                        }, 
+                        {
+                            "description": "Index register", 
+                            "name": "X", 
+                            "type": "register"
+                        }
+                    ]
+                }
+            ]
         }, 
         "0xEE": {
             "instruction": "LDX", 
@@ -3034,17 +3190,19 @@
         }, 
         "0xF3": {
             "operands": [], 
-            "variant": {
-                "instruction": "ADDD", 
-                "operands": [
-                    {
-                        "bytes": 2, 
-                        "description": "16-bit immediate address", 
-                        "name": "a16", 
-                        "type": "immediate"
-                    }
-                ]
-            }
+            "variants": [
+                {
+                    "instruction": "ADDD", 
+                    "operands": [
+                        {
+                            "bytes": 2, 
+                            "description": "16-bit immediate address", 
+                            "name": "a16", 
+                            "type": "immediate"
+                        }
+                    ]
+                }
+            ]
         }, 
         "0xF4": {
             "instruction": "AND", 
@@ -3176,33 +3334,37 @@
         }, 
         "0xFC": {
             "operands": [], 
-            "variant": {
-                "instruction": "LDD", 
-                "operands": [
-                    {
-                        "bytes": 2, 
-                        "description": "16-bit immediate address", 
-                        "name": "a16", 
-                        "type": "immediate"
-                    }
-                ]
-            }
+            "variants": [
+                {
+                    "instruction": "LDD", 
+                    "operands": [
+                        {
+                            "bytes": 2, 
+                            "description": "16-bit immediate address", 
+                            "name": "a16", 
+                            "type": "immediate"
+                        }
+                    ]
+                }
+            ]
         }, 
         "0xFD": {
             "illegal": true, 
             "instruction": "HCF", 
             "operands": [], 
-            "variant": {
-                "instruction": "STD", 
-                "operands": [
-                    {
-                        "bytes": 2, 
-                        "description": "16-bit immediate address", 
-                        "name": "a16", 
-                        "type": "immediate"
-                    }
-                ]
-            }
+            "variants": [
+                {
+                    "instruction": "STD", 
+                    "operands": [
+                        {
+                            "bytes": 2, 
+                            "description": "16-bit immediate address", 
+                            "name": "a16", 
+                            "type": "immediate"
+                        }
+                    ]
+                }
+            ]
         }, 
         "0xFE": {
             "instruction": "LDX", 
