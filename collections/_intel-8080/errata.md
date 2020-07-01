@@ -1,7 +1,7 @@
 ---
 layout: optable
 theme: default
-title: Errata: Intel 8080/8085 opcode table
+title: Errata for Intel 8080/8085 opcode table
 ---
 
 Changes from Pastraiser's tables
