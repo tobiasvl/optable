@@ -1,5 +1,5 @@
 <div class="table-responsive">
-	<table{% if include.id != "" %} id="{{ include.id }}"{% endif %} class="table opcode-table table-bordered table-sm{% if page.theme == "dark" %} table-dark{% endif %}">
+	<table{% if include.id != "" %} id="{{ include.id }}"{% endif %} class="table opcode-table table-bordered table-sm{% if page.theme == "dark" %} table-dark{% endif %} table-{{ include.cpu }}">
 		<thead>
 			<tr>
 				{% for i in (-1..15) %}

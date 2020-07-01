@@ -30,6 +30,15 @@ kbd {
     width: 2px;
 }
 
+.operands .operand:not(:last-of-type):after {
+    content: ",";
+}
+
+.table-m6800 .operands .operand.register:first-of-type:after {
+    content: " ";
+    white-space: pre;
+}
+
 .mnemonic, .bytes-cycles, .flags {
 	display: block;
     font-weight: bold;
