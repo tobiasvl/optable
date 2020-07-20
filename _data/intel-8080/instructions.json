@@ -383,11 +383,11 @@
         "group": "flow"
     },
     "JP": {
-        "description": "Jump if plus (S is set)",
+        "description": "Jump if plus (S is not set)",
         "group": "flow"
     },
     "JM": {
-        "description": "Jump if minus (S is not set)",
+        "description": "Jump if minus (S is set)",
         "group": "flow"
     },
     "CALL": {
@@ -419,11 +419,11 @@
         "group": "flow"
     },
     "CP": {
-        "description": "Call if plus (S is set)",
+        "description": "Call if plus (S is not set)",
         "group": "flow"
     },
     "CM": {
-        "description": "Call if minus (S is not set)",
+        "description": "Call if minus (S is set)",
         "group": "flow"
     },
     "RET": {
@@ -455,11 +455,11 @@
         "group": "flow"
     },
     "RP": {
-        "description": "Return if plus (S is set)",
+        "description": "Return if plus (S is not set)",
         "group": "flow"
     },
     "RM": {
-        "description": "Return if minus (S is not set)",
+        "description": "Return if minus (S is set)",
         "group": "flow"
     },
     "RST": {
