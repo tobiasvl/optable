@@ -3,10 +3,10 @@ import json
 opcodes = {}
 
 immediate = {
-    "d8": {"name": "d8", "description": "8-bit immediate value", "bytes": 1, "type": "immediate"},
+    "o8": {"name": "o8", "description": "8-bit immediate offset (for index)", "bytes": 1, "type": "immediate"},
     "#d8": {"name": "#d8", "description": "8-bit immediate value", "bytes": 1, "type": "immediate"},
-    "s8": {"name": "s8", "description": "8-bit immediate value", "bytes": 1, "type": "immediate"},
-    "a8": {"name": "a8", "description": "8-bit immediate value", "bytes": 1, "type": "immediate"},
+    "s8": {"name": "s8", "description": "Signed 8-bit immediate value (for branch)", "bytes": 1, "type": "immediate"},
+    "a8": {"name": "a8", "description": "8-bit immediate address (zero page)", "bytes": 1, "type": "immediate"},
     "d16": {"name": "d16", "description": "16-bit immediate value", "bytes": 2, "type": "immediate"},
     "#d16": {"name": "#d16", "description": "16-bit immediate value", "bytes": 2, "type": "immediate"},
     "a16": {"name": "a16", "description": "16-bit immediate address", "bytes": 2, "type": "immediate"}
@@ -58,7 +58,7 @@ for opcode in range(0x00, 0x100):
                 {},
                 {
                     'instruction': 'AIM',
-                    'operands': [ immediate['d8'] ]
+                    'operands': [ immediate['#d8'] ]
                 }
             ]
         elif nibble1 > 0x7:
@@ -76,7 +76,7 @@ for opcode in range(0x00, 0x100):
                 {},
                 {
                     'instruction': 'OIM',
-                    'operands': [ immediate['d8'] ]
+                    'operands': [ immediate['#d8'] ]
                 }
             ]
         elif nibble1 > 0x7:
@@ -143,7 +143,7 @@ for opcode in range(0x00, 0x100):
                 {},
                 {
                     'instruction': 'EIM',
-                    'operands': [ immediate['d8'] ]
+                    'operands': [ immediate['#d8'] ]
                 }
             ]
         elif nibble1 > 7:
@@ -247,7 +247,7 @@ for opcode in range(0x00, 0x100):
                 {},
                 {
                     'instruction': 'TIM',
-                    'operands': [ immediate['d8'] ]
+                    'operands': [ immediate['o8'] ]
                 }
             ]
         elif nibble1 > 7:
@@ -303,7 +303,6 @@ for opcode in range(0x00, 0x100):
                 foo['variants'] = [
                     {
                         'instruction': 'JSR',
-                        'operands': [ immediate['d8'] ]
                     }
                 ]
             elif nibble1 > 0xC:
@@ -359,7 +358,7 @@ for opcode in range(0x00, 0x100):
     if nibble1 == 0x2 or opcode == 0x8D:
         foo['operands'].append(immediate['s8'])
     elif nibble1 == 0x6 or nibble1 == 0xA or nibble1 == 0xE:
-        foo['operands'] += [immediate['d8'], registers['X']]
+        foo['operands'] += [immediate['o8'], registers['X']]
     elif nibble1 == 0x7 or nibble1 == 0xB or nibble1 == 0xF:
         if nibble1 == 0x7 and nibble2 in (0x1, 0x2, 0x5, 0xB):
             foo['operands'].append(immediate['a8'])

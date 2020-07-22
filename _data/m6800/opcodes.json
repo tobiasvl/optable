@@ -152,7 +152,7 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "Signed 8-bit immediate value (for branch)", 
                     "name": "s8", 
                     "type": "immediate"
                 }
@@ -167,7 +167,7 @@
                     "operands": [
                         {
                             "bytes": 1, 
-                            "description": "8-bit immediate value", 
+                            "description": "Signed 8-bit immediate value (for branch)", 
                             "name": "s8", 
                             "type": "immediate"
                         }
@@ -180,7 +180,7 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "Signed 8-bit immediate value (for branch)", 
                     "name": "s8", 
                     "type": "immediate"
                 }
@@ -191,7 +191,7 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "Signed 8-bit immediate value (for branch)", 
                     "name": "s8", 
                     "type": "immediate"
                 }
@@ -202,7 +202,7 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "Signed 8-bit immediate value (for branch)", 
                     "name": "s8", 
                     "type": "immediate"
                 }
@@ -213,7 +213,7 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "Signed 8-bit immediate value (for branch)", 
                     "name": "s8", 
                     "type": "immediate"
                 }
@@ -224,7 +224,7 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "Signed 8-bit immediate value (for branch)", 
                     "name": "s8", 
                     "type": "immediate"
                 }
@@ -235,7 +235,7 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "Signed 8-bit immediate value (for branch)", 
                     "name": "s8", 
                     "type": "immediate"
                 }
@@ -246,7 +246,7 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "Signed 8-bit immediate value (for branch)", 
                     "name": "s8", 
                     "type": "immediate"
                 }
@@ -257,7 +257,7 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "Signed 8-bit immediate value (for branch)", 
                     "name": "s8", 
                     "type": "immediate"
                 }
@@ -268,7 +268,7 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "Signed 8-bit immediate value (for branch)", 
                     "name": "s8", 
                     "type": "immediate"
                 }
@@ -279,7 +279,7 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "Signed 8-bit immediate value (for branch)", 
                     "name": "s8", 
                     "type": "immediate"
                 }
@@ -290,7 +290,7 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "Signed 8-bit immediate value (for branch)", 
                     "name": "s8", 
                     "type": "immediate"
                 }
@@ -301,7 +301,7 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "Signed 8-bit immediate value (for branch)", 
                     "name": "s8", 
                     "type": "immediate"
                 }
@@ -312,7 +312,7 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "Signed 8-bit immediate value (for branch)", 
                     "name": "s8", 
                     "type": "immediate"
                 }
@@ -323,7 +323,7 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "Signed 8-bit immediate value (for branch)", 
                     "name": "s8", 
                     "type": "immediate"
                 }
@@ -691,8 +691,8 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -709,8 +709,8 @@
                     "operands": [
                         {
                             "bytes": 1, 
-                            "description": "8-bit immediate value", 
-                            "name": "d8", 
+                            "description": "8-bit immediate offset (for index)", 
+                            "name": "o8", 
                             "type": "immediate"
                         }, 
                         {
@@ -726,13 +726,13 @@
                         {
                             "bytes": 1, 
                             "description": "8-bit immediate value", 
-                            "name": "d8", 
+                            "name": "#d8", 
                             "type": "immediate"
                         }, 
                         {
                             "bytes": 1, 
-                            "description": "8-bit immediate value", 
-                            "name": "d8", 
+                            "description": "8-bit immediate offset (for index)", 
+                            "name": "o8", 
                             "type": "immediate"
                         }, 
                         {
@@ -751,8 +751,8 @@
                     "operands": [
                         {
                             "bytes": 1, 
-                            "description": "8-bit immediate value", 
-                            "name": "d8", 
+                            "description": "8-bit immediate offset (for index)", 
+                            "name": "o8", 
                             "type": "immediate"
                         }, 
                         {
@@ -768,13 +768,13 @@
                         {
                             "bytes": 1, 
                             "description": "8-bit immediate value", 
-                            "name": "d8", 
+                            "name": "#d8", 
                             "type": "immediate"
                         }, 
                         {
                             "bytes": 1, 
-                            "description": "8-bit immediate value", 
-                            "name": "d8", 
+                            "description": "8-bit immediate offset (for index)", 
+                            "name": "o8", 
                             "type": "immediate"
                         }, 
                         {
@@ -791,8 +791,8 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -807,8 +807,8 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -825,8 +825,8 @@
                     "operands": [
                         {
                             "bytes": 1, 
-                            "description": "8-bit immediate value", 
-                            "name": "d8", 
+                            "description": "8-bit immediate offset (for index)", 
+                            "name": "o8", 
                             "type": "immediate"
                         }, 
                         {
@@ -842,13 +842,13 @@
                         {
                             "bytes": 1, 
                             "description": "8-bit immediate value", 
-                            "name": "d8", 
+                            "name": "#d8", 
                             "type": "immediate"
                         }, 
                         {
                             "bytes": 1, 
-                            "description": "8-bit immediate value", 
-                            "name": "d8", 
+                            "description": "8-bit immediate offset (for index)", 
+                            "name": "o8", 
                             "type": "immediate"
                         }, 
                         {
@@ -865,8 +865,8 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -881,8 +881,8 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -897,8 +897,8 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -913,8 +913,8 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -929,8 +929,8 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -947,8 +947,8 @@
                     "operands": [
                         {
                             "bytes": 1, 
-                            "description": "8-bit immediate value", 
-                            "name": "d8", 
+                            "description": "8-bit immediate offset (for index)", 
+                            "name": "o8", 
                             "type": "immediate"
                         }, 
                         {
@@ -963,14 +963,14 @@
                     "operands": [
                         {
                             "bytes": 1, 
-                            "description": "8-bit immediate value", 
-                            "name": "d8", 
+                            "description": "8-bit immediate offset (for index)", 
+                            "name": "o8", 
                             "type": "immediate"
                         }, 
                         {
                             "bytes": 1, 
-                            "description": "8-bit immediate value", 
-                            "name": "d8", 
+                            "description": "8-bit immediate offset (for index)", 
+                            "name": "o8", 
                             "type": "immediate"
                         }, 
                         {
@@ -987,8 +987,8 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -1003,8 +1003,8 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -1019,8 +1019,8 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -1035,8 +1035,8 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -1064,7 +1064,7 @@
                     "operands": [
                         {
                             "bytes": 1, 
-                            "description": "8-bit immediate value", 
+                            "description": "8-bit immediate address (zero page)", 
                             "name": "a8", 
                             "type": "immediate"
                         }
@@ -1076,12 +1076,12 @@
                         {
                             "bytes": 1, 
                             "description": "8-bit immediate value", 
-                            "name": "d8", 
+                            "name": "#d8", 
                             "type": "immediate"
                         }, 
                         {
                             "bytes": 1, 
-                            "description": "8-bit immediate value", 
+                            "description": "8-bit immediate address (zero page)", 
                             "name": "a8", 
                             "type": "immediate"
                         }
@@ -1096,7 +1096,7 @@
                     "operands": [
                         {
                             "bytes": 1, 
-                            "description": "8-bit immediate value", 
+                            "description": "8-bit immediate address (zero page)", 
                             "name": "a8", 
                             "type": "immediate"
                         }
@@ -1108,12 +1108,12 @@
                         {
                             "bytes": 1, 
                             "description": "8-bit immediate value", 
-                            "name": "d8", 
+                            "name": "#d8", 
                             "type": "immediate"
                         }, 
                         {
                             "bytes": 1, 
-                            "description": "8-bit immediate value", 
+                            "description": "8-bit immediate address (zero page)", 
                             "name": "a8", 
                             "type": "immediate"
                         }
@@ -1150,7 +1150,7 @@
                     "operands": [
                         {
                             "bytes": 1, 
-                            "description": "8-bit immediate value", 
+                            "description": "8-bit immediate address (zero page)", 
                             "name": "a8", 
                             "type": "immediate"
                         }
@@ -1162,12 +1162,12 @@
                         {
                             "bytes": 1, 
                             "description": "8-bit immediate value", 
-                            "name": "d8", 
+                            "name": "#d8", 
                             "type": "immediate"
                         }, 
                         {
                             "bytes": 1, 
-                            "description": "8-bit immediate value", 
+                            "description": "8-bit immediate address (zero page)", 
                             "name": "a8", 
                             "type": "immediate"
                         }
@@ -1237,7 +1237,7 @@
                     "operands": [
                         {
                             "bytes": 1, 
-                            "description": "8-bit immediate value", 
+                            "description": "8-bit immediate address (zero page)", 
                             "name": "a8", 
                             "type": "immediate"
                         }
@@ -1248,13 +1248,13 @@
                     "operands": [
                         {
                             "bytes": 1, 
-                            "description": "8-bit immediate value", 
-                            "name": "d8", 
+                            "description": "8-bit immediate offset (for index)", 
+                            "name": "o8", 
                             "type": "immediate"
                         }, 
                         {
                             "bytes": 1, 
-                            "description": "8-bit immediate value", 
+                            "description": "8-bit immediate address (zero page)", 
                             "name": "a8", 
                             "type": "immediate"
                         }
@@ -1515,7 +1515,7 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "Signed 8-bit immediate value (for branch)", 
                     "name": "s8", 
                     "type": "immediate"
                 }
@@ -1554,7 +1554,7 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "8-bit immediate address (zero page)", 
                     "name": "a8", 
                     "type": "immediate"
                 }
@@ -1570,7 +1570,7 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "8-bit immediate address (zero page)", 
                     "name": "a8", 
                     "type": "immediate"
                 }
@@ -1586,7 +1586,7 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "8-bit immediate address (zero page)", 
                     "name": "a8", 
                     "type": "immediate"
                 }
@@ -1600,7 +1600,7 @@
                     "operands": [
                         {
                             "bytes": 1, 
-                            "description": "8-bit immediate value", 
+                            "description": "8-bit immediate address (zero page)", 
                             "name": "a8", 
                             "type": "immediate"
                         }
@@ -1618,7 +1618,7 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "8-bit immediate address (zero page)", 
                     "name": "a8", 
                     "type": "immediate"
                 }
@@ -1634,7 +1634,7 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "8-bit immediate address (zero page)", 
                     "name": "a8", 
                     "type": "immediate"
                 }
@@ -1650,7 +1650,7 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "8-bit immediate address (zero page)", 
                     "name": "a8", 
                     "type": "immediate"
                 }
@@ -1666,7 +1666,7 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "8-bit immediate address (zero page)", 
                     "name": "a8", 
                     "type": "immediate"
                 }
@@ -1682,7 +1682,7 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "8-bit immediate address (zero page)", 
                     "name": "a8", 
                     "type": "immediate"
                 }
@@ -1698,7 +1698,7 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "8-bit immediate address (zero page)", 
                     "name": "a8", 
                     "type": "immediate"
                 }
@@ -1714,7 +1714,7 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "8-bit immediate address (zero page)", 
                     "name": "a8", 
                     "type": "immediate"
                 }
@@ -1730,7 +1730,7 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "8-bit immediate address (zero page)", 
                     "name": "a8", 
                     "type": "immediate"
                 }
@@ -1741,7 +1741,7 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "8-bit immediate address (zero page)", 
                     "name": "a8", 
                     "type": "immediate"
                 }
@@ -1757,13 +1757,7 @@
                     "operands": [
                         {
                             "bytes": 1, 
-                            "description": "8-bit immediate value", 
-                            "name": "d8", 
-                            "type": "immediate"
-                        }, 
-                        {
-                            "bytes": 1, 
-                            "description": "8-bit immediate value", 
+                            "description": "8-bit immediate address (zero page)", 
                             "name": "a8", 
                             "type": "immediate"
                         }
@@ -1776,7 +1770,7 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "8-bit immediate address (zero page)", 
                     "name": "a8", 
                     "type": "immediate"
                 }
@@ -1787,7 +1781,7 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "8-bit immediate address (zero page)", 
                     "name": "a8", 
                     "type": "immediate"
                 }
@@ -1803,8 +1797,8 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -1824,8 +1818,8 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -1845,8 +1839,8 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -1864,8 +1858,8 @@
                     "operands": [
                         {
                             "bytes": 1, 
-                            "description": "8-bit immediate value", 
-                            "name": "d8", 
+                            "description": "8-bit immediate offset (for index)", 
+                            "name": "o8", 
                             "type": "immediate"
                         }, 
                         {
@@ -1887,8 +1881,8 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -1908,8 +1902,8 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -1929,8 +1923,8 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -1950,8 +1944,8 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -1971,8 +1965,8 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -1992,8 +1986,8 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -2013,8 +2007,8 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -2034,8 +2028,8 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -2050,8 +2044,8 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -2066,8 +2060,8 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -2082,8 +2076,8 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -2098,8 +2092,8 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -2592,7 +2586,7 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "8-bit immediate address (zero page)", 
                     "name": "a8", 
                     "type": "immediate"
                 }
@@ -2608,7 +2602,7 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "8-bit immediate address (zero page)", 
                     "name": "a8", 
                     "type": "immediate"
                 }
@@ -2624,7 +2618,7 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "8-bit immediate address (zero page)", 
                     "name": "a8", 
                     "type": "immediate"
                 }
@@ -2638,7 +2632,7 @@
                     "operands": [
                         {
                             "bytes": 1, 
-                            "description": "8-bit immediate value", 
+                            "description": "8-bit immediate address (zero page)", 
                             "name": "a8", 
                             "type": "immediate"
                         }
@@ -2656,7 +2650,7 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "8-bit immediate address (zero page)", 
                     "name": "a8", 
                     "type": "immediate"
                 }
@@ -2672,7 +2666,7 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "8-bit immediate address (zero page)", 
                     "name": "a8", 
                     "type": "immediate"
                 }
@@ -2688,7 +2682,7 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "8-bit immediate address (zero page)", 
                     "name": "a8", 
                     "type": "immediate"
                 }
@@ -2704,7 +2698,7 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "8-bit immediate address (zero page)", 
                     "name": "a8", 
                     "type": "immediate"
                 }
@@ -2720,7 +2714,7 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "8-bit immediate address (zero page)", 
                     "name": "a8", 
                     "type": "immediate"
                 }
@@ -2736,7 +2730,7 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "8-bit immediate address (zero page)", 
                     "name": "a8", 
                     "type": "immediate"
                 }
@@ -2752,7 +2746,7 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "8-bit immediate address (zero page)", 
                     "name": "a8", 
                     "type": "immediate"
                 }
@@ -2768,7 +2762,7 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "8-bit immediate address (zero page)", 
                     "name": "a8", 
                     "type": "immediate"
                 }
@@ -2782,7 +2776,7 @@
                     "operands": [
                         {
                             "bytes": 1, 
-                            "description": "8-bit immediate value", 
+                            "description": "8-bit immediate address (zero page)", 
                             "name": "a8", 
                             "type": "immediate"
                         }
@@ -2800,7 +2794,7 @@
                     "operands": [
                         {
                             "bytes": 1, 
-                            "description": "8-bit immediate value", 
+                            "description": "8-bit immediate address (zero page)", 
                             "name": "a8", 
                             "type": "immediate"
                         }
@@ -2813,7 +2807,7 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "8-bit immediate address (zero page)", 
                     "name": "a8", 
                     "type": "immediate"
                 }
@@ -2824,7 +2818,7 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
+                    "description": "8-bit immediate address (zero page)", 
                     "name": "a8", 
                     "type": "immediate"
                 }
@@ -2840,8 +2834,8 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -2861,8 +2855,8 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -2882,8 +2876,8 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -2901,8 +2895,8 @@
                     "operands": [
                         {
                             "bytes": 1, 
-                            "description": "8-bit immediate value", 
-                            "name": "d8", 
+                            "description": "8-bit immediate offset (for index)", 
+                            "name": "o8", 
                             "type": "immediate"
                         }, 
                         {
@@ -2924,8 +2918,8 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -2945,8 +2939,8 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -2966,8 +2960,8 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -2987,8 +2981,8 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -3008,8 +3002,8 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -3029,8 +3023,8 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -3050,8 +3044,8 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -3071,8 +3065,8 @@
                 }, 
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -3090,8 +3084,8 @@
                     "operands": [
                         {
                             "bytes": 1, 
-                            "description": "8-bit immediate value", 
-                            "name": "d8", 
+                            "description": "8-bit immediate offset (for index)", 
+                            "name": "o8", 
                             "type": "immediate"
                         }, 
                         {
@@ -3113,8 +3107,8 @@
                     "operands": [
                         {
                             "bytes": 1, 
-                            "description": "8-bit immediate value", 
-                            "name": "d8", 
+                            "description": "8-bit immediate offset (for index)", 
+                            "name": "o8", 
                             "type": "immediate"
                         }, 
                         {
@@ -3131,8 +3125,8 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
@@ -3147,8 +3141,8 @@
             "operands": [
                 {
                     "bytes": 1, 
-                    "description": "8-bit immediate value", 
-                    "name": "d8", 
+                    "description": "8-bit immediate offset (for index)", 
+                    "name": "o8", 
                     "type": "immediate"
                 }, 
                 {
