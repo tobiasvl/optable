@@ -574,5 +574,13 @@
     "LHLX": {
         "description": "Load HL from memory indexed by DE",
         "group": "transfer"
+    },
+    "RIM": {
+        "description": "Read Interrupt Mask and serial data into A",
+        "group": "control"
+    },
+    "SIM": {
+        "description": "Set Interrupt Mask and serial data from A",
+        "group": "control"
     }
 }
