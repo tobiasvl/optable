@@ -19,8 +19,8 @@
 {% endif %}
 
 {% assign instruction = site.data[include.cpu].instructions[op.instruction] %}
-<td id="op-{% if include.set == "cbprefixed" %}cb{% endif %}{{ key | downcase | slice: -2, 2 }}" class="opcode-info {% if is16bit %}is16bit{% else %}is8bit{% endif %} op-{{ op.instruction | downcase }} op-group-{{ instruction.group | join: ' op-group-' }}">
-        <div class="operation op-{{ op.instruction | downcase }} op-group-{{ instruction.group | join: ' op-group-' }}{% if op.illegal %} illegal{% endif %}">
+<td id="op-{% if include.set == "cbprefixed" %}cb{% endif %}{{ key | downcase | slice: -2, 2 }}" class="opcode-info {% if is16bit %}is16bit{% else %}is8bit{% endif %} {% unless op.variants %}op-{{ op.instruction | downcase }} op-group-{{ instruction.group | join: ' op-group-' }}{% if op.illegal %} illegal{% endif %}{% endunless %}">
+        <div class="operation {% if op.variants %}op-{{ op.instruction | downcase }} op-group-{{ instruction.group | join: ' op-group-' }}{% if op.illegal %} illegal{% endif %}{% endif %}">
             <span class="mnemonic"><span class="tool">{{ op.instruction }}<span class="tooltiptext {% if include.column == 0 %}right{% elsif include.column == 15 %}left{% elsif include.row == 0 %}bottom{% else %}top{% endif %}">{{ instruction.description }}{% if op.illegal %}<br/>(illegal opcode){% endif %}</span></span>{% if op.operands %}&nbsp;<span class="operands">{% for operand in op.operands %}<span class="tool operand {{ operand.type }}">{{ operand.name }}<span class="tooltiptext {% if include.column == 0 %}right{% elsif include.column == 15 %}left{% elsif include.row == 0 %}bottom{% else %}top{% endif %}">{{ operand.description }}</span></span>{% endfor %}</span>{% endif %}</span>
 
             <span class="bytes-cycles">
