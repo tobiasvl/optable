@@ -16,7 +16,6 @@ The following are the changes in this table from Pastraiser's.
 
 Errata
 ------
-* `SIM` uses 10 cycles (and 3 states), not 4 cycles. (Source: Intel's _8080/8085 Assembly Language Programming Manual_)
 
 Other changes
 -------------
