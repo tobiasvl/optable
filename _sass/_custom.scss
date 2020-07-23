@@ -15,13 +15,11 @@ kbd {
 .table-sm {
 	font-size: 0.65rem;
 	line-height: 1.125;
-    table-layout: fixed;
 }
 
 .table-sm td {
 	padding: 0; /*.2rem .5rem;*/
     height: 80px;
-    min-width: 9em;
 }
 
 .table-sm td:first-child {
@@ -175,7 +173,7 @@ kbd {
 		&:first-child {
 			vertical-align: middle;
             width: 1.5em;
-			// min-width: 2rem;
+			min-width: 1.5em;
 		}
 	}
 
