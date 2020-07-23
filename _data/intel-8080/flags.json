@@ -13,12 +13,12 @@
         "name": "A",
         "description": "Auxiliary Carry"
     }, {
+        "name": "P",
+        "description": "Parity"
+    }, {
         "name": "V",
         "variant": true,
         "description": "Signed overflow (undocumented, 8085 only)"
-    }, {
-        "name": "P",
-        "description": "Parity"
     }, {
         "name": "C",
         "description": "Carry"
