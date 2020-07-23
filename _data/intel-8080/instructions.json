@@ -385,11 +385,11 @@
         "group": "flow"
     },
     "JNC": {
-        "description": "Jump if Not Jarry (C is not set)",
+        "description": "Jump if Not Carry (C is not set)",
         "group": "flow"
     },
     "JC": {
-        "description": "Jump if Jarry (C is set)",
+        "description": "Jump if Carry (C is set)",
         "group": "flow"
     },
     "JPO": {
