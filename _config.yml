@@ -31,8 +31,10 @@ collections:
     output: true
   m6800:
     output: true
-  opdescriptions:
+  rca-1800:
     output: true
+  opdescriptions:
+    output: false
 
 # Build settings
 markdown: kramdown

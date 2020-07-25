@@ -1,0 +1,186 @@
+{
+    "NOP": {
+        "description": "No operation",
+        "group": "control"
+    },
+    "LDN": {
+        "description": "Load D from memory location in register",
+        "group": "transfer"
+    },
+    "LDA": {
+        "description": "Load D from memory location in register and Advance (increment) register",
+        "group": "transfer"
+    },
+    "LDI": {
+        "description": "Load D with Immediate value",
+        "group": "transfer"
+    },
+    "STR": {
+        "description": "Store D to memory location in register",
+        "group": "transfer"
+    },
+    "SEQ": {
+        "description": "Set Q output line",
+        "group": "control"
+    },
+    "REQ": {
+        "description": "Reset Q output line",
+        "group": "control"
+    },
+    "SEX": {
+        "description": "Set X to register",
+        "group": "transfer"
+    },
+    "IRX": {
+        "description": "Increment Register X",
+        "group": "transfer"
+    },
+    "LDX": {
+        "description": "Load D from memory location in X",
+        "group": "transfer"
+    },
+    "LDXA": {
+        "description": "Load D from memory location in X and Advance (increment) X",
+        "group": "transfer"
+    },
+    "STXD": {
+        "description": "Store D to memory location in X and Decrement X",
+        "group": "transfer"
+    },
+    "SEP": {
+        "description": "Set P to register",
+        "group": "transfer"
+    },
+    "AND": {
+        "description": "Set D to the logical AND of D and the memory location in X",
+        "group": "logic"
+    },
+    "OR": {
+        "description": "Set D to the logical OR of D and the memory location in X",
+        "group": "logic"
+    },
+    "XOR": {
+        "description": "Set D to the logical exclusive OR of D and the memory location in X",
+        "group": "logic"
+    },
+    "ANI": {
+        "description": "Set D to the logical AND of D and an Immediate value",
+        "group": "logic"
+    },
+    "ORI": {
+        "description": "Set D to the logical OR of D and an Immediate value",
+        "group": "logic"
+    },
+    "XRI": {
+        "description": "Set D to the logical exclusive OR of D and an Immediate value",
+        "group": "logic"
+    },
+    "SHR": {
+        "description": "Shift D right into carry (DF)",
+        "group": "logic"
+    },
+    "SHRC": {
+        "description": "Rotate D right through carry (DF)",
+        "group": "logic"
+    },
+    "SHL": {
+        "description": "Shift D left into carry (DF)",
+        "group": "logic"
+    },
+    "SHLC": {
+        "description": "Rotate D left through carry (DF)",
+        "group": "logic"
+    },
+    "ADD": {
+        "description": "Add D and the memory location in X",
+        "group": "arithmetic"
+    },
+    "ADI": {
+        "description": "Add D and the Immediate value",
+        "group": "arithmetic"
+    },
+    "ADC": {
+        "description": "Add D and the memory location in X with Carry (DF)",
+        "group": "arithmetic"
+    },
+    "ADCI": {
+        "description": "Add D and the Immediate value with Carry (DF)",
+        "group": "arithmetic"
+    },
+    "SD": {
+        "description": "Subtract D from the memory location in X",
+        "group": "arithmetic"
+    },
+    "SDI": {
+        "description": "Subtract D from the Immediate value",
+        "group": "arithmetic"
+    },
+    "SDB": {
+        "description": "Subtract D from the memory location in X with Borrow (NOT DF)",
+        "group": "arithmetic"
+    },
+    "SDBI": {
+        "description": "Subtract D from the Immediate value with Borrow (NOT DF)",
+        "group": "arithmetic"
+    },
+    "SM": {
+        "description": "Subtract the memory location in X from D",
+        "group": "arithmetic"
+    },
+    "SMI": {
+        "description": "Subtract the Immediate value from D",
+        "group": "arithmetic"
+    },
+    "SMB": {
+        "description": "Subtract the memory location in X with Borrow (NOT DF) from D",
+        "group": "arithmetic"
+    },
+    "SMBI": {
+        "description": "Subtract the Immediate value with Borrow (NOT DF) from D",
+        "group": "arithmetic"
+    },
+    "OUT": {
+        "description": "Output the memory location in X, and increment X",
+        "group": "control"
+    },
+    "INP": {
+        "description": "Input into D and the memory location in X",
+        "group": "control"
+    },
+    "GHI": {
+        "description": "Get High byte of register and load into D",
+        "group": "transfer"
+    },
+    "GLO": {
+        "description": "Get Low byte of register and load into D",
+        "group": "transfer"
+    },
+    "PHI": {
+        "description": "Put D into High byte of register",
+        "group": "transfer"
+    },
+    "PLO": {
+        "description": "Put D into Low byte of register",
+        "group": "transfer"
+    },
+    "IDL": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "control"
+    },
+    "SAV": {
+        "description": "Save T to memory location in X",
+        "group": "control"
+    },
+    "MARK": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "control"
+    },
+    "RET": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "control"
+    },
+    "DIS": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "control"
+    }
+}
