@@ -74,12 +74,12 @@ for opcode in range(0x00, 0x100):
         elif N < 0x8:
             foo['instruction'] = "OUT"
             foo['operands'] = [ inherent[N] ]
-        elif N == 0x8:
-            pass
-            # illegal
         else:
             foo['instruction'] = "INP"
             foo['operands'] = [ inherent[N - 0x8] ]
+            if N == 0x8:
+                foo['illegal'] = True
+                foo['variants'] = [ { 'instruction': "PREFIX" } ]
     elif I == 0x7:
         if N == 0x0:
             foo['instruction'] = "RET"
@@ -217,8 +217,111 @@ for opcode in range(0x00, 0x100):
             foo['operands'] = [ immediate['d8'] ]
     if not 'timing' in foo:
         foo['timing'] = { 'cycles': 2 }
-    #if not opcodes[opcode]:
     opcodes["0x%02X" % opcode] = foo
 
+prefixed = {}
+
+for opcode in range(0x00, 0x100):
+    I = opcode >> 4
+    N = opcode & 0xF
+
+    foo = {}
+    bar = {}
+
+    if I == 0x0:
+        if N == 0x0:
+            foo['instruction'] = "STPC"
+        elif N == 0x1:
+            foo['instruction'] = "DTC"
+        elif N == 0x2:
+            foo['instruction'] = "SPM2"
+        elif N == 0x3:
+            foo['instruction'] = "SCM2"
+        elif N == 0x4:
+            foo['instruction'] = "SPM1"
+        elif N == 0x5:
+            foo['instruction'] = "SCM1"
+        elif N == 0x6:
+            foo['instruction'] = "LDC"
+        elif N == 0x7:
+            foo['instruction'] = "STM"
+        elif N == 0x8:
+            foo['instruction'] = "GEC"
+        elif N == 0x9:
+            foo['instruction'] = "ETQ"
+        elif N == 0xA:
+            foo['instruction'] = "XIE"
+        elif N == 0xB:
+            foo['instruction'] = "XID"
+        elif N == 0xC:
+            foo['instruction'] = "CIE"
+        elif N == 0xD:
+            foo['instruction'] = "CID"
+    elif I == 0x1:
+        pass
+    elif I == 0x2:
+        bar['instruction'] = "DBNZ"
+        bar['operands'] = [ registers[N] ]
+        foo['variants'] = [ bar ]
+    elif I == 0x3:
+        if N == 0xE:
+            foo['instruction'] = "BCI"
+            foo['operands'] = [ immediate['d8'] ]
+        elif N == 0xF:
+            foo['instruction'] = "BXI"
+            foo['operands'] = [ immediate['d8'] ]
+    elif I == 0x4:
+        pass
+    elif I == 0x5:
+        pass
+    elif I == 0x6:
+        foo['instruction'] = "RLXA"
+        foo['operands'] = [ registers[N] ]
+    elif I == 0x7:
+        if N == 0x4:
+            foo['instruction'] = "DADC"
+        elif N == 0x6:
+            foo['instruction'] = "DSAV"
+        elif N == 0x7:
+            foo['instruction'] = "DSMB"
+        elif N == 0xC:
+            foo['instruction'] = "DACI"
+            foo['operands'] = [ immediate['d8'] ]
+        elif N == 0xF:
+            foo['instruction'] = "DSBI"
+            foo['operands'] = [ immediate['d8'] ]
+    elif I == 0x8:
+        foo['instruction'] = "SCAL"
+        foo['operands'] = [ registers[N] ]
+    elif I == 0x9:
+        foo['instruction'] = "SRET"
+        foo['operands'] = [ registers[N] ]
+    elif I == 0xA:
+        foo['instruction'] = "RSXD"
+        foo['operands'] = [ registers[N] ]
+    elif I == 0xB:
+        foo['instruction'] = "RNX"
+        foo['operands'] = [ registers[N] ]
+    elif I == 0xC:
+        foo['instruction'] = "RLDI"
+        foo['operands'] = [ registers[N] ]
+    elif I == 0xD:
+        pass
+    elif I == 0xE:
+        pass
+    elif I == 0xF:
+        if N == 0x4:
+            foo['instruction'] = "DADD"
+        elif N == 0x7:
+            foo['instruction'] = "DSM"
+        elif N == 0xC:
+            foo['instruction'] = "DADI"
+            foo['operands'] = [ immediate['d8'] ]
+        elif N == 0xF:
+            foo['instruction'] = "DSMI"
+            foo['operands'] = [ immediate['d8'] ]
+
+    prefixed["0x%02X" % opcode] = foo
+
 with open('opcodes.json', 'w') as fp:
-    json.dump({'unprefixed': opcodes}, fp, sort_keys=True, indent=4)
+    json.dump({'unprefixed': opcodes, 'cbprefixed': prefixed}, fp, sort_keys=True, indent=4)

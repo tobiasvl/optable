@@ -1,4 +1,1426 @@
 {
+    "cbprefixed": {
+        "0x00": {
+            "instruction": "STPC"
+        }, 
+        "0x01": {
+            "instruction": "DTC"
+        }, 
+        "0x02": {
+            "instruction": "SPM2"
+        }, 
+        "0x03": {
+            "instruction": "SCM2"
+        }, 
+        "0x04": {
+            "instruction": "SPM1"
+        }, 
+        "0x05": {
+            "instruction": "SCM1"
+        }, 
+        "0x06": {
+            "instruction": "LDC"
+        }, 
+        "0x07": {
+            "instruction": "STM"
+        }, 
+        "0x08": {
+            "instruction": "GEC"
+        }, 
+        "0x09": {
+            "instruction": "ETQ"
+        }, 
+        "0x0A": {
+            "instruction": "XIE"
+        }, 
+        "0x0B": {
+            "instruction": "XID"
+        }, 
+        "0x0C": {
+            "instruction": "CIE"
+        }, 
+        "0x0D": {
+            "instruction": "CID"
+        }, 
+        "0x0E": {}, 
+        "0x0F": {}, 
+        "0x10": {}, 
+        "0x11": {}, 
+        "0x12": {}, 
+        "0x13": {}, 
+        "0x14": {}, 
+        "0x15": {}, 
+        "0x16": {}, 
+        "0x17": {}, 
+        "0x18": {}, 
+        "0x19": {}, 
+        "0x1A": {}, 
+        "0x1B": {}, 
+        "0x1C": {}, 
+        "0x1D": {}, 
+        "0x1E": {}, 
+        "0x1F": {}, 
+        "0x20": {
+            "variants": [
+                {
+                    "instruction": "DBNZ", 
+                    "operands": [
+                        {
+                            "description": "Scratchpad Register 0", 
+                            "name": "R0", 
+                            "type": "register"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        "0x21": {
+            "variants": [
+                {
+                    "instruction": "DBNZ", 
+                    "operands": [
+                        {
+                            "description": "Scratchpad Register 1", 
+                            "name": "R1", 
+                            "type": "register"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        "0x22": {
+            "variants": [
+                {
+                    "instruction": "DBNZ", 
+                    "operands": [
+                        {
+                            "description": "Scratchpad Register 2", 
+                            "name": "R2", 
+                            "type": "register"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        "0x23": {
+            "variants": [
+                {
+                    "instruction": "DBNZ", 
+                    "operands": [
+                        {
+                            "description": "Scratchpad Register 3", 
+                            "name": "R3", 
+                            "type": "register"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        "0x24": {
+            "variants": [
+                {
+                    "instruction": "DBNZ", 
+                    "operands": [
+                        {
+                            "description": "Scratchpad Register 4", 
+                            "name": "R4", 
+                            "type": "register"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        "0x25": {
+            "variants": [
+                {
+                    "instruction": "DBNZ", 
+                    "operands": [
+                        {
+                            "description": "Scratchpad Register 5", 
+                            "name": "R5", 
+                            "type": "register"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        "0x26": {
+            "variants": [
+                {
+                    "instruction": "DBNZ", 
+                    "operands": [
+                        {
+                            "description": "Scratchpad Register 6", 
+                            "name": "R6", 
+                            "type": "register"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        "0x27": {
+            "variants": [
+                {
+                    "instruction": "DBNZ", 
+                    "operands": [
+                        {
+                            "description": "Scratchpad Register 7", 
+                            "name": "R7", 
+                            "type": "register"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        "0x28": {
+            "variants": [
+                {
+                    "instruction": "DBNZ", 
+                    "operands": [
+                        {
+                            "description": "Scratchpad Register 8", 
+                            "name": "R8", 
+                            "type": "register"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        "0x29": {
+            "variants": [
+                {
+                    "instruction": "DBNZ", 
+                    "operands": [
+                        {
+                            "description": "Scratchpad Register 9", 
+                            "name": "R9", 
+                            "type": "register"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        "0x2A": {
+            "variants": [
+                {
+                    "instruction": "DBNZ", 
+                    "operands": [
+                        {
+                            "description": "Scratchpad Register A", 
+                            "name": "RA", 
+                            "type": "register"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        "0x2B": {
+            "variants": [
+                {
+                    "instruction": "DBNZ", 
+                    "operands": [
+                        {
+                            "description": "Scratchpad Register B", 
+                            "name": "RB", 
+                            "type": "register"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        "0x2C": {
+            "variants": [
+                {
+                    "instruction": "DBNZ", 
+                    "operands": [
+                        {
+                            "description": "Scratchpad Register C", 
+                            "name": "RC", 
+                            "type": "register"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        "0x2D": {
+            "variants": [
+                {
+                    "instruction": "DBNZ", 
+                    "operands": [
+                        {
+                            "description": "Scratchpad Register D", 
+                            "name": "RD", 
+                            "type": "register"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        "0x2E": {
+            "variants": [
+                {
+                    "instruction": "DBNZ", 
+                    "operands": [
+                        {
+                            "description": "Scratchpad Register E", 
+                            "name": "RE", 
+                            "type": "register"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        "0x2F": {
+            "variants": [
+                {
+                    "instruction": "DBNZ", 
+                    "operands": [
+                        {
+                            "description": "Scratchpad Register F", 
+                            "name": "RF", 
+                            "type": "register"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        "0x30": {}, 
+        "0x31": {}, 
+        "0x32": {}, 
+        "0x33": {}, 
+        "0x34": {}, 
+        "0x35": {}, 
+        "0x36": {}, 
+        "0x37": {}, 
+        "0x38": {}, 
+        "0x39": {}, 
+        "0x3A": {}, 
+        "0x3B": {}, 
+        "0x3C": {}, 
+        "0x3D": {}, 
+        "0x3E": {
+            "instruction": "BCI", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x3F": {
+            "instruction": "BXI", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x40": {}, 
+        "0x41": {}, 
+        "0x42": {}, 
+        "0x43": {}, 
+        "0x44": {}, 
+        "0x45": {}, 
+        "0x46": {}, 
+        "0x47": {}, 
+        "0x48": {}, 
+        "0x49": {}, 
+        "0x4A": {}, 
+        "0x4B": {}, 
+        "0x4C": {}, 
+        "0x4D": {}, 
+        "0x4E": {}, 
+        "0x4F": {}, 
+        "0x50": {}, 
+        "0x51": {}, 
+        "0x52": {}, 
+        "0x53": {}, 
+        "0x54": {}, 
+        "0x55": {}, 
+        "0x56": {}, 
+        "0x57": {}, 
+        "0x58": {}, 
+        "0x59": {}, 
+        "0x5A": {}, 
+        "0x5B": {}, 
+        "0x5C": {}, 
+        "0x5D": {}, 
+        "0x5E": {}, 
+        "0x5F": {}, 
+        "0x60": {
+            "instruction": "RLXA", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 0", 
+                    "name": "R0", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x61": {
+            "instruction": "RLXA", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 1", 
+                    "name": "R1", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x62": {
+            "instruction": "RLXA", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 2", 
+                    "name": "R2", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x63": {
+            "instruction": "RLXA", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 3", 
+                    "name": "R3", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x64": {
+            "instruction": "RLXA", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 4", 
+                    "name": "R4", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x65": {
+            "instruction": "RLXA", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 5", 
+                    "name": "R5", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x66": {
+            "instruction": "RLXA", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 6", 
+                    "name": "R6", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x67": {
+            "instruction": "RLXA", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 7", 
+                    "name": "R7", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x68": {
+            "instruction": "RLXA", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 8", 
+                    "name": "R8", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x69": {
+            "instruction": "RLXA", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 9", 
+                    "name": "R9", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x6A": {
+            "instruction": "RLXA", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register A", 
+                    "name": "RA", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x6B": {
+            "instruction": "RLXA", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register B", 
+                    "name": "RB", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x6C": {
+            "instruction": "RLXA", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register C", 
+                    "name": "RC", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x6D": {
+            "instruction": "RLXA", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register D", 
+                    "name": "RD", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x6E": {
+            "instruction": "RLXA", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register E", 
+                    "name": "RE", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x6F": {
+            "instruction": "RLXA", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register F", 
+                    "name": "RF", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x70": {}, 
+        "0x71": {}, 
+        "0x72": {}, 
+        "0x73": {}, 
+        "0x74": {
+            "instruction": "DADC"
+        }, 
+        "0x75": {}, 
+        "0x76": {
+            "instruction": "DSAV"
+        }, 
+        "0x77": {
+            "instruction": "DSMB"
+        }, 
+        "0x78": {}, 
+        "0x79": {}, 
+        "0x7A": {}, 
+        "0x7B": {}, 
+        "0x7C": {
+            "instruction": "DACI", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x7D": {}, 
+        "0x7E": {}, 
+        "0x7F": {
+            "instruction": "DSBI", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0x80": {
+            "instruction": "SCAL", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 0", 
+                    "name": "R0", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x81": {
+            "instruction": "SCAL", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 1", 
+                    "name": "R1", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x82": {
+            "instruction": "SCAL", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 2", 
+                    "name": "R2", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x83": {
+            "instruction": "SCAL", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 3", 
+                    "name": "R3", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x84": {
+            "instruction": "SCAL", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 4", 
+                    "name": "R4", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x85": {
+            "instruction": "SCAL", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 5", 
+                    "name": "R5", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x86": {
+            "instruction": "SCAL", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 6", 
+                    "name": "R6", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x87": {
+            "instruction": "SCAL", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 7", 
+                    "name": "R7", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x88": {
+            "instruction": "SCAL", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 8", 
+                    "name": "R8", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x89": {
+            "instruction": "SCAL", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 9", 
+                    "name": "R9", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x8A": {
+            "instruction": "SCAL", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register A", 
+                    "name": "RA", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x8B": {
+            "instruction": "SCAL", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register B", 
+                    "name": "RB", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x8C": {
+            "instruction": "SCAL", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register C", 
+                    "name": "RC", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x8D": {
+            "instruction": "SCAL", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register D", 
+                    "name": "RD", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x8E": {
+            "instruction": "SCAL", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register E", 
+                    "name": "RE", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x8F": {
+            "instruction": "SCAL", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register F", 
+                    "name": "RF", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x90": {
+            "instruction": "SRET", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 0", 
+                    "name": "R0", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x91": {
+            "instruction": "SRET", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 1", 
+                    "name": "R1", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x92": {
+            "instruction": "SRET", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 2", 
+                    "name": "R2", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x93": {
+            "instruction": "SRET", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 3", 
+                    "name": "R3", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x94": {
+            "instruction": "SRET", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 4", 
+                    "name": "R4", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x95": {
+            "instruction": "SRET", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 5", 
+                    "name": "R5", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x96": {
+            "instruction": "SRET", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 6", 
+                    "name": "R6", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x97": {
+            "instruction": "SRET", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 7", 
+                    "name": "R7", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x98": {
+            "instruction": "SRET", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 8", 
+                    "name": "R8", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x99": {
+            "instruction": "SRET", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 9", 
+                    "name": "R9", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x9A": {
+            "instruction": "SRET", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register A", 
+                    "name": "RA", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x9B": {
+            "instruction": "SRET", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register B", 
+                    "name": "RB", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x9C": {
+            "instruction": "SRET", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register C", 
+                    "name": "RC", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x9D": {
+            "instruction": "SRET", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register D", 
+                    "name": "RD", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x9E": {
+            "instruction": "SRET", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register E", 
+                    "name": "RE", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0x9F": {
+            "instruction": "SRET", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register F", 
+                    "name": "RF", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xA0": {
+            "instruction": "RSXD", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 0", 
+                    "name": "R0", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xA1": {
+            "instruction": "RSXD", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 1", 
+                    "name": "R1", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xA2": {
+            "instruction": "RSXD", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 2", 
+                    "name": "R2", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xA3": {
+            "instruction": "RSXD", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 3", 
+                    "name": "R3", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xA4": {
+            "instruction": "RSXD", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 4", 
+                    "name": "R4", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xA5": {
+            "instruction": "RSXD", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 5", 
+                    "name": "R5", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xA6": {
+            "instruction": "RSXD", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 6", 
+                    "name": "R6", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xA7": {
+            "instruction": "RSXD", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 7", 
+                    "name": "R7", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xA8": {
+            "instruction": "RSXD", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 8", 
+                    "name": "R8", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xA9": {
+            "instruction": "RSXD", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 9", 
+                    "name": "R9", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xAA": {
+            "instruction": "RSXD", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register A", 
+                    "name": "RA", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xAB": {
+            "instruction": "RSXD", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register B", 
+                    "name": "RB", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xAC": {
+            "instruction": "RSXD", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register C", 
+                    "name": "RC", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xAD": {
+            "instruction": "RSXD", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register D", 
+                    "name": "RD", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xAE": {
+            "instruction": "RSXD", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register E", 
+                    "name": "RE", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xAF": {
+            "instruction": "RSXD", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register F", 
+                    "name": "RF", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xB0": {
+            "instruction": "RNX", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 0", 
+                    "name": "R0", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xB1": {
+            "instruction": "RNX", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 1", 
+                    "name": "R1", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xB2": {
+            "instruction": "RNX", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 2", 
+                    "name": "R2", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xB3": {
+            "instruction": "RNX", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 3", 
+                    "name": "R3", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xB4": {
+            "instruction": "RNX", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 4", 
+                    "name": "R4", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xB5": {
+            "instruction": "RNX", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 5", 
+                    "name": "R5", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xB6": {
+            "instruction": "RNX", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 6", 
+                    "name": "R6", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xB7": {
+            "instruction": "RNX", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 7", 
+                    "name": "R7", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xB8": {
+            "instruction": "RNX", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 8", 
+                    "name": "R8", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xB9": {
+            "instruction": "RNX", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 9", 
+                    "name": "R9", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xBA": {
+            "instruction": "RNX", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register A", 
+                    "name": "RA", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xBB": {
+            "instruction": "RNX", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register B", 
+                    "name": "RB", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xBC": {
+            "instruction": "RNX", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register C", 
+                    "name": "RC", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xBD": {
+            "instruction": "RNX", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register D", 
+                    "name": "RD", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xBE": {
+            "instruction": "RNX", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register E", 
+                    "name": "RE", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xBF": {
+            "instruction": "RNX", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register F", 
+                    "name": "RF", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xC0": {
+            "instruction": "RLDI", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 0", 
+                    "name": "R0", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xC1": {
+            "instruction": "RLDI", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 1", 
+                    "name": "R1", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xC2": {
+            "instruction": "RLDI", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 2", 
+                    "name": "R2", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xC3": {
+            "instruction": "RLDI", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 3", 
+                    "name": "R3", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xC4": {
+            "instruction": "RLDI", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 4", 
+                    "name": "R4", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xC5": {
+            "instruction": "RLDI", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 5", 
+                    "name": "R5", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xC6": {
+            "instruction": "RLDI", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 6", 
+                    "name": "R6", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xC7": {
+            "instruction": "RLDI", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 7", 
+                    "name": "R7", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xC8": {
+            "instruction": "RLDI", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 8", 
+                    "name": "R8", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xC9": {
+            "instruction": "RLDI", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register 9", 
+                    "name": "R9", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xCA": {
+            "instruction": "RLDI", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register A", 
+                    "name": "RA", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xCB": {
+            "instruction": "RLDI", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register B", 
+                    "name": "RB", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xCC": {
+            "instruction": "RLDI", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register C", 
+                    "name": "RC", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xCD": {
+            "instruction": "RLDI", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register D", 
+                    "name": "RD", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xCE": {
+            "instruction": "RLDI", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register E", 
+                    "name": "RE", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xCF": {
+            "instruction": "RLDI", 
+            "operands": [
+                {
+                    "description": "Scratchpad Register F", 
+                    "name": "RF", 
+                    "type": "register"
+                }
+            ]
+        }, 
+        "0xD0": {}, 
+        "0xD1": {}, 
+        "0xD2": {}, 
+        "0xD3": {}, 
+        "0xD4": {}, 
+        "0xD5": {}, 
+        "0xD6": {}, 
+        "0xD7": {}, 
+        "0xD8": {}, 
+        "0xD9": {}, 
+        "0xDA": {}, 
+        "0xDB": {}, 
+        "0xDC": {}, 
+        "0xDD": {}, 
+        "0xDE": {}, 
+        "0xDF": {}, 
+        "0xE0": {}, 
+        "0xE1": {}, 
+        "0xE2": {}, 
+        "0xE3": {}, 
+        "0xE4": {}, 
+        "0xE5": {}, 
+        "0xE6": {}, 
+        "0xE7": {}, 
+        "0xE8": {}, 
+        "0xE9": {}, 
+        "0xEA": {}, 
+        "0xEB": {}, 
+        "0xEC": {}, 
+        "0xED": {}, 
+        "0xEE": {}, 
+        "0xEF": {}, 
+        "0xF0": {}, 
+        "0xF1": {}, 
+        "0xF2": {}, 
+        "0xF3": {}, 
+        "0xF4": {
+            "instruction": "DADD"
+        }, 
+        "0xF5": {}, 
+        "0xF6": {}, 
+        "0xF7": {
+            "instruction": "DSM"
+        }, 
+        "0xF8": {}, 
+        "0xF9": {}, 
+        "0xFA": {}, 
+        "0xFB": {}, 
+        "0xFC": {
+            "instruction": "DADI", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }, 
+        "0xFD": {}, 
+        "0xFE": {}, 
+        "0xFF": {
+            "instruction": "DSMI", 
+            "operands": [
+                {
+                    "bytes": 1, 
+                    "name": "d8", 
+                    "type": "immediate"
+                }
+            ]
+        }
+    }, 
     "unprefixed": {
         "0x00": {
             "instruction": "IDL", 
@@ -1332,9 +2754,22 @@
             }
         }, 
         "0x68": {
+            "illegal": true, 
+            "instruction": "INP", 
+            "operands": [
+                {
+                    "name": "0", 
+                    "type": "inherent"
+                }
+            ], 
             "timing": {
                 "cycles": 2
-            }
+            }, 
+            "variants": [
+                {
+                    "instruction": "PREFIX"
+                }
+            ]
         }, 
         "0x69": {
             "instruction": "INP", 
