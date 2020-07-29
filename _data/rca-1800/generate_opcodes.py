@@ -49,7 +49,7 @@ for opcode in range(0x00, 0x100):
             foo['instruction'] = "BZ"
         elif N == 0x3:
             foo['instruction'] = "BDF"
-        elif N >= 0x4 and N <= 0x8:
+        elif N >= 0x4 and N <= 0x7:
             foo['instruction'] = "B%d" % (N - 3)
         elif N == 0x8:
             foo['instruction'] = "SKP"
@@ -61,7 +61,7 @@ for opcode in range(0x00, 0x100):
         elif N == 0xB:
             foo['instruction'] = "BNF"
         elif N >= 0xC:
-            foo['instruction'] = "BN%d" % (N - 3)
+            foo['instruction'] = "BN%d" % (N - 0xB)
     elif I == 0x4:
         foo['instruction'] = "LDA"
         foo['operands'] = [ registers[N] ]

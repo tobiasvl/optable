@@ -3,6 +3,14 @@
         "description": "No operation",
         "group": "control"
     },
+    "INC": {
+        "description": "Increment register",
+        "group": "arithmetic"
+    },
+    "DEC": {
+        "description": "Decrement register",
+        "group": "arithmetic"
+    },
     "LDN": {
         "description": "Load D from memory location in register",
         "group": "transfer"
@@ -182,5 +190,129 @@
     "DIS": {
         "description": "Idle and wait for DMA or interrupt",
         "group": "control"
+    },
+    "BR": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "BQ": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "BZ": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "BDF": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "B1": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "B2": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "B3": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "B4": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "SKP": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "BNQ": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "BNZ": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "BNF": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "BN1": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "BN2": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "BN3": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "BN4": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "LBR": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "LBQ": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "LBZ": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "LBDF": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "LSNQ": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "LSNZ": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "LSNF": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "LSKP": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "LBNQ": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "LBNZ": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "LBNF": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "LSIE": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "LSQ": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "LSZ": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
+    },
+    "LSDF": {
+        "description": "Idle and wait for DMA or interrupt",
+        "group": "flow"
     }
 }
