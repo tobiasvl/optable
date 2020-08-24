@@ -506,10 +506,10 @@ for opcode in range(0x00, 0x100):
                 foo['instruction'] = "XTHL"
                 foo['timing'] = {
                     'cycles': 5,
-                    'states': 17,
+                    'states': 18,
                     'variant': {
                         'cycles': 5,
-                        'states': 18
+                        'states': 16
                     }
                 }
             elif op == 5:

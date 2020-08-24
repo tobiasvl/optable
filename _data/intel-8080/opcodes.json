@@ -4094,10 +4094,10 @@
             "instruction": "XTHL", 
             "timing": {
                 "cycles": 5, 
-                "states": 17, 
+                "states": 18, 
                 "variant": {
                     "cycles": 5, 
-                    "states": 18
+                    "states": 16
                 }
             }
         }, 
